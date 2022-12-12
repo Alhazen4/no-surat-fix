@@ -515,7 +515,6 @@
         computed: {
             // For pagination
             rows() {
-                // return this.userItemsTest.length
                 return this.suratItems.length
             },
         },
@@ -723,18 +722,17 @@
                     )
                     .then(response => {
                         const params = response.data
-                        console.log(params);
-                        this.noSuratSelected = params.noSurat,
-                        this.generatedKode = params.noKodeSurat,
-                        this.kodeSuratSelected = params.kodeSurat,
-                        this.masalahUtamaSelected = params.masalahUtama,
-                        this.masalahCabang1Selected = params.masalahCabang1,
-                        this.masalahCabang2Selected = params.masalahCabang2,
-                        this.pejabatTtdSelected = params.pejabatTtd,
-                        this.input_tglKeluar = params.tglKeluar,
-                        this.input_wktKeluar = params.wktKeluar,
-                        this.input_perihal = params.perihal,
-                        this.input_tujuanUnit = params.tujuanUnit,
+                        this.noSuratSelected = params.noSurat
+                        this.generatedKode = params.noKodeSurat
+                        this.kodeSuratSelected = params.kodeSurat
+                        this.masalahUtamaSelected = params.masalahUtama
+                        this.masalahCabang1Selected = params.masalahCabang1
+                        this.masalahCabang2Selected = params.masalahCabang2
+                        this.pejabatTtdSelected = params.pejabatTtd
+                        this.input_tglKeluar = params.tglKeluar
+                        this.input_wktKeluar = params.wktKeluar
+                        this.input_perihal = params.perihal
+                        this.input_tujuanUnit = params.tujuanUnit
                         this.input_keterangan = params.keterangan
                     })
                 } catch (error) {
@@ -831,10 +829,6 @@
 
     .nav ul li:not(:last-child) {
         margin-right: 20px;
-    }
-
-    .btn_input {
-
     }
 
     .dropdown {
