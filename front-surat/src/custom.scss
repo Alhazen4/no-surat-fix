@@ -1,0 +1,75 @@
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+// .wrapper-login{
+//     height: 97vh;
+// }
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    width: 520px;
+}
+
+// .form {
+//     background-color: whitesmoke;
+//     width: 550px;
+//     height: 570px;
+//     padding: 15px;
+//     border-radius: 20px;
+// }
+
+.select {
+    padding: 7px;
+    height: 50px;
+    width: 500px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.col-md-5 {
+    margin-bottom: 10px;
+}
+
+.col-tgl {
+    width: 260px;
+}
+
+.col-bln {
+    width: 260px;
+}
+
+/* Button input photo style */
+input[type="file"] {
+    display: none;
+}
+
+.btn_input {
+    color: white;
+    font-weight: 400;
+    background-color: #ffc107;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    padding: 0.47rem 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn_input:hover {
+    cursor: pointer;
+    background-color: #dba605;
+}

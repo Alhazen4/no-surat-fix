@@ -1,0 +1,869 @@
+<template>
+    <div>
+        <div class="nav justify-content-between">
+            <p>Penomoran Surat</p>
+            <ul>
+                <li><a href="/homePage">Home</a></li>
+                <li><a href="/suratKeluar">Surat Keluar</a></li>
+                <li><a href="/suratMasuk">Surat Masuk</a></li>
+                <li><a href="/daftarUser" :style="{ display }">Daftar User</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn">Profil</a>
+                        <div class="dropdown-content">
+                            <a>User {{nama_admin}}</a>
+                            <a class="logout-btn" @click="logout">Log Out</a>
+                        </div>
+                    </div>
+                </li>   
+            </ul>
+        </div>
+        <div class="body">
+            <div class="user-wrapper">
+                <div class="table-wrapper">
+                    <div class="page-title">
+                        <h5>Surat Masuk</h5>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="p-2">
+                            <b-button @click="$router.go(-1)" variant="secondary">
+                                <b-icon icon="arrow-left"></b-icon>
+                                Kembali
+                            </b-button>
+                        </div>
+                        <div class="p-2">
+                            <b-button @click="popUpActive=true" variant="success">
+                                <b-icon icon="envelope-open"></b-icon>
+                                Tambah Surat Masuk
+                            </b-button>
+                        </div>
+
+                        <vs-popup class="holamundo"  title="Tambah Surat Masuk" :active.sync="popUpActive">
+                            <b-form>
+                                <b-form-group
+                                    label="Pengirim Surat"
+                                    label-for="input-pengirim">
+                                    <b-form-input
+                                        id="input-pengirim"
+                                        v-model="input_pengirim"
+                                        type="text"
+                                        required>
+                                    </b-form-input>
+                                </b-form-group>
+                                <b-form-group
+                                    label="Perihal:"
+                                    label-for="input-perihal">
+                                    <b-form-input
+                                        id="input-perihal"
+                                        v-model="input_perihal"
+                                        type="text"
+                                        required>
+                                    </b-form-input>
+                                </b-form-group>
+                                <b-form-group
+                                    label="Tujuan Unit:"
+                                    label-for="input-tujuanUnit">
+                                    <b-form-input
+                                        id="input-tujuanUnit"
+                                        v-model="input_tujuanUnit"
+                                        type="text"
+                                        required>
+                                    </b-form-input>
+                                </b-form-group>
+                                <b-form-group
+                                    label="Nama Penerima:"
+                                    label-for="input-namaPenerima">
+                                    <b-form-input
+                                        id="input-namaPenerima"
+                                        v-model="input_namaPenerima"
+                                        type="text"
+                                        required>
+                                    </b-form-input>
+                                </b-form-group>
+                                <b-form-group
+                                    label="Disposisi:"
+                                    label-for="input-disposisi">
+                                    <b-form-input
+                                        id="input-disposisi"
+                                        v-model="input_disposisi"
+                                        type="text"
+                                        required>
+                                    </b-form-input>
+                                </b-form-group>
+
+                                <div class="col-md-5">
+                                    <div class="row justify-content-between">
+                                        <div class="col-tgl">
+                                            <b-form-group
+                                                label="Tanggal Terima:"
+                                                label-for="input-tanggalTerima">
+                                                <b-form-datepicker 
+                                                    id="input-tanggalTerima" 
+                                                    v-model="input_tglTerima" 
+                                                    class="mb-2"></b-form-datepicker>
+                                            </b-form-group>
+                                        </div>
+                                        <div class="col-bln">
+                                            <b-form-group
+                                                label="Waktu Terima:"
+                                                label-for="input-tanggalTerima">
+                                                <b-form-timepicker
+                                                    :hour12="false"
+                                                    v-model="input_wktTerima" 
+                                                    locale="en">
+                                                </b-form-timepicker>
+                                            </b-form-group>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <b-form-group
+                                    label="Foto Paket:"
+                                    label-for="input-foto">
+                                    <img id="input-foto" :src="preImage" alt="" style="width:320px; height:auto;">
+                                </b-form-group>
+                            </b-form>
+
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2">
+                                        <b-button @click="popUpActive=false" variant="secondary">Kembali</b-button>
+                                    </div>
+                                    <div class="p-2">
+                                        <label class="btn_input">
+                                            <input @change="selectImage" type="file"/>
+                                            Upload Foto
+                                        </label>
+                                    </div>
+                                    <div class="p-2">
+                                        <b-button @click="tambahSuratMasuk" variant="success" type="submit">Tambah Surat Masuk</b-button>
+                                    </div>
+                                </div>
+                        </vs-popup>
+
+
+                        <div class="d-flex ms-auto p-2" style="flex-direction: row;">
+                            <b-form-input
+                                v-model="keyword"
+                                placeholder="Type to Search"
+                            >
+                        </b-form-input>
+                        </div>
+                    </div>
+
+                    <b-pagination
+                        v-model="currentPage"
+                        :total-rows="rows"
+                        :per-page="perPage"
+                        aria-controls="suratTable"
+                    ></b-pagination>
+
+                    <b-table 
+                    id="suratTable"
+                    hover
+                    stacked="md"
+                    :items="suratItems" 
+                    :fields="columns" 
+                    :filter="keyword"
+                    label-sort-asc=""
+                    label-sort-desc=""
+                    label-sort-clear=""
+                    :per-page="perPage"
+                    :current-page="currentPage">
+
+                        <!-- <template #cell(index)="data">
+                            {{ data.index + 1 }}
+                        </template> -->
+
+                        <template #cell(opsi)="data">
+                            <div class="d-flex" style="gap: 10px">
+                                    <b-button @click="lihatClick(data.item._id)" variant="primary" size="sm">
+                                        <b-icon icon="eye"></b-icon>
+                                    </b-button>
+
+                                    <vs-popup class="holamundo"  title="Lihat Surat Masuk" :active.sync="popUp3Active">
+                                        <b-form>
+                                            <b-form-group
+                                                label="Pengirim Surat"
+                                                label-for="input-pengirim">
+                                                <b-form-input
+                                                    id="input-pengirim"
+                                                    v-model="input_pengirim"
+                                                    type="text"
+                                                    readonly>
+                                                </b-form-input>
+                                            </b-form-group>
+                                            <b-form-group
+                                                label="Perihal:"
+                                                label-for="input-perihal">
+                                                <b-form-input
+                                                    id="input-perihal"
+                                                    v-model="input_perihal"
+                                                    type="text"
+                                                    readonly>
+                                                </b-form-input>
+                                            </b-form-group>
+                                            <b-form-group
+                                                label="Tujuan Unit:"
+                                                label-for="input-tujuanUnit">
+                                                <b-form-input
+                                                    id="input-tujuanUnit"
+                                                    v-model="input_tujuanUnit"
+                                                    type="text"
+                                                    readonly>
+                                                </b-form-input>
+                                            </b-form-group>
+                                            <b-form-group
+                                                label="Nama Penerima:"
+                                                label-for="input-namaPenerima">
+                                                <b-form-input
+                                                    id="input-namaPenerima"
+                                                    v-model="input_namaPenerima"
+                                                    type="text"
+                                                    readonly>
+                                                </b-form-input>
+                                            </b-form-group>
+                                            <b-form-group
+                                                label="Disposisi:"
+                                                label-for="input-disposisi">
+                                                <b-form-input
+                                                    id="input-disposisi"
+                                                    v-model="input_disposisi"
+                                                    type="text"
+                                                    readonly>
+                                                </b-form-input>
+                                            </b-form-group>
+
+                                            <div class="row justify-content-between">
+                                                <div class="col-tgl">
+                                                    <b-form-group
+                                                        label="Tanggal Terima:"
+                                                        label-for="input-tanggalTerima">
+                                                        <b-form-datepicker 
+                                                            disabled
+                                                            id="input-tanggalTerima" 
+                                                            v-model="input_tglTerima" 
+                                                            class="mb-2"></b-form-datepicker>
+                                                    </b-form-group>
+                                                </div>
+                                                <div class="col-bln">
+                                                    <b-form-group
+                                                        label="Waktu Terima:"
+                                                        label-for="input-tanggalTerima">
+                                                        <b-form-timepicker
+                                                            disabled
+                                                            :hour12="false"
+                                                            v-model="input_wktTerima" 
+                                                            locale="en">
+                                                        </b-form-timepicker>
+                                                    </b-form-group>
+                                                </div>
+                                            </div>
+
+                                            <b-form-group
+                                                label="Foto Paket:"
+                                                label-for="input-foto">
+                                                <img id="input-foto" :src="preImage" alt="" style="width:320px; height:auto;">
+                                            </b-form-group>
+                                        </b-form>
+
+                                            <div class="d-flex justify-content-center">
+                                                <div class="p-2" style="margin-top: 20px;">
+                                                    <b-button @click="popUp3Active=false" variant="secondary">Kembali</b-button>
+                                                </div>
+                                            </div>
+                                    </vs-popup>
+
+                                    <b-button @click="ubahClick(data.item._id)" variant="warning" size="sm">
+                                        <b-icon icon="pencil-square"></b-icon>
+                                    </b-button>
+
+                                    <vs-popup class="holamundo"  title="Edit Surat Masuk" :active.sync="popUp2Active">
+                                        <b-form>
+                                            <b-form-group
+                                                label="Pengirim Surat"
+                                                label-for="input-pengirim">
+                                                <b-form-input
+                                                    id="input-pengirim"
+                                                    v-model="input_pengirim"
+                                                    type="text"
+                                                    required>
+                                                </b-form-input>
+                                            </b-form-group>
+                                            <b-form-group
+                                                label="Perihal:"
+                                                label-for="input-perihal">
+                                                <b-form-input
+                                                    id="input-perihal"
+                                                    v-model="input_perihal"
+                                                    type="text"
+                                                    required>
+                                                </b-form-input>
+                                            </b-form-group>
+                                            <b-form-group
+                                                label="Tujuan Unit:"
+                                                label-for="input-tujuanUnit">
+                                                <b-form-input
+                                                    id="input-tujuanUnit"
+                                                    v-model="input_tujuanUnit"
+                                                    type="text"
+                                                    required>
+                                                </b-form-input>
+                                            </b-form-group>
+                                            <b-form-group
+                                                label="Nama Penerima:"
+                                                label-for="input-namaPenerima">
+                                                <b-form-input
+                                                    id="input-namaPenerima"
+                                                    v-model="input_namaPenerima"
+                                                    type="text"
+                                                    required>
+                                                </b-form-input>
+                                            </b-form-group>
+                                            <b-form-group
+                                                label="Disposisi:"
+                                                label-for="input-disposisi">
+                                                <b-form-input
+                                                    id="input-disposisi"
+                                                    v-model="input_disposisi"
+                                                    type="text"
+                                                    readonly>
+                                                </b-form-input>
+                                            </b-form-group>
+
+                                            <div class="col-md-5">
+                                            <div class="row justify-content-between">
+                                                <div class="col-tgl">
+                                                    <b-form-group
+                                                        label="Tanggal Terima:"
+                                                        label-for="input-tanggalTerima">
+                                                        <b-form-datepicker 
+                                                            id="input-tanggalTerima" 
+                                                            v-model="input_tglTerima" 
+                                                            class="mb-2"></b-form-datepicker>
+                                                    </b-form-group>
+                                                </div>
+                                                <div class="col-bln">
+                                                    <b-form-group
+                                                        label="Waktu Terima:"
+                                                        label-for="input-tanggalTerima">
+                                                        <b-form-timepicker
+                                                            :hour12="false"
+                                                            v-model="input_wktTerima" 
+                                                            locale="en">
+                                                        </b-form-timepicker>
+                                                    </b-form-group>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <b-form-group
+                                                label="Foto Paket:"
+                                                label-for="input-foto">
+                                                <img id="input-foto" :src="preImage" alt="" style="width:320px; height:auto;">
+                                            </b-form-group>
+                                        </b-form>
+
+                                            <div class="d-flex justify-content-between">
+                                                <div class="p-2">
+                                                    <b-button @click="popUp2Active=false" variant="secondary">Kembali</b-button>
+                                                </div>
+                                                <div class="p-2">
+                                                    <label class="btn_input">
+                                                        <input @change="selectImage" type="file"/>
+                                                        Upload Foto
+                                                    </label>
+                                                </div>
+                                                <div class="p-2">
+                                                    <b-button @click="ubahSuratMasuk" variant="success" type="submit">Ubah Surat Masuk</b-button>
+                                                </div>
+                                            </div>
+                                    </vs-popup>
+
+                                    <b-button variant="danger" @click="hapusSurat(data.item._id)" size="sm">
+                                        <b-icon icon="trash"></b-icon>
+                                    </b-button>
+                            </div>
+                        </template>
+                    </b-table>
+                    {{ this.suratItems['image'] }}
+                </div>
+            </div>
+        </div>
+        <footer>
+            by pass
+        </footer>
+    </div>
+</template>
+
+<script>
+
+    import store from '/src/store';
+    import apis from './apis.js';
+    import router from '@/router';
+
+    import Vue from 'vue'
+    import { vsPopup } from 'vuesax'
+    import 'vuesax/dist/vuesax.css'
+
+    Vue.use(vsPopup)
+
+    export default {
+        async mounted() {
+
+            try {
+                await apis.get('/surat')
+                .then((response) => {
+                    this.suratItems = response.data;
+                });
+            } catch (error) {
+                console.log(error);
+            }
+
+            for (let i=1; i <= this.suratItems.length; i++) {
+                // console.log(i);
+                // console.log(this.suratItems[i-1]);
+                this.suratItems[i-1].idx = i;
+            }
+
+            if (store.state.role === 'super_admin') {
+                this.display = 'block'
+                } else {
+                this.display = 'none'
+                }
+
+            try {
+                await apis.get(`/user/${store.state.id}`)
+                .then((response) => {
+                    this.nama_admin = response.data.nama
+                });
+            } catch (error) {
+                console.log(error);
+            }
+        },
+        
+        name: 'suratMasuk',
+        data() {
+            return {
+                nama_admin:'',
+                display: 'none',
+                popUpActive: false,
+                popUp2Active: false,
+                popUp3Active: false,
+                selectedSuratId: '',
+
+                keyword: '',
+                perPage: 8,
+                currentPage: 1,
+
+                input_pengirim: '',
+                input_perihal: '',
+                input_tujuanUnit: '',
+                input_namaPenerima: '',
+                input_disposisi: '',
+                curImage: '',
+                preImage: '',
+
+                input_tglTerima: '',
+                input_wktTerima: '',
+
+                columns: [  
+                    {
+                        key: 'idx',
+                        label: 'No',
+                        sortable: true
+                    },
+                    {
+                        key: 'pengirim',
+                        label: 'Nama Pengirim',
+                        sortable: true,
+                        thStyle: { width: "40vh"}
+                    },
+                    {
+                        key: 'disposisi',
+                        label: 'Disposisi',
+                        sortable: true,
+                        thStyle: { width: "40vh"}
+                    },
+                    {
+                        key: 'tglTerima',
+                        label: 'Tanggal Terima',
+                        thStyle: { width: "30vh"}
+                    },
+                    {
+                        key: 'wktTerima',
+                        label: 'Waktu Terima',
+                        thStyle: { width: "30vh"}
+                    },
+                    {
+                        key: 'perihal',
+                        label: 'Perihal',
+                        thStyle: { width: "30vh"}
+                    },
+                    {
+                        key: "tujuanUnit",
+                        label: 'Tujuan Unit',
+                        thStyle: { width: "30vh"}
+                    },
+                    {
+                        key: "namaPenerima",
+                        label: 'Nama Penerima',
+                        thStyle: { width: "30vh"}
+                    },
+                    {
+                        key: "opsi",
+                        label: 'Opsi',
+                        thStyle: { width: "30vh"}
+                    }
+                ],
+                suratItems: [],
+
+                current_imageURL: '',
+                current_local_imageURL: '',
+                new_imageURL: '',
+                new_local_imageURL: '',
+            }
+        },
+
+        computed: {
+            // For pagination
+            rows() {
+                // return this.userItemsTest.length
+                return this.suratItems.length
+            },
+        },
+
+        methods: {
+            logout() {
+                store.dispatch('logoutAction')
+            },
+
+            selectImage: function (event) {
+                this.curImage = event.target.files[0]
+                this.preImage = URL.createObjectURL(this.curImage);
+            },
+
+            async tambahSuratMasuk() {
+                const backend_url = process.env.NODE_ENV === 'production' ? '/api/image/' : 'http://localhost:4041/api/image/';
+
+                const formData = new FormData();
+                formData.append('image', this.curImage)
+
+                if (this.curImage === '') {
+                    console.log('Error: no image selected!');
+                } else {
+                    
+                    // Upload the image to server
+                    try {
+                        await apis.post('/image', formData)
+                        .then(res => {
+                            this.local_imageURL = res.data.file,
+                            this.imageURL = `${backend_url}${this.local_imageURL}`
+                        })
+                    } catch (error) {
+                        console.log(error)
+                    }
+                }
+
+                // Save the data to MongoDB 
+                try {
+                    await apis.post
+                    (
+                        '/surat', 
+                        { 
+                            idx: '',
+                            pengirim: this.input_pengirim, 
+                            tglTerima: this.input_tglTerima,
+                            wktTerima: this.input_wktTerima,
+                            perihal: this.input_perihal, 
+                            tujuanUnit: this.input_tujuanUnit, 
+                            namaPenerima: this.input_namaPenerima,
+                            disposisi: this.input_disposisi,
+                            image: `${this.imageURL}`,
+                            local_image: `${this.local_imageURL}`,
+                        
+                        },
+                        { headers: { 'Content-Type': 'application/json' } }
+                    )
+                    this.popUpActive = false
+                    router.go(0)
+                } catch (error) {
+                    console.log(error)
+                }
+            },
+                
+            async hapusSurat(id) {
+                this.selectedSuratId = id;
+                try {
+                    apis.get
+                    (
+                        `/surat/${this.selectedSuratId}`,
+                    )
+                    .then(response => {
+                        this.current_local_imageURL = response.data.local_image;
+                    })
+                } catch (error) {
+                    console.log(error)
+                }
+
+                try {
+                    await apis.delete(`/surat/${id}`);
+                } catch (error) {
+                    console.log(error)
+                }
+
+                try {
+                    await apis.delete(`/image`,
+                    {
+                        data: { image: this.current_local_imageURL },
+                    });
+                } catch (error) {
+                    console.log(error)
+                    
+                }
+                this.$router.go();
+            },
+
+            lihatClick(id) {
+                this.selectedSuratId = id;
+                // console.log(this.selectedSuratId);
+                try {
+                    apis.get
+                    (
+                        `/surat/${this.selectedSuratId}`,
+                    )
+                    .then(response => {
+                        // console.log(response);
+                        const params = response.data
+                        this.input_pengirim = params.pengirim;
+                        this.input_perihal = params.perihal;
+                        this.input_tujuanUnit = params.tujuanUnit;
+                        this.input_namaPenerima = params.namaPenerima;
+                        this.input_disposisi = params.disposisi;
+
+                        this.input_tglTerima = params.tglTerima;
+                        this.input_wktTerima = params.wktTerima;
+                        
+                        this.current_imageURL = response.data.image;
+                        this.current_local_imageURL = response.data.local_image;
+
+                        this.preImage = this.current_imageURL
+                    })
+                } catch (error) {
+                    console.log(error)
+                }
+                this.popUp3Active = true;
+            },
+
+            ubahClick(id) {
+                this.selectedSuratId = id;
+                // console.log(this.selectedSuratId);
+                try {
+                    apis.get
+                    (
+                        `/surat/${this.selectedSuratId}`,
+                    )
+                    .then(response => {
+                        const params = response.data
+                        this.input_pengirim = params.pengirim;
+                        this.input_perihal = params.perihal;
+                        this.input_tujuanUnit = params.tujuanUnit;
+                        this.input_namaPenerima = params.namaPenerima;
+                        this.input_disposisi = params.disposisi;
+                        
+                        this.input_tglTerima = params.tglTerima;
+                        this.input_wktTerima = params.wktTerima;
+
+                        this.current_imageURL = response.data.image;
+                        this.current_local_imageURL = response.data.local_image;
+
+                        this.preImage = this.current_imageURL
+                        console.log(this.preImage);
+                        console.log(this.current_imageURL);
+                    })
+                } catch (error) {
+                    console.log(error)
+                }
+                this.popUp2Active = true;
+            },
+
+            async ubahSuratMasuk() {
+                const params = this.selectedSuratId
+                try {
+                    const backend_url = process.env.NODE_ENV === 'production' ? '/api/image/' : 'http://localhost:4041/api/image/';
+                    const formData = new FormData();
+                    formData.append('image', this.curImage)
+
+                    console.log('pre ', this.preImage);
+                    console.log('cur ', this.current_imageURL);
+
+                    // If the image is not cahnged
+                    if (this.preImage === this.current_imageURL) {
+                        console.log('Image sama')
+                        this.new_imageURL = this.current_imageURL
+                        this.new_local_imageURL = this.current_local_imageURL
+                    } else {
+                        console.log('Image beda')
+                        try {
+                            // Upload the image to the database, set the new image URL and the new image local database URL
+                            await apis.post('/image', formData)
+                            .then(res => {
+                                this.new_imageURL = `${backend_url}${res.data.file}`
+                                this.new_local_imageURL = `${res.data.file}`
+                            })
+                            // Delete the current image with call its API and send the current image local database URL
+                            await apis.delete(`/image`,
+                            {
+                                data: { image: this.current_local_imageURL },
+                            });
+                        } catch (error) {
+                            console.log(error)
+                        }
+                    }
+                    
+                    // // Update the database with new data, such as "selected nama", "selected no_telp", "new imageURL", and "new local image URL"
+                    await apis.patch
+                    (
+                        `/surat/${params}`, 
+                        { 
+                            pengirim: this.input_pengirim, 
+                            tglTerima: this.input_tglTerima,
+                            wktTerima: this.input_wktTerima,
+                            perihal: this.input_perihal, 
+                            tujuanUnit: this.input_tujuanUnit, 
+                            namaPenerima: this.input_namaPenerima,
+                            disposisi: this.input_disposisi,
+                            image: `${this.new_imageURL}`,
+                            local_image: `${this.new_local_imageURL}`,
+                        },
+                        { headers: { 'Content-Type': 'application/json; charset=UTF-8' } }
+                    )
+                    console.log('Success');
+                    router.go(0)
+                } catch (error) {
+                    console.log(error)
+                }
+            },
+        }
+    }
+</script>
+
+<style>
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        height: 100%;
+    }
+
+    .nav {
+        padding: 0;
+        position: sticky;
+        top: 0;
+        background-color: #E6E2EB;
+    }
+
+    .nav p {
+        margin-left: 230px;
+        padding: 0;
+        line-height: 63px;
+        margin-bottom: 0;
+    }
+
+    .nav ul {
+        margin-right: 230px;
+        margin-bottom: 0;
+    }
+
+    .nav ul li {
+        float: left;
+        list-style: none;
+        display: inline;
+    }
+
+    .nav ul li:hover {
+        background-color: grey;
+    }
+
+    .nav ul li a {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav ul li:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .btn_input {
+
+    }
+
+    .dropdown {
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #E6E2EB;
+        min-width: 160px;
+        z-index: 1;
+        right: 1%;
+        text-align: right;
+    }
+
+    .dropdown-content .logout-btn:hover {
+        background-color: orangered;
+    }
+
+    .dropdown:hover .dropdown-content {
+        cursor: pointer;
+        display: block;
+    }
+
+    .dropbtn:hover {
+        cursor: pointer;
+    }
+
+    .body {
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    .user-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        border: 100px red;
+
+    }
+
+    .table-wrapper {
+        width: 70%;
+        height: auto;
+        top: 0;
+    }
+
+    .page-title {
+        background-color: #E6E2EB;
+        width: 100%;
+        height: 40px;
+        padding: 8px;
+    }
+
+    footer {
+        background-color: #E6E2EB;
+        width: 100%;
+        height: 20px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        padding: 2px;
+        font-size: 10px;
+        text-align: center;
+    }
+</style>

@@ -1,0 +1,2 @@
+Query from selected collection MongoDB:
+https://stackoverflow.com/questions/24348437/mongoose-select-a-specific-field-with-find
