@@ -171,10 +171,6 @@
                     :per-page="perPage"
                     :current-page="currentPage">
 
-                        <!-- <template #cell(index)="data">
-                            {{ data.index + 1 }}
-                        </template> -->
-
                         <template #cell(opsi)="data">
                             <div class="d-flex" style="gap: 10px">
                                     <b-button @click="lihatClick(data.item._id)" variant="primary" size="sm">
@@ -797,10 +793,6 @@
 
     .nav ul li:not(:last-child) {
         margin-right: 20px;
-    }
-
-    .btn_input {
-
     }
 
     .dropdown {

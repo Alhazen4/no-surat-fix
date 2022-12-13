@@ -45,15 +45,15 @@
                                 <div class="col-md-12" :style="{ display }">
                                     <label class="form-label">No Surat Cadangan</label>
                                     <b-form-select :disabled="noSuratCadanganField" class="select form-select" v-model="noSuratCadanganSelected" :options="noSuratCadangan"/>
-                                </div>
-
-                                <b-form-checkbox
+                                
+                                    <b-form-checkbox
                                     name="useNoSuratCadangan"
                                     v-model="noSuratCadanganField"
                                     value=true
                                     size="md">
                                     Tidak Pakai Nomor Cadangan
-                                </b-form-checkbox>
+                                    </b-form-checkbox>
+                                </div>
 
                                 <div class="col-md-12">
                                     <label class="form-label">Kode Surat</label>
@@ -763,7 +763,19 @@
             async ubahSuratKeluar() {
                 const today = new Date();
                 const params = this.selectedNoSuratId
-                this.generatedKode = `${this.kodeSuratSelected} ${this.noSuratSelected}/${this.masalahCabang2Selected}/${this.pejabatTtdSelected}/REG4/${today.getFullYear()}`
+
+                this.noSuratLastString = this.noSuratSelected.toString()
+
+                // // Formatting the noSuratLast
+                if (this.noSuratLastString.length === 1) {
+                    this.noSuratLastString = '00' + this.noSuratLastString;
+                } else if (this.noSuratLastString.length === 2) {
+                    this.noSuratLastString = '0' + this.noSuratLastString;
+                } else if (this.noSuratLastString.length === 3) {
+                    this.noSuratLastString = this.noSuratLastString;
+                }
+
+                this.generatedKode = `${this.kodeSuratSelected} ${this.noSuratLastString}/${this.masalahCabang2Selected}/${this.pejabatTtdSelected}/REG4/${today.getFullYear()}`
 
                 try {
                     await apis.patch
