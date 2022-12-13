@@ -2,13 +2,13 @@ import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import store from '../store';
 
-import Home from '../views/Home.vue'
 import userLogin from '../views/regist/userLogin.vue'
 import homePage from '../views/homePage.vue'
 import daftarUser from '../views/superAdmin/daftarUser.vue'
-import tambahSurat from '../views/tambahSurat.vue'
 import suratMasuk from '../views/suratMasuk.vue'
 import suratKeluar from '../views/suratKeluar.vue'
+// import Home from '../views/Home.vue'
+// import tambahSurat from '../views/tambahSurat.vue'
 
 Vue.use(VueRouter)
 
@@ -43,11 +43,6 @@ const routes: Array<RouteConfig> = [
         next()
       }
     },
-  },
-  {
-    path: '/tambahSurat',
-    name: 'tambahSurat',
-    component: tambahSurat
   },
   {
     path: '/suratMasuk',

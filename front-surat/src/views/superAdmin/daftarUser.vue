@@ -447,6 +447,7 @@
         position: sticky;
         top: 0;
         background-color: #E6E2EB;
+        z-index: 99;
     }
 
     .nav p {

@@ -334,8 +334,13 @@
                 await apis.get('/noSurat')
                 .then((response) => {
                     this.suratItems = response.data;
-                    let maxNoSurat= response.data.map(object => object.noSurat);
-                    this.lastMaxNoSurat = Math.max(...maxNoSurat);
+
+                    if (this.suratItems.length === 0) {
+                        this.lastMaxNoSurat = 0;
+                    } else {
+                        let maxNoSurat= response.data.map(object => object.noSurat);
+                        this.lastMaxNoSurat = Math.max(...maxNoSurat);
+                    }
                 });
             } catch (error) {
                 console.log(error);
@@ -412,7 +417,7 @@
                 lastMaxNoSurat: null,
 
                 keyword: '',
-                perPage: 8,
+                perPage: 15,
                 currentPage: 1,
                 
                 dataPejabat: [],
@@ -575,105 +580,119 @@
                         this.errorPopUpActive = true;
                     } else {
 
-                    // Check the last noSurat written in last database record
-                    try {
-                        await apis.get(`/lastNoSurat`)
-                        .then((response) => {
-                            this.noSuratLast = response.data[0].noSurat;
-                            this.noSuratBeforeLast = response.data[1].noSurat;
-                            console.log(this.noSuratLast, this.noSuratBeforeLast);
-                        });
-                    } catch (error) {
-                            console.log(error);
-                    }
+                        if (this.suratItems.length !== 0) {
+                            // Check the last noSurat written in last database record
+                            try {
+                                await apis.get(`/lastNoSurat`)
+                                .then((response) => {
 
-                    // If user doesn't use the "nomor surat cadangan"
-                    if (this.noSuratCadanganField === 'true') {
+                                    if (response.data.length <= 1) {
+                                        this.noSuratLast = response.data[0].noSurat;
+                                        this.noSuratBeforeLast = 0;
+                                    } else {
+                                        this.noSuratLast = response.data[0].noSurat;
+                                        this.noSuratBeforeLast = response.data[1].noSurat;
+                                    }
 
-                        this.noSuratCadanganSelected = null
-                        // Condition to continue increasing noSurat number
-                        if (this.noSuratLast !== this.lastMaxNoSurat) {
-                            this.noSuratLast = this.lastMaxNoSurat;
-                        }
-
-                        if (this.noSuratLast === null || this.noSuratLast === 0) {
-                            this.noSuratLast = 1
-                        } else {
-                            if (today.getDay() === 1 && store.state.saturdayCheck === false) {
-                                // console.log('Today is sunday and false');
-
-                                store.dispatch('setSaturdayCheckAction', true)
-                                this.noSuratLast += 10;
-                                store.dispatch('setCadanganUpdatedAction', false)
-
-                            } else if (today.getDay() === 1 && store.state.saturdayCheck === true) {
-                                // console.log('Today is sunday and true');
-
-                                if (this.noSuratLast === this.noSuratBeforeLast + 10 || this.noSuratLast === this.noSuratBeforeLast + 1) {
-                                    this.noSuratLast++
-                                } else if (this.noSuratLast === this.lastMaxNoSurat){
-                                    this.noSuratLast++;
-                                } else {
-                                    this.noSuratLast += 10;
-                                    store.dispatch('setCadanganUpdatedAction', false)
-                                }
-                            } else if (today.getDay() !== 1) {
-                                // console.log('Today is not sunday');
-
-                                store.dispatch('setSaturdayCheckAction', false)
-                                this.noSuratLast++
-                            } else if (store.state.noSuratCadanganPrev.includes(this.noSuratBeforeLast)) {
-                                console.log("TURU");
-                                this.noSuratLast++
+                                    console.log(this.noSuratLast, this.noSuratBeforeLast);
+                                });
+                            } catch (error) {
+                                    console.log(error);
                             }
+
                         }
+                            // If user doesn't use the "nomor surat cadangan"
+                            if (this.noSuratCadanganField === 'true') {
+                                
+                                this.noSuratCadanganSelected = null
+                                // Condition to continue increasing noSurat number
+                                if (this.noSuratLast !== this.lastMaxNoSurat) {
+                                    this.noSuratLast = this.lastMaxNoSurat;
+                                }
+                                
+                                if (this.noSuratLast === null || this.noSuratLast === 0) {
+                                    this.noSuratLast = 1
+                                } else {
+                                    // Change the namber at "today.getDay() === 2"
+                                    // If you want to change the day that trigger noSuratLast + 10
+                                    if (today.getDay() === 2 && store.state.saturdayCheck === false) {
+                                        // console.log('Today is sunday and false');
+                                        
+                                        store.dispatch('setSaturdayCheckAction', true)
+                                        this.noSuratLast += 10;
+                                        store.dispatch('setCadanganUpdatedAction', false)
 
-                    // If user use the "nomor surat cadangan"
-                    } else if (this.noSuratCadanganField === false) {
-                        this.noSuratLast = this.noSuratCadanganSelected
-                    }
+                                    // Don't forget to also change the number here as before
+                                    } else if (today.getDay() === 2 && store.state.saturdayCheck === true) {
 
-                    this.noSuratLastString = this.noSuratLast.toString()
-                    // console.log('len ', this.noSuratLastString.length);
+                                        // console.log('Today is sunday and true');
 
-                    // // Formatting the noSuratLast
-                    if (this.noSuratLastString.length === 1) {
-                        this.noSuratLastString = '00' + this.noSuratLastString;
-                    } else if (this.noSuratLastString.length === 2) {
-                        this.noSuratLastString = '0' + this.noSuratLastString;
-                    } else if (this.noSuratLastString.length === 3) {
-                        this.noSuratLastString = this.noSuratLastString;
-                    }
+                                        if (this.noSuratLast === this.noSuratBeforeLast + 10 || this.noSuratLast === this.noSuratBeforeLast + 1 || this.noSuratBeforeLast === 0) {
+                                            this.noSuratLast++
+                                        } else if (this.noSuratLast === this.lastMaxNoSurat){
+                                            this.noSuratLast++;
+                                        } else {
+                                            this.noSuratLast += 10;
+                                            store.dispatch('setCadanganUpdatedAction', false)
+                                        }
+                                    // Also here
+                                    } else if (today.getDay() !== 2) {
+                                        // console.log('Today is not sunday');
 
-                    this.generatedKode = `${this.kodeSuratSelected} ${this.noSuratLastString}/${this.masalahCabang2Selected}/${this.pejabatTtdSelected}/REG4/${today.getFullYear()}`
+                                        store.dispatch('setSaturdayCheckAction', false)
+                                        this.noSuratLast++
+                                    } else if (store.state.noSuratCadanganPrev.includes(this.noSuratBeforeLast)) {
+                                        console.log("TURU");
+                                        this.noSuratLast++
+                                    }
+                                }
 
-                    // Save the data to MongoDB 
-                    try {
-                        await apis.post
-                        (
-                            '/noSurat', 
-                            { 
-                                idx: '',
-                                noSurat: this.noSuratLast,
-                                noKodeSurat: this.generatedKode,
-                                kodeSurat: this.kodeSuratSelected,
-                                masalahUtama: this.masalahUtamaSelected,
-                                masalahCabang1: this.masalahCabang1Selected,
-                                masalahCabang2: this.masalahCabang2Selected,
-                                pejabatTtd: this.pejabatTtdSelected,
-                                tglKeluar: this.input_tglKeluar,
-                                wktKeluar: this.input_wktKeluar,
-                                perihal: this.input_perihal,
-                                tujuanUnit: this.input_tujuanUnit,
-                                keterangan: this.input_keterangan
-                            },
-                            { headers: { 'Content-Type': 'application/json' } }
-                        )
-                        this.popUpActive = false
-                        router.go(0)
-                    } catch (error) {
-                        console.log(error)
-                    }
+                            // If user use the "nomor surat cadangan"
+                            } else if (this.noSuratCadanganField === false) {
+                                this.noSuratLast = this.noSuratCadanganSelected
+                            }
+
+                            this.noSuratLastString = this.noSuratLast.toString()
+                            // console.log('len ', this.noSuratLastString.length);
+
+                            // // Formatting the noSuratLast
+                            if (this.noSuratLastString.length === 1) {
+                                this.noSuratLastString = '00' + this.noSuratLastString;
+                            } else if (this.noSuratLastString.length === 2) {
+                                this.noSuratLastString = '0' + this.noSuratLastString;
+                            } else if (this.noSuratLastString.length === 3) {
+                                this.noSuratLastString = this.noSuratLastString;
+                            }
+
+                            this.generatedKode = `${this.kodeSuratSelected} ${this.noSuratLastString}/${this.masalahCabang2Selected}/${this.pejabatTtdSelected}/REG4/${today.getFullYear()}`
+
+                            // Save the data to MongoDB 
+                            try {
+                                await apis.post
+                                (
+                                    '/noSurat', 
+                                    { 
+                                        idx: '',
+                                        noSurat: this.noSuratLast,
+                                        noKodeSurat: this.generatedKode,
+                                        kodeSurat: this.kodeSuratSelected,
+                                        masalahUtama: this.masalahUtamaSelected,
+                                        masalahCabang1: this.masalahCabang1Selected,
+                                        masalahCabang2: this.masalahCabang2Selected,
+                                        pejabatTtd: this.pejabatTtdSelected,
+                                        tglKeluar: this.input_tglKeluar,
+                                        wktKeluar: this.input_wktKeluar,
+                                        perihal: this.input_perihal,
+                                        tujuanUnit: this.input_tujuanUnit,
+                                        keterangan: this.input_keterangan
+                                    },
+                                    { headers: { 'Content-Type': 'application/json' } }
+                                )
+                                this.popUpActive = false
+                                router.go(0)
+                            } catch (error) {
+                                console.log(error)
+                                }
                 }
             },
                 
@@ -796,6 +815,7 @@
         position: sticky;
         top: 0;
         background-color: #E6E2EB;
+        z-index: 99;
     }
 
     .nav p {

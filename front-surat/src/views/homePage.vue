@@ -26,10 +26,8 @@
 
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quos dolorum rerum molestias doloribus at incidunt dignissimos alias dolorem nihil necessitatibus odio, minus praesentium nesciunt consequuntur! Ratione nobis voluptates autem? Nemo asperiores voluptate, nobis enim, alias ab, illum impedit rerum magni veritatis excepturi omnis minima amet deleniti dolore dignissimos distinctio adipisci explicabo eligendi! Quam modi hic distinctio debitis quis recusandae, expedita totam quidem officia veniam ullam sapiente? Quod, debitis ullam.
-                        <br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nihil commodi quam rerum provident necessitatibus libero quis quod similique quidem!
                     </p>
-                    <b-button href="/tambahSurat">Start Use</b-button>
+                    <b-button href="/suratKeluar">Start Use</b-button>
                 </div>
             </div>
         </div>
