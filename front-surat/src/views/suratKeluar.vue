@@ -514,6 +514,7 @@
                 saturdayCheck: false,
                 selectedNoSuratId: '',
                 lastMaxNoSurat: null,
+                isNoSaturdayCheck: false,
 
                 keyword: '',
                 perPage: 15,
@@ -663,8 +664,6 @@
                     this.kodeSuratSelected === ''
                     || this.pejabatTtdSelected === ''
                     || this.masalahUtamaSelected === ''
-                    || this.masalahCabang1Selected === ''
-                    || this.masalahCabang2Selected === ''
                     || this.input_perihal === ''
                     || this.input_tujuanUnit === ''
                     || this.input_keterangan === ''
@@ -711,15 +710,16 @@
                                 } else {
                                     // Change the namber at "today.getDay() === 2"
                                     // If you want to change the day that trigger noSuratLast + 10
-                                    if (today.getDay() === 2 && store.state.saturdayCheck === false) {
+                                    if (today.getDay() === 3 && store.state.saturdayCheck === false) {
                                         // console.log('Today is sunday and false');
                                         
                                         store.dispatch('setSaturdayCheckAction', true)
                                         this.noSuratLast += 10;
+                                        this.isNoSaturdayCheck = true;
                                         store.dispatch('setCadanganUpdatedAction', false)
 
                                     // Don't forget to also change the number here as before
-                                    } else if (today.getDay() === 2 && store.state.saturdayCheck === true) {
+                                    } else if (today.getDay() === 3 && store.state.saturdayCheck === true) {
 
                                         // console.log('Today is sunday and true');
 
@@ -729,17 +729,21 @@
                                             this.noSuratLast++;
                                         } else {
                                             this.noSuratLast += 10;
+                                            this.isNoSaturdayCheck = true;
                                             store.dispatch('setCadanganUpdatedAction', false)
                                         }
                                     // Also here
-                                    } else if (today.getDay() !== 2) {
+                                    } else if (today.getDay() !== 3) {
                                         // console.log('Today is not sunday');
 
                                         store.dispatch('setSaturdayCheckAction', false)
                                         this.noSuratLast++
+                                        this.isNoSaturdayCheck = false;
+
                                     } else if (store.state.noSuratCadanganPrev.includes(this.noSuratBeforeLast)) {
                                         console.log("TURU");
                                         this.noSuratLast++
+                                        this.isNoSaturdayCheck = false;
                                     }
                                 }
 
@@ -760,7 +764,7 @@
                                 this.noSuratLastString = this.noSuratLastString;
                             }
 
-                            this.generatedKode = `${this.kodeSuratSelected} ${this.noSuratLastString}/${this.masalahCabang2Selected}/${this.pejabatTtdSelected}/REG4/${today.getFullYear()}`
+                            this.generatedKode = `${this.kodeSuratSelected} ${this.noSuratLastString}/${this.masalahUtamaSelected}/${this.pejabatTtdSelected}/REG4/${today.getFullYear()}`
 
                             // Save the data to MongoDB 
                             try {
@@ -770,11 +774,12 @@
                                     { 
                                         idx: '',
                                         noSurat: this.noSuratLast,
+                                        isNoSaturday: this.isNoSaturdayCheck,
                                         noKodeSurat: this.generatedKode,
                                         kodeSurat: this.kodeSuratSelected,
                                         masalahUtama: this.masalahUtamaSelected,
-                                        masalahCabang1: this.masalahCabang1Selected,
-                                        masalahCabang2: this.masalahCabang2Selected,
+                                        // masalahCabang1: this.masalahCabang1Selected,
+                                        // masalahCabang2: this.masalahCabang2Selected,
                                         pejabatTtd: this.pejabatTtdSelected,
                                         tglKeluar: this.input_tglKeluar,
                                         wktKeluar: this.input_wktKeluar,
@@ -793,15 +798,32 @@
             },
                 
             async hapusSuratKeluar(id) {
-                this.selectedSuratId = id;
-
+                console.log(id);
                 try {
-                    await apis.delete(`/noSurat/${id}`);
+                    apis.get
+                    (
+                        `/noSurat/${id}`,
+                    )
+                    .then(response => {
+                        const params = response.data
+                        console.log(params.isNoSaturday);
+
+                        if (params.isNoSaturday === true) {
+                            this.isNoSaturdayCheck = false
+                            store.dispatch('setSaturdayCheckAction', false)
+                            store.dispatch('setCadanganUpdatedAction', false)
+                        }
+                        
+                        try {
+                            apis.delete(`/noSurat/${id}`);
+                        } catch (error) {
+                            console.log(error)
+                        }
+                    })
                 } catch (error) {
                     console.log(error)
                 }
-
-                this.$router.go();
+                // this.$router.go();
             },
 
             // lihatClick(id) {

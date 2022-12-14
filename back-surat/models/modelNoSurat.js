@@ -9,6 +9,10 @@ export const modelSurat = mongoose.Schema(
         type: Number,
         required: true
     },
+    isNoSaturday:{
+        type: Boolean,
+        required: true
+    },
     noKodeSurat:{
         type: String,
         required: true
@@ -21,14 +25,14 @@ export const modelSurat = mongoose.Schema(
         type: String,
         required: true
     },
-    masalahCabang1:{
-        type: String,
-        required: true
-    },
-    masalahCabang2:{
-        type: String,
-        required: true
-    },
+    // masalahCabang1:{
+    //     type: String,
+    //     required: true
+    // },
+    // masalahCabang2:{
+    //     type: String,
+    //     required: true
+    // },
     pejabatTtd:{
         type: String,
         required: true
