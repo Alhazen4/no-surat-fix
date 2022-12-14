@@ -7,6 +7,7 @@ import homePage from '../views/homePage.vue'
 import daftarUser from '../views/superAdmin/daftarUser.vue'
 import suratMasuk from '../views/suratMasuk.vue'
 import suratKeluar from '../views/suratKeluar.vue'
+import nav from '../views/nav.vue'
 // import Home from '../views/Home.vue'
 // import tambahSurat from '../views/tambahSurat.vue'
 

@@ -1,23 +1,6 @@
 <template>
     <div>
-        <div class="nav justify-content-between">
-            <p>Penomoran Surat</p>
-            <ul>
-                <li><a href="/homePage">Home</a></li>
-                <li><a href="/suratKeluar">Surat Keluar</a></li>
-                <li><a href="/suratMasuk">Surat Masuk</a></li>
-                <li><a href="/daftarUser" :style="{ display }">Daftar User</a></li>
-                <li>
-                    <div class="dropdown">
-                        <a class="dropbtn">Profil</a>
-                        <div class="dropdown-content">
-                            <a>User {{nama_admin}}</a>
-                            <a class="logout-btn" @click="logout">Log Out</a>
-                        </div>
-                    </div>
-                </li>   
-            </ul>
-        </div>
+        <navigation></navigation>
         <div class="body">
             <div class="user-wrapper">
                 <div class="table-wrapper">
@@ -218,7 +201,7 @@
                                 </div>
 
                                 <vs-popup class="holamundo"  title="Error!" :active.sync="errorPopUpActive">
-                                    <p>Ada beberapa field yang belum terisi. <br> Harap lengkapi data diatas terlebih dahulu!</p><br>
+                                    <p>Ada beberapa field yang belum terisi. <br> Harap lengkapi data terlebih dahulu!</p><br>
                                     <b-button @click="errorPopUpActive=false" variant="danger">Mengerti</b-button>
                                 </vs-popup>
 
@@ -384,6 +367,8 @@
 
 <script>
 
+    import navigation from './nav.vue';
+
     import store from '/src/store';
     import apis from './apis.js';
     import router from '@/router';
@@ -471,28 +456,11 @@
             for (let i=1; i <= this.suratItems.length; i++) {
                 this.suratItems[i-1].idx = i;
             }
-
-            if (store.state.role === 'super_admin') {
-                this.display = 'block'
-                } else {
-                this.display = 'none'
-            }
-
-            try {
-                await apis.get(`/user/${store.state.id}`)
-                .then((response) => {
-                    this.nama_admin = response.data.nama
-                });
-            } catch (error) {
-                console.log(error);
-            }
         },
         
         name: 'suratMasuk',
         data() {
             return {
-                nama_admin:'',
-                display: 'none',
                 sortBy: 'idx',
                 sortDesc: true,
                 popUpActive: false,
@@ -926,123 +894,9 @@
 
         components: {
             ModelListSelect,
+            navigation
         }
     }
 </script>
 
-<style>
-
-    html {
-        height: 100%;
-    }
-
-    body {
-        height: 100%;
-    }
-
-    .nav {
-        padding: 0;
-        position: sticky;
-        top: 0;
-        background-color: #E6E2EB;
-        z-index: 99;
-    }
-
-    .nav p {
-        margin-left: 230px;
-        padding: 0;
-        line-height: 63px;
-        margin-bottom: 0;
-    }
-
-    .nav ul {
-        margin-right: 230px;
-        margin-bottom: 0;
-    }
-
-    .nav ul li {
-        float: left;
-        list-style: none;
-        display: inline;
-    }
-
-    .nav ul li:hover {
-        background-color: grey;
-    }
-
-    .nav ul li a {
-        display: block;
-        padding: 20px;
-        text-decoration: none;
-        color: black;
-    }
-
-    .nav ul li:not(:last-child) {
-        margin-right: 20px;
-    }
-
-    .dropdown {
-        display: inline-block;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #E6E2EB;
-        min-width: 160px;
-        z-index: 1;
-        right: 1%;
-        text-align: right;
-    }
-
-    .dropdown-content .logout-btn:hover {
-        background-color: orangered;
-    }
-
-    .dropdown:hover .dropdown-content {
-        cursor: pointer;
-        display: block;
-    }
-
-    .dropbtn:hover {
-        cursor: pointer;
-    }
-
-    .body {
-        width: 100%;
-        padding: 50px 0;
-    }
-
-    .user-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        border: 100px red;
-
-    }
-
-    .table-wrapper {
-        width: 70%;
-        height: auto;
-        top: 0;
-    }
-
-    .page-title {
-        background-color: #E6E2EB;
-        width: 100%;
-        height: 40px;
-        padding: 8px;
-    }
-
-    footer {
-        background-color: #E6E2EB;
-        width: 100%;
-        height: 20px;
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        padding: 2px;
-        font-size: 10px;
-        text-align: center;
-    }
-</style>
+<style></style>

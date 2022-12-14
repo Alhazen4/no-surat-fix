@@ -11,7 +11,7 @@
                         <p>{{ error_login_text }}</p>
                     </div>
 
-                    <b-form autoComplete="off">
+                    <b-form autoComplete="off" class="b-form">
                         <b-form-group
                             label="Username:"
                             label-for="input-username">
@@ -36,9 +36,9 @@
                             </b-form-input>
                         </b-form-group>
                     </b-form>
-
-                    <div class="d-flex justify-content-center custom-btn-login">
-                        <b-button @click="login" variant="outline-primary" type="submit">Login</b-button>
+                    
+                    <div>
+                        <b-button class="custom-btn-login"   @click="login" variant="primary" type="submit">Login</b-button>
                     </div>
                 </div>
             </div>
@@ -112,10 +112,7 @@ export default {
 }
 
 .main_wrap {
-    background-image: url('./BG.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: #202e47;
 }
 
 .wrap {
@@ -127,10 +124,18 @@ export default {
 .form {
     padding: 40px;
     border-radius: 10px;
+    color: white;
+}
+
+.b-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .custom-btn-login {
     margin-top: 20px;
+    width: 210px; 
 }
 
 </style>
