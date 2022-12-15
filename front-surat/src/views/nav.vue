@@ -1,6 +1,6 @@
 <template>
     <div class="nav justify-content-between">
-        <p>Penomoran Surat</p>
+        <p><b-icon icon="envelope-open-fill"></b-icon><b> Penomoran Surat App</b></p>
         <ul>
             <li><a href="/homePage">Home</a></li>
             <li><a href="/suratKeluar">Surat Keluar</a></li>

@@ -4,7 +4,7 @@
             <div class="wrapper wrapper-login">
                 <div class="form">
                     <div class="title">
-                        <h2>Login</h2>
+                        <h2 style="color: aliceblue;">Login</h2>
                     </div>
 
                     <div class="error_login" :style="{ display }">
@@ -14,7 +14,8 @@
                     <b-form autoComplete="off" class="b-form">
                         <b-form-group
                             label="Username:"
-                            label-for="input-username">
+                            label-for="input-username"
+                            label-class="login-label">
 
                             <b-form-input
                                 id="input-username"
@@ -26,7 +27,8 @@
 
                         <b-form-group
                             label="Password:"
-                            label-for="input-password">
+                            label-for="input-password"
+                            label-class="login-label">
 
                             <b-form-input
                                 id="input-password"
@@ -111,6 +113,10 @@ export default {
     height: 40px;
 }
 
+.login-label {
+    color: white;
+}
+
 .main_wrap {
     background-color: #202e47;
 }
@@ -119,12 +125,6 @@ export default {
     float: left;
     width: 50%;
     height: 100vh;
-}
-
-.form {
-    padding: 40px;
-    border-radius: 10px;
-    color: white;
 }
 
 .b-form {

@@ -1,7 +1,7 @@
 <template>
     <div>
         <navigation></navigation>
-        <div class="body">
+        <div class="body body-padding-top">
             <div class="user-wrapper">
                 <div class="table-wrapper">
                     <div class="page-title">
@@ -9,13 +9,13 @@
                     </div>
 
                     <div class="d-flex">
-                        <div class="p-2">
+                        <div class="nav-2">
                             <b-button @click="$router.go(-1)" variant="secondary">
                                 <b-icon icon="arrow-left"></b-icon>
                                 Kembali
                             </b-button>
                         </div>
-                        <div class="p-2">
+                        <div class="nav-2">
                             <b-button @click="popUpActive=true" variant="success">
                                 <b-icon icon="envelope"></b-icon>
                                 Tambah Surat Keluar
@@ -23,215 +23,237 @@
                         </div>
 
                         <vs-popup class="holamundo"  title="Tambah Surat Keluar" :active.sync="popUpActive">
-                            <b-form class="row form">
+                            <b-form autoComplete="off" class="b-form-custom">
 
-                                <div class="col-md-12" :style="{ display }">
+                                <b-form-group :style="{ display }">
                                     <label class="form-label">No Surat Cadangan</label>
-                                    <b-form-select :disabled="noSuratCadanganField" class="select form-select" v-model="noSuratCadanganSelected" :options="noSuratCadangan"/>
-                                
+                                    <b-form-select :disabled="noSuratCadanganField"  class="select form-select" v-model="noSuratCadanganSelected" :options="noSuratCadangan"></b-form-select>
+                                    
                                     <b-form-checkbox
-                                    name="useNoSuratCadangan"
-                                    v-model="noSuratCadanganField"
-                                    value=true
-                                    size="md">
-                                    Tidak Pakai Nomor Cadangan
+                                        name="useNoSuratCadangan"
+                                        v-model="noSuratCadanganField"
+                                        value=true
+                                        size="md">
+                                        Tidak Pakai Nomor Cadangan
                                     </b-form-checkbox>
-                                </div>
+                                </b-form-group>
 
-                                <div class="col-md-12">
+                                <b-form-group>
                                     <label class="form-label">Kode Surat</label>
                                     <b-form-select class="select form-select" v-model="kodeSuratSelected" :options="dataKodeSurat"/>
-                                </div>
+                                </b-form-group>
 
-                                <div class="col-md-12">
-                                    <label class="form-label">Klasifikasi Masalah Utama</label>
-                                    <b-form-input class="select" type="text" v-model="masalahUtamaSelected"/>
-                                </div>
-
-                                <div class="d-flex justify-content-between">
-                                    <b-button @click="popUpMasalah=true" variant="primary">Klarifikasi Masalah</b-button>
-
-                                    <vs-popup class="holamundo"  title="Klarifikasi Masalah" :active.sync="popUpMasalah">
-                                        <b-card style="height: 500px; overflow-y: auto;">
-                                                <div style="display: flex; flex-direction: column; gap: 10px;">
-                                                    
-                                                    <div v-for="masalah in dataMasalahUtama">
-                                                        <b-button v-b-toggle="masalah.value" size="sm">{{masalah.value}} {{masalah.text}}</b-button>
-
-                                                        <b-collapse :id="masalah.value" class="mt-2">
-                                                            <div v-if="masalah.value === 'HK.000'" style="margin-left: 10px; display: flex; flex-direction: column; gap: 10px">
-                                                                <template v-for="cabang in cabangHK000">
-                                                                    <b-button v-b-toggle="cabang.value" size="sm">{{cabang.value}} {{cabang.text}}</b-button>
-                                                                    
-                                                                    <b-collapse :id="cabang.value" class="mt-2">
-                                                                        <div v-if="cabang.value === 'HK.100'" style="margin-left: 10px; display: flex; flex-direction: column; gap: 20px">
-                                                                            <template v-for="cabang2 in HK100">
-                                                                                <div>
-                                                                                    <b-button @click="selectMasalahUmum(cabang2.value)" size="sm">{{cabang2.value}} {{cabang2.text}}</b-button>
-                                                                                    <b-card size="sm">{{cabang2.desc}}</b-card>
-                                                                                </div>
-                                                                            </template>
-                                                                        </div>
-
-                                                                        <div v-if="cabang.value === 'HK.200'" style="margin-left: 10px; display: flex; flex-direction: column; gap: 20px">
-                                                                            <template v-for="cabang2 in HK100">
-                                                                                <div>
-                                                                                    <b-button size="sm">{{cabang2.value}} {{cabang2.text}}</b-button>
-                                                                                    <b-card size="sm">{{cabang2.desc}}</b-card>
-                                                                                </div>
-                                                                            </template>
-                                                                        </div>
-                                                                    
-                                                                    </b-collapse>
-                                                                
-                                                                </template>
-                                                            </div>
-                                                        
-                                                        </b-collapse>
-                                                    </div>
+                                <b-form-group>
+                                            <label class="form-label">Klasifikasi Masalah Utama</label>
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <b-form-input class="select" style="width: 100%; margin: 0;" type="text" v-model="masalahUtamaSelected"/>
                                                 </div>
-                                        </b-card>
-                                        <b-button @click="popUpMasalah=false" variant="secondary">Kembali</b-button>
-                                    </vs-popup>
+                                                <div class="align-self-center">
+                                                    <b-button @click="popUpMasalah=true" variant="primary">
+                                                        <b-icon icon="journal-bookmark"></b-icon>
+                                                        Klarifikasi Masalah
+                                                    </b-button>
+                                                </div>
+                                            </div>
 
-                                    <b-button @click="popUpPejabatTtd=true" variant="primary">Pejabat yg ber-TTD</b-button>
-
-                                    <vs-popup class="holamundo"  title="Pejabat Tanda Tangan" :active.sync="popUpPejabatTtd">
-                                        <b-card style="height: 500px; overflow-y: auto;">
-                                                <div style="display: flex; flex-direction: column; gap: 10px;">
-                                                    <div v-for="bagian in dataBagianPejabat">
-                                                        <b-button v-b-toggle="bagian.value" size="sm">{{bagian.text}}</b-button>
-
-                                                        <b-collapse :id="bagian.value" class="mt-2">
-
-                                                            <div v-if="bagian.value === 'EVP'" style="margin-left: 10px; display: flex; flex-direction: column; gap: 10px">
-                                                                
-                                                                <template v-for="cabang in cabangEVP">
-                                                                    <div style="display: flex; flex-direction: row; gap: 10px">
-                                                                        <b-button v-b-toggle="cabang.value" size="sm">V</b-button>
-                                                                        <b-button @click="selectPejabatTtd(cabang.value)" size="sm">{{cabang.value}} {{cabang.text}}</b-button>
-                                                                    </div>
-                                                                    <div style="margin-left: 37px;">
+                                        <vs-popup class="holamundo"  title="Klarifikasi Masalah" :active.sync="popUpMasalah">
+                                            <b-card style="height: 500px; overflow-y: auto;">
+                                                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                                    
+                                                        <div v-for="masalah in dataMasalahUtama">
+                                                            <b-button v-b-toggle="masalah.value" size="sm" variant="primary">{{masalah.value}} {{masalah.text}}</b-button>
+                                                            <b-collapse :id="masalah.value" class="mt-2">
+                                                                <div v-if="masalah.value === 'HK.000'" style="margin-left: 10px; display: flex; flex-direction: column; gap: 10px">
+                                                                    <template v-for="cabang in cabangHK000">
+                                                                        <b-button v-b-toggle="cabang.value" size="sm" variant="warning">{{cabang.value}} {{cabang.text}}</b-button>
                                                                         <b-card size="sm">{{cabang.desc}}</b-card>
-                                                                    </div>
-                                                                    
-                                                                    <b-collapse :id="cabang.value" class="mt-2">
-                                                                        <div v-if="cabang.value === 'DR4-10000000'" style="margin-left: 45px; display: flex; flex-direction: column; gap: 10px">
-                                                                            <template v-for="cabang2 in dataDR41000">
-                                                                                <div style="display: flex; flex-direction: row; gap: 10px">
-                                                                                    <b-button v-b-toggle="cabang2.value" size="sm">V</b-button>
-                                                                                    <b-button @click="selectPejabatTtd(cabang2.value)" size="sm">{{cabang2.value}} {{cabang2.text}}</b-button>
-                                                                                </div>
-                                                                                <div style="margin-left: 37px;">
-                                                                                    <b-card size="sm">{{cabang2.desc}}</b-card>
-                                                                                </div>
-
-                                                                                <b-collapse :id="cabang2.value" class="mt-2">
-                                                                                    <div v-if="cabang2.value === 'DR4-10400000'" style="margin-left: 45px; display: flex; flex-direction: column; gap: 10px">
-                                                                                        <template v-for="cabang3 in dataDR41040">
-                                                                                            <div style="display: flex; flex-direction: row; gap: 10px">
-                                                                                                <b-button @click="selectPejabatTtd(cabang3.value)" size="sm">{{cabang3.value}} {{cabang3.text}}</b-button>
-                                                                                            </div>
-                                                                                            <div style="margin-left: 37px;">
-                                                                                                <b-card size="sm">{{cabang3.desc}}</b-card>
-                                                                                            </div>
-                                                                                        </template>
+                                    
+                                                                        <b-collapse :id="cabang.value" class="mt-2">
+                                                                            <div v-if="cabang.value === 'HK.100'" style="margin-left: 10px; display: flex; flex-direction: column; gap: 20px">
+                                                                                <template v-for="cabang2 in HK100">
+                                                                                    <div>
+                                                                                        <b-button variant="success" @click="selectMasalahUmum(cabang2.value)" size="sm" style="margin-bottom: 5px;">{{cabang2.value}} {{cabang2.text}}</b-button>
+                                                                                        <b-card size="sm">{{cabang2.desc}}</b-card>
                                                                                     </div>
-                                                                                </b-collapse>
-                                                                            </template>
-                                                                        </div>
-                                                                    </b-collapse>
-                                                                
-                                                                </template>
-                                                            </div>
-                                                        
-                                                        </b-collapse>
+                                                                                </template>
+                                                                            </div>
+                                                                            <div v-if="cabang.value === 'HK.200'" style="margin-left: 10px; display: flex; flex-direction: column; gap: 20px">
+                                                                                <template v-for="cabang2 in HK100">
+                                                                                    <div>
+                                                                                        <b-button variant="success" size="sm">{{cabang2.value}} {{cabang2.text}}</b-button>
+                                                                                        <b-card size="sm">{{cabang2.desc}}</b-card>
+                                                                                    </div>
+                                                                                </template>
+                                                                            </div>
+                                    
+                                                                        </b-collapse>
+                                    
+                                                                    </template>
+                                                                </div>
+                                    
+                                                            </b-collapse>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                        </b-card>
-                                        <b-button @click="popUpPejabatTtd=false" variant="secondary">Kembali</b-button>
-                                    </vs-popup>
-                                </div>
-                                
-                                <div class="col-md-12">
-                                    <label class="form-label">Pejabat yang bet-TTD</label>
-                                    <b-form-input class="select" type="text" v-model="pejabatTtdSelected"/>
-                                </div>
-                                
-                                <div class="col-md-12">
-                                    <label class="form-label">Perihal</label>
-                                    <b-form-input class="select" type="text" v-model="input_perihal"/>
-                                </div>
+                                            </b-card>
+                                            <b-button @click="popUpMasalah=false" variant="secondary" style="margin-top: 13px;">
+                                                <b-icon icon="arrow-left"></b-icon>
+                                                Kembali
+                                            </b-button>
+                                        </vs-popup>
+                                </b-form-group>
 
-                                <div class="col-md-12">
-                                    <label class="form-label">Tujuan Unit</label>
-                                    <b-form-input class="select" type="text" v-model="input_tujuanUnit"/>
-                                </div>
+                                <b-form-group>
+                                            <label class="form-label">Pejabat yang bet-TTD</label>
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <b-form-input class="select" style="width: 100%; margin: 0;" type="text" v-model="pejabatTtdSelected"/>
+                                                </div>
+                                                <div class="align-self-center">
+                                                    <b-button @click="popUpPejabatTtd=true" variant="primary">
+                                                        <b-icon icon="people-fill"></b-icon>
+                                                        Pejabat yg ber-TTD
+                                                    </b-button>
+                                                </div>
+                                            </div>
+                                    
+                                        <vs-popup class="holamundo"  title="Pejabat Tanda Tangan" :active.sync="popUpPejabatTtd">
+                                            <b-card style="height: 500px; overflow-y: auto;">
+                                                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                                                        <div v-for="bagian in dataBagianPejabat">
+                                                            <b-button v-b-toggle="bagian.value" size="sm">{{bagian.text}}</b-button>
+                                                            <b-collapse :id="bagian.value" class="mt-2">
+                                                                <div v-if="bagian.value === 'EVP'" style="margin-left: 10px; display: flex; flex-direction: column; gap: 10px">
+                                    
+                                                                    <template v-for="cabang in cabangEVP">
+                                                                        <div style="display: flex; flex-direction: row; gap: 10px">
+                                                                            <b-button v-b-toggle="cabang.value" size="sm">V</b-button>
+                                                                            <b-button @click="selectPejabatTtd(cabang.value)" size="sm">{{cabang.value}} {{cabang.text}}</b-button>
+                                                                        </div>
+                                                                        <div style="margin-left: 37px;">
+                                                                            <b-card size="sm">{{cabang.desc}}</b-card>
+                                                                        </div>
+                                    
+                                                                        <b-collapse :id="cabang.value" class="mt-2">
+                                                                            <div v-if="cabang.value === 'DR4-10000000'" style="margin-left: 45px; display: flex; flex-direction: column; gap: 10px">
+                                                                                <template v-for="cabang2 in dataDR41000">
+                                                                                    <div style="display: flex; flex-direction: row; gap: 10px">
+                                                                                        <b-button v-b-toggle="cabang2.value" size="sm">V</b-button>
+                                                                                        <b-button @click="selectPejabatTtd(cabang2.value)" size="sm">{{cabang2.value}} {{cabang2.text}}</b-button>
+                                                                                    </div>
+                                                                                    <div style="margin-left: 37px;">
+                                                                                        <b-card size="sm">{{cabang2.desc}}</b-card>
+                                                                                    </div>
+                                                                                    <b-collapse :id="cabang2.value" class="mt-2">
+                                                                                        <div v-if="cabang2.value === 'DR4-10400000'" style="margin-left: 45px; display: flex; flex-direction: column; gap: 10px">
+                                                                                            <template v-for="cabang3 in dataDR41040">
+                                                                                                <div style="display: flex; flex-direction: row; gap: 10px">
+                                                                                                    <b-button @click="selectPejabatTtd(cabang3.value)" size="sm">{{cabang3.value}} {{cabang3.text}}</b-button>
+                                                                                                </div>
+                                                                                                <div style="margin-left: 37px;">
+                                                                                                    <b-card size="sm">{{cabang3.desc}}</b-card>
+                                                                                                </div>
+                                                                                            </template>
+                                                                                        </div>
+                                                                                    </b-collapse>
+                                                                                </template>
+                                                                            </div>
+                                                                        </b-collapse>
+                                    
+                                                                    </template>
+                                                                </div>
+                                    
+                                                            </b-collapse>
+                                                        </div>
+                                                    </div>
+                                            </b-card>
+                                            <b-button @click="popUpPejabatTtd=false" variant="secondary" style="margin-top: 13px;">Kembali</b-button>
+                                        </vs-popup>
+                                </b-form-group>
                                 
-                                <div class="col-md-12">
+                                <b-form-group>
+                                    <label class="form-label">Perihal</label>
+                                    <b-form-input type="text" v-model="input_perihal"/>
+                                </b-form-group>
+
+                                <b-form-group>
+                                    <label class="form-label">Tujuan Unit</label>
+                                    <b-form-input type="text" v-model="input_tujuanUnit"/>
+                                </b-form-group>
+                                
+                                <b-form-group>
                                     <label class="form-label">Keterangan</label>
-                                    <b-form-input class="select" type="text" v-model="input_keterangan"/>
-                                </div>
+                                    <b-form-input type="text" v-model="input_keterangan"/>
+                                </b-form-group>
                             
-                                <div class="col-md-5">
-                                    <div class="row justify-content-between">
-                                        <div class="col-tgl">
-                                            <b-form-group
-                                                label="Tanggal Keluar:"
-                                                label-for="input-tanggalKeluar">
-                                                <b-form-datepicker 
-                                                    id="input-tanggalKeluar" 
-                                                    v-model="input_tglKeluar" 
-                                                    class="mb-2"></b-form-datepicker>
-                                            </b-form-group>
-                                        </div>
-                                        <div class="col-bln">
-                                            <b-form-group
-                                                label="Waktu Keluar:"
-                                                label-for="input-tanggalKeluar">
-                                                <b-form-timepicker
-                                                    id="input-tanggalKeluar"
-                                                    :hour12="false"
-                                                    v-model="input_wktKeluar" 
-                                                    locale="en">
-                                                </b-form-timepicker>
-                                            </b-form-group>
-                                        </div>
+                                <b-form-group>
+                                    <div class="d-flex justify-content-between">
+                                    <div class="col-tgl">
+                                        <b-form-group
+                                            label="Tanggal Keluar:">
+                                            <b-form-datepicker 
+                                                v-model="input_tglKeluar"
+                                                size="sm">
+                                            </b-form-datepicker>
+                                        </b-form-group>
+                                    </div>
+                                    <div class="col-bln ms-auto">
+                                        <b-form-group
+                                            label="Waktu Keluar:">
+                                            <b-form-timepicker
+                                                :hour12="false"
+                                                v-model="input_wktKeluar" 
+                                                locale="en"
+                                                size="sm">
+                                            </b-form-timepicker>
+                                        </b-form-group>
                                     </div>
                                 </div>
+                                </b-form-group>
 
                                 <vs-popup class="holamundo"  title="Error!" :active.sync="errorPopUpActive">
                                     <p>Ada beberapa field yang belum terisi. <br> Harap lengkapi data terlebih dahulu!</p><br>
                                     <b-button @click="errorPopUpActive=false" variant="danger">Mengerti</b-button>
                                 </vs-popup>
 
-                                <div class="d-flex justify-content-between">
-                                    <div class="p-2">
-                                        <b-button @click="popUpActive=false" variant="secondary">Kembali</b-button>
+                                <b-form-group>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="nav-2">
+                                            <b-button @click="popUpActive=false" variant="secondary">
+                                                <b-icon icon="arrow-left"></b-icon>
+                                                Kembali
+                                            </b-button>
+                                        </div>
+                                        <div class="nav-2 ms-auto" style="padding-right: 0;">
+                                            <b-button @click="tambahSuratKeluar()" variant="success">
+                                                <b-icon icon="save"></b-icon>
+                                                Simpan Data
+                                            </b-button>
+                                        </div>
                                     </div>
+                                </b-form-group>
 
-                                    <div class="p-2">
-                                        <b-button @click="tambahSuratKeluar()" variant="success">Simpan Data</b-button>
-                                    </div>
-                                </div>
                             </b-form>
                         </vs-popup>
 
-                        <div class="d-flex ms-auto p-2" style="flex-direction: row;">
+                    </div>
+
+                    <div class="d-flex nav-3" style="flex-direction: row;">
+                        <div>
+                            <b-pagination
+                                v-model="currentPage"
+                                :total-rows="rows"
+                                :per-page="perPage"
+                                aria-controls="suratTable"
+                            ></b-pagination>
+                        </div>
+                        <div class="ms-auto">
                             <b-form-input
                                 v-model="keyword"
-                                placeholder="Type to Search"
-                            >
+                                placeholder="Type to Search">
                             </b-form-input>
                         </div>
                     </div>
-
-                    <b-pagination
-                        v-model="currentPage"
-                        :total-rows="rows"
-                        :per-page="perPage"
-                        aria-controls="suratTable"
-                    ></b-pagination>
 
                     <b-table 
                     id="suratTable"

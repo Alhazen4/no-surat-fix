@@ -24,7 +24,7 @@
                     </b-carousel>
 
                     <h2>Selamat Datang!</h2>
-                    <p>Ini adalah aplikasi penomoran surat berbasis web khusus untuk kantor Telkom Regional 4.</p>
+                    <p>Ini adalah aplikasi penomoran surat berbasis web.</p>
                     <p>
                         Di sini Anda bisa melakukan beberapa hal terkait surat-menyurat khususnya pembuatan nomor surat. Selain itu aplikasi ini 
                         juga bisa digunakan untuk mendata dan mendokumentasikan surat yang datang ke kantor.

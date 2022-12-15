@@ -1,7 +1,7 @@
 <template>
     <div>
         <navigation></navigation>
-        <div class="body body-user">
+        <div class="body body-padding-top">
             <div class="user-wrapper">
                 <div class="table-wrapper">
                     <div class="page-title">
@@ -15,7 +15,7 @@
                             </b-button>
                         </div>
                         <div class="nav-2">
-                            <b-button @click="popUpActive=true" variant="success">
+                            <b-button @click="klikTambahUser()" variant="success">
                                 <b-icon icon="person-plus"></b-icon>
                                 Tambah User
                             </b-button>
@@ -74,15 +74,24 @@
 
                             <vs-popup class="holamundo"  title="Error!" :active.sync="errorPopUpActive">
                                 <p>Ada beberapa field yang belum terisi. <br> Harap lengkapi data terlebih dahulu!</p><br>
-                                <b-button @click="errorPopUpActive=false" variant="danger">Mengerti</b-button>
+                                <b-button @click="errorPopUpActive=false" variant="danger">
+                                    <b-icon icon="exclamation-circle"></b-icon>
+                                    Mengerti
+                                </b-button>
                             </vs-popup>
 
                             <div class="d-flex justify-content-between" style="padding-top: 20px;">
                                 <div class="nav-2">
-                                    <b-button @click="popUpActive=false" variant="secondary">Kembali</b-button>
+                                    <b-button @click="popUpActive=false" variant="secondary">
+                                        <b-icon icon="arrow-left"></b-icon>
+                                        Kembali
+                                    </b-button>
                                 </div>
                                 <div class="nav-2" style="padding-right: 0;">
-                                    <b-button @click="tambahUser" variant="success" type="submit">Tambah User</b-button>
+                                    <b-button @click="tambahUser()" variant="success" type="submit">
+                                        <b-icon icon="person-plus"></b-icon>
+                                        Tambah User
+                                    </b-button>
                                 </div>
                             </div>
                         </vs-popup>
@@ -178,10 +187,16 @@
 
                                         <div class="d-flex justify-content-between" style="padding-top: 20px;">
                                             <div class="nav-2">
-                                                <b-button @click="popUp2Active=false" variant="secondary">Kembali</b-button>
+                                                <b-button @click="popUp2Active=false" variant="secondary">
+                                                    <b-icon icon="arrow-left"></b-icon>
+                                                    Kembali
+                                                </b-button>
                                             </div>
                                             <div class="nav-2" style="padding-right: 0;">
-                                                <b-button @click="ubahUser" variant="success" type="submit">Ubah User</b-button>
+                                                <b-button @click="ubahUser" variant="success" type="submit">
+                                                    <b-icon icon="pencil-square"></b-icon>
+                                                    Ubah User
+                                                </b-button>
                                             </div>
                                         </div>
                                     </vs-popup>
@@ -300,9 +315,15 @@
                 store.dispatch('logoutAction')
             },
 
+            klikTambahUser() {
+                this.input_nama = '';
+                this.input_email = '';
+                this.input_username = '';
+                this.input_password = '';
+                this.popUpActive=true;
+            },
+
             async tambahUser() {
-
-
                 if (
                     this.input_nama === ''
                     || this.input_username === ''
@@ -366,24 +387,34 @@
             },
 
             async ubahUser() {
-                try {
-                    await apis.patch
-                    (
-                        `/user/${this.selectedId}`, 
-                        { 
-                            nama: this.input_nama,
-                            email: this.input_email,
-                            role: 'admin',
-                            username: this.input_username,
-                            password: this.input_password
-                        },
-                        { headers: { 'Content-Type': 'application/json' } }
-                    )
-                    .then(response => {console.log('Success Edit!')})
-                    this.popUp2Active = false;
-                    this.$router.go(0);
-                } catch (error) {
-                    console.log(error)
+
+                if (
+                    this.input_nama === ''
+                    || this.input_username === ''
+                    || this.input_email === ''
+                    || this.input_password === ''
+                ) {
+                    this.errorPopUpActive = true;
+                } else {
+                    try {
+                        await apis.patch
+                        (
+                            `/user/${this.selectedId}`, 
+                            { 
+                                nama: this.input_nama,
+                                email: this.input_email,
+                                role: 'admin',
+                                username: this.input_username,
+                                password: this.input_password
+                            },
+                            { headers: { 'Content-Type': 'application/json' } }
+                        )
+                        .then(response => {console.log('Success Edit!')})
+                        this.popUp2Active = false;
+                        this.$router.go(0);
+                    } catch (error) {
+                        console.log(error)
+                    }
                 }
             }
         },
@@ -391,7 +422,7 @@
 </script>
 
 <style>
-    .body-user {
+    .body-padding-top {
         padding-top: 50px;
     }
 

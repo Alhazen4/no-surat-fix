@@ -1,7 +1,7 @@
 <template>
     <div>
         <navigation></navigation>
-        <div class="body">
+        <div class="body body-padding-top">
             <div class="user-wrapper">
                 <div class="table-wrapper">
                     <div class="page-title">
@@ -9,21 +9,21 @@
                     </div>
 
                     <div class="d-flex">
-                        <div class="p-2">
+                        <div class="nav-2">
                             <b-button @click="$router.go(-1)" variant="secondary">
                                 <b-icon icon="arrow-left"></b-icon>
                                 Kembali
                             </b-button>
                         </div>
-                        <div class="p-2">
-                            <b-button @click="popUpActive=true" variant="success">
+                        <div class="nav-2">
+                            <b-button @click="klikSuratMasuk()" variant="success">
                                 <b-icon icon="envelope-open"></b-icon>
                                 Tambah Surat Masuk
                             </b-button>
                         </div>
 
                         <vs-popup class="holamundo"  title="Tambah Surat Masuk" :active.sync="popUpActive">
-                            <b-form>
+                            <b-form autoComplete="off" class="b-form-custom">
                                 <b-form-group
                                     label="Pengirim Surat"
                                     label-for="input-pengirim">
@@ -75,29 +75,29 @@
                                     </b-form-input>
                                 </b-form-group>
 
-                                <div class="col-md-5">
-                                    <div class="row justify-content-between">
-                                        <div class="col-tgl">
-                                            <b-form-group
-                                                label="Tanggal Terima:"
-                                                label-for="input-tanggalTerima">
-                                                <b-form-datepicker 
-                                                    id="input-tanggalTerima" 
-                                                    v-model="input_tglTerima" 
-                                                    class="mb-2"></b-form-datepicker>
-                                            </b-form-group>
-                                        </div>
-                                        <div class="col-bln">
-                                            <b-form-group
-                                                label="Waktu Terima:"
-                                                label-for="input-tanggalTerima">
-                                                <b-form-timepicker
-                                                    :hour12="false"
-                                                    v-model="input_wktTerima" 
-                                                    locale="en">
-                                                </b-form-timepicker>
-                                            </b-form-group>
-                                        </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="col-tgl">
+                                        <b-form-group
+                                            label="Tanggal Terima:"
+                                            label-for="input-tanggalTerima">
+                                            <b-form-datepicker 
+                                                id="input-tanggalTerima" 
+                                                v-model="input_tglTerima"
+                                                size="sm">
+                                            </b-form-datepicker>
+                                        </b-form-group>
+                                    </div>
+                                    <div class="col-bln ms-auto">
+                                        <b-form-group
+                                            label="Waktu Terima:"
+                                            label-for="input-tanggalTerima">
+                                            <b-form-timepicker
+                                                :hour12="false"
+                                                v-model="input_wktTerima" 
+                                                locale="en"
+                                                size="sm">
+                                            </b-form-timepicker>
+                                        </b-form-group>
                                     </div>
                                 </div>
 
@@ -108,38 +108,48 @@
                                 </b-form-group>
                             </b-form>
 
-                                <div class="d-flex justify-content-between">
-                                    <div class="p-2">
-                                        <b-button @click="popUpActive=false" variant="secondary">Kembali</b-button>
+                                <div class="d-flex justify-content-between" style="margin-top: 20px;">
+                                    <div class="nav-2">
+                                        <b-button @click="popUpActive=false" variant="secondary">
+                                            <b-icon icon="arrow-left"></b-icon>
+                                            Kembali
+                                        </b-button>
                                     </div>
-                                    <div class="p-2">
+                                    <div class="nav-2">
                                         <label class="btn_input">
                                             <input @change="selectImage" type="file"/>
+                                            <b-icon icon="cloud-upload"></b-icon>
                                             Upload Foto
                                         </label>
                                     </div>
-                                    <div class="p-2">
-                                        <b-button @click="tambahSuratMasuk" variant="success" type="submit">Tambah Surat Masuk</b-button>
+                                    <div class="nav-2" style="padding-right: 0;">
+                                        <b-button @click="tambahSuratMasuk" variant="success" type="submit">
+                                            <b-icon icon="save"></b-icon>
+                                            Tambah Surat Masuk
+                                        </b-button>
                                     </div>
                                 </div>
                         </vs-popup>
 
-
-                        <div class="d-flex ms-auto p-2" style="flex-direction: row;">
-                            <b-form-input
-                                v-model="keyword"
-                                placeholder="Type to Search"
-                            >
-                        </b-form-input>
-                        </div>
                     </div>
 
-                    <b-pagination
-                        v-model="currentPage"
-                        :total-rows="rows"
-                        :per-page="perPage"
-                        aria-controls="suratTable"
-                    ></b-pagination>
+                    <div class="d-flex nav-3" style="flex-direction: row;">
+                        <div>
+                            <b-pagination
+                                v-model="currentPage"
+                                :total-rows="rows"
+                                :per-page="perPage"
+                                aria-controls="suratTable"
+                            ></b-pagination>
+                        </div>
+                        
+                        <div class="ms-auto">
+                            <b-form-input
+                                v-model="keyword"
+                                placeholder="Type to Search">
+                            </b-form-input>
+                        </div>
+                    </div>
 
                     <b-table 
                     id="suratTable"
@@ -152,7 +162,9 @@
                     label-sort-desc=""
                     label-sort-clear=""
                     :per-page="perPage"
-                    :current-page="currentPage">
+                    :current-page="currentPage"
+                    :sort-by.sync="sortBy"
+                    :sort-desc.sync="sortDesc">
 
                         <template #cell(opsi)="data">
                             <div class="d-flex" style="gap: 10px">
@@ -161,7 +173,7 @@
                                     </b-button>
 
                                     <vs-popup class="holamundo"  title="Lihat Surat Masuk" :active.sync="popUp3Active">
-                                        <b-form>
+                                        <b-form autoComplete="off" class="b-form-custom">
                                             <b-form-group
                                                 label="Pengirim Surat"
                                                 label-for="input-pengirim">
@@ -213,7 +225,7 @@
                                                 </b-form-input>
                                             </b-form-group>
 
-                                            <div class="row justify-content-between">
+                                            <div class="d-flex justify-content-between">
                                                 <div class="col-tgl">
                                                     <b-form-group
                                                         label="Tanggal Terima:"
@@ -221,11 +233,12 @@
                                                         <b-form-datepicker 
                                                             disabled
                                                             id="input-tanggalTerima" 
-                                                            v-model="input_tglTerima" 
-                                                            class="mb-2"></b-form-datepicker>
+                                                            v-model="input_tglTerima"
+                                                            size="sm" 
+                                                        ></b-form-datepicker>
                                                     </b-form-group>
                                                 </div>
-                                                <div class="col-bln">
+                                                <div class="col-bln ms-auto">
                                                     <b-form-group
                                                         label="Waktu Terima:"
                                                         label-for="input-tanggalTerima">
@@ -233,6 +246,7 @@
                                                             disabled
                                                             :hour12="false"
                                                             v-model="input_wktTerima" 
+                                                            size="sm" 
                                                             locale="en">
                                                         </b-form-timepicker>
                                                     </b-form-group>
@@ -246,11 +260,11 @@
                                             </b-form-group>
                                         </b-form>
 
-                                            <div class="d-flex justify-content-center">
-                                                <div class="p-2" style="margin-top: 20px;">
-                                                    <b-button @click="popUp3Active=false" variant="secondary">Kembali</b-button>
-                                                </div>
+                                        <div class="d-flex justify-content-center" style="margin-top: 20px;">
+                                            <div class="nav-2">
+                                                <b-button @click="popUp3Active=false" variant="secondary">Kembali</b-button>
                                             </div>
+                                        </div>
                                     </vs-popup>
 
                                     <b-button @click="ubahClick(data.item._id)" variant="warning" size="sm">
@@ -258,7 +272,7 @@
                                     </b-button>
 
                                     <vs-popup class="holamundo"  title="Edit Surat Masuk" :active.sync="popUp2Active">
-                                        <b-form>
+                                        <b-form autoComplete="off" class="b-form-custom">
                                             <b-form-group
                                                 label="Pengirim Surat"
                                                 label-for="input-pengirim">
@@ -305,13 +319,11 @@
                                                 <b-form-input
                                                     id="input-disposisi"
                                                     v-model="input_disposisi"
-                                                    type="text"
-                                                    readonly>
+                                                    type="text">
                                                 </b-form-input>
                                             </b-form-group>
 
-                                            <div class="col-md-5">
-                                            <div class="row justify-content-between">
+                                            <div class="d-flex justify-content-between">
                                                 <div class="col-tgl">
                                                     <b-form-group
                                                         label="Tanggal Terima:"
@@ -319,22 +331,23 @@
                                                         <b-form-datepicker 
                                                             id="input-tanggalTerima" 
                                                             v-model="input_tglTerima" 
-                                                            class="mb-2"></b-form-datepicker>
+                                                            size="sm" 
+                                                            ></b-form-datepicker>
                                                     </b-form-group>
                                                 </div>
-                                                <div class="col-bln">
+                                                <div class="col-bln ms-auto">
                                                     <b-form-group
                                                         label="Waktu Terima:"
                                                         label-for="input-tanggalTerima">
                                                         <b-form-timepicker
                                                             :hour12="false"
-                                                            v-model="input_wktTerima" 
+                                                            v-model="input_wktTerima"
+                                                            size="sm" 
                                                             locale="en">
                                                         </b-form-timepicker>
                                                     </b-form-group>
                                                 </div>
                                             </div>
-                                        </div>
 
                                         <b-form-group
                                                 label="Foto Paket:"
@@ -343,17 +356,17 @@
                                             </b-form-group>
                                         </b-form>
 
-                                            <div class="d-flex justify-content-between">
-                                                <div class="p-2">
+                                            <div class="d-flex justify-content-between" style="margin-top: 20px;">
+                                                <div class="nav-2">
                                                     <b-button @click="popUp2Active=false" variant="secondary">Kembali</b-button>
                                                 </div>
-                                                <div class="p-2">
+                                                <div class="nav-2">
                                                     <label class="btn_input">
                                                         <input @change="selectImage" type="file"/>
                                                         Upload Foto
                                                     </label>
                                                 </div>
-                                                <div class="p-2">
+                                                <div class="nav-2" style="padding-right: 0;">
                                                     <b-button @click="ubahSuratMasuk" variant="success" type="submit">Ubah Surat Masuk</b-button>
                                                 </div>
                                             </div>
@@ -411,6 +424,8 @@
         name: 'suratMasuk',
         data() {
             return {
+                sortBy: 'idx',
+                sortDesc: true,
                 popUpActive: false,
                 popUp2Active: false,
                 popUp3Active: false,
@@ -511,6 +526,21 @@
                 this.preImage = URL.createObjectURL(this.curImage);
             },
 
+            klikSuratMasuk() {
+                this.input_pengirim = '';
+                this.input_perihal = '';
+                this.input_tujuanUnit = '';
+                this.input_namaPenerima = '';
+                this.input_disposisi = '';
+                this.input_tglTerima = '';
+                this.input_wktTerima = '';
+                this.current_imageURL = '';
+                this.current_local_imageURL = '';
+
+                this.preImage = this.current_imageURL;
+                this.popUpActive=true
+            },
+
             async tambahSuratMasuk() {
                 const backend_url = process.env.NODE_ENV === 'production' ? '/api/image/' : 'http://localhost:4041/api/image/';
 
@@ -593,6 +623,17 @@
             },
 
             lihatClick(id) {
+                this.input_pengirim = '';
+                this.input_perihal = '';
+                this.input_tujuanUnit = '';
+                this.input_namaPenerima = '';
+                this.input_disposisi = '';
+                this.input_tglTerima = '';
+                this.input_wktTerima = '';
+                this.current_imageURL = '';
+                this.current_local_imageURL = '';
+                this.preImage = this.current_imageURL;
+
                 this.selectedSuratId = id;
                 // console.log(this.selectedSuratId);
                 try {
