@@ -61,29 +61,31 @@
                                             <b-card style="height: 500px; overflow-y: auto;">
                                                     <div style="display: flex; flex-direction: column; gap: 10px;">
                                     
-                                                        <div v-for="masalah in dataMasalahJSON">
+                                                        <template v-for="masalah in dataMasalahJSON">
                                                             <b-button v-b-toggle="masalah.value" size="sm" variant="primary">{{masalah.value}} {{masalah.text}}</b-button>
+                                                            
                                                             <b-collapse :id="masalah.value" class="mt-2">
+                                                                <b-card size="sm" style="margin-bottom: 20px;">{{masalah.desc}}</b-card>
 
-                                                                <div style="margin-left: 10px; display: flex; flex-direction: column; gap: 10px">
+                                                                <div style="margin-left: 10px; display: flex; flex-direction: column; gap: 10px;">
                                                                     <template v-for="cabang in masalah.child">
                                                                         <b-button v-b-toggle="cabang.value" size="sm" variant="warning">{{cabang.value}} {{cabang.text}}</b-button>
                                                                         <b-card size="sm">{{cabang.desc}}</b-card>
 
-                                                                        <b-collapse :id="cabang.value" class="mt-2">
-                                                                            <template v-for="cabang2 in cabang.child2">
-                                                                                <div style="margin-left: 10px; display: flex; flex-direction: column; gap: 10px">
-                                                                                    <b-button variant="success" @click="selectMasalahUmum(cabang2.value)" size="sm" style="margin-bottom: 5px;">{{cabang2.value}} {{cabang2.text}}</b-button>
-                                                                                    <b-card size="sm">{{cabang2.desc}}</b-card>
-                                                                                </div>
-                                                                            </template>
-                                                                        </b-collapse>
+                                                                            <b-collapse :id="cabang.value" class="mt-2">
+                                                                                <template v-for="cabang2 in cabang.child2">
+                                                                                    <div style="margin-left: 10px; margin-bottom: 20px;">
+                                                                                        <b-button variant="success" @click="selectMasalahUmum(cabang2.value)" size="sm">{{cabang2.value}} {{cabang2.text}}</b-button>
+                                                                                        <b-card size="sm">{{cabang2.desc}}</b-card>
+                                                                                    </div>
+                                                                                </template>
+                                                                            </b-collapse>
                                     
                                                                     </template>
                                                                 </div>
                                     
                                                             </b-collapse>
-                                                        </div>
+                                                        </template>
                                                     </div>
                                             </b-card>
                                             <b-button @click="popUpMasalah=false" variant="secondary" style="margin-top: 13px;">
