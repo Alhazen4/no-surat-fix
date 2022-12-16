@@ -1,0 +1,2889 @@
+[
+ {
+  "Keterangan Kode Klasifikasi Masalah": "NO",
+  value: "Kode",
+  text: "Judul",
+  desc: "Keterangan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 1,
+  value: "HK.000",
+  text: "Hukum",
+  desc: "Naskah Dokumen yang berkaitan dengan fungsi kegiatan hukum di lingkungan PT Telkom"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 2,
+  value: "HK.100",
+  text: "Peraturan Non perusahaan",
+  desc: "Peraturan yang dikeluarkan oleh instansi - instansi diluar perusahaan yang berkaitan dengan : - Kebijakan dasar, - strategi pengelolaan, - standar\nperalatan pengoperasian alat telekomunikasi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 3,
+  value: "HK.110",
+  text: "Peraturan Lembaga",
+  desc: "kebijakan dasar yang dikeluarkan oleh lembaga lembaga tinggi negara seperti MPR, DPR, DPA &amp; lembaga pemerintah lainnya. Contoh : - TAP\nMPR, - Peraturan Pemerintah ,- Inpres kepres, - Perda"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 4,
+  value: "HK.120",
+  text: "Peraturan Departemen",
+  desc: "Kebijakan dasar yang tingkatannya lebih operasional dari yang dikeluarkan oleh departemen departemen teknik (misal : DEPARPOSTEL,\nDEPNAKER, Perindustrian, dll) dan Direktorat jendral yang bernaung dibawahnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 5,
+  value: "HK.130",
+  text: "Peraturan Non Departemen",
+  desc: "Kebijakan dasar yang dikeluarkan oleh lembaga lembaga tinggi negara seperti MPR, DPR, DPA &amp; lembaga pemerintaah lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 6,
+  value: "HK.140",
+  text: "Peraturan Internasional",
+  desc: "Kebijakan dasar yang berkaitan dengan spesifikasi peralatan dan pengelolaan telekomunikasi secara umum yang dikeluarkan oleh lembaga\ninternasional yang berwenang (ITU, CCITT, dll)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 7,
+  value: "HK.150",
+  text: "Peraturan Non perusahaan lainnya",
+  desc: "Naskah dokumen yang berkaitan dengan produk peraturan non perusahaan lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 8,
+  value: "HK.200",
+  text: "Peraturan perusahaan",
+  desc: "Peraturan-peraturan yang dikeluarkan oleh unit kerja yang berwewenang didalam perusahaan (peraturan, keputusan, instruksi SE) yang meliputi : -kebijaksanaan dasar, -petunjuk pelaksanaan (juklak), -petunjuk tekhnis (juknis), -prosedur tetap (protap)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 9,
+  value: "HK.210",
+  text: "peraturan bidang tekhnik telekomunikasi",
+  desc: "peraturan peraturan dalam bidang tekhnik telekomunikasi yang meliputi operasi tekhnik, pemeliharaan, instalasi &amp; Konstruksi, ataupun network dari perangkat : -sentral telekomunikasi, -sistem transmisi, -jaringan lokal kabel, -catu daya mechanical electrical dan sarpen lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 10,
+  value: "HK.220",
+  text: "Peraturan bidang pelayanan",
+  desc: "Peraturan peraturan dalam bidang pelayanan (service) terhadap pelanggan yang meliputi: -pelayanan jasa telekomunikasi perorangan (telepon,telex telegrap, faksimil, sistem komunikasi data, sirkit langganan, jasa transponder, mobile telephone, JASNITA dan lainnya), - pelayanan jasa telekomunikasi umum (TUC, TUK, kamar bicara umum WARTEL, Telegram, kartu telepon dan lainnya)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 11,
+  value: "HK.230",
+  text: "Peraturan bidang-bidang keuangan",
+  desc: "peraturan peraturan dalam bidang keuangan misalnya : -bank, -anggaran, -perbendaharaaan, -akuntansi, -pendapatan, -pembiayaan, -tarif"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 12,
+  value: "HK.240",
+  text: "Peraturan bidang Logistik",
+  desc: "Peraturan peraturan dalam bidang logistik perlengkapan, misalnya :-kebijaksanaan perlengkapan, -tata cara pengadaan jasa"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 13,
+  value: "HK.250",
+  text: "Peraturan bidang sumber Daya Manusia\n  DIKLAT",
+  desc: "Peraturan peraturan dalam bidang sumber daya manusia dan pendidikan dan latihan misalnya : -mutasi karyawan cuti, -penghargaan, -fasilitas\nkaryawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 14,
+  value: "HK.260",
+  text: "Peraturan bidang pengawasan Hukum",
+  desc: "peraturan peraturan dan bidang pengawasan dan hukum"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 15,
+  value: "Hk.270",
+  text: "Peraturan bidang pengolahan\ndata pelaporan",
+  desc: "peraturan peraturan dalam bidang pengelohan data pelaporan : -peraturan SIMAK"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 16,
+  value: "HK.280",
+  text: "Peraturan bidang\npenelitian pengembangan",
+  desc: "peraturan peraturan dalam bidang penelitian pengembangan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 17,
+  value: "HK.290",
+  text: "Peraturan bidang lainnya",
+  desc: "peraturan peraturan dalam bidang bidang yang tidak termasuk dalam klasifikasi diatas: -peraturan bidang umum (kebersihan, building\nmanagement, dll)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 18,
+  value: "HK.300",
+  text: "PERDATA",
+  desc: "naskah dokumen yang berkaitan dengan urusan keperdataan didalam perusahaan dan antara perusahaan dengan pihak luar"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 19,
+  value: "HK.310",
+  text: "Perseorangan",
+  desc: "naskah dokumen yang berkaitan dengan urusan keperdataaan antara perseorangan didalam perusahaan dan dengan pihak luar"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 20,
+  value: "HK.320",
+  text: "Kebendaan",
+  desc: "naskah   dokumen yang berkaitan dengan urusan keperdataan dalam hal kebendaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 21,
+  value: "HK.330",
+  text: "Pembuktian dan kadaluarsa",
+  desc: "naskah dokumen yang berkaitan dengan urusan pembuktian masalah keperdataan dan kadaluarsa"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 22,
+  value: "HK.340",
+  text: "Tanah Bangunan",
+  desc: "naskah dokumen yang berkaitan dengan urusan tanah bangunan: -pembebasan tanah, -pembebasan rumah"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 23,
+  value: "HK.400",
+  text: "PIDANA",
+  desc: "naskah dokumen yang ebrkaitan dengan tindak pidana yang dilakukan oleh pihak dalam maupun luar perusahaan, terhadap PT Telkom"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 24,
+  value: "HK.410",
+  text: "Kejahatan Kriminalitas",
+  desc: "naskah dokumen yang berkaitan dengan tindak pidana kejahatan kriminalitas"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 25,
+  value: "HK.420",
+  text: "Pelanggaran",
+  desc: "naskah dokumen yang berkaitan dengan tindak pidana pelanggaran"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 26,
+  value: "HK.500",
+  text: "PERIJINAN",
+  desc: "Naskah dokumen yang berkaitan dengan pemberian ijin oleh PT Telkom"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 27,
+  value: "HK.510",
+  text: "Surat Kuasa",
+  desc: "Naskah dokumen yang berkaitan dengan penerbitan surat kuasa"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 28,
+  value: "HK.520",
+  text: "Dispensasi",
+  desc: "naskah dokumen yang berkaitan dengan penerbitan dispensasi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 29,
+  value: "HK.530",
+  text: "Lisensi",
+  desc: "naskah dokumen yang berkaitan dengan penerbitan lisensi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 30,
+  value: "HK.540",
+  text: "Konsesi",
+  desc: "naskah dokumen yang berkaitan dengan penerbitan konsesi dari suatu daerah"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 31,
+  value: "HK.550",
+  text: "Rekomendasi",
+  desc: "naskah dokumen yang berkaitan dengan pemberian rekomendasi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 32,
+  value: "HK.560",
+  text: "Surat Ijin",
+  desc: "naskah dokumen yang berkaitan dengan penerbitan surat ijin"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 33,
+  value: "HK.570",
+  text: "Legalisasi Dokumen",
+  desc: "naskah dokumen yang berkaitan dengan penerbitan legalisasi dokumen"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 34,
+  value: "HK.580",
+  text: "Perijinan lainnya",
+  desc: "naskah dokumen yang berkaitan dengan jenis perijinan lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 35,
+  value: "HK.600",
+  text: "PELAYANAN UMUM",
+  desc: "naskah dokumen yang berkaitan dengan pelayanan hukum yang diberikan kepada pihak dalam dan pihak lain"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 36,
+  value: "HK.610",
+  text: "Bantuan Hukum Konsultasi",
+  desc: "naskah dokumen yang berkaitan dengan pemberian bantuan hukum konsultasi hukum oleh PT Telkom"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 37,
+  value: "HK.620",
+  text: "Kajian Hukum",
+  desc: "naskah dokumen yang berkaitan dengan kajian hukum"
+ },
+ {
+  value: "HK.700",
+  text: "PENYELESAIAN HUKUM",
+  desc: "naskah dokumen yang berkaitan dengan penyelesaian masalah hukum yang dilaksanakan oleh PT Telkom"
+ },
+ {
+  value: "HK.710",
+  text: "Gugatan Sengketa",
+  desc: "naskah dokumen yang berkaitan dengan gugatan sengketa dari atau untuk PT Telkom"
+ },
+ {
+  value: "HK.720",
+  text: "Peradilan Tata Usaha Negara (PTUN)",
+  desc: "naskah dokumen yang berkaitan dengan Peradilan Tata Usaha Negara (PTUN)"
+ },
+ {
+  value: "HK.730",
+  text: "Klaim ganti rugi",
+  desc: "naskah dokumen yang berkaitan dengan tuntutan klaim ganti rugi dari dan untuk PT Telkom"
+ },
+ {
+  value: "HK.740",
+  text: "Arbitrase",
+  desc: "naskah dokumen yang berkaitan dengan arbitrase"
+ },
+ {
+  value: "HK.800",
+  text: "KERJASAMA PERIKATAN DALAM\nNEGERI",
+  desc: "naskah dokumen yang berkaitan dengan kerjasama perikatan antara PT dan pihak lain dalam negeri"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 44,
+  value: "HK.810",
+  text: "Kontrak perjanjian kerjasama",
+  desc: "naskah dokumen yang berkaitan dengan kontrak perjanjian kerjasama dengan pihak lain didalam negeri"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 45,
+  value: "HK.820",
+  text: "Amandemen",
+  desc: "naskah dokumen yang berkaitan dengan kontrak perjanjian kerjsama dengan pihak lain didalam negeri"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 46,
+  value: "HK.830",
+  text: "Side Letter",
+  desc: "naskah dokumen yang berkaitan dengan side letter atas kontrak dengan pihak lain didalam negeri"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 47,
+  value: "HK.840",
+  text: "Memorandum of understanding (MOU)",
+  desc: "naskah dokumen yang berkaitan dengan Memorandum of Understanding dengan pihak lain di dalam negeri"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 48,
+  value: "HK.850",
+  text: "Bentuk kerjasama perikatan dalam\nnegeri lainnya",
+  desc: "naskah dokumen yang berkaitan dengan bentuk kerjasama perikatan dalam negeri lainnya antara PT dengan pihak lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 49,
+  value: "HK.900",
+  text: "KERJASAMA PERIKATAN LUAR NEGERI",
+  desc: "naskah dokumen yang berkaitan dengan kerjasama perikatan antara PT dan pihak lain luar negeri"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 50,
+  value: "HK.910",
+  text: "Kontrak perjanjian kerjasama",
+  desc: "naskah dokumen yang berkaitan dengan kontrak perjanjian kerjasama dengan pihak lain di luar negeri"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 51,
+  value: "HK.920",
+  text: "Amandemen",
+  desc: "naskah dokumen yang berkaitan dengan kontrak perjanjian kerjsama dengan pihak lain diluar negeri"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 52,
+  value: "HK.930",
+  text: "Side Letter",
+  desc: "naskah dokumen yang berkaitan dengan side letter atas kontrak dengan pihak lain diluar negeri"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 53,
+  value: "HK.940",
+  text: "Memorandum of understanding (MOU)",
+  desc: "naskah dokumen yang berkaitan dengan Memorandum of Understanding dengan pihak lain di luar negeri"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 54,
+  value: "HK.950",
+  text: "Bentuk kerjasama perikatan dalam\nnegeri lainnya",
+  desc: "naskah dokumen yang berkaitan dengan bentuk kerjasama perikatan luar negeri lainnya antara PT dengan pihak lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 55,
+  value: "IN.000",
+  text: "DAPENTEL",
+  desc: "Dapentel Investasi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 56,
+  value: "IN.100",
+  text: "Investasi Langsung",
+  desc: "Investasi langsung"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 57,
+  value: "IN.110",
+  text: "Properti",
+  desc: "Properti"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 58,
+  value: "IN.120",
+  text: "Penyertaan saham",
+  desc: "Penyertaan saham"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 59,
+  value: "IN.130",
+  text: "Investasi Lainnya",
+  desc: "Investasi Lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 60,
+  value: "IN.200",
+  text: "Investasi Tidak Langsung",
+  desc: "Investasi Tidak Langsung"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 61,
+  value: "IN.210",
+  text: "Deposito",
+  desc: "Deposito"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 62,
+  value: "IN.220",
+  text: "Saham Bursa",
+  desc: "Saham Bursa"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 63,
+  value: "IN.230",
+  text: "Obligasi",
+  desc: "Obligasi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 64,
+  value: "IN.240",
+  text: "SBI",
+  desc: "SBI"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 65,
+  value: "IN.250",
+  text: "Reksadana",
+  desc: "Reksadana"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 66,
+  value: "IN.260",
+  text: "Fund Manager",
+  desc: "Fund Manager"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 67,
+  value: "IN.270",
+  text: "SUN",
+  desc: "SUN"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 68,
+  value: "IN.280",
+  text: "Custodian",
+  desc: "Custodian"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 69,
+  value: "IN.290",
+  text: "Investasi tak langsung lainnya",
+  desc: "Investasi tak langsung lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 70,
+  value: "KA.000",
+  text: "DAPENTEL",
+  desc: "Kepesertaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 71,
+  value: "KA.100",
+  text: "Manajemen peserta",
+  desc: "Manajemen peserta"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 72,
+  value: "KA.110",
+  text: "Pemberitahuan Pensiun",
+  desc: "Pemberitahuan Pensiun"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 73,
+  value: "KA.120",
+  text: "Penerbitan keputusan pemberian MP\nKaryawan",
+  desc: "Penerbitan keputusan pemberian MP Karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 74,
+  value: "KA.130",
+  text: "Penerbitan keputusan pemberian janda,\nDuda, anak",
+  desc: "Penerbitan keputusan pemberian janda, Duda, anak"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 75,
+  value: "KA.140",
+  text: "iuran dana pensiun",
+  desc: "iuran dana pensiun"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 76,
+  value: "KA.150",
+  text: "murasi data peserta",
+  desc: "murasi data peserta"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 77,
+  value: "KA.160",
+  text: "mutasi data penerima manfaat pensiun",
+  desc: "mutasi data penerima manfaat pensiun"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 78,
+  value: "KA.200",
+  text: "Manajemen Pelayanan",
+  desc: "Manajemen Pelayanan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 79,
+  value: "KA.210",
+  text: "Pembayaran Manfaat pensiun",
+  desc: "Pembayaran Manfaat pensiun"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 80,
+  value: "KA.220",
+  text: "Pembayaran THT MPS",
+  desc: "Pembayaran THT MPS"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 81,
+  value: "KA.230",
+  text: "Pembayaran dana peserta",
+  desc: "Pembayaran dana peserta"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 82,
+  value: "KA.240",
+  text: "penghentian pembayaran manfaat\npensiun",
+  desc: "penghentian pembayaran manfaat pensiun"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 83,
+  value: "KA.250",
+  text: "pelayanan kartu pengenal manfaat\npensiun",
+  desc: "pelayanan kartu pengenal manfaat pensiun"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 84,
+  value: "KA.260",
+  text: "pelayanan kepesertaan lainnya",
+  desc: "pelayanan kepesertaan lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 85,
+  value: "KA.270",
+  text: "costumer service",
+  desc: "costumer service"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 86,
+  value: "KU.000",
+  text: "KEUANGAN",
+  desc: "naskah dokumen yang berkaitan dengan fungsi keuangan dan merupakan kegiatan yang melibatkan\nkoordinasi antara fungsi fungsi perbankan anggaran, perbendaharaan, pendapatan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 87,
+  value: "KU.100",
+  text: "Perbankan",
+  desc: "naskah dokumen yang berkaitan dengan fungsi perbankan secara umum"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 88,
+  value: "KU.110",
+  text: "Bank",
+  desc: "naskah dokumen yang berkaitan dengan bank yang meliputi : -Bank pemerintah bank asing, -bank swasta nasional"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 89,
+  value: "KU.120",
+  text: "Deposito",
+  desc: "naskah dokumen yang berkaitan dengan deposito"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 90,
+  value: "KU.130",
+  text: "Garansi Bank",
+  desc: "naskah dokumen yang berkaitan dengan garansi bank. Contoh: -file bank garansi, -pembukaan bank garansi, -surat peringatan bank garansi, -\nmutasi bank garansi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 91,
+  value: "KU.140",
+  text: "Valuta Asing",
+  desc: "naskah dokumen yang berkaitan dengan valutas asing, antara lain : kurs valuta asing, -simpanan valas"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 92,
+  value: "KU.150",
+  text: "Hutang (pinjaman)   kredit",
+  desc: "naskah dokumen yang berkaitan dengan hutang(pinjaman)   kredit dengan bank pihak lain. Contoh: pembuatan status pengurusan kredit luar\nnegeri, -angsuran hutang pokok, -hutang jangka panjang, hutang, hutang kompensasi,dll"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 93,
+  value: "KU.160",
+  text: "Rekening",
+  desc: "naskah dokumen yang berkaitan dengan rekening simpanan perusahaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 94,
+  value: "KU.170",
+  text: "Check Giro Kiriman uang",
+  desc: "naskah dokumen yang berkaitan dengan cek giro dan kiriman uang, antara lain: -mutasi cek giro, Girat, dll"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 95,
+  value: "KU.180",
+  text: "Bunga Bank",
+  desc: "naskah dokumen yang berkaitan dengan bunga bank"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 96,
+  value: "KU.200",
+  text: "Anggaran",
+  desc: "naskah dokumen yang berkaitan dengan anggaran secara umum"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 97,
+  value: "KU.210",
+  text: "Penyusunan Rencana kerja dan\nanggaran",
+  desc: "naskah dokumen yang berkaitan dengan penyusunan anggaran antara lain : -RKA RKB, -DRKA"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 98,
+  value: "KU.220",
+  text: "Permintaan dana dan anggaran",
+  desc: "naskah dokumen yang berkaitan dengan dengan permintaan dana anggaran, contoh: permintaan panjar, -dropping uang, dll"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 99,
+  value: "KU.230",
+  text: "Distribusi dan Redistribusi",
+  desc: "naskah dokumen yang berkaitan dengan distribusi dan redistribusi anggaran"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 100,
+  value: "KU.240",
+  text: "Realisasi Anggaran",
+  desc: "naskah dokumen yang berkaitan dengan realisasi penggunana dana anggaran"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 101,
+  value: "KU.250",
+  text: "SUKKA",
+  desc: "naskah dokumen yang berkaitan dengan SUKKA"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 102,
+  value: "KU.260",
+  text: "Pertanggungan",
+  desc: "naskah dokumen yang berkaitan dengan pertanggungan penggunaan dana anggaran"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 103,
+  value: "KU.300",
+  text: "Perbendaharaan",
+  desc: "naskah dokumen yang berkaitan dengan perbendaharaan secara umum"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 104,
+  value: "KU.310",
+  text: "Letter of credit",
+  desc: "naskah dokumen yang berkaitan dengan letter of credit"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 105,
+  value: "KU.320",
+  text: "Perpajakan",
+  desc: "naskah dokumen yang berkaitan dengan perpajakan antara lain: -Pajak penghasilan (PPH), -pajak pertambahan nilai (PPN) contoh: -keberatan\npajak -daftar nominatif pajak"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 106,
+  value: "KU.330",
+  text: "Petty cash",
+  desc: "naskah dokumen yang berkaitan dengan petty cash"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 107,
+  value: "KU.340",
+  text: "Credit card",
+  desc: "naskah dokumen yang berkaitan dengan credit card"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 108,
+  value: "KU.350",
+  text: "Penggunaan laba",
+  desc: "naskah dokumen yang berkaitan dengan penggunaan laba perusahaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 109,
+  value: "KU.360",
+  text: "Asuransi",
+  desc: "naskah dokumen yang berkaitan dengan asuransi antara lain :-asuransi kerugian benda, -asuransi tenaga kerja jiwa, -taspen,dll. Contoh: -\npenyuluhan bersama PT jasindo, -klaim astek dan taspen"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 110,
+  value: "KU.370",
+  text: "Piutang",
+  desc: "naskah dokumen yang berkaitan dengan piutang perusahaan atau tunggakan hutang pihak lain kepada perusahaan. Contoh: -surat pemberitahuan tunggakan, -perhitungan saldo hutang rekanan dan piutang uang muka, -analisis piutang usaha, -piutang usaha nasional"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 111,
+  value: "KU.380",
+  text: "Kas",
+  desc: "naskah dokumen yang berkaitan dengan kas"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 112,
+  value: "KU.390",
+  text: "Uang jaminan",
+  desc: "naskah dokumen yang berkaitan dengan uang jaminan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 113,
+  value: "KU.400",
+  text: "PENDAPATAN JASA DASAR",
+  desc: "naskah dokumen yang berkaitan dengan seluruh pendapatan perusahaan yang diperoleh melalui jasa dasar perusahaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 114,
+  value: "KU.410",
+  text: "Pendapatan Telepon",
+  desc: "naskah dokumen yang berkaitan dengan pendapatan perusahaan yang diperoleh melalui jasa telepon yang meliputi: -pendapatan jasa telepon pelanggan (telepon otomat, mobile telephone,dll), -pendapatan jasa telepon umum (TUK TUC,wartel, kios, KBU,dll), -pendapatan jasa radio panggil (paging) &amp; trunking. Contoh: -Billing (tagihan), -surat perintah setor pembayaran PSB kepada calang, -daftar kuitansi pertanggal\n25 bulan bersangkutan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 115,
+  value: "KU.420",
+  text: "Pendapatan Telex Telegraph faksmili",
+  desc: "naskah dokumen yang berkaitan dengan pendapatan perusahaan yang diperoleh melalui jasa telex telegraph faksimil birofax. Contoh: -billing\n(tagihan) telex, pendapatan birofax"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 116,
+  value: "KU.430",
+  text: "Pendapatan Telegram",
+  desc: "naskah dokumen yang berkaitan dengan pendapatan perusaahn yang diperoleh melalui telegram antara lain: -pendapatan jasa telegram indah, -\npendapatan jasa telegram biasa,dll"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 117,
+  value: "KU.440",
+  text: "Pendapatan sirkit langganan",
+  desc: "naskah dokumen yang berkaitan dengan pendapatan perusahaan yang diperoleh melalui jasa sirkit langganan (sirkit sewa)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 118,
+  value: "KU.450",
+  text: "pendapatan jasa transpoder",
+  desc: "naskah dokumen yang berkaitan dengan pendapatan perusahaan yang diperoleh melalui jasa penyewaan transponder satelit"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 119,
+  value: "KU.460",
+  text: "pedapatan sistem komunikasi data",
+  desc: "naskah dokumen yang berkaitan dengan pendapatan perusahaan yang diperoleh melalui jasa sistem komunikasi data, antara lain: -jasa SKDP, -\njasa sistem informasi elektronik, -jasa SKSBM VSAT"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 120,
+  value: "KU.470",
+  text: "pendapatan jasa nilai tambah",
+  desc: "naskah dokumen yang berkaitan dengan pendapatan perusahaan yang diperoleh melalui jasa nilai tambah"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 121,
+  value: "KU.480",
+  text: "pendapatan jasa dasar lainnya",
+  desc: "naskah dokumen yang berkaitan dengan pendapatan perusahaan yang diperoleh melalui jasa dasar lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 122,
+  value: "KU.500",
+  text: "PENDAPATAN JASA KHUSUS",
+  desc: "naskah dokumen yang berkaitan dengan seluruh pendapatan perusahaan yang diperoleh melalui jasa khusus perusahaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 123,
+  value: "KU.510",
+  text: "Pendapatan kartu telepon",
+  desc: "naskah dokumen yang berkaitan dengan pendapatan perusahaan yang diperoleh melalui hasil penjualan kartu telepon. Contoh: transaksi TUK"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 124,
+  value: "KU.520",
+  text: "pendapatan radio kapal",
+  desc: "naskah dokumen yang berkaitan dengan pendapatan perusahaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 125,
+  value: "KU.530",
+  text: "pendapatan proyek",
+  desc: "naskah dokumen yang berkaitan dengan pendapatan perusahaan yang diperoleh melalui pendapatan proyek"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 126,
+  value: "KU.540",
+  text: "pendapatan jasa konsultasi",
+  desc: "naskah dokumen yang berkaitan dengan pendapatan perusahaan yang diperoleh melalui jasa konsultasi yang diberikan oleh perusahaan\nkepada pihak lain"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 127,
+  value: "KU.550",
+  text: "pendapatan royalties",
+  desc: "naskah dokumen yang berkaitan dengan pendapatan perusahaan yang diperoleh melalui royalties dari jasa tertentu. Contoh: -tagihan royalties\ndengan PT ELNUSA untuk YELOOW PAGES"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 128,
+  value: "KU.560",
+  text: "pendapatan khusus lainnya",
+  desc: "naskah dokumen yang berkaitan dengan pendapatan perusahaan yang diperoleh melalui jasa khusus lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 129,
+  value: "KU.600",
+  text: "PEMBAYARAN PEMBIAYAAN",
+  desc: "naskah dokumen yang berkaitan dengan seluruh pembayaran pembiayaan yang dilakukan oleh perusahaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 130,
+  value: "KU.610",
+  text: "Rekening Kerumahtanggaan",
+  desc: "naskah dokumen yang berkaitan dengan pembayaran pembiayaan perusahaan untuk rekening kerumahtanggaan. Contoh: -pembiayaan biaya\nrapat, -pembayaran biaya bulanan PAM, AQUA, ARTESIS"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 131,
+  value: "KU.620",
+  text: "Pembayaran pegawai pensiunan",
+  desc: "naskah dokumen yang berkaitan dengan pembayaran pembiayaan perusahaan untuk pegawai dan pensiunan seperti: -pembayaran gaji pegawai, -pembayaran pengobatan pegawai, -pembayaran SPPD, -pembayaran tunjangan, -dll Contoh: -restitusi pengobatan (dokter, apotik, rumah sakit kontrak), -pembayaran sumbangan kematian  tunjangan duka, -master listing kepegawaian, -pembayaran panjar THT, -pembiayaan\npengasramaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 132,
+  value: "KU.630",
+  text: "pembayaran operasi dan pemeliharaan",
+  desc: "naskah dokumen yang berkaitan dengan pembayaran pembiayaan perusahaan untuk operasional dan pemeliharaan saran produksi. Contoh: -\nbon pengeluaran bahan bakar, -biaya pengecetan gedung, dll"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 133,
+  value: "KU.640",
+  text: "pembayaran sewa",
+  desc: "naskah dokumen yang berkaitan dengan pembayaran pembiayaan perusahaan untuk sewa kepada pihak lain. Contoh: -sewa\ngedung rumah ruang, -sewa peralatan dll"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 134,
+  value: "KU.650",
+  text: "pembayaran proyek",
+  desc: "naskah dokumen yang berkaitan dengan pembayaran pembiayaan perusahaan untuk proyek dalam bentuk apapun. Contoh: -pendanaan untuk\nproyek bantuan LN ke DIRPEN"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 135,
+  value: "KU.660",
+  text: "pembayaran peralatan perangkat",
+  desc: "naskah dokumen yang berkaitan dengan pembayaran pembiayaan perusahaan untuk perangkat peralatan. Contoh: -pembayaran pembelian\nperangkat sentral, -pembayaran pembelian spare parts kendaraan, dll"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 136,
+  value: "KU.670",
+  text: "pembayaran jasa konsultas",
+  desc: "naskah dokumen yang berkaitan dengan pembayaran pembiayaan perusahaan untuk jasa konsultan yang digunakan oleh perusahaan, seperti:\npembayaran PA Consulting group, -pembayaran untuk konsultan JICA dll"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 137,
+  value: "KU.680",
+  text: "pembayaran Hutang angsuran",
+  desc: "naskah dokumen yang berkaitan dengan pembayaran hutang angsuran perusahaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 138,
+  value: "KU.690",
+  text: "pembayaran pembiayaan lainnya",
+  desc: "naskah dokumen yang berkaitan dengan pembayaran pembiayaan perusahaan untuk keperluan lainnya, seperti: pembayaran panjar uang\nmuka dll"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 139,
+  value: "KU.700",
+  text: "AKUNTANSI",
+  desc: "naskah dokumen yang berkaitan dengan perlakuan akuntasi. Cotnoh: -pengujian perlakuan akuntasi wilayah pusat, -informasi kekeliruan\nperlakuan akuntasi wilayah"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 140,
+  value: "KU.710",
+  text: "perlakuan akuntansi",
+  desc: "naskah dokumen yang berkaitan dengan cashflow perusahaan. Contoh: -pembuatan cashflow harian, mingguan, dll"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 141,
+  value: "KU.720",
+  text: "cash flow",
+  desc: "naskah dokumen yang berkaitan dengan neraca keuangan rugi laba perusahaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 142,
+  value: "KU.730",
+  text: "neraca rugi laba",
+  desc: "naskah dokumen yang berkaitan dengan analisa laporan keuangan seperti analisa RSL (Rentabilitas, solvabilitas, Rentabilitas) -analisa ratio\nkeuangan, dll"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 143,
+  value: "KU.740",
+  text: "analisa laporan keuangan",
+  desc: "naskah dokumen yang berkaitan dengan pembukuan perusahaan. Contoh: -pembukuan penerimaan dan pengeluaraan kas, -pembukuan K-\n7 CN ke buku bank rek. A dengan model input S.011"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 144,
+  value: "KU.750",
+  text: "pembukuan",
+  desc: "naskah dokumen yang berkaitan dengan rekonsiliasi. Contoh: -pembuatan rekonsiliasi bank, -rekonsiliasi antara SIMAK 110 dengan GI 565, -\nRekonsiliasi saldo bank antara saldo SIMAK 106 dengan saldo RC untuk BDN"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 145,
+  value: "KU.760",
+  text: "rekonsiliasi",
+  desc: "naskah dokumen yang berkaitan dengan administrasi pendapatan secara umum"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 146,
+  value: "KU.800",
+  text: "ADMINISTRASI KEUANGAN",
+  desc: "naskah dokumen yang berkaitan dengan administrasi keuangan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 147,
+  value: "KU.810",
+  text: "Statistik",
+  desc: "naskah dokumen yang berkaitan dengan statistik pendapatan perusahaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 148,
+  value: "KU.820",
+  text: "Pentarifan",
+  desc: "naskah dokumen yang berkaitan dengan pentarifan, contoh: -evaluasi dan analisan peraturan operasi tarif, -penyesuain tarif baru pulsa telpon"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 149,
+  value: "KU.830",
+  text: "Surat berharga",
+  desc: "naskah dokumen yang berkaitan dengan surat surat berharga, contoh: obligasi saham dll"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 150,
+  value: "KU.840",
+  text: "administrasi keuangan lainnya",
+  desc: "naskah dokumen yang berkaitan dengan adminsitrasi lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 151,
+  value: "LB.000",
+  text: "PENELITIAN DAN\nPENGEMBANGAN",
+  desc: "naskah dokumen yang berkaitan dengan kegiatan penelitian dan pengembangan yang meliputi penelitian,\npengembangan pengujian perangkat maupun manajemen"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 152,
+  value: "LB.100",
+  text: "Perencanaan perusahaan",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan perusahaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 153,
+  value: "LB.110",
+  text: "corporate plan",
+  desc: "naskah dokumen yang berkaitan dengan corporate plan PT"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 154,
+  value: "LB.120",
+  text: "repelita",
+  desc: "naskah dokumen yang berkaitan dengan rencana pembangunan lima tahunan (REPELITA)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 155,
+  value: "LB.130",
+  text: "business plan",
+  desc: "naskah dokumen yang berkaitan dengan business plan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 156,
+  value: "LB.200",
+  text: "PENELITIAN, PENGEMBANGAN DAN\nPENGUJIAN PERANGKAT",
+  desc: "naskah dokumen yang berkaitan dengan penelitian, pengembangan dan pengujian perangkat sarana peralatan sentral yang meliputi sentral\ntelepon, sentral telex, sentral ata ataupun sentral lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 157,
+  value: "LB.210",
+  text: "Penelitian Pengujian Pengembangan Perangkat sentral",
+  desc: "naskah dokumen yang berkaitan dengan penelitian, pengembangan dan pengujian perangkat saran peralatan sistem transmisi yang meliputi sistem transmisi kabel, sistem transmisi terestial, sistem transmisi satelit atupun sistem transimisi lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 158,
+  value: "LB.220",
+  text: "Penelitian Pengujian Pengembangan\nperangkat sistem transmisi",
+  desc: "naskah dokumen yang berkaitan dengan penelitian, pengembangan dan pengujian sistem jaringan kabel (lokal) dan sarannya dll"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 159,
+  value: "LB.230",
+  text: "Penelitian Pengujian Pengembangan\njaringan",
+  desc: "naskah dokumen yang berkaitan dengan penelitian, pengembangan dan pengujian perangkat telepon"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 160,
+  value: "LB.240",
+  text: "Penelitian Pengujian Pengembangan\nperangkat telepon",
+  desc: "naskah dokumen yang berkaitan dengan penelitian pengembangan dan pengujian perangkat sarana peralatan catudaya mechanical electrical\n(AC, trafo, genset, AVR, UPS, Battery,dll)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 161,
+  value: "LB.250",
+  text: "Penelitian Pengujian Pengembangan perangkat telex telegraph faksimile",
+  desc: "naskah dokumen yang berkaitan dengan penelitian, pengembangan dan pengujian perangkat sarana peralatan catudaya mechanical electrical (AC, trafo, genset, AVR, UPS, battery dll)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 162,
+  value: "LB.260",
+  text: "Penelitian Pengujian Pengembangan\nperangkat catu daya ME",
+  desc: "naskah dokumen yang berkaitan dengan penelitian, pengembangan dan pengujian perangkat   sarana peralatan lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 163,
+  value: "LB.270",
+  text: "Penelitian Pengujian Pengembangan\nperangkat lainnya",
+  desc: "naskah dokumen yang berkaitan dengan penelitian dan pengembangan manajemen secara umum yang meliputi penelitian, pengembangan\nsistem prosedur dan administrasi dari fungsi yang ada di PT Telkom"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 164,
+  value: "LB.300",
+  text: "PENELITIAN DAN PENGEMBANGAN MANAJEMEN FUNGSIONAL",
+  desc: "naskah dokumen yang berkaitan dengan penelitian dan pengembangan manajemen dibidang teknik yang meliputi manajemen operasi, instalasi kontruksi (pembangunan) maupun pemeliharaan perangkat. Contoh: -penelitian dan pengembangan sisdur operasi dan pemeliharaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 165,
+  value: "LB.310",
+  text: "Penelitian pengembangan manajemen teknik",
+  desc: "naskah dokumen yang berkaitan dengan penelitian dan pengembangan manajemen bidang pelayanan (service) kepada pelanggan. Contoh: - penelitian dan pengembangan sistem dan prosedur pelayanan pasang baru telepon. -pembuatan market survey produk pelayanan jasa baru"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 166,
+  value: "LB.320",
+  text: "Penelitian pengembangan manajemen pelayanan",
+  desc: "naskah dokumen yang berkaitan dengan penelitian dan pengembangan manajemen bidang personalia atau SDM. Contoh: -pengkajian, penyusunan, penyempurnaan peraturan pokok kepegawaian. -penelitian produktivitas unit kerja maupun perorangan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 167,
+  value: "LB.330",
+  text: "Penelitian pengembangan manajemen\npersonalia",
+  desc: "naskah dokumen yang berkaitan dengan penelitian dan pengembangan manajemen bidang pendidikan dan pelatihan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 168,
+  value: "LB.340",
+  text: "Penelitian pengembangan manajemen pendidikan dan pelatihan",
+  desc: "naskah dokumen yang berkaitan dengan penelitian dan pengembangan manajemen bidang logistik, contoh: -perancangan sistem dan prosedur pengadaan barang dan jasa"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 169,
+  value: "LB.350",
+  text: "Penelitian pengembangan manajemen\nlogistik",
+  desc: "naskah dokumen yang berkaitan dengan penelitian dan pengembangan manajemen bidang keuangan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 170,
+  value: "LB.360",
+  text: "Penelitian pengembangan manajemen\nkeuangan",
+  desc: "naskah dokumen yang berkaitan dengan penelitian dan pengembangan  manajemen bidang pengawasan (controlling) dan hukum. Contoh: -\npenelitian, perumusan standarisasi perikatan dalam negeri non pengadaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 171,
+  value: "LB.370",
+  text: "Penelitian pengembangan manajemen pengawasan dan hukum",
+  desc: "naskah dokumen yang berkaitan dengan penelitian dan pengembangan manajemen bidang pelaporan dan pengolahan data"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 172,
+  value: "LB.380",
+  text: "Penelitian pengembangan manajemen pelaporan dan pengolahan data",
+  desc: "naskah dokumen yang berkaitan dengan penelitian dan pengembangan manajemen fungsional lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 173,
+  value: "LB.390",
+  text: "Penelitian pengembangan manajemen fungsional lainnya",
+  desc: "naskah dokumen yang berkaitan dengan fungsi logistik atau kegiatan bidang logistik yang meliputi: -perencananaan   analisis kebutuhan barang dan atau jasa, -proses pegadaan, penyerahaan penerimaan ditribusi, penghapusan dan adminsitrasi logistik"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 174,
+  value: "LG.000",
+  text: "LOGISTIK",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan   analisa dan evaluasi kebutuhan barang dan atau jasa"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 175,
+  value: "LG.100",
+  text: "PERENCANAAN DAN ANALISA\nKEBUTUHAN",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan dan analisa kebutuhan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 176,
+  value: "LG.110",
+  text: "perencanaan kebutuhan",
+  desc: "naskah dokumen yang berkaitan dengan  perencanaan kebutuhan barang dan atau jasa baik jangka pendek ataupun jangka panjang"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 177,
+  value: "LG.120",
+  text: "harga standar harga refrensi harga\npatok",
+  desc: "naskah dokumen yang berkaitan dengan harga standar  harga refrensi,"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 178,
+  value: "LG.200",
+  text: "PENGADAAN",
+  desc: "naskah dokumen yang berkaitan dengan Pengadaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 179,
+  value: "LG.210",
+  text: "Permintaan barang jasa",
+  desc: "naskah dokumen yang berkaitan dengan permintaan barang dan atau jasa"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 180,
+  value: "LG.220",
+  text: "penawaran harga",
+  desc: "naskah dokumen yang berkaitan dengan penawaran harga barang dan jasa atau yang dajukan rekanan barang dan atau jasa"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 181,
+  value: "LG.230",
+  text: "konfirmasi",
+  desc: "naskah dokumen yang berkaitan dengan konfirmasi tekhnik ataupun administrasi kepada pihak luar"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 182,
+  value: "LG.240",
+  text: "tender",
+  desc: "naskah dokumen yang berkaitan dengan tender atau lelang"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 183,
+  value: "LG.250",
+  text: "evaluasi",
+  desc: "naskah dokumen yang berkaitan dengan evaluasi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 184,
+  value: "LG.260",
+  text: "klasifikasi negosiasi",
+  desc: "naskah dokumen yang berkaitan dengan klarifikasi barang dan atau jasa dan proses negosiasinya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 185,
+  value: "LG.270",
+  text: "penetapan pemenang",
+  desc: "naskah dokumen yang berkaitan dengan penetapan pemenang pengadaan barang atau jasa"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 186,
+  value: "LG.280",
+  text: "pengadaan pembelian langsung",
+  desc: "naskah dokumen yang berkaitan dengan pembelian barang   material dan atau jasa tanpa melalui tender"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 187,
+  value: "LG.300",
+  text: "PENERIMAAN PENYERAHAN DAN\nDISTRIBUSI",
+  desc: "naskah dokumen yang berkaitan dengan kegiatan penyerahan penerimaan barang dan kegiatan pergudangan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 188,
+  value: "LG.310",
+  text: "Pemeriksanaan",
+  desc: "naskah dokumen yang berkaitan dengan pemeriksanaan barang dan atau jasa yang akan diterima"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 189,
+  value: "LG.320",
+  text: "Penerimaan",
+  desc: "naskah dokumen yang berkaitan dengan penerimaan barang"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 190,
+  value: "LG.330",
+  text: "penyimpanan pergudangan",
+  desc: "pergudangan dan penyimpanan barang Contoh: PER 42"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 191,
+  value: "LG.340",
+  text: "distribusi pengiriman",
+  desc: "naskah dokumen yang berkaitan dengan pengalokasian barang (distribusi brang) atau pengiriman"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 192,
+  value: "LG.350",
+  text: "peminjaman pengeluaran",
+  desc: "naskah dokumen yang berkaitan dengan peminjaman dan pengeluaran barang contoh: -penggunaan   pemijaman kendaraan dinas, -ijin\nperjalanan kendaraan, -bon pengeluaran barang"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 193,
+  value: "LG.360",
+  text: "pengembalian",
+  desc: "naskah dokumen yang berkaitan dengan pengembalian barang perangkat"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 194,
+  value: "LG.400",
+  text: "PENGHAPUSAN BARANG",
+  desc: "naskah dokumen yang berkaitan dengan kegiatan penghapusan barang"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 195,
+  value: "LG.410",
+  text: "Usulan penghapusan",
+  desc: "naskah dokumen yang berkaitan dengan usulan penghapusan barang, contoh: usulan penghapusan   pengajuan penghapusan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 196,
+  value: "LG.420",
+  text: "penghibaan",
+  desc: "naskah dokumen yang berkaitan dengan kegiatan penghibahan barang yang sudah tidak terpakai lagi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 197,
+  value: "LG.430",
+  text: "penjualan   pelelangan",
+  desc: "naskah dokumen yang berkaitan dengan penghapusan barang melalui penjualan pelelangan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 198,
+  value: "LG.500",
+  text: "ADMINISTRASI LOGISTIK",
+  desc: "naskah dokumen yang berkaitan dengan kegiatan pengadministrasian barang"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 199,
+  value: "LG.510",
+  text: "Kodefikasi   indexing",
+  desc: "naskah dokumen yang berkaitan dengan pemberian kode (kodefikasi) dana indexing barang, contoh: -kardex KBM, -ST33 dan ST44"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 200,
+  value: "LG.520",
+  text: "inventarisasi barang",
+  desc: "naskah dokumen yang berkaitan dengan inventarisasi barnag. Contoh: inventarisasi peralatan kerja dan kantor -fixed asset tanah bangunan, -\ndaftar barang"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 201,
+  value: "LG.530",
+  text: "rekanan barang rekanan jasa",
+  desc: "naskah dokumen yang berkaitan dengan pendaftaran rekanan barang dan atau jasa. Contoh: -pembuatan daftar rekanan, -konsultan\npembangunan gedung PT Telkom"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 202,
+  value: "LG.540",
+  text: "pengelolaan bukti kepemilikan",
+  desc: "naskah dokumen yang berkaitan dengan pengelolaan bukti kepemilikan perusahaan. Contoh: -BPKB dan surat surat BPKB, STNK, --sertifikat\ntanah, -surat kir, -bukti kepemilikan lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 203,
+  value: "LG.550",
+  text: "persediaan dan inventory",
+  desc: "naskah dokumen yang berkaitan dengan persedian barang dan kegiatan inventory"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 204,
+  value: "LG.560",
+  text: "mutasi barang",
+  desc: "naskah dokumen yang berkaitan dengan mutasi barang perangkat di lingkungan perusahaan, -menara tower, -halaman, dll. Contoh: -\nperencanaan gedung OPMC dan STO Bintaro, -pemeliharaan gedung kantor pusat, -dan lain lain"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 205,
+  value: "LG.570",
+  text: "administrasi logistik lainnya",
+  desc: "naskah dokumen yang berkaitan dengan administrasi logistik lainny"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 206,
+  value: "LP.000",
+  text: "PENGOLAHAN DATA DAN\nPELAPORAN",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data  pelaporan seluruh kegiatan (fungsi kegiatan)\nyang ada di PT Telkom"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 207,
+  value: "LP.100",
+  text: "PENGOLAHAN DATA PELAPORAN KEUANGAN DAN ANGGARAN",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan dibidang keuangan dan anggaran secara umum (rutin ataupun berkala) yang meliputi bidang perbankan, bidang anggaran keuangan, bidang perbendaharaan, pendapatan pembayaran, bidang akuntansi dan\nadministrasi pendapatan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 208,
+  value: "LP.110",
+  text: "Pengolahan data pelaporan bank",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan perbankan (rutin berkala) yang berhubungan dengan PT yang meliputi: - bank, garansi bank, kurs valas, rekening, kredit hutang pinjaman, check giro bilyet kiriman uang bunga bank dll"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 209,
+  value: "LP.120",
+  text: "pengolahan data pelaporan BPK",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan PT kepada BPK dan sebaliknya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 210,
+  value: "LP.130",
+  text: "pengolahan data pelaporan BPKP",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan kepada BPKP atau sebaliknya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 211,
+  value: "LP.140",
+  text: "pengolahan data pelaporan keuangan",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan keuangan perusahaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 212,
+  value: "LP.150",
+  text: "pengolahan data pelaporan anggaran\ndan pertanggungan",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan perusahaan seperti realisasi dan pertanggungjawabannya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 213,
+  value: "LP.160",
+  text: "pengolahan data pelaporan anggaran\ndan pertangungjawaban",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan anggaran perusahaan seperti realisasi dan pertanggungannya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 214,
+  value: "LP.170",
+  text: "pengolahan data pelaporan lainnya",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan keuangan dan anggaran lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 215,
+  value: "LP.200",
+  text: "PENGOLAHAN DATA PELAPORAN\nTEKNIS",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan bidang teknis secara keseluruhan (network) rutin berkala"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 216,
+  value: "LP.210",
+  text: "Pelaporan sentral",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan sistem transmisi (sistem transmisi kabel, sistem transmisi terestial, sistem\ntransmisi satelit dan lainnya) secara rutin berkala"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 217,
+  value: "LP.220",
+  text: "pengolahan data pelaporan sistem\ntransmisi",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan sistem transmisi (sistem transmisi kabel, sistem transmisi terestrial,\nsistem transmisi satelit dan lainnya secara rutin dan berkala"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 218,
+  value: "LP.230",
+  text: "pengolahan data pelaporan jaringan\nlokal (kabel)",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan untuk jaringan lokal atau kabel (jaringan lokal lokal atas tanah dan bawah\ntanah) secara rutin ataupun berkala"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 219,
+  value: "LP.240",
+  text: "pengolahan data pelaporan catu\ndaya mechanical electrical",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan sarana perangkat catu daya mechanical electrical secara rutin ataupun\nberkala"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 220,
+  value: "LP.250",
+  text: "pengolahan data pelaporan\nbangunan konstruksi",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan sarana bangunan kontruksi secara rutin atau berkala"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 221,
+  value: "LP.260",
+  text: "pengolahan data pelaporan perangkat\natau sarana lainnya",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan sarana bangunan kontruksi secara rutin atau berkala meliputi bangunan\ndan kontruksid an lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 222,
+  value: "LP.300",
+  text: "PENGOLAHAN DATA PELAPORAN\nPELAYANAN JASA FASILITAS TELEKOMUNIKASI PERORANGAN",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan dari perencanaan, pelayanan (service), pemasaran penjualan jasa\ntelekomunikasi, instalasi (pemasangan), konstruksi (pembangunan), pengoperasian, pemeliharaan perbanikan perangkat untuk jasa telekomunikasi dengan pelanggan perorangan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 223,
+  value: "LP.310",
+  text: "Pengolahan data pelaporan telepon",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan tentang telepon yang meliputi telepon pelanggan, radio paging, trunking,\ntelephone, telephone credit card dan lainnya, baik itu fastel dinas, berbayar ataupun temporer"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 224,
+  value: "LP.320",
+  text: "Pengolahan data pelaporan\ntelex telegrap faksmil",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan telex telegraph faksimil"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 225,
+  value: "LP.330",
+  text: "Pengolahan data pelaporan sistem\nkomunikasi",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan sistem komunikasi khusus yang terdiri dari: -sistem komunikasi data paket\n(SKDP), -sistem komunikasi stasiun bumi makro (SKSBM), -sistem informasi elektronik"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 226,
+  value: "LP.340",
+  text: "Pengolahan data pelaporan sirkit\nlangganan",
+  desc: "naskah dokumen yang berkaitan dengan masalah pengolahan data pelaporan pelayanan jasa sirkit langganan atau sirkit sewa (LC LDS)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 227,
+  value: "LP.350",
+  text: "Pengolahan data pelaporan jasa\ntransponder",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan jasa sewa transponder satelit"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 228,
+  value: "LP.360",
+  text: "Pengolahan data pelaporan mpbile\ntelephone",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan jasa telepon bergerak (mobile telephone)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 229,
+  value: "LP.370",
+  text: "Pengolahan data pelaporan jasa nilai\ntambah (jasnita)",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan jasa nilai tambah (JASNITA)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 230,
+  value: "LP.380",
+  text: "Pengolahan data pelaporan jasa fasilitas telekomunikasi perorangan\nlainnya",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan jasa fasilitas telekomunikasi perseorangan lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 231,
+  value: "LP.400",
+  text: "PENGOLAHAN DATA PELAPORAN PELAYANAN JASA FASILITAS\nTELEKOMUNIKASI UMUM",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan dari perencanaan, pelayanan (service), pemasaran penjualan jasa telekomunikasi, instalasi (pemasangan), konstruksi (pembangunan), pengoperasian, pemeliharaan perbaikan perangkatnua untuk kepentingan\nmasyrakat umum"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 232,
+  value: "LP.410",
+  text: "Pengolahan data pelaporan telepon\numum coin",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan telepon coin (TUC)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 233,
+  value: "LP.420",
+  text: "pengolahan data pelaporan telepon\numum kartu",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan telepon umum kartu (TUK)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 234,
+  value: "LP.430",
+  text: "pengolahan data pelaporan kamar bisa\numum (KBU) Wartel",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan warung telekomunikasi (Wartel), kamar bicara umum dan kios"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 235,
+  value: "LP.440",
+  text: "pengolahan data pelaporan telegram",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan penyelenggaraan jasa telegram (telegram indah dan biasa)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 236,
+  value: "LP.450",
+  text: "pengolahan data pelaporan kartu\ntelepon",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan kartu telepon"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 237,
+  value: "LP.460",
+  text: "pengolahan data pelaporan jasa fasilitas telekomunikasi umum\nlainnya",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan jasa fasilitas telekomunikasi perseorangan lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 238,
+  value: "LP.500",
+  text: "PENGOLAHAN DATA PELAPORAN\nFUNGSIONAL",
+  desc: "pelaporan secara rutin ataupun berkala melipui logistik, personalia (public relation), pendidikan, pengawasan, hukum,\npenelitian pengembangan dan bidang bidang lainnya yang belum termasuk"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 239,
+  value: "LP.510",
+  text: "pengolahan data pelaporan logistik",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan bidang logistik baik secara rutin ataupun berkala"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 240,
+  value: "LP.520",
+  text: "pengolahan data pelaporan personalia",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan bidang personalia baik secara rutin ataupun berkala"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 241,
+  value: "LP.530",
+  text: "pengolahan data pelaporan pendidikan",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan bidang pendidikan baik secara rutin ataupun berkala"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 242,
+  value: "LP.540",
+  text: "pengolahan data pelaporan\npengawasan",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan bidang pengawasan baik secara rutin ataupun berkala"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 243,
+  value: "LP.550",
+  text: "pengolahan data pelaporan hukum",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan bidang hukum baik secara rutin atuapun secara berkala"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 244,
+  value: "LP.560",
+  text: "pengolahan data pelaporan penelitian\ndan pengembangan",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan bidang penelitian dan pengembangan baik secara rutin ataupun berkala"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 245,
+  value: "LP.570",
+  text: "pengolahan data pelaporan public\nrelation",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan bidang public relation secara rutin atuapun berkala"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 246,
+  value: "LP.580",
+  text: "pengolahan data pelaporan fungsional\nlainnya",
+  desc: "naskah dokumen yang berkaitan dengan pengolahan data pelaporan bidang kegiatan fungsional lainnya"
+ },
+ null,
+ {
+  "Keterangan Kode Klasifikasi Masalah": 247,
+  value: "LP.600",
+  text: "SISTEM INFORMASI MANAJEMEN",
+  desc: "naskah dokumen yang berkaitan dengan sistem informasi manajemen (SIM) PT secara keseluruhan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 248,
+  value: "LP.610",
+  text: "Sistem informasi manajemen\nkepegawaian",
+  desc: "naskah dokumen yang berkaitan dengan sistem informasi manajemen (SIM) di bidang kepegawaian (SIMKEP)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 249,
+  value: "LP.620",
+  text: "Sistem informasi manajemen keuangan",
+  desc: "naskah dokumen yang berkaitan dengan sistem informasi manajemen (SIM) di bidang keuaangan (SIMKUG)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 250,
+  value: "LP.630",
+  text: "Sistem informasi manajemen akuntansi",
+  desc: "naskah dokumen yang berkaitan dengan sistem informasi manajemen (SIM) akuntansi (SIMAK)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 251,
+  value: "LP.640",
+  text: "Sistem informasi manajemen\nperlengkapan",
+  desc: "naskah dokumen yang berkaitan dengan sistem informasi manajemen (SIM) di bidang logistik (SIMKAP)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 252,
+  value: "LP.650",
+  text: "Sistem informasi manajemen\npembangunan",
+  desc: "naskah dokumen yang berkaitan dengan sistem informasi manajemen (SIM) di bidang pembangunan (SIMBANG)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 253,
+  value: "LP.660",
+  text: "Sistem informasi manajemen operasi",
+  desc: "naskah dokumen yang berkaitan dengan sistem informasi manajemen (SIM) di bidang operasi (SIMOP)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 254,
+  value: "LP.670",
+  text: "Sistem informasi manajemen telkom",
+  desc: "naskah dokumen yang berkaitan dengan sistem informasi manajemen Telkom (SIMTEL)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 255,
+  value: "LP.680",
+  text: "Sistem informasi manajemen lainnya",
+  desc: "naskah dokumen yang berkaitan dengan sistem informasi manajemen (SIM) fungsi kegiatan kegiatan bidang lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 256,
+  value: "PD.000",
+  text: "PENDIDIKAN DAN PELATIHAN",
+  desc: "naskah dokumen yang berkaitan dengan pendidikan dan pelatihan sumberdaya manusia di lingkungan PT"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 257,
+  value: "PD.100",
+  text: "ANALISA KEBUTUHAN DIKLAT",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan analisa kebutuhan di bidang pendidikan dan pelatihan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 258,
+  value: "PD.110",
+  text: "Perencanaan kebutuhan diklat",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan kebutuhan pendidikan dan pelatihan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 259,
+  value: "PD.120",
+  text: "jadwal kursil diklat",
+  desc: "naskah dokumen yang berkaitan dengan penyusunan jadwan kurikulum pendidikan dan pelatihan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 260,
+  value: "PD.200",
+  text: "PENDIDIKAN DAN PELATIHAN TEKNIK",
+  desc: "naskah dokumen yang berkaitan dengan pendidikan dan pelatihan di bidang tekhnik yang meliputi tekhnik telekomunikasi, komputer,\ninformatika, tekhnik listrik dan elektro serta pendidikan teknik lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 261,
+  value: "PD.210",
+  text: "Teknik Telekomunikasi",
+  desc: "naskah dokumen yang berkaitan dengan pendidikan dan pelatihan di bidang tekhnik telekomunikasi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 262,
+  value: "PD.220",
+  text: "Komputer dan informatika",
+  desc: "naskah dokumen yang berkaitan dengan pendidikan dan pelatihan di bidang komputer dan informatika baik hardware maupun software"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 263,
+  value: "PD.230",
+  text: "tekhnik listrik dan elektro",
+  desc: "naskah dokumen yang berkaitan dengan pendidikan pelatihan tekhnik listrik dan elektro"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 264,
+  value: "PD.240",
+  text: "pendidikan tekhnik lain",
+  desc: "naskah dokumen yang berkaitan dengan pendidikan pelatihan tekhnik lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 265,
+  value: "PD.300",
+  text: "PENDIDIKAN DAN PELATIHAN UMUM",
+  desc: "naskah dokumen yang berkaitan dengan pendidikan pelatihan non tekhnik"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 266,
+  value: "PD.310",
+  text: "Pendidikan pelatihan keuangan",
+  desc: "naskah dokumen yang berkaitan dengan pendidikan pelatihan di bidang keuangan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 267,
+  value: "PD.320",
+  text: "Pendidikan pelatihan administrasi dan\nmanajemen",
+  desc: "naskah dokumen yang berkaitan dengan pendidikan pelatihan di bidang administrasi dan manajemen"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 268,
+  value: "PD.330",
+  text: "Pendidikan pelatihan hukum",
+  desc: "naskah dokumen yang berkaitan dengan pendidikan pelatihan di bidang hukum"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 269,
+  value: "PD.340",
+  text: "Pendidikan pelatihan pelayanan",
+  desc: "naskah dokumen yang berkaitan dengan pendidikan pelatihan di bidang pelayanan (service)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 270,
+  value: "PD.350",
+  text: "Pendidikan pelatihan bidang SDM",
+  desc: "naskah dokumen yang berkaitan dengan pendidikan pelatihan di bidang pengembangan sumber daya manusia"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 271,
+  value: "PD.360",
+  text: "Pendidikan pelatihan bahasa asing",
+  desc: "naskah dokumen yang berkaitan dengan pendidikan pelatihan bahasa asing"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 272,
+  value: "PD.370",
+  text: "Pendidikan pelatihan pengamanan",
+  desc: "naskah dokumen yang berkaitan dengan pendidikan pelatihan di bidang pengamanan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 273,
+  value: "PD.380",
+  text: "Pendidikan pelatihan pengetahuan\npendukung lainnya",
+  desc: "naskah dokumen yang berkaitan dengan pendidikan pelatihan pendidikan pelatihan bidang non tekhnik atau pengetahuan pendukung lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 274,
+  value: "PD.400",
+  text: "PENDIDIKAN DAN PEATIHAN KHUSUS",
+  desc: "naskah dokumen yang berkaitan dengan pendidikan khsusu yang ada di lingkungan PT Telkom"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 275,
+  value: "PD.410",
+  text: "Lemhanas",
+  desc: "naskah dokumen yang berkaitan dengan pendidikan lemhanas"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 276,
+  value: "PD.420",
+  text: "suspim suslia suslia",
+  desc: "naskah dokumen yang berkaitan dengan suspim susila susnal"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 277,
+  value: "PD.430",
+  text: "vocational training",
+  desc: "naskah dokumen yang berkaitan dengan pendidikan persiapan untuk karyawan yang akan menjalani pensiunan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 278,
+  value: "PD.440",
+  text: "pendidikan dan pelatihan khusus lainnya",
+  desc: "naskah dokumen yang berkaitan dengan pendidikan pelatihan khusus lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 279,
+  value: "PD.500",
+  text: "PELAYANAN PENDIDIKAN DAN\nPELATIHAN",
+  desc: "naskah dokumen yang berkaitan dengan pelayanan untuk menunjang penyelenggaraan pendidikan dan pelatihan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 280,
+  value: "PD.510",
+  text: "kesejahteraan siswa",
+  desc: "naskah dokumen yang berkaitan dengan pelayanan untuk menunjang kesejahteraan siswa yang mengikuti pendidikan dan pelatihan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 281,
+  value: "PD.520",
+  text: "tugas akhir kerja praktek",
+  desc: "naskah dokumen yang berkaitan dengan pelaksanaan kerja praktek ataupun tugas akhir"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 282,
+  value: "PD.530",
+  text: "program latihan kerja",
+  desc: "naskah dokumen yang berkaitan dengan program latihan kerja"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 283,
+  value: "PD.540",
+  text: "seminar workshop penataran",
+  desc: "naskah dokumen yang berkaitan dengan seminar workshop penataran"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 284,
+  value: "PD.550",
+  text: "sarana pendidikan",
+  desc: "naskah dokumen yang berkaitan dengan sarana pendidikan dan pelatihan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 285,
+  value: "PD.560",
+  text: "sistem pengajaran khusus",
+  desc: "naskah dokumen yang berkaitan dengan sistem pengajaran khusus"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 286,
+  value: "PD.570",
+  text: "tenaga pengajar",
+  desc: "naskah dokumen yang berkaitan dengan tenaga pengajar dosen"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 287,
+  value: "PD.580",
+  text: "buku pedoman pelatihan diklat",
+  desc: "naskah dokumen yang berkaitan dengan buku pedoman pelatihan diklat"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 288,
+  value: "PD.590",
+  text: "pelayanan pendidikan   pelatihan\nlainnya",
+  desc: "naskah dokumen yang berkaitan dengan pelayanan di bidang pendidikan dan pelatihan lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 289,
+  value: "PD.600",
+  text: "ADMINISTRASI EVALUASI PENDIDIKAN\nDAN PELATIHAN",
+  desc: "naskah dokumen yang berkaitan dengan administrasi pendidikan dan pelatihan serta pelaksanaan evaluasi (penilaian) siswa yang mengikuti\npendidikan dan pelatihan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 290,
+  value: "PD.610",
+  text: "Ujian test",
+  desc: "naskah dokumen yang berkaitan dengan ujian test terhadap siswa yang mengikuti pendidikan dan pelatihan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 291,
+  value: "PD.620",
+  text: "ijazah sertifikat",
+  desc: "naskah dokumen yang berkaitan dengan ijazah sertifikat yang diberikan kepada siswa atas keluluhan atau prestasi yang telah dicapai"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 292,
+  value: "PD.630",
+  text: "administrasi pendidikan dan pelatihan\nlainnya",
+  desc: "naskah dokumen yang berkaitan dengan administrasi pendidikan dan pelatihan lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 293,
+  value: "PR.000",
+  text: "PUBLIC RELATION",
+  desc: "naskah dokumen yang berkaitan dengan fungsi public relations perusahaan yang meliputi bidang opini,\nbudaya perusahaan, keprotokolan dokumentasi dan museum"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 294,
+  value: "PR.100",
+  text: "KEPURELAN",
+  desc: "naskah dokumen yang berkaitan dengan kepurelan secara umum"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 295,
+  value: "PR.110",
+  text: "pers",
+  desc: "naskah dokumen yang berkaitan dengan kegiatan pers"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 296,
+  value: "PR.120",
+  text: "promosi",
+  desc: "naskah dokumen yang berkaitan dengan promosi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 297,
+  value: "PR.130",
+  text: "costumer educations",
+  desc: "naskah dokumen yang berkaitan dengan pengerangan kepada pelanggan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 298,
+  value: "PR.140",
+  text: "ucapan terima kasih",
+  desc: "naskah dokumen yang berkaitan dengan penghargaan kepada pihak luar, ucapan terima kasih dan selamat kepada karyawan dan pihak luar"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 299,
+  value: "PR.150",
+  text: "media internal",
+  desc: "naskah dokumen yang berkaitan dengan materi majalah"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 300,
+  value: "PR.160",
+  text: "pidato sambutan",
+  desc: "naskah dokumen yang berkaitan dengan pidato sambutan pembacaan laporan pimpinan perusahaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 301,
+  value: "PR.170",
+  text: "perlombaan",
+  desc: "naskah dokumen yang berkaitan dengan perlombaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 302,
+  value: "PR.180",
+  text: "budaya perusahaan",
+  desc: "naskah dokumen yang berkaitan dengan pembinaan budaya perusahaan dan saran karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 303,
+  value: "PR.190",
+  text: "penghargaan kepada pihak luar",
+  desc: "naskah dokumen yang berkaitan dengan pembinaan budaya perusahaan dan saran karyawan kepada pihak luar"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 304,
+  value: "PR.200",
+  text: "KEPROTOKOLAN",
+  desc: "naskah dokumen yang berkaitan dengan keprotokolan secara umum"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 305,
+  value: "PR.210",
+  text: "Kunjungan",
+  desc: "naskah dokumen yang berkaitan dengan kunjungan pihak luar tamu ke PT atau kunjungan PT ke pihak luar"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 306,
+  value: "PR.220",
+  text: "Upacara peresmian",
+  desc: "naskah dokumen yang berkaitan dengan upacara peresmian"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 307,
+  value: "PR.230",
+  text: "Rapat",
+  desc: "naskah dokumen yang berkaitan dengan rapat"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 308,
+  value: "PR.240",
+  text: "pengumuman",
+  desc: "naskah dokumen yang berkaitan dengan pengumuman ke dalam dan ke luar perusahaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 309,
+  value: "PR.250",
+  text: "peliputan",
+  desc: "naskah dokumen yang berkaitan dengan peliputan suatu kegiatan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 310,
+  value: "PR.300",
+  text: "DOKUMENTASI",
+  desc: "naskah dokumen yang berkaitan dengan penyelenggaraan dokumentasi, -pelayanan informasi, -pelayanan museum"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 311,
+  value: "PR.310",
+  text: "Bahan pustaka",
+  desc: "naskah dokumen yang berkaitan dengan bahan pustaka"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 312,
+  value: "PR.320",
+  text: "pelayanan perpustakaan",
+  desc: "naskah dokumen yang berkaitan dengan perpusatakaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 313,
+  value: "PR.330",
+  text: "pengolahan dokumentasi",
+  desc: "naskah dokumen yang berkaitan dengan pekerjaan dokumentasi, -abstraksi resensi, -pembuatan resume"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 314,
+  value: "PR.340",
+  text: "pelayanan informasi",
+  desc: "naskah dokumen yang berkaitan dengan pelayanan informasi produk dokumentalis"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 315,
+  value: "PR.350",
+  text: "materi museum",
+  desc: "naskah dokumen yang berkaitan dengan materi atau alat peraga museum"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 316,
+  value: "PR.360",
+  text: "pelayanan museum",
+  desc: "naskah dokumen yang berkaitan dengan pelayanan museum"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 317,
+  value: "PS.000",
+  text: "PERSONALIA",
+  desc: "naskah dokumen yang berkaitan dengan fungsi ataupun kegiatan di bidang personalia"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 318,
+  value: "PS.100",
+  text: "ORGANISASI DAN PERENCANAAN\nKEBUTUHAN",
+  desc: "naskah dokumen yang berkaitan dengan organisasi perusahaan dan perencanaan kebutuhan karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 319,
+  value: "PS.110",
+  text: "Survey Kebutuhan",
+  desc: "naskah dokumen yang berkaitan dengan kegiatan surbey kebutuhan karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 320,
+  value: "PS.120",
+  text: "formasi karyawan",
+  desc: "naskah dokumen yang berkaitan dengan formasi karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 321,
+  value: "PS.130",
+  text: "analisa jabatan",
+  desc: "naskah dokumen yang berkaitan dengan analisa jabatan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 322,
+  value: "PS.140",
+  text: "penyusunan jabatan",
+  desc: "naskah dokumen yang berkaitan dengan penyusunan jabatan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 323,
+  value: "PS.150",
+  text: "struktur organisasi",
+  desc: "naskah dokumen yang berkaitan dengan struktur organisasi perusahaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 324,
+  value: "PS.160",
+  text: "uraian kerja",
+  desc: "naskah dokumen yang berkaitan dengan uraian kerja job description dari organisasi perusahaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 325,
+  value: "PS.170",
+  text: "pembentukan tim kerja",
+  desc: "naskah dokumen yang berkaitan dengan pembentukan tim kerja"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 326,
+  value: "PS.180",
+  text: "jalur karir",
+  desc: "naskah dokumen yang berkaitan dengan perancangan sistem, penyusunan dan penyempurnaan pola jalur karir"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 327,
+  value: "PS.200",
+  text: "REKRUTMEN",
+  desc: "naskah dokumen yang berkaitan dengan rekrutasi pengadaan karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 328,
+  value: "PS.210",
+  text: "lamaran",
+  desc: "naskah dokumen yang berkaitan dengan lamaran untuk menjadi karyawan perusahaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 329,
+  value: "PS.220",
+  text: "panggilan",
+  desc: "naskah dokumen yang berkaitan dengan panggilan kepada pelamar"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 330,
+  value: "PS.230",
+  text: "test seleksi",
+  desc: "naskah dokumen yang berkaitan dengan test seleksi yang dilaksanakan bagi pelamar"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 331,
+  value: "PS.240",
+  text: "evaluasi",
+  desc: "naskah dokumen yang berkaitan dengan evaluasi hasil test pelamar"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 332,
+  value: "PS.300",
+  text: "ADMINISTRASI PERSONALIA",
+  desc: "naskah dokumen yang berkaitan dengan administrasi personalia secara umum"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 333,
+  value: "PS.310",
+  text: "identitas karyawan personal data",
+  desc: "naskah dokumen yang berkaitan dengan identitas data karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 334,
+  value: "PS.320",
+  text: "pengangkatan",
+  desc: "naskah dokumen yang berkaitan dengan pengangkatan karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 335,
+  value: "PS.330",
+  text: "penugasan",
+  desc: "naskah dokumen yang berkaitan dengan penugasan karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 336,
+  value: "PS.340",
+  text: "permintaan karyawan",
+  desc: "naskah dokumen yang berkaitan dengan permintaan karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 337,
+  value: "PS.350",
+  text: "perjalanan dinas",
+  desc: "naskah dokumen yang berkaitan dengan perjalanan dinas karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 338,
+  value: "PS.360",
+  text: "cuti",
+  desc: "naskah dokumen yang berkaitan dengan cuti"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 339,
+  value: "PS.370",
+  text: "ijin",
+  desc: "naskah dokumen yang berkaitan dengan ijin yang diberikan untuk karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 340,
+  value: "PS.380",
+  text: "sumpah janji karyawan",
+  desc: "naskah dokumen yang berkaitan dengan sumpah janji karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 341,
+  value: "PS.390",
+  text: "absensi daftar hadir",
+  desc: "naskah dokumen yang berkaitan dengan absensi dan daftar hadir"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 342,
+  value: "PS.400",
+  text: "KEPANGKATAN",
+  desc: "naskah dokumen yang berkaitan dengan kepangkatan secara umum"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 343,
+  value: "PS.410",
+  text: "Kenaikan pangkat",
+  desc: "naskah dokumen yang berkaitan dengan kenaikan pangkat"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 344,
+  value: "PS.420",
+  text: "penyesuaian pendidikan",
+  desc: "naskah dokumen yang berkaitan dengan penyesuaian pendidikan karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 345,
+  value: "PS.430",
+  text: "penundaan kenaikan pangkat",
+  desc: "naskah dokumen yang berkaitan dengan penundaan kenaikan pangkat"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 346,
+  value: "PS.440",
+  text: "penurunan pangkat",
+  desc: "naskah dokumen yang berkaitan dengan penurunan pangkat"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 347,
+  value: "PS.450",
+  text: "kenaikan pangkat penghargaan",
+  desc: "naskah dokumen yang berkaitan dengan kenaikan pangkat penghargaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 348,
+  value: "PS.500",
+  text: "PENGGAJIAN",
+  desc: "naskah dokumen yang berkaitan dengan penggajian"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 349,
+  value: "PS.510",
+  text: "kenaikan gaji",
+  desc: "naskah dokumen yang berkaitan dengan kenaikan gaji"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 350,
+  value: "PS.520",
+  text: "penurunan gaji",
+  desc: "naskah dokumen yang berkaitan dengan penurunan gaji"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 351,
+  value: "PS.530",
+  text: "daftar gaji jenjang gaji",
+  desc: "naskah dokumen yang berkaitan dengan daftar gaji jenjang gaji"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 352,
+  value: "PS.540",
+  text: "penyesuaian gaji",
+  desc: "naskah dokumen yang berkaitan dengan penyesuaian gaji"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 353,
+  value: "PS.550",
+  text: "penundaan kenaikan gaji",
+  desc: "naskah dokumen yang berkaitan dengan penundaan kenaikan gaji"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 354,
+  value: "PS.560",
+  text: "sistem penggajian (kompensasi)",
+  desc: "naskah dokumen yang berkaitan dengan sistem penggajian (kompensasi)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 355,
+  value: "PS.600",
+  text: "KESEJAHTERAAN",
+  desc: "naskah dokumen yang berkaitan dengan kesejahteraan kesehatan karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 356,
+  value: "PS.610",
+  text: "kesehatan",
+  desc: "naskah dokumen yang berkaitan dengan kesehatan karyawan dan keluarganya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 357,
+  value: "PS.620",
+  text: "bantuan dana karyawan",
+  desc: "naskah dokumen yang berkaitan dengan bantuan dana karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 358,
+  value: "PS.630",
+  text: "pembinaan rokhani dan jasmani",
+  desc: "naskah dokumen yang berkaitan dengan pembinaan rokhani dan jasmani"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 359,
+  value: "PS.640",
+  text: "transportasi",
+  desc: "naskah dokumen yang berkaitan dengan penyediaan fasilitas transportasi karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 360,
+  value: "PS.650",
+  text: "akomodasi",
+  desc: "naskah dokumen yang berkaitan dengan penyediaan fasilitas akomodasi karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 361,
+  value: "PS.660",
+  text: "bea siswa",
+  desc: "naskah dokumen yang berkaitan dengan beasiswa kepada karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 362,
+  value: "PS.670",
+  text: "lembur",
+  desc: "naskah dokumen yang berkaitan dengan lenbur karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 363,
+  value: "PS.680",
+  text: "bantuan sosial",
+  desc: "naskah dokumen yang berkaitan dengan bantuan sosial perusahaan kepada pihak lain"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 364,
+  value: "PS.700",
+  text: "PEMBINAAN PENILAIAN",
+  desc: "naskah dokumen yang berkaitan dengan pembinaan dan penilaian karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 365,
+  value: "PS.710",
+  text: "ujian dinas penjenjangan",
+  desc: "naskah dokumen yang berkaitan dengan ujian dinas dan penjenjangan karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 366,
+  value: "PS.720",
+  text: "pemindahan (mutasi)",
+  desc: "naskah dokumen yang berkaitan dengan pemindahan mutasi karyawan atau keluarga"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 367,
+  value: "PS.730",
+  text: "pembinaan penilaian",
+  desc: "naskah dokumen yang berkaitan dengan pembinaan penilaian karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 368,
+  value: "PS.740",
+  text: "promosi jabatan",
+  desc: "naskah dokumen yang berkaitan dengan promosi jabatan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 369,
+  value: "PS.750",
+  text: "kelulusan",
+  desc: "naskah dokumen yang berkaitan dengan kelulusan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 370,
+  value: "PS.760",
+  text: "skrining",
+  desc: "naskah dokumen yang berkaitan dengan skrining"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 371,
+  value: "PS.770",
+  text: "penghargaan karyawan",
+  desc: "naskah dokumen yang berkaitan dengan penghargaan karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 372,
+  value: "PS.800",
+  text: "PENERTIBAN",
+  desc: "naskah dokumen yang berkaitan dengan penertiba karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 373,
+  value: "PS.810",
+  text: "pelanggaran disiplin",
+  desc: "naskah dokumen yang berkaitan dengan temuan kasus pelanggaran"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 374,
+  value: "PS.820",
+  text: "pemeriksanaan",
+  desc: "naskah dokumen yang berkaitan dengan pemeriksanaan terhadap kasus pelanggaran"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 375,
+  value: "PS.830",
+  text: "peringatan",
+  desc: "naskah dokumen yang berkaitan dengan peringatan kepada karyawan atas pelanggaran yang dilakukan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 376,
+  value: "PS.840",
+  text: "tindak administrasi hukuman disiplin\n(hukdis)",
+  desc: "naskah dokumen yang berkaitan dengan tindak administrasi (HUKDIS)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 377,
+  value: "PS.850",
+  text: "rehabilitasi",
+  desc: "naskah dokumen yang berkaitan dengan rehabilitasi karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 378,
+  value: "PS.900",
+  text: "PENSIUN DAN PEMBERHENTIAN",
+  desc: "naskah dokumen yang berkaitan dengan pensiun dan pemberhentian karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 379,
+  value: "PS.910",
+  text: "pemberhentian dengan hormat",
+  desc: "naskah dokumen yang berkaitan dengan pemberhentian dengan hormat"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 380,
+  value: "PS.920",
+  text: "pemberhentian dengan tidak hormat",
+  desc: "naskah dokumen yang berkaitan dengan pemberhentian dengan tidak hormat"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 381,
+  value: "PS.930",
+  text: "masa pensiapan pensiun (MPP)",
+  desc: "naskah dokumen yang berkaitan dengan MPP"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 382,
+  value: "PS.940",
+  text: "pensiun",
+  desc: "naskah dokumen yang berkaitan dengan pensiun"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 383,
+  value: "PS.950",
+  text: "nominatif pensiun",
+  desc: "naskah dokumen yang berkaitan dengan nominatif pensiun"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 384,
+  value: "PW.000",
+  text: "PENGAWASAN",
+  desc: "naskah dokumen yang berkaitan dengan pengasawan penyelenggaraan telekomunikas"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 385,
+  value: "PW.100",
+  text: "PENGAWASAN TEKNIS",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan teknis, instalasi konstruksi (pembangunan) pengoperasian dari seluruh saran\nproduksi sarana penunjang dalam network sistem telekomunikasi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 386,
+  value: "PW.110",
+  text: "Pengawasan Teknis sentral",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan perencanaan teknis instalasi konstruksi (pembangunan), pengoperasian dan\npemeliharaan sentral telekomunikasi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 387,
+  value: "PW.120",
+  text: "Pengawasan Teknis sistem transmisi",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan perencanaan teknis instalasi konstruksi (pembangunan), pengoperasian dan\npemeliharaan sistem transmisi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 388,
+  value: "PW.130",
+  text: "Pengawasan Teknis jaringan lokal kabel",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan perencanaan tekhnis kontruksi (pembangunan), pengoperasian  dan pemeliharaan\njaringan lokal kabel"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 389,
+  value: "PW.140",
+  text: "Pengawasan Teknis catu\ndaya mechanical electrical",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan perencanaan teknis instalasi konstruksi (pembangunan) pengoperasian dan\npemeliharaan perangkat catu daya mechanical electrical"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 390,
+  value: "PW.150",
+  text: "Pengawasan Teknis bangunan  \nkonstruksi",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan perencanaan teknis instalasi konstruksi (pembangunan) pengoperasian dan\npemeliharaan sarana bangunan kontruksi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 391,
+  value: "PW.160",
+  text: "Pengawasan Teknis sarana perangkat\nlain",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan perencanaan teknis instalasi konstruksi (pembangunan) pengoperasian dan\npemeliharaan sarana atau perangkat teknik lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 392,
+  value: "PW.200",
+  text: "PENGAWASAN PELAYANAN JASA FASILITAS TELEKOMUNIKASI",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan dari perencanaan, pelayanan (service), pemasaran penjualan jasa telekomunikasi, instalasi (pemasangan), kontruksi (pembangunan), pengoperasian, pemeliharaan perbaikan perangkat untuk jasa telekomunikasi pelanggan\nperseorangan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 393,
+  value: "PW.210",
+  text: "Pengawasan Telepon",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan telepon pelanggan, paging, tele credit card, baik itu yang merupakan fasilitas dinas, fastel\nberbayar dan temporer"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 394,
+  value: "PW.220",
+  text: "Pengawasan Telex Telegraph Faksimil",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan telex telegram faksimil"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 395,
+  value: "PW.230",
+  text: "Pengawasan sistem komunikasi data",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan sistem komunikasi data"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 396,
+  value: "PW.240",
+  text: "Pengawasan sirkit langganan",
+  desc: "naskah dokumen yang berkaitan dengan masalah pengawasan pelayanan jasa sirkit langganan atau sirkit sewa (LC LDS)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 397,
+  value: "PW.250",
+  text: "Pengawasan jasa transponder",
+  desc: "naskah dokumen yang berkaitan dengan masalah pengawasan pelayanan jasa transponder (sewa transponder("
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 398,
+  value: "PW.260",
+  text: "Pengawasan mobile telephone",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan jasa mobile telephone (telpon bergerak)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 399,
+  value: "PW.270",
+  text: "pengawasan jasa nilai tambah (jasnita)",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan pelayanan jasa nilai tambah (jasnita)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 400,
+  value: "PW.280",
+  text: "Pengawasan jasa fasilitas\ntelekomunikasi perorangan",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan pelayanan jasa fasilitas telekomuikasi perorangan lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 401,
+  value: "PW.300",
+  text: "PENGAWASAN PELAYANAN JASA FASILITAS TELEKOMUNIKASI\nUMUM",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan dari perencanaan pelayanan (service), pemasaran penjualan jasa telekomunikasi serta instalasi (pemasangan) konstruksi (pembangunan), pengoperasian pemeliharaan perabikan perangkat dari jasa telekomunikasi untuk\nkepentingan umum"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 402,
+  value: "PW.310",
+  text: "Pengawasan telepon umum coin",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan telepon umum coin (TUC)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 403,
+  value: "PW.320",
+  text: "pengawasan telepon umum kartu",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan telepon umum kartu"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 404,
+  value: "PW.330",
+  text: "pengawasan kamar bicara umum (KBU)\n  WARTEL",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan warung telekomunikasi kamar bicara umum dan kios"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 405,
+  value: "PW.340",
+  text: "pengawasan telegram",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan penyelenggaran jasa telegram (telegram indah dan biasa)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 406,
+  value: "PW.350",
+  text: "pengawasan kartu telepon",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan karu telepon"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 407,
+  value: "PW.360",
+  text: "pengawasan jasa fasilitas\ntelekomunikasi umum lainnya",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan jasa fasilitas telekomunikasi umum lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 408,
+  value: "PW.400",
+  text: "PENGAWASAN FUNGSIONAL",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan fungsional bidang yang terdiri dari : -pengawasan personalia, -pengawasan logistik, -\npengawasan keuangan dan anggaran, -pengawasan hukum, -pengawasan public relation, -pengawasan diklat, -pengawasan penelitian dan pengembangan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 409,
+  value: "PW.410",
+  text: "Pengawasan personalia",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan dibidang personalia"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 410,
+  value: "PW.420",
+  text: "pengawasan logistik",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan dibidang logistik"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 411,
+  value: "PW.430",
+  text: "pengawasan keuangan dan anggaran",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan dibidang keuangan dan anggaran"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 412,
+  value: "PW.440",
+  text: "pengawasan hukum",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan dibidang hukum"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 413,
+  value: "PW.450",
+  text: "pengawasan public relation",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan dibidang public relation"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 414,
+  value: "PW.460",
+  text: "pengawasan pendidikan dan pelatihan",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan dibidang pendidikan dan pelatihan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 415,
+  value: "PW.470",
+  text: "pengawasan penelitian dan\npengembangan",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan dibidang penelitian dan pengembangan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 416,
+  value: "PW.480",
+  text: "pengawasan bidang fungsional lainnya",
+  desc: "naskah dokumen yang berkaitan dengan pengawasan bidang fungsional lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 417,
+  value: "TK.000",
+  text: "TEKHNIK TELEKOMUNIKASI",
+  desc: "naskah dokumen yang berkaitan dengan perencanan tekhnis, konstruksi (pembangunan) instalasi\n(pemasangan) pengoperasian, pemeliharaan (pengukuran perbaikan) seluruh saran produksi network komunikasi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 418,
+  value: "TK.100",
+  text: "SENTRAL TELEKOMUNIKASI",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan\n(pengukuran perbaikan) seluruh perangkat sentral telekomunikasi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 419,
+  value: "TK.110",
+  text: "sentral telepon",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan\n(pengukuran perbaikan) seluruh perangkat sentral telpon"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 420,
+  value: "TK.120",
+  text: "sentral telex",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan\n(pengukuran perbaikan) seluruh perangkat sentral telex"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 421,
+  value: "TK.130",
+  text: "sentral data",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan\n(pengukuran perbaikan) seluruh perangkat sentral data"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 422,
+  value: "TK.140",
+  text: "sentral telekomunikasi lainnya",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan\n(pengukuran perbaikan) seluruh perangkat sentral telekomunikasi lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 423,
+  value: "TK.200",
+  text: "SISTEM TRANSMISI",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan\n(pengukuran perbaikan) seluruh perangkat sistem transmisi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 424,
+  value: "TK.210",
+  text: "sistem transmisi kabel",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan\n(pengukuran perbaikan) seluruh sistem transmisi kabel"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 425,
+  value: "TK.220",
+  text: "sistem transmisi terrestrial",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan\n(pengukuran perbaikan) seluruh perangkat sistem transmisi terrestrial"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 426,
+  value: "TK.230",
+  text: "sistem transmisi satelit",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan\n(pengukuran perbaikan) seluruh perangkat sistem transmisi satelit"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 427,
+  value: "TK.240",
+  text: "sistem transmisi lainnya",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan\n(pengukuran perbaikan) seluruh perangkat sistem transmisi lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 428,
+  value: "TK.300",
+  text: "JARINGAN LOKAL",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan\n(pengukuran perbaikan) seluruh perangkat jaringan lokal kabel"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 429,
+  value: "TK.310",
+  text: "jaringan lokal kabel bawah tanah",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan\n(pengukuran perbaikan) seluruh perangkat jaringan lokal kabel bawah tanah"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 430,
+  value: "TK.320",
+  text: "jaringan lokal kabel atas tanah",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan\n(pengukuran perbaikan) seluruh perangkat jaringan lokal kabel atas tanah"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 431,
+  value: "TK.330",
+  text: "aksesoris",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan\n(pengukuran perbaikan) seluruh perangkat aksesoris jaringan lokal kabel"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 432,
+  value: "TK.400",
+  text: "SARANA PENUNJANG",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan\n(pengukuran perbaikan) seluruh perangkat sarana penunjang"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 433,
+  value: "TK.410",
+  text: "Catu daya mechanical electrical",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan\n(pengukuran perbaikan) seluruh perangkat catu daya mechanical electrical (ME)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 434,
+  value: "TK.420",
+  text: "bangunan kontruksi",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan\n(pengukuran perbaikan) seluruh bangunan konstruksi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 435,
+  value: "TK.430",
+  text: "sarana penunjang lainnya",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan\n(pengukuran perbaikan) dan sarana penunjang lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 436,
+  value: "UM.000",
+  text: "UMUM",
+  desc: "naskah dokumen yang berkaitan dengan fungsi bidang kegiatan lain di PT yang belum termasuk atau\ntercantum dalam klasifikasi masalah yang ada"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 437,
+  value: "UM.100",
+  text: "ADMINISTRASI PERKANTORAN",
+  desc: "naskah dokumen yang berkaitan dengan administrasi perkantoran"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 438,
+  value: "UM.110",
+  text: "sistem kearsipan",
+  desc: "naskah dokumen yang berkaitan dengan sistem atau tata kearsipan tata naskah"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 439,
+  value: "UM.120",
+  text: "building management",
+  desc: "naskah dokumen yang berkaitan dengan pengelolaan (manajemen) gedung perkantoran"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 440,
+  value: "UM.130",
+  text: "form model administrasi",
+  desc: "naskah dokumen yang berkaitan dengan form atau model model administrasi perkantoran"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 441,
+  value: "UM.140",
+  text: "alat tulis menulis (ATM ATK)",
+  desc: "naskah dokumen yang berkaitan dengan alat tulis menulis (ATK ATM)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 442,
+  value: "UM.200",
+  text: "BARANG INVENTARIS PERUSAHAAN",
+  desc: "naskah dokumen yang berkaitan dengan barang inventaris perusahaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 443,
+  value: "UM.210",
+  text: "Meubelair",
+  desc: "naskah dokumen yang berkaitan dengan peralatan rumah tangga meubelair"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 444,
+  value: "UM.220",
+  text: "mesin kantor",
+  desc: "naskah dokumen yang berkaitan dengan sarana perangkat mesin mesin perkantor"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 445,
+  value: "UM.230",
+  text: "peralatan kantor",
+  desc: "naskah dokumen yang berkaitan dengan sarana peralatan perkantoran"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 446,
+  value: "UM.240",
+  text: "kendaraan bermotor",
+  desc: "naskah dokumen yang berkaitan dengan kendaraan bermotor"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 447,
+  value: "UM.250",
+  text: "barang inventaris perusahaan lainnya",
+  desc: "naskah dokumen yang berkaitan dengan barang inventaris perusahaan lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 448,
+  value: "UM.300",
+  text: "KEBERSIHAN",
+  desc: "naskah dokumen yang berkaitan dengan pengelolaan kebersihan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 449,
+  value: "UM.310",
+  text: "cleaning service",
+  desc: "naskah dokumen yang berkaitan dengan cleaning service"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 450,
+  value: "UM.320",
+  text: "kebersihan lingkungan",
+  desc: "naskah dokumen yang berkaitan dengan pengelolaan kebersihan lingkungan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 451,
+  value: "UM.330",
+  text: "peralatan perangkat pembersih",
+  desc: "naskah dokumen yang berkaitan dengan peralatan perangkat kebersihan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 452,
+  value: "UM.400",
+  text: "PENGAMANAN",
+  desc: "naskah dokumen yang berkaitan dengan fungsi pengamanan, baik itu pengamanan SDM, perangkat (aset) ataupun sistem telekomunikasi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 453,
+  value: "UM.410",
+  text: "Keselamatan kerja",
+  desc: "naskah dokumen yang berkaitan dengan keselamatan kerja karyawan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 454,
+  value: "UM.420",
+  text: "keamanan lingkungan",
+  desc: "naskah dokumen yang berkaitan dengan keamanan lingkungan kerja, peralatan dan sistem telekomunikasi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 455,
+  value: "UM.430",
+  text: "pengamanan perangkat sarana",
+  desc: "naskah dokumen yang berkaitan dengan pengamanan perangkat sarana"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 456,
+  value: "UM.440",
+  text: "peralatan perangkat pengamanan",
+  desc: "naskah dokumen yang berkaitan dengan peralatan perangkat sarana"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 457,
+  value: "UM.500",
+  text: "YAYASAN PERKUMPULAN",
+  desc: "naskah dokumen yang berkaitan dengan yayasan perkumpulan yang berhubungan dengan PT Telkom"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 458,
+  value: "UM.510",
+  text: "Koperasi",
+  desc: "naskah dokumen yang berkaitan dengan KOPERASI"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 459,
+  value: "UM.520",
+  text: "KORPRI",
+  desc: "naskah dokumen yang berkaitan dengan KORPRI"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 460,
+  value: "UM.530",
+  text: "dharma wanita",
+  desc: "naskah dokumen yang berkaitan dengan Dharma wanita"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 461,
+  value: "UM.540",
+  text: "yayasan dana pensiun",
+  desc: "naskah dokumen yang berkaitan dengan yayasan dana pensiun"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 462,
+  value: "UM.550",
+  text: "industri kecil",
+  desc: "naskah dokumen yang berkaitan dengan industri kecil"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 463,
+  value: "UM.560",
+  text: "anak perusahaan",
+  desc: "naskah dokumen yang berkaitan dengan anak perusahaan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 464,
+  value: "UM.570",
+  text: "yayasan perkumpulan lembaga lainnya",
+  desc: "naskah dokumen yang berkaitan dengan yayasan perkumpulan lembaga lainnya seperti PMI, pramuka, yayasan sandikara putra"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 465,
+  value: "YN.000",
+  text: "PELAYANAN JASA FASILITAS TELEKOMUNIKASI",
+  desc: "naskah dokumen yang berkaitan dengan pelayanan jasa fasilitas telekomunikasi yang terdiri dari jasa fasilitas telekomunikasi perorangan dan jasa fasilitas telekomunikasi umum"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 466,
+  value: "YN.100",
+  text: "JASA FASILITAS TELEKOMUNIKASI\nPERORANGAN",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan\n(pengukuran perbaikan) pelayanan jasa fasilitas telekomunikasi perorangan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 467,
+  value: "YN.110",
+  text: "telepon",
+  desc: "naskah dokumen yang berkaitan dengan telepon perorangan"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 468,
+  value: "YN.120",
+  text: "telex telegraph faksmil",
+  desc: "naskah dokumen yang berkaitan dengan telex telegraph faksmil dan birofax"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 469,
+  value: "YN.130",
+  text: "sistem komunikasi data",
+  desc: "naskah dokumen yang berkaitan dengan jasa sistem komunikasi data"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 470,
+  value: "YN.140",
+  text: "sirkit langganan",
+  desc: "naskah dokumen yang berkaitan dengan jasa penyewaan saluran (sirkit langganan)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 471,
+  value: "YN.150",
+  text: "jasa transponder",
+  desc: "naskah dokumen yang berkaitan dengan jasa sewa transponder"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 472,
+  value: "YN.160",
+  text: "mobile telephone",
+  desc: "naskah dokumen yang berkaitan dengan mobile telephone (sistem telepon bergerak)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 473,
+  value: "YN.170",
+  text: "jasa nilai tambah",
+  desc: "naskah dokumen yang berkaitan dengan pelayanan atas jasa nilai tambah (JASNITA)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 474,
+  value: "YN.180",
+  text: "jasa fasilitas telekomunikasi perorangan\nlainnya",
+  desc: "naskah dokumen yang berkaitan dengan jasa fasilitas telekomunikasi perorangan lainnya"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 475,
+  value: "YN.200",
+  text: "JASA FASILITAS TELEKOMUNIKASI UMUM",
+  desc: "naskah dokumen yang berkaitan dengan perencanaan teknis, konstruksi (pembangunan), instalasi (pemasangan), pemasaran penjualan,\npengoperasian, pelayanan service, pemeliharaan (pengukuran perbaikan) seluruh perangkat pelayanan jasa telekomunikasi untuk kepentingan masyarakat umum"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 476,
+  value: "YN.210",
+  text: "telepon umum coin",
+  desc: "naskah dokumen yang berkaitan dengan telepon coin"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 477,
+  value: "YN.220",
+  text: "telepon umum kartu",
+  desc: "naskah dokumen yang berkaitan dengan telepon umum kartu"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 478,
+  value: "YN.230",
+  text: "kamar bicara umum (KBU)   wartel",
+  desc: "naskah dokumen yang berkaitan dengan kamar bicara umum (KBU) warung telekomunikasi (wartel) dan kios telekomunikasi"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 479,
+  value: "YN.240",
+  text: "telegram",
+  desc: "naskah dokumen yang berkaitan dengan penyelenggaraan jasa telegram (telegram indah dan biasa)"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 480,
+  value: "YN.250",
+  text: "kartu telepon",
+  desc: "naskah dokumen yang berkaitan dengan kartu telepon"
+ },
+ {
+  "Keterangan Kode Klasifikasi Masalah": 481,
+  value: "YN.260",
+  text: "jasa fasilitas telekomunikasi umum\nlainnya",
+  desc: "naskah dokumen yang berkaitan dengan jasa fasilitas telekomunikasi umum"
+ }
+]

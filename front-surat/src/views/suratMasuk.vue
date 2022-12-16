@@ -17,7 +17,7 @@
                         </div>
                         <div class="nav-2">
                             <b-button @click="klikSuratMasuk()" variant="success">
-                                <b-icon icon="envelope-open"></b-icon>
+                                <b-icon icon="envelope"></b-icon>
                                 Tambah Surat Masuk
                             </b-button>
                         </div>

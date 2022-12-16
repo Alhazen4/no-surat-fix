@@ -25,14 +25,6 @@ export const modelSurat = mongoose.Schema(
         type: String,
         required: true
     },
-    // masalahCabang1:{
-    //     type: String,
-    //     required: true
-    // },
-    // masalahCabang2:{
-    //     type: String,
-    //     required: true
-    // },
     pejabatTtd:{
         type: String,
         required: true
