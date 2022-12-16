@@ -1116,5 +1116,1523 @@ export default
         },
 
         // LP.000 Pengolahan Data dan Pelaporan
+        {
+            "value": "LP.000",
+            "text": "PENGOLAHAN DATA DAN PELAPORAN",
+            "desc": "naskah dokumen yang berkaitan dengan pengolahan data  pelaporan seluruh kegiatan (fungsi kegiatan) yang ada di PT Telkom",
+            "child": [
+                {
+                    "value": "LP.100",
+                    "text": "PENGOLAHAN DATA PELAPORAN KEUANGAN DAN ANGGARAN",
+                    "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan dibidang keuangan dan anggaran secara umum (rutin ataupun berkala) yang meliputi bidang perbankan, bidang anggaran keuangan, bidang perbendaharaan, pendapatan pembayaran, bidang akuntansi dan administrasi pendapatan",
+                    "child2": [
+                        {
+                        "value": "LP.110",
+                        "text": "Pengolahan data pelaporan bank",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan perbankan (rutin berkala) yang berhubungan dengan PT yang meliputi: - bank, garansi bank, kurs valas, rekening, kredit hutang pinjaman, check giro bilyet kiriman uang bunga bank dll"
+                        },
+                        {
+                        "value": "LP.120",
+                        "text": "pengolahan data pelaporan BPK",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan PT kepada BPK dan sebaliknya"
+                        },
+                        {
+                        "value": "LP.130",
+                        "text": "pengolahan data pelaporan BPKP",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan kepada BPKP atau sebaliknya"
+                        },
+                        {
+                        "value": "LP.140",
+                        "text": "pengolahan data pelaporan keuangan",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan keuangan perusahaan"
+                        },
+                        {
+                        "value": "LP.150",
+                        "text": "pengolahan data pelaporan anggaran dan pertanggungan",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan perusahaan seperti realisasi dan pertanggungjawabannya"
+                        },
+                        {
+                        "value": "LP.160",
+                        "text": "pengolahan data pelaporan anggaran dan pertangungjawaban",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan anggaran perusahaan seperti realisasi dan pertanggungannya"
+                        },
+                        {
+                        "value": "LP.170",
+                        "text": "pengolahan data pelaporan lainnya",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan keuangan dan anggaran lainnya"
+                        }
+                    ]
+                },
+                
+                {
+                "value": "LP.200",
+                "text": "PENGOLAHAN DATA PELAPORAN TEKNIS",
+                "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan bidang teknis secara keseluruhan (network) rutin berkala",
+                "child2": [
+                        {
+                            "value": "LP.210",
+                            "text": "Pelaporan sentral",
+                            "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan sistem transmisi (sistem transmisi kabel, sistem transmisi terestial, sistem transmisi satelit dan lainnya) secara rutin berkala"
+                        },
+                        {
+                        "value": "LP.220",
+                        "text": "pengolahan data pelaporan sistem transmisi",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan sistem transmisi (sistem transmisi kabel, sistem transmisi terestrial, sistem transmisi satelit dan lainnya secara rutin dan berkala"
+                        },
+                        {
+                        "value": "LP.230",
+                        "text": "pengolahan data pelaporan jaringan lokal (kabel)",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan untuk jaringan lokal atau kabel (jaringan lokal lokal atas tanah dan bawah\ntanah) secara rutin ataupun berkala"
+                        },
+                        {
+                        "value": "LP.240",
+                        "text": "pengolahan data pelaporan catu daya mechanical electrical",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan sarana perangkat catu daya mechanical electrical secara rutin ataupunberkala"
+                        },
+                        {
+                        "value": "LP.250",
+                        "text": "pengolahan data pelaporan bangunan konstruksi",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan sarana bangunan kontruksi secara rutin atau berkala"
+                        },
+                        {
+                        "value": "LP.260",
+                        "text": "pengolahan data pelaporan perangkat atau sarana lainnya",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan sarana bangunan kontruksi secara rutin atau berkala meliputi bangunan dan kontruksid an lainnya"
+                        },
+                    ]
+                },
+                
+                {
+                "value": "LP.300",
+                "text": "PENGOLAHAN DATA PELAPORAN PELAYANAN JASA FASILITAS TELEKOMUNIKASI PERORANGAN",
+                "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan dari perencanaan, pelayanan (service), pemasaran penjualan jasa telekomunikasi, instalasi (pemasangan), konstruksi (pembangunan), pengoperasian, pemeliharaan perbanikan perangkat untuk jasa telekomunikasi dengan pelanggan perorangan",
+                "child2": [
+                    {
+                        "value": "LP.310",
+                        "text": "Pengolahan data pelaporan telepon",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan tentang telepon yang meliputi telepon pelanggan, radio paging, trunking, telephone, telephone credit card dan lainnya, baik itu fastel dinas, berbayar ataupun temporer"
+                        },
+                        {
+                        "value": "LP.320",
+                        "text": "Pengolahan data pelaporan telex telegrap faksmil",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan telex telegraph faksimil"
+                        },
+                        {
+                        "value": "LP.330",
+                        "text": "Pengolahan data pelaporan sistem komunikasi",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan sistem komunikasi khusus yang terdiri dari: -sistem komunikasi data paket (SKDP), -sistem komunikasi stasiun bumi makro (SKSBM), -sistem informasi elektronik"
+                        },
+                        {
+                        "value": "LP.340",
+                        "text": "Pengolahan data pelaporan sirkit langganan",
+                        "desc": "naskah dokumen yang berkaitan dengan masalah pengolahan data pelaporan pelayanan jasa sirkit langganan atau sirkit sewa (LC LDS)"
+                        },
+                        {
+                        "value": "LP.350",
+                        "text": "Pengolahan data pelaporan jasa transponder",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan jasa sewa transponder satelit"
+                        },
+                        {
+                        "value": "LP.360",
+                        "text": "Pengolahan data pelaporan mpbile telephone",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan jasa telepon bergerak (mobile telephone)"
+                        },
+                        {
+                        "value": "LP.370",
+                        "text": "Pengolahan data pelaporan jasa nilai tambah (jasnita)",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan jasa nilai tambah (JASNITA)"
+                        },
+                        {
+                        "value": "LP.380",
+                        "text": "Pengolahan data pelaporan jasa fasilitas telekomunikasi perorangan lainnya",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan jasa fasilitas telekomunikasi perseorangan lainnya"
+                        }
+                    ]
+                },
+                
+                {
+                "value": "LP.400",
+                "text": "PENGOLAHAN DATA PELAPORAN PELAYANAN JASA FASILITAS TELEKOMUNIKASI UMUM",
+                "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan dari perencanaan, pelayanan (service), pemasaran penjualan jasa telekomunikasi, instalasi (pemasangan), konstruksi (pembangunan), pengoperasian, pemeliharaan perbaikan perangkatnua untuk kepentingan masyrakat umum",
+                "child2": [
+                    {
+                        "value": "LP.410",
+                        "text": "Pengolahan data pelaporan telepon umum coin",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan telepon coin (TUC)"
+                        },
+                        {
+                        "value": "LP.420",
+                        "text": "pengolahan data pelaporan telepon umum kartu",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan telepon umum kartu (TUK)"
+                        },
+                        {
+                        "value": "LP.430",
+                        "text": "pengolahan data pelaporan kamar bisa umum (KBU) Wartel",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan warung telekomunikasi (Wartel), kamar bicara umum dan kios"
+                        },
+                        {
+                        "value": "LP.440",
+                        "text": "pengolahan data pelaporan telegram",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan penyelenggaraan jasa telegram (telegram indah dan biasa)"
+                        },
+                        {
+                        "value": "LP.450",
+                        "text": "pengolahan data pelaporan kartu telepon",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan kartu telepon"
+                        },
+                        {
+                        "value": "LP.460",
+                        "text": "pengolahan data pelaporan jasa fasilitas telekomunikasi umum lainnya",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan jasa fasilitas telekomunikasi perseorangan lainnya"
+                        }
+                    ]
+                },
+                
+                {
+                "value": "LP.500",
+                "text": "PENGOLAHAN DATA PELAPORAN FUNGSIONAL",
+                "desc": "pelaporan secara rutin ataupun berkala melipui logistik, personalia (public relation), pendidikan, pengawasan, hukum, penelitian pengembangan dan bidang bidang lainnya yang belum termasuk",
+                "child2": [
+                    {
+                        "value": "LP.510",
+                        "text": "pengolahan data pelaporan logistik",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan bidang logistik baik secara rutin ataupun berkala"
+                        },
+                        {
+                        "value": "LP.520",
+                        "text": "pengolahan data pelaporan personalia",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan bidang personalia baik secara rutin ataupun berkala"
+                        },
+                        {
+                        "value": "LP.530",
+                        "text": "pengolahan data pelaporan pendidikan",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan bidang pendidikan baik secara rutin ataupun berkala"
+                        },
+                        {
+                        "value": "LP.540",
+                        "text": "pengolahan data pelaporan pengawasan",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan bidang pengawasan baik secara rutin ataupun berkala"
+                        },
+                        {
+                        "value": "LP.550",
+                        "text": "pengolahan data pelaporan hukum",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan bidang hukum baik secara rutin atuapun secara berkala"
+                        },
+                        {
+                        "value": "LP.560",
+                        "text": "pengolahan data pelaporan penelitian dan pengembangan",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan bidang penelitian dan pengembangan baik secara rutin ataupun berkala"
+                        },
+                        {
+                        "value": "LP.570",
+                        "text": "pengolahan data pelaporan public relation",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan bidang public relation secara rutin atuapun berkala"
+                        },
+                        {
+                        "value": "LP.580",
+                        "text": "pengolahan data pelaporan fungsional lainnya",
+                        "desc": "naskah dokumen yang berkaitan dengan pengolahan data pelaporan bidang kegiatan fungsional lainnya"
+                        }
+                    ]
+                },
+                {
+                    "value": "LP.600",
+                    "text": "SISTEM INFORMASI MANAJEMEN",
+                    "desc": "naskah dokumen yang berkaitan dengan sistem informasi manajemen (SIM) PT secara keseluruhan",
+                    "child2": [
+                        {
+                        "value": "LP.610",
+                        "text": "Sistem informasi manajemen kepegawaian",
+                        "desc": "naskah dokumen yang berkaitan dengan sistem informasi manajemen (SIM) di bidang kepegawaian (SIMKEP)"
+                        },
+                        {
+                        "value": "LP.620",
+                        "text": "Sistem informasi manajemen keuangan",
+                        "desc": "naskah dokumen yang berkaitan dengan sistem informasi manajemen (SIM) di bidang keuaangan (SIMKUG)"
+                        },
+                        {
+                        "value": "LP.630",
+                        "text": "Sistem informasi manajemen akuntansi",
+                        "desc": "naskah dokumen yang berkaitan dengan sistem informasi manajemen (SIM) akuntansi (SIMAK)"
+                        },
+                        {
+                        "value": "LP.640",
+                        "text": "Sistem informasi manajemen perlengkapan",
+                        "desc": "naskah dokumen yang berkaitan dengan sistem informasi manajemen (SIM) di bidang logistik (SIMKAP)"
+                        },
+                        {
+                        "value": "LP.650",
+                        "text": "Sistem informasi manajemen pembangunan",
+                        "desc": "naskah dokumen yang berkaitan dengan sistem informasi manajemen (SIM) di bidang pembangunan (SIMBANG)"
+                        },
+                        {
+                        "value": "LP.660",
+                        "text": "Sistem informasi manajemen operasi",
+                        "desc": "naskah dokumen yang berkaitan dengan sistem informasi manajemen (SIM) di bidang operasi (SIMOP)"
+                        },
+                        {
+                        "value": "LP.670",
+                        "text": "Sistem informasi manajemen telkom",
+                        "desc": "naskah dokumen yang berkaitan dengan sistem informasi manajemen Telkom (SIMTEL)"
+                        },
+                        {
+                        "value": "LP.680",
+                        "text": "Sistem informasi manajemen lainnya",
+                        "desc": "naskah dokumen yang berkaitan dengan sistem informasi manajemen (SIM) fungsi kegiatan kegiatan bidang lainnya"
+                        },
+                    ]
+                },
+                
+            ]
+        },
+
+        // PD.000 Pendidikan dan Pelatihan
+        {
+            "value": "PD.000",
+            "text": "PENDIDIKAN DAN PELATIHAN",
+            "desc": "naskah dokumen yang berkaitan dengan pendidikan dan pelatihan sumberdaya manusia di lingkungan PT",
+            "child": [
+                {
+                "value": "PD.100",
+                "text": "ANALISA KEBUTUHAN DIKLAT",
+                "desc": "naskah dokumen yang berkaitan dengan perencanaan analisa kebutuhan di bidang pendidikan dan pelatihan",
+                "child2": [
+                {
+                    "value": "PD.110",
+                    "text": "Perencanaan kebutuhan diklat",
+                    "desc": "naskah dokumen yang berkaitan dengan perencanaan kebutuhan pendidikan dan pelatihan"
+                    },
+                    {
+                    "value": "PD.120",
+                    "text": "jadwal kursil diklat",
+                    "desc": "naskah dokumen yang berkaitan dengan penyusunan jadwan kurikulum pendidikan dan pelatihan"
+                    }
+                    ]
+                },
+            
+                {
+                "value": "PD.200",
+                "text": "PENDIDIKAN DAN PELATIHAN TEKNIK",
+                "desc": "naskah dokumen yang berkaitan dengan pendidikan dan pelatihan di bidang tekhnik yang meliputi tekhnik telekomunikasi, komputer,informatika, tekhnik listrik dan elektro serta pendidikan teknik lainnya",
+                "child2": [
+                {
+                    "value": "PD.210",
+                    "text": "Teknik Telekomunikasi",
+                    "desc": "naskah dokumen yang berkaitan dengan pendidikan dan pelatihan di bidang tekhnik telekomunikasi"
+                    },
+                    {
+                    "value": "PD.220",
+                    "text": "Komputer dan informatika",
+                    "desc": "naskah dokumen yang berkaitan dengan pendidikan dan pelatihan di bidang komputer dan informatika baik hardware maupun software"
+                    },
+                    {
+                    "value": "PD.230",
+                    "text": "tekhnik listrik dan elektro",
+                    "desc": "naskah dokumen yang berkaitan dengan pendidikan pelatihan tekhnik listrik dan elektro"
+                    },
+                    {
+                    "value": "PD.240",
+                    "text": "pendidikan tekhnik lain",
+                    "desc": "naskah dokumen yang berkaitan dengan pendidikan pelatihan tekhnik lainnya"
+                    }
+                    ]
+                },
+            
+                {
+                "value": "PD.300",
+                "text": "PENDIDIKAN DAN PELATIHAN UMUM",
+                "desc": "naskah dokumen yang berkaitan dengan pendidikan pelatihan non tekhnik",
+                "child2": [
+                {
+                    "value": "PD.310",
+                    "text": "Pendidikan pelatihan keuangan",
+                    "desc": "naskah dokumen yang berkaitan dengan pendidikan pelatihan di bidang keuangan"
+                    },
+                    {
+                    "value": "PD.320",
+                    "text": "Pendidikan pelatihan administrasi dan manajemen",
+                    "desc": "naskah dokumen yang berkaitan dengan pendidikan pelatihan di bidang administrasi dan manajemen"
+                    },
+                    {
+                    "value": "PD.330",
+                    "text": "Pendidikan pelatihan hukum",
+                    "desc": "naskah dokumen yang berkaitan dengan pendidikan pelatihan di bidang hukum"
+                    },
+                    {
+                    "value": "PD.340",
+                    "text": "Pendidikan pelatihan pelayanan",
+                    "desc": "naskah dokumen yang berkaitan dengan pendidikan pelatihan di bidang pelayanan (service)"
+                    },
+                    {
+                    "value": "PD.350",
+                    "text": "Pendidikan pelatihan bidang SDM",
+                    "desc": "naskah dokumen yang berkaitan dengan pendidikan pelatihan di bidang pengembangan sumber daya manusia"
+                    },
+                    {
+                    "value": "PD.360",
+                    "text": "Pendidikan pelatihan bahasa asing",
+                    "desc": "naskah dokumen yang berkaitan dengan pendidikan pelatihan bahasa asing"
+                    },
+                    {
+                    "value": "PD.370",
+                    "text": "Pendidikan pelatihan pengamanan",
+                    "desc": "naskah dokumen yang berkaitan dengan pendidikan pelatihan di bidang pengamanan"
+                    },
+                    {
+                    "value": "PD.380",
+                    "text": "Pendidikan pelatihan pengetahuan pendukung lainnya",
+                    "desc": "naskah dokumen yang berkaitan dengan pendidikan pelatihan pendidikan pelatihan bidang non tekhnik atau pengetahuan pendukung lainnya"
+                    }
+                    ]
+                },
+            
+                {
+                "value": "PD.400",
+                "text": "PENDIDIKAN DAN PEATIHAN KHUSUS",
+                "desc": "naskah dokumen yang berkaitan dengan pendidikan khsusu yang ada di lingkungan PT Telkom",
+                "child2": [
+                {
+                    "value": "PD.410",
+                    "text": "Lemhanas",
+                    "desc": "naskah dokumen yang berkaitan dengan pendidikan lemhanas"
+                    },
+                    {
+                    "value": "PD.420",
+                    "text": "suspim suslia suslia",
+                    "desc": "naskah dokumen yang berkaitan dengan suspim susila susnal"
+                    },
+                    {
+                    "value": "PD.430",
+                    "text": "vocational training",
+                    "desc": "naskah dokumen yang berkaitan dengan pendidikan persiapan untuk karyawan yang akan menjalani pensiunan"
+                    },
+                    {
+                    "value": "PD.440",
+                    "text": "pendidikan dan pelatihan khusus lainnya",
+                    "desc": "naskah dokumen yang berkaitan dengan pendidikan pelatihan khusus lainnya"
+                    }
+                    ]
+                },
+            
+                {
+                "value": "PD.500",
+                "text": "PELAYANAN PENDIDIKAN DAN PELATIHAN",
+                "desc": "naskah dokumen yang berkaitan dengan pelayanan untuk menunjang penyelenggaraan pendidikan dan pelatihan",
+                "child2": [
+                {
+                    "value": "PD.510",
+                    "text": "kesejahteraan siswa",
+                    "desc": "naskah dokumen yang berkaitan dengan pelayanan untuk menunjang kesejahteraan siswa yang mengikuti pendidikan dan pelatihan"
+                    },
+                    {
+                    "value": "PD.520",
+                    "text": "tugas akhir kerja praktek",
+                    "desc": "naskah dokumen yang berkaitan dengan pelaksanaan kerja praktek ataupun tugas akhir"
+                    },
+                    {
+                    "value": "PD.530",
+                    "text": "program latihan kerja",
+                    "desc": "naskah dokumen yang berkaitan dengan program latihan kerja"
+                    },
+                    {
+                    "value": "PD.540",
+                    "text": "seminar workshop penataran",
+                    "desc": "naskah dokumen yang berkaitan dengan seminar workshop penataran"
+                    },
+                    {
+                    "value": "PD.550",
+                    "text": "sarana pendidikan",
+                    "desc": "naskah dokumen yang berkaitan dengan sarana pendidikan dan pelatihan"
+                    },
+                    {
+                    "value": "PD.560",
+                    "text": "sistem pengajaran khusus",
+                    "desc": "naskah dokumen yang berkaitan dengan sistem pengajaran khusus"
+                    },
+                    {
+                    "value": "PD.570",
+                    "text": "tenaga pengajar",
+                    "desc": "naskah dokumen yang berkaitan dengan tenaga pengajar dosen"
+                    },
+                    {
+                    "value": "PD.580",
+                    "text": "buku pedoman pelatihan diklat",
+                    "desc": "naskah dokumen yang berkaitan dengan buku pedoman pelatihan diklat"
+                    },
+                    {
+                    "value": "PD.590",
+                    "text": "pelayanan pendidikan pelatihan lainnya",
+                    "desc": "naskah dokumen yang berkaitan dengan pelayanan di bidang pendidikan dan pelatihan lainnya"
+                    }
+                    ]
+                },
+            
+                {
+                "value": "PD.600",
+                "text": "ADMINISTRASI EVALUASI PENDIDIKAN DAN PELATIHAN",
+                "desc": "naskah dokumen yang berkaitan dengan administrasi pendidikan dan pelatihan serta pelaksanaan evaluasi (penilaian) siswa yang mengikuti pendidikan dan pelatihan",
+                "child2": [
+                {
+                    "value": "PD.610",
+                    "text": "Ujian test",
+                    "desc": "naskah dokumen yang berkaitan dengan ujian test terhadap siswa yang mengikuti pendidikan dan pelatihan"
+                    },
+                    {
+                    "value": "PD.620",
+                    "text": "ijazah sertifikat",
+                    "desc": "naskah dokumen yang berkaitan dengan ijazah sertifikat yang diberikan kepada siswa atas keluluhan atau prestasi yang telah dicapai"
+                    },
+                    {
+                    "value": "PD.630",
+                    "text": "administrasi pendidikan dan pelatihan lainnya",
+                    "desc": "naskah dokumen yang berkaitan dengan administrasi pendidikan dan pelatihan lainnya"
+                    }
+                    ]
+                },
+            ]
+        },
+
+        // PR.000 Public Relation
+        {
+            "value": "PR.000",
+            "text": "PUBLIC RELATION",
+            "desc": "naskah dokumen yang berkaitan dengan fungsi public relations perusahaan yang meliputi bidang opini, budaya perusahaan, keprotokolan dokumentasi dan museum",
+            "child": [
+                {
+                    "value": "PR.100",
+                    "text": "KEPURELAN",
+                    "desc": "naskah dokumen yang berkaitan dengan kepurelan secara umum",
+                    "child2": [
+                        {
+                            "value": "PR.110",
+                            "text": "pers",
+                            "desc": "naskah dokumen yang berkaitan dengan kegiatan pers"
+                        },
+                        {
+                            "value": "PR.120",
+                            "text": "promosi",
+                            "desc": "naskah dokumen yang berkaitan dengan promosi"
+                        },
+                        {
+                            "value": "PR.130",
+                            "text": "costumer educations",
+                            "desc": "naskah dokumen yang berkaitan dengan pengerangan kepada pelanggan"
+                        },
+                        {
+                            "value": "PR.140",
+                            "text": "ucapan terima kasih",
+                            "desc": "naskah dokumen yang berkaitan dengan penghargaan kepada pihak luar, ucapan terima kasih dan selamat kepada karyawan dan pihak luar"
+                        },
+                        {
+                            "value": "PR.150",
+                            "text": "media internal",
+                            "desc": "naskah dokumen yang berkaitan dengan materi majalah"
+                        },
+                        {
+                            "value": "PR.160",
+                            "text": "pidato sambutan",
+                            "desc": "naskah dokumen yang berkaitan dengan pidato sambutan pembacaan laporan pimpinan perusahaan"
+                        },
+                        {
+                            "value": "PR.170",
+                            "text": "perlombaan",
+                            "desc": "naskah dokumen yang berkaitan dengan perlombaan"
+                        },
+                        {
+                            "value": "PR.180",
+                            "text": "budaya perusahaan",
+                            "desc": "naskah dokumen yang berkaitan dengan pembinaan budaya perusahaan dan saran karyawan"
+                        },
+                        {
+                            "value": "PR.190",
+                            "text": "penghargaan kepada pihak luar",
+                            "desc": "naskah dokumen yang berkaitan dengan pembinaan budaya perusahaan dan saran karyawan kepada pihak luar"
+                        }
+                    ]
+                    },
+                    
+                    {
+                    "value": "PR.200",
+                    "text": "KEPROTOKOLAN",
+                    "desc": "naskah dokumen yang berkaitan dengan keprotokolan secara umum",
+                    "child2": [
+                        {
+                            "value": "PR.210",
+                            "text": "Kunjungan",
+                            "desc": "naskah dokumen yang berkaitan dengan kunjungan pihak luar tamu ke PT atau kunjungan PT ke pihak luar"
+                        },
+                        {
+                            "value": "PR.220",
+                            "text": "Upacara peresmian",
+                            "desc": "naskah dokumen yang berkaitan dengan upacara peresmian"
+                        },
+                        {
+                            "value": "PR.230",
+                            "text": "Rapat",
+                            "desc": "naskah dokumen yang berkaitan dengan rapat"
+                        },
+                        {
+                            "value": "PR.240",
+                            "text": "pengumuman",
+                            "desc": "naskah dokumen yang berkaitan dengan pengumuman ke dalam dan ke luar perusahaan"
+                        },
+                        {
+                            "value": "PR.250",
+                            "text": "peliputan",
+                            "desc": "naskah dokumen yang berkaitan dengan peliputan suatu kegiatan"
+                        }
+                    ]
+                    },
+                    
+                    {
+                    "value": "PR.300",
+                    "text": "DOKUMENTASI",
+                    "desc": "naskah dokumen yang berkaitan dengan penyelenggaraan dokumentasi, -pelayanan informasi, -pelayanan museum",
+                    "child2": [
+                        {
+                            "value": "PR.310",
+                            "text": "Bahan pustaka",
+                            "desc": "naskah dokumen yang berkaitan dengan bahan pustaka"
+                        },
+                        {
+                            "value": "PR.320",
+                            "text": "pelayanan perpustakaan",
+                            "desc": "naskah dokumen yang berkaitan dengan perpusatakaan"
+                        },
+                        {
+                            "value": "PR.330",
+                            "text": "pengolahan dokumentasi",
+                            "desc": "naskah dokumen yang berkaitan dengan pekerjaan dokumentasi, -abstraksi resensi, -pembuatan resume"
+                        },
+                        {
+                            "value": "PR.340",
+                            "text": "pelayanan informasi",
+                            "desc": "naskah dokumen yang berkaitan dengan pelayanan informasi produk dokumentalis"
+                        },
+                        {
+                            "value": "PR.350",
+                            "text": "materi museum",
+                            "desc": "naskah dokumen yang berkaitan dengan materi atau alat peraga museum"
+                        },
+                        {
+                            "value": "PR.360",
+                            "text": "pelayanan museum",
+                            "desc": "naskah dokumen yang berkaitan dengan pelayanan museum"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        // PS.000 Personalia
+        {
+            "value": "PS.000",
+            "text": "PERSONALIA",
+            "desc": "naskah dokumen yang berkaitan dengan fungsi ataupun kegiatan di bidang personalia",
+            "child": [
+                {
+                    "value": "PS.100",
+                    "text": "ORGANISASI DAN PERENCANAAN KEBUTUHAN",
+                    "desc": "naskah dokumen yang berkaitan dengan organisasi perusahaan dan perencanaan kebutuhan karyawan",
+                    "child2": [
+                        {
+                            "value": "PS.110",
+                            "text": "Survey Kebutuhan",
+                            "desc": "naskah dokumen yang berkaitan dengan kegiatan surbey kebutuhan karyawan"
+                        },
+                        {
+                            "value": "PS.120",
+                            "text": "formasi karyawan",
+                            "desc": "naskah dokumen yang berkaitan dengan formasi karyawan"
+                        },
+                        {
+                            "value": "PS.130",
+                            "text": "analisa jabatan",
+                            "desc": "naskah dokumen yang berkaitan dengan analisa jabatan"
+                        },
+                        {
+                            "value": "PS.140",
+                            "text": "penyusunan jabatan",
+                            "desc": "naskah dokumen yang berkaitan dengan penyusunan jabatan"
+                        },
+                        {
+                            "value": "PS.150",
+                            "text": "struktur organisasi",
+                            "desc": "naskah dokumen yang berkaitan dengan struktur organisasi perusahaan"
+                        },
+                        {
+                            "value": "PS.160",
+                            "text": "uraian kerja",
+                            "desc": "naskah dokumen yang berkaitan dengan uraian kerja job        description dari organisasi perusahaan"
+                        },
+                        {
+                            "value": "PS.170",
+                            "text": "pembentukan tim kerja",
+                            "desc": "naskah dokumen yang berkaitan dengan pembentukan tim kerja"
+                        },
+                        {
+                            "value": "PS.180",
+                            "text": "jalur karir",
+                            "desc": "naskah dokumen yang berkaitan dengan perancangan sistem, penyusunan dan penyempurnaan pola jalur karir"
+                        },
+                    ]
+                    },
+                    
+                    {
+                    "value": "PS.200",
+                    "text": "REKRUTMEN",
+                    "desc": "naskah dokumen yang berkaitan dengan rekrutasi pengadaan karyawan",
+                    "child2": [
+                        {
+                            "value": "PS.210",
+                            "text": "lamaran",
+                            "desc": "naskah dokumen yang berkaitan dengan lamaran untuk menjadi karyawan perusahaan"
+                        },
+                        {
+                            "value": "PS.220",
+                            "text": "panggilan",
+                            "desc": "naskah dokumen yang berkaitan dengan panggilan kepada pelamar"
+                        },
+                        {
+                            "value": "PS.230",
+                            "text": "test seleksi",
+                            "desc": "naskah dokumen yang berkaitan dengan test seleksi yang dilaksanakan bagi pelamar"
+                        },
+                        {
+                            "value": "PS.240",
+                            "text": "evaluasi",
+                            "desc": "naskah dokumen yang berkaitan dengan evaluasi hasil test pelamar"
+                        },
+                    ]
+                    },
+                    
+                    {
+                    "value": "PS.300",
+                    "text": "ADMINISTRASI PERSONALIA",
+                    "desc": "naskah dokumen yang berkaitan dengan administrasi personalia secara umum",
+                    "child2": [
+                        {
+                            "value": "PS.310",
+                            "text": "identitas karyawan personal data",
+                            "desc": "naskah dokumen yang berkaitan dengan identitas data karyawan"
+                        },
+                        {
+                            "value": "PS.320",
+                            "text": "pengangkatan",
+                            "desc": "naskah dokumen yang berkaitan dengan pengangkatan karyawan"
+                        },
+                        {
+                            "value": "PS.330",
+                            "text": "penugasan",
+                            "desc": "naskah dokumen yang berkaitan dengan penugasan karyawan"
+                        },
+                        {
+                            "value": "PS.340",
+                            "text": "permintaan karyawan",
+                            "desc": "naskah dokumen yang berkaitan dengan permintaan karyawan"
+                        },
+                        {
+                            "value": "PS.350",
+                            "text": "perjalanan dinas",
+                            "desc": "naskah dokumen yang berkaitan dengan perjalanan dinas karyawan"
+                        },
+                        {
+                            "value": "PS.360",
+                            "text": "cuti",
+                            "desc": "naskah dokumen yang berkaitan dengan cuti"
+                        },
+                        {
+                            "value": "PS.370",
+                            "text": "ijin",
+                            "desc": "naskah dokumen yang berkaitan dengan ijin yang diberikan untuk karyawan"
+                        },
+                        {
+                            "value": "PS.380",
+                            "text": "sumpah janji karyawan",
+                            "desc": "naskah dokumen yang berkaitan dengan sumpah janji karyawan"
+                        },
+                        {
+                            "value": "PS.390",
+                            "text": "absensi daftar hadir",
+                            "desc": "naskah dokumen yang berkaitan dengan absensi dan daftar hadir"
+                        },
+                    ]
+                    },
+                    
+                    {
+                    "value": "PS.400",
+                    "text": "KEPANGKATAN",
+                    "desc": "naskah dokumen yang berkaitan dengan kepangkatan secara umum",
+                    "child2": [
+                        {
+                            "value": "PS.410",
+                            "text": "Kenaikan pangkat",
+                            "desc": "naskah dokumen yang berkaitan dengan kenaikan pangkat"
+                        },
+                        {
+                            "value": "PS.420",
+                            "text": "penyesuaian pendidikan",
+                            "desc": "naskah dokumen yang berkaitan dengan penyesuaian pendidikan karyawan"
+                        },
+                        {
+                            "value": "PS.430",
+                            "text": "penundaan kenaikan pangkat",
+                            "desc": "naskah dokumen yang berkaitan dengan penundaan kenaikan pangkat"
+                        },
+                        {
+                            "value": "PS.440",
+                            "text": "penurunan pangkat",
+                            "desc": "naskah dokumen yang berkaitan dengan penurunan pangkat"
+                        },
+                        {
+                            "value": "PS.450",
+                            "text": "kenaikan pangkat penghargaan",
+                            "desc": "naskah dokumen yang berkaitan dengan kenaikan pangkat penghargaan"
+                        },
+                    ]
+                    },
+                    
+                    {
+                    "value": "PS.500",
+                    "text": "PENGGAJIAN",
+                    "desc": "naskah dokumen yang berkaitan dengan penggajian",
+                    "child2": [
+                        {
+                            "value": "PS.510",
+                            "text": "kenaikan gaji",
+                            "desc": "naskah dokumen yang berkaitan dengan kenaikan gaji"
+                        },
+                        {
+                            "value": "PS.520",
+                            "text": "penurunan gaji",
+                            "desc": "naskah dokumen yang berkaitan dengan penurunan gaji"
+                        },
+                        {
+                            "value": "PS.530",
+                            "text": "daftar gaji jenjang gaji",
+                            "desc": "naskah dokumen yang berkaitan dengan daftar gaji jenjang gaji"
+                        },
+                        {
+                            "value": "PS.540",
+                            "text": "penyesuaian gaji",
+                            "desc": "naskah dokumen yang berkaitan dengan penyesuaian gaji"
+                        },
+                        {
+                            "value": "PS.550",
+                            "text": "penundaan kenaikan gaji",
+                            "desc": "naskah dokumen yang berkaitan dengan penundaan kenaikan gaji"
+                        },
+                        {
+                            "value": "PS.560",
+                            "text": "sistem penggajian (kompensasi)",
+                            "desc": "naskah dokumen yang berkaitan dengan sistem penggajian (kompensasi)"
+                        },
+                    ]
+                    },
+                    
+                    {
+                    "value": "PS.600",
+                    "text": "KESEJAHTERAAN",
+                    "desc": "naskah dokumen yang berkaitan dengan kesejahteraan kesehatan karyawan",
+                    "child2": [
+                        {
+                            "value": "PS.610",
+                            "text": "kesehatan",
+                            "desc": "naskah dokumen yang berkaitan dengan kesehatan karyawan dan keluarganya"
+                        },
+                        {
+                            "value": "PS.620",
+                            "text": "bantuan dana karyawan",
+                            "desc": "naskah dokumen yang berkaitan dengan bantuan dana karyawan"
+                        },
+                        {
+                            "value": "PS.630",
+                            "text": "pembinaan rokhani dan jasmani",
+                            "desc": "naskah dokumen yang berkaitan dengan pembinaan rokhani dan jasmani"
+                        },
+                        {
+                            "value": "PS.640",
+                            "text": "transportasi",
+                            "desc": "naskah dokumen yang berkaitan dengan penyediaan fasilitas transportasi karyawan"
+                        },
+                        {
+                            "value": "PS.650",
+                            "text": "akomodasi",
+                            "desc": "naskah dokumen yang berkaitan dengan penyediaan fasilitas akomodasi karyawan"
+                        },
+                        {
+                            "value": "PS.660",
+                            "text": "bea siswa",
+                            "desc": "naskah dokumen yang berkaitan dengan beasiswa kepada karyawan"
+                        },
+                        {
+                            "value": "PS.670",
+                            "text": "lembur",
+                            "desc": "naskah dokumen yang berkaitan dengan lenbur karyawan"
+                        },
+                        {
+                            "value": "PS.680",
+                            "text": "bantuan sosial",
+                            "desc": "naskah dokumen yang berkaitan dengan bantuan sosial perusahaan kepada pihak lain"
+                        },
+                    ]
+                    },
+                    
+                    {
+                    "value": "PS.700",
+                    "text": "PEMBINAAN PENILAIAN",
+                    "desc": "naskah dokumen yang berkaitan dengan pembinaan dan penilaian karyawan",
+                    "child2": [
+                        {
+                            "value": "PS.710",
+                            "text": "ujian dinas penjenjangan",
+                            "desc": "naskah dokumen yang berkaitan dengan ujian dinas dan penjenjangan karyawan"
+                        },
+                        {
+                            "value": "PS.720",
+                            "text": "pemindahan (mutasi)",
+                            "desc": "naskah dokumen yang berkaitan dengan pemindahan mutasi karyawan atau keluarga"
+                        },
+                        {
+                            "value": "PS.730",
+                            "text": "pembinaan penilaian",
+                            "desc": "naskah dokumen yang berkaitan dengan pembinaan penilaian karyawan"
+                        },
+                        {
+                            "value": "PS.740",
+                            "text": "promosi jabatan",
+                            "desc": "naskah dokumen yang berkaitan dengan promosi jabatan"
+                        },
+                        {
+                            "value": "PS.750",
+                            "text": "kelulusan",
+                            "desc": "naskah dokumen yang berkaitan dengan kelulusan"
+                        },
+                        {
+                            "value": "PS.760",
+                            "text": "skrining",
+                            "desc": "naskah dokumen yang berkaitan dengan skrining"
+                        },
+                        {
+                            "value": "PS.770",
+                            "text": "penghargaan karyawan",
+                            "desc": "naskah dokumen yang berkaitan dengan penghargaan karyawan"
+                        },
+                    ]
+                    },
+                    
+                    {
+                    "value": "PS.800",
+                    "text": "PENERTIBAN",
+                    "desc": "naskah dokumen yang berkaitan dengan penertiba karyawan",
+                    "child2": [
+                        {
+                            "value": "PS.810",
+                            "text": "pelanggaran disiplin",
+                            "desc": "naskah dokumen yang berkaitan dengan temuan kasus pelanggaran"
+                        },
+                        {
+                            "value": "PS.820",
+                            "text": "pemeriksanaan",
+                            "desc": "naskah dokumen yang berkaitan dengan pemeriksanaan terhadap kasus pelanggaran"
+                        },
+                        {
+                            "value": "PS.830",
+                            "text": "peringatan",
+                            "desc": "naskah dokumen yang berkaitan dengan peringatan kepada karyawan atas pelanggaran yang dilakukan"
+                        },
+                        {
+                            "value": "PS.840",
+                            "text": "tindak administrasi hukuman disiplin (hukdis)",
+                            "desc": "naskah dokumen yang berkaitan dengan tindak administrasi (HUKDIS)"
+                        },
+                        {
+                            "value": "PS.850",
+                            "text": "rehabilitasi",
+                            "desc": "naskah dokumen yang berkaitan dengan rehabilitasi karyawan"
+                        },
+                    ]
+                    },
+                    
+                    {
+                    "value": "PS.900",
+                    "text": "PENSIUN DAN PEMBERHENTIAN",
+                    "desc": "naskah dokumen yang berkaitan dengan pensiun dan pemberhentian karyawan",
+                    "child2": [
+                        {
+                            "value": "PS.910",
+                            "text": "pemberhentian dengan hormat",
+                            "desc": "naskah dokumen yang berkaitan dengan pemberhentian dengan hormat"
+                        },
+                        {
+                            "value": "PS.920",
+                            "text": "pemberhentian dengan tidak hormat",
+                            "desc": "naskah dokumen yang berkaitan dengan pemberhentian dengan tidak hormat"
+                        },
+                        {
+                            "value": "PS.930",
+                            "text": "masa pensiapan pensiun (MPP)",
+                            "desc": "naskah dokumen yang berkaitan dengan MPP"
+                        },
+                        {
+                            "value": "PS.940",
+                            "text": "pensiun",
+                            "desc": "naskah dokumen yang berkaitan dengan pensiun"
+                        },
+                        {
+                            "value": "PS.950",
+                            "text": "nominatif pensiun",
+                            "desc": "naskah dokumen yang berkaitan dengan nominatif pensiun"
+                        },
+                    ]
+                    },
+            ]
+        },
+
+        // PW.000 Pengawasan
+        {
+            "value": "PW.000",
+            "text": "PENGAWASAN",
+            "desc": "naskah dokumen yang berkaitan dengan pengasawan penyelenggaraan telekomunikas",
+            "child": [
+                {
+                    "value": "PW.100",
+                    "text": "PENGAWASAN TEKNIS",
+                    "desc": "naskah dokumen yang berkaitan dengan pengawasan teknis, instalasi konstruksi (pembangunan) pengoperasian dari seluruh saran produksi sarana penunjang dalam network sistem telekomunikasi",
+                    "child2": [
+                        {
+                            "value": "PW.110",
+                            "text": "Pengawasan Teknis sentral",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan perencanaan teknis instalasi konstruksi (pembangunan), pengoperasian dan pemeliharaan sentral telekomunikasi"
+                        },
+                        {
+                            "value": "PW.120",
+                            "text": "Pengawasan Teknis sistem transmisi",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan perencanaan teknis instalasi konstruksi (pembangunan), pengoperasian dan pemeliharaan sistem transmisi"
+                        },
+                        {
+                            "value": "PW.130",
+                            "text": "Pengawasan Teknis jaringan lokal kabel",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan perencanaan tekhnis kontruksi (pembangunan), pengoperasian  dan pemeliharaan jaringan lokal kabel"
+                        },
+                        {
+                            "value": "PW.140",
+                            "text": "Pengawasan Teknis catu daya mechanical electrical",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan perencanaan teknis instalasi konstruksi (pembangunan) pengoperasian dan pemeliharaan perangkat catu daya mechanical electrical"
+                        },
+                        {
+                            "value": "PW.150",
+                            "text": "Pengawasan Teknis bangunan konstruksi",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan perencanaan teknis instalasi konstruksi (pembangunan) pengoperasian dan pemeliharaan sarana bangunan kontruksi"
+                        },
+                        {
+                            "value": "PW.160",
+                            "text": "Pengawasan Teknis sarana perangkat lain",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan perencanaan teknis instalasi konstruksi (pembangunan) pengoperasian dan pemeliharaan sarana atau perangkat teknik lainnya"
+                        },
+                    ]
+                    },
+                    
+                    {
+                    "value": "PW.200",
+                    "text": "PENGAWASAN PELAYANAN JASA FASILITAS TELEKOMUNIKASI",
+                    "desc": "naskah dokumen yang berkaitan dengan pengawasan dari perencanaan, pelayanan (service), pemasaran penjualan jasa telekomunikasi, instalasi (pemasangan), kontruksi (pembangunan), pengoperasian, pemeliharaan perbaikan perangkat untuk jasa telekomunikasi pelanggan perseorangan",
+                    "child2": [
+                        {
+                            "value": "PW.210",
+                            "text": "Pengawasan Telepon",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan telepon pelanggan, paging, tele credit card, baik itu yang merupakan fasilitas dinas, fastel berbayar dan temporer"
+                        },
+                        {
+                            "value": "PW.220",
+                            "text": "Pengawasan Telex Telegraph Faksimil",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan telex telegram faksimil"
+                        },
+                        {
+                            "value": "PW.230",
+                            "text": "Pengawasan sistem komunikasi data",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan sistem komunikasi data"
+                        },
+                        {
+                            "value": "PW.240",
+                            "text": "Pengawasan sirkit langganan",
+                            "desc": "naskah dokumen yang berkaitan dengan masalah pengawasan pelayanan jasa sirkit langganan atau sirkit sewa (LC LDS)"
+                        },
+                        {
+                            "value": "PW.250",
+                            "text": "Pengawasan jasa transponder",
+                            "desc": "naskah dokumen yang berkaitan dengan masalah pengawasan pelayanan jasa transponder (sewa transponder("
+                        },
+                        {
+                            "value": "PW.260",
+                            "text": "Pengawasan mobile telephone",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan jasa mobile telephone (telpon bergerak)"
+                        },
+                        {
+                            "value": "PW.270",
+                            "text": "pengawasan jasa nilai tambah (jasnita)",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan pelayanan jasa nilai tambah (jasnita)"
+                        },
+                        {
+                            "value": "PW.280",
+                            "text": "Pengawasan jasa fasilitas telekomunikasi perorangan",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan pelayanan jasa fasilitas telekomuikasi perorangan lainnya"
+                        },
+                    ]
+                    },
+                    
+                    {
+                    "value": "PW.300",
+                    "text": "PENGAWASAN PELAYANAN JASA FASILITAS TELEKOMUNIKASI UMUM",
+                    "desc": "naskah dokumen yang berkaitan dengan pengawasan dari perencanaan pelayanan (service), pemasaran penjualan jasa telekomunikasi serta instalasi (pemasangan) konstruksi (pembangunan), pengoperasian pemeliharaan perabikan perangkat dari jasa telekomunikasi untuk kepentingan umum",
+                    "child2": [
+                        {
+                            "value": "PW.310",
+                            "text": "Pengawasan telepon umum coin",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan telepon umum coin (TUC)"
+                        },
+                        {
+                            "value": "PW.320",
+                            "text": "pengawasan telepon umum kartu",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan telepon umum kartu"
+                        },
+                        {
+                            "value": "PW.330",
+                            "text": "pengawasan kamar bicara umum (KBU) WARTEL",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan warung telekomunikasi kamar bicara umum dan kios"
+                        },
+                        {
+                            "value": "PW.340",
+                            "text": "pengawasan telegram",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan penyelenggaran jasa telegram (telegram indah dan biasa)"
+                        },
+                        {
+                            "value": "PW.350",
+                            "text": "pengawasan kartu telepon",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan karu telepon"
+                        },
+                        {
+                            "value": "PW.360",
+                            "text": "pengawasan jasa fasilitas telekomunikasi umum lainnya",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan jasa fasilitas telekomunikasi umum lainnya"
+                        },
+                    ]
+                    },
+                    
+                    {
+                    "value": "PW.400",
+                    "text": "PENGAWASAN FUNGSIONAL",
+                    "desc": "naskah dokumen yang berkaitan dengan pengawasan fungsional bidang yang terdiri dari : -pengawasan personalia, -pengawasan logistik, -pengawasan keuangan dan anggaran, -pengawasan hukum, -pengawasan public relation, -pengawasan diklat, -pengawasan penelitian dan pengembangan",
+                    "child2": [
+                        {
+                            "value": "PW.410",
+                            "text": "Pengawasan personalia",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan dibidang personalia"
+                        },
+                        {
+                            "value": "PW.420",
+                            "text": "pengawasan logistik",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan dibidang logistik"
+                        },
+                        {
+                            "value": "PW.430",
+                            "text": "pengawasan keuangan dan anggaran",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan dibidang keuangan dan anggaran"
+                        },
+                        {
+                            "value": "PW.440",
+                            "text": "pengawasan hukum",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan dibidang hukum"
+                        },
+                        {
+                            "value": "PW.450",
+                            "text": "pengawasan public relation",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan dibidang public relation"
+                        },
+                        {
+                            "value": "PW.460",
+                            "text": "pengawasan pendidikan dan pelatihan",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan dibidang pendidikan dan pelatihan"
+                        },
+                        {
+                            "value": "PW.470",
+                            "text": "pengawasan penelitian dan pengembangan",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan dibidang penelitian dan pengembangan"
+                        },
+                        {
+                            "value": "PW.480",
+                            "text": "pengawasan bidang fungsional lainnya",
+                            "desc": "naskah dokumen yang berkaitan dengan pengawasan bidang fungsional lainnya"
+                        },
+                    ]
+                    },
+                ]
+        },
+
+        // TK.000 Tekhnik Telekomunikasi
+        {
+            "value": "TK.000",
+            "text": "TEKHNIK TELEKOMUNIKASI",
+            "desc": "naskah dokumen yang berkaitan dengan perencanan tekhnis, konstruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan (pengukuran perbaikan) seluruh saran produksi network komunikasi",
+            "child": [
+                {
+                    "value": "TK.100",
+                    "text": "SENTRAL TELEKOMUNIKASI",
+                    "desc": "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan (pengukuran perbaikan) seluruh perangkat sentral telekomunikasi",
+                    "child2": [
+                        {
+                            "value": "TK.110",
+                            "text": "sentral telepon",
+                            "desc": "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan (pengukuran perbaikan) seluruh perangkat sentral telpon"
+                        },
+                        {
+                            "value": "TK.120",
+                            "text": "sentral telex",
+                            "desc": "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan (pengukuran perbaikan) seluruh perangkat sentral telex"
+                        },
+                        {
+                            "value": "TK.130",
+                            "text": "sentral data",
+                            "desc": "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan (pengukuran perbaikan) seluruh perangkat sentral data"
+                        },
+                        {
+                            "value": "TK.140",
+                            "text": "sentral telekomunikasi lainnya",
+                            "desc": "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan (pengukuran perbaikan) seluruh perangkat sentral telekomunikasi lainnya"
+                        },
+                    ]
+                },
+                {
+                    "value": "TK.200",
+                    "text": "SISTEM TRANSMISI",
+                    "desc": "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan(pengukuran perbaikan) seluruh perangkat sistem transmisi",
+                    "child2": [
+                    {
+                        "value": "TK.210",
+                        "text": "sistem transmisi kabel",
+                        "desc": "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan (pengukuran perbaikan) seluruh sistem transmisi kabel"
+                        },
+                        {
+                        "value": "TK.220",
+                        "text": "sistem transmisi terrestrial",
+                        "desc": "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan (pengukuran perbaikan) seluruh perangkat sistem transmisi terrestrial"
+                        },
+                        {
+                        "value": "TK.230",
+                        "text": "sistem transmisi satelit",
+                        "desc": "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan (pengukuran perbaikan) seluruh perangkat sistem transmisi satelit"
+                        },
+                        {
+                        "value": "TK.240",
+                        "text": "sistem transmisi lainnya",
+                        "desc": "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan (pengukuran perbaikan) seluruh perangkat sistem transmisi lainnya"
+                        },
+                    ]
+                },
+                {
+                    "value": "TK.300",
+                    "text": "JARINGAN LOKAL",
+                    "desc": "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan (pengukuran perbaikan) seluruh perangkat jaringan lokal kabel",
+                    "child2": [
+                    {
+                        "value": "TK.310",
+                        "text": "jaringan lokal kabel bawah tanah",
+                        "desc": "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan (pengukuran perbaikan) seluruh perangkat jaringan lokal kabel bawah tanah"
+                        },
+                        {
+                        "value": "TK.320",
+                        "text": "jaringan lokal kabel atas tanah",
+                        "desc": "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan (pengukuran perbaikan) seluruh perangkat jaringan lokal kabel atas tanah"
+                        },
+                        {
+                        "value": "TK.330",
+                        "text": "aksesoris",
+                        "desc": "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan (pengukuran perbaikan) seluruh perangkat aksesoris jaringan lokal kabel"
+                        },
+                    ]
+                },
+                
+                {
+                    "value": "TK.400",
+                    "text": "SARANA PENUNJANG",
+                    "desc": "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan (pengukuran perbaikan) seluruh perangkat sarana penunjang",
+                    "child2": [
+                    {
+                        "value": "TK.410",
+                        "text": "Catu daya mechanical electrical",
+                        "desc": "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan (pengukuran perbaikan) seluruh perangkat catu daya mechanical electrical (ME)"
+                        },
+                        {
+                        "value": "TK.420",
+                        "text": "bangunan kontruksi",
+                        "desc": "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan (pengukuran perbaikan) seluruh bangunan konstruksi"
+                        },
+                        {
+                        "value": "TK.430",
+                        "text": "sarana penunjang lainnya",
+                        "desc": "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan (pengukuran perbaikan) dan sarana penunjang lainnya"
+                        },
+                    ]
+                    },
+            ]
+        },
+
+        //  UM.100 Umum
+        {
+            "value": "UM.000",
+            "text": "UMUM",
+            "desc": "naskah dokumen yang berkaitan dengan fungsi bidang kegiatan lain di PT yang belum termasuk atau tercantum dalam klasifikasi masalah yang ada",
+            "child": [
+                {
+                    "value": "UM.100",
+                    "text": "ADMINISTRASI PERKANTORAN",
+                    "desc": "naskah dokumen yang berkaitan dengan administrasi perkantoran",
+                    "child2": [
+                        {
+                            "value": "UM.110",
+                            "text": "sistem kearsipan",
+                            "desc": "naskah dokumen yang berkaitan dengan sistem atau tata kearsipan tata naskah"
+                        },
+                        {
+                            "value": "UM.120",
+                            "text": "building management",
+                            "desc": "naskah dokumen yang berkaitan dengan pengelolaan (manajemen) gedung perkantoran"
+                        },
+                        {
+                            "value": "UM.130",
+                            "text": "form model administrasi",
+                            "desc": "naskah dokumen yang berkaitan dengan form atau model model administrasi perkantoran"
+                        },
+                        {
+                            "value": "UM.140",
+                            "text": "alat tulis menulis (ATM ATK)",
+                            "desc": "naskah dokumen yang berkaitan dengan alat tulis menulis (ATK ATM)"
+                        },
+                    ]
+                    },
+                    
+                    {
+                    "value": "UM.200",
+                    "text": "BARANG INVENTARIS PERUSAHAAN",
+                    "desc": "naskah dokumen yang berkaitan dengan barang inventaris perusahaan",
+                    "child2": [
+                        {
+                            "value": "UM.210",
+                            "text": "Meubelair",
+                            "desc": "naskah dokumen yang berkaitan dengan peralatan rumah tangga meubelair"
+                        },
+                        {
+                            "value": "UM.220",
+                            "text": "mesin kantor",
+                            "desc": "naskah dokumen yang berkaitan dengan sarana perangkat mesin mesin perkantor"
+                        },
+                        {
+                            "value": "UM.230",
+                            "text": "peralatan kantor",
+                            "desc": "naskah dokumen yang berkaitan dengan sarana peralatan perkantoran"
+                        },
+                        {
+                            "value": "UM.240",
+                            "text": "kendaraan bermotor",
+                            "desc": "naskah dokumen yang berkaitan dengan kendaraan bermotor"
+                        },
+                        {
+                            "value": "UM.250",
+                            "text": "barang inventaris perusahaan lainnya",
+                            "desc": "naskah dokumen yang berkaitan dengan barang inventaris perusahaan lainnya"
+                        },
+                    ]
+                    },
+                    
+                    {
+                    "value": "UM.300",
+                    "text": "KEBERSIHAN",
+                    "desc": "naskah dokumen yang berkaitan dengan pengelolaan kebersihan",
+                    "child2": [
+                        {
+                            "value": "UM.310",
+                            "text": "cleaning service",
+                            "desc": "naskah dokumen yang berkaitan dengan cleaning service"
+                        },
+                        {
+                            "value": "UM.320",
+                            "text": "kebersihan lingkungan",
+                            "desc": "naskah dokumen yang berkaitan dengan pengelolaan kebersihan lingkungan"
+                        },
+                        {
+                            "value": "UM.330",
+                            "text": "peralatan perangkat pembersih",
+                            "desc": "naskah dokumen yang berkaitan dengan peralatan perangkat kebersihan"
+                        },
+                    ]
+                    },
+                    
+                    
+                    {
+                    "value": "UM.400",
+                    "text": "PENGAMANAN",
+                    "desc": "naskah dokumen yang berkaitan dengan fungsi pengamanan, baik itu pengamanan SDM, perangkat (aset) ataupun sistem telekomunikasi",
+                    "child2": [
+                        {
+                            "value": "UM.410",
+                            "text": "Keselamatan kerja",
+                            "desc": "naskah dokumen yang berkaitan dengan keselamatan kerja karyawan"
+                        },
+                        {
+                            "value": "UM.420",
+                            "text": "keamanan lingkungan",
+                            "desc": "naskah dokumen yang berkaitan dengan keamanan lingkungan kerja, peralatan dan sistem telekomunikasi"
+                        },
+                        {
+                            "value": "UM.430",
+                            "text": "pengamanan perangkat sarana",
+                            "desc": "naskah dokumen yang berkaitan dengan pengamanan perangkat sarana"
+                        },
+                        {
+                            "value": "UM.440",
+                            "text": "peralatan perangkat pengamanan",
+                            "desc": "naskah dokumen yang berkaitan dengan peralatan perangkat sarana"
+                        },
+                    ]
+                    },
+                    
+                    {
+                    "value": "UM.500",
+                    "text": "YAYASAN PERKUMPULAN",
+                    "desc": "naskah dokumen yang berkaitan dengan yayasan perkumpulan yang berhubungan dengan PT Telkom",
+                    "child2": [
+                        {
+                            "value": "UM.510",
+                            "text": "Koperasi",
+                            "desc": "naskah dokumen yang berkaitan dengan KOPERASI"
+                        },
+                        {
+                            "value": "UM.520",
+                            "text": "KORPRI",
+                            "desc": "naskah dokumen yang berkaitan dengan KORPRI"
+                        },
+                        {
+                            "value": "UM.530",
+                            "text": "dharma wanita",
+                            "desc": "naskah dokumen yang berkaitan dengan Dharma wanita"
+                        },
+                        {
+                            "value": "UM.540",
+                            "text": "yayasan dana pensiun",
+                            "desc": "naskah dokumen yang berkaitan dengan yayasan dana pensiun"
+                        },
+                        {
+                            "value": "UM.550",
+                            "text": "industri kecil",
+                            "desc": "naskah dokumen yang berkaitan dengan industri kecil"
+                        },
+                        {
+                            "value": "UM.560",
+                            "text": "anak perusahaan",
+                            "desc": "naskah dokumen yang berkaitan dengan anak perusahaan"
+                        },
+                        {
+                            "value": "UM.570",
+                            "text": "yayasan perkumpulan lembaga lainnya",
+                            "desc": "naskah dokumen yang berkaitan dengan yayasan perkumpulan lembaga lainnya seperti PMI, pramuka, yayasan sandikara putra"
+                        },
+                    ]
+                    },
+            ]
+        },
+
+        // YN.000 Pelayanan Jasa Fasilitas Telekomunikasi
+        {
+            "value": "YN.000",
+            "text": "PELAYANAN JASA FASILITAS TELEKOMUNIKASI",
+            "desc": "naskah dokumen yang berkaitan dengan pelayanan jasa fasilitas telekomunikasi yang terdiri dari jasa fasilitas telekomunikasi perorangan dan jasa fasilitas telekomunikasi umum",
+            "child": [
+                {
+                    "value": "YN.100",
+                    "text": "JASA FASILITAS TELEKOMUNIKASI PERORANGAN",
+                    "desc": "naskah dokumen yang berkaitan dengan perencanaan teknis, kontruksi (pembangunan) instalasi (pemasangan) pengoperasian, pemeliharaan (pengukuran perbaikan) pelayanan jasa fasilitas telekomunikasi perorangan",
+                    "child2": [
+                        {
+                            "value": "YN.110",
+                            "text": "telepon",
+                            "desc": "naskah dokumen yang berkaitan dengan telepon perorangan"
+                        },
+                        {
+                            "value": "YN.120",
+                            "text": "telex telegraph faksmil",
+                            "desc": "naskah dokumen yang berkaitan dengan telex telegraph faksmil dan birofax"
+                        },
+                        {
+                            "value": "YN.130",
+                            "text": "sistem komunikasi data",
+                            "desc": "naskah dokumen yang berkaitan dengan jasa sistem komunikasi data"
+                        },
+                        {
+                            "value": "YN.140",
+                            "text": "sirkit langganan",
+                            "desc": "naskah dokumen yang berkaitan dengan jasa penyewaan saluran (sirkit langganan)"
+                        },
+                        {
+                            "value": "YN.150",
+                            "text": "jasa transponder",
+                            "desc": "naskah dokumen yang berkaitan dengan jasa sewa transponder"
+                        },
+                        {
+                            "value": "YN.160",
+                            "text": "mobile telephone",
+                            "desc": "naskah dokumen yang berkaitan dengan mobile telephone (sistem telepon bergerak)"
+                        },
+                        {
+                            "value": "YN.170",
+                            "text": "jasa nilai tambah",
+                            "desc": "naskah dokumen yang berkaitan dengan pelayanan atas jasa nilai tambah (JASNITA)"
+                        },
+                        {
+                            "value": "YN.180",
+                            "text": "jasa fasilitas telekomunikasi perorangan lainnya",
+                            "desc": "naskah dokumen yang berkaitan dengan jasa fasilitas telekomunikasi perorangan lainnya"
+                        },
+                    ]
+                    },
+                    
+                    {
+                    "value": "YN.200",
+                    "text": "JASA FASILITAS TELEKOMUNIKASI UMUM",
+                    "desc": "naskah dokumen yang berkaitan dengan perencanaan teknis, konstruksi (pembangunan), instalasi (pemasangan), pemasaran penjualan, pengoperasian, pelayanan service, pemeliharaan (pengukuran perbaikan) seluruh perangkat pelayanan jasa telekomunikasi untuk kepentingan masyarakat umum",
+                    "child2": [
+                        {
+                            "value": "YN.210",
+                            "text": "telepon umum coin",
+                            "desc": "naskah dokumen yang berkaitan dengan telepon coin"
+                        },
+                        {
+                            "value": "YN.220",
+                            "text": "telepon umum kartu",
+                            "desc": "naskah dokumen yang berkaitan dengan telepon umum kartu"
+                        },
+                        {
+                            "value": "YN.230",
+                            "text": "kamar bicara umum (KBU)   wartel",
+                            "desc": "naskah dokumen yang berkaitan dengan kamar bicara umum (KBU) warung telekomunikasi (wartel) dan kios telekomunikasi"
+                        },
+                        {
+                            "value": "YN.240",
+                            "text": "telegram",
+                            "desc": "naskah dokumen yang berkaitan dengan penyelenggaraan jasa telegram (telegram indah dan biasa)"
+                        },
+                        {
+                            "value": "YN.250",
+                            "text": "kartu telepon",
+                            "desc": "naskah dokumen yang berkaitan dengan kartu telepon"
+                        },
+                        {
+                            "value": "YN.260",
+                            "text": "jasa fasilitas telekomunikasi umum lainnya",
+                            "desc": "naskah dokumen yang berkaitan dengan jasa fasilitas telekomunikasi umum"
+                        }
+                    ]
+                    },
+                ]
+        },
     ]
 }
