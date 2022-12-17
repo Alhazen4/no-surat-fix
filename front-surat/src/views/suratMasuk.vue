@@ -402,8 +402,8 @@
     Vue.use(vsPopup)
 
     export default {
-        async mounted() {
 
+        async created() {
             try {
                 await apis.get('/surat')
                 .then((response) => {
@@ -414,8 +414,6 @@
             }
 
             for (let i=1; i <= this.suratItems.length; i++) {
-                // console.log(i);
-                // console.log(this.suratItems[i-1]);
                 this.suratItems[i-1].idx = i;
             }
         },

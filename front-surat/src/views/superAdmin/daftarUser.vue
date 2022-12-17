@@ -230,8 +230,8 @@
     Vue.use(vsPopup)
 
     export default {
-        async mounted() {
 
+        async created() {
             try {
                 await apis.get('/users')
                 .then((response) => {
@@ -241,10 +241,7 @@
                 console.log(error);
             }
 
-            
             for (let i=1; i <= this.userItems.length; i++) {
-                // console.log(i);
-                // console.log(this.userItems[i-1]);
                 this.userItems[i-1].idx = i;
             }
         },
