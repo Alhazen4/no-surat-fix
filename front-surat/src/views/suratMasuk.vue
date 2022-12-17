@@ -382,15 +382,14 @@
                 </div>
             </div>
         </div>
-        <footer>
-            by pass
-        </footer>
+        <customFooter></customFooter>
     </div>
 </template>
 
 <script>
 
     import navigation from './nav.vue'
+    import customFooter from './footer.vue'
 
     import store from '/src/store';
     import apis from './apis.js';
@@ -513,7 +512,8 @@
         },
 
         components: {
-            navigation
+            navigation,
+            customFooter
         },
 
         methods: {

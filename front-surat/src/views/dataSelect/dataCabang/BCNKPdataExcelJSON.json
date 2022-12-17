@@ -1,0 +1,3317 @@
+[
+    {
+        "Sheet1":[
+         {
+          "n_nik": 670169,
+          "text": "RIJANTO UTOMO, RADEN, IR",
+          "desc": "EVP TELKOM REGIONAL IV",
+          "value": "DR4-10000000"
+         },
+         {
+          "n_nik": 680079,
+          "text": "SOERACHMAD ADI WAHJONO, IR.MT.",
+          "desc": "SM GENERAL AFFAIR",
+          "value": "DR4-10400000"
+         },
+         {
+          "n_nik": 710220,
+          "text": "DWI KRISTIANTI, SH",
+          "desc": "MGR LOGISTIC &amp; PROCUREMENT",
+          "value": "DR4-104A0000"
+         },
+         {
+          "n_nik": 680016,
+          "text": "SUNANTO",
+          "desc": "MGR ASSET &amp; FACILITY MANAGEMENT",
+          "value": "DR4-104B0000"
+         },
+         {
+          "n_nik": 660263,
+          "text": "DJAJA WIGUNA",
+          "desc": "MGR LEGAL &amp; REGULATORY AFFAIR",
+          "value": "DR4-104C0000"
+         },
+         {
+          "n_nik": 670190,
+          "text": "SUDARYONO, ST.",
+          "desc": "MGR SECURITY AND SAFETY",
+          "value": "DR4-104D0000"
+         },
+         {
+          "n_nik": 740070,
+          "text": "HENDRO CAHYADIANTO, A.Md, S.KOMP",
+          "desc": "MGR SEKDIV &amp; PUBLIC RELATION",
+          "value": "DR4-104E0000"
+         },
+         {
+          "n_nik": 720104,
+          "text": "MUHAMMAD ASHARI, ST, MM",
+          "desc": "SM BUSINESS PLANNING, PERF &amp; RISK MGT",
+          "value": "DR4-10600000"
+         },
+         {
+          "n_nik": 720466,
+          "text": "ATIK RAHMAWATI TRI ASTUTI, ST",
+          "desc": "MGR PLAN &amp; BUDGET CONTROL",
+          "value": "DR4-106A0000"
+         },
+         {
+          "n_nik": 800029,
+          "text": "EVA MARYAM SANI",
+          "desc": "MGR PERFORMANCE &amp; WAR ROOM",
+          "value": "DR4-106B0000"
+         },
+         {
+          "n_nik": 740102,
+          "text": "YUSTINA ANEKE SARI",
+          "desc": "MGR QUALITY, CHANGE &amp; RISK MANAGEMENT",
+          "value": "DR4-106C0000"
+         },
+         {
+          "n_nik": 730575,
+          "text": "ARIS DONO WARIH UTOMO",
+          "desc": "MGR REVENUE ASSURANCE",
+          "value": "DR4-106D0000"
+         },
+         {
+          "n_nik": 740051,
+          "text": "AMIR SYARIFUDIN, ST",
+          "desc": "SM SHARED SERVICE",
+          "value": "DR4-10700000"
+         },
+         {
+          "n_nik": 840122,
+          "text": "DIANI MARDISAR",
+          "desc": "MGR FINANCIAL SERVICE &amp; TAX",
+          "value": "DR4-107A0000"
+         },
+         {
+          "n_nik": 800099,
+          "text": "MARTA DAMAYANTI",
+          "desc": "MGR BILLING &amp; PAYMENT COLLECTION (CONS)",
+          "value": "DR4-107B0000"
+         },
+         {
+          "n_nik": 710384,
+          "text": "PANTJARINI TRISNANING S,ST",
+          "desc": "MGR BILLING &amp; PAYMENT COLLECTION (EBIS)",
+          "value": "DR4-107C0000"
+         },
+         {
+          "n_nik": 740178,
+          "text": "LULU KURNIJATI, ST",
+          "desc": "MGR HC PLANNING, DEVELOPMENT &amp; SERVICE",
+          "value": "DR4-107D0000"
+         },
+         {
+          "n_nik": 670189,
+          "text": "SIWI WIDIARTO",
+          "desc": "MGR COMMUNITY DEVELOPMENT CENTER",
+          "value": "DR4-107E0000"
+         },
+         {
+          "n_nik": 670157,
+          "text": "FIRMANSYAH, IR",
+          "desc": "DEPUTY EVP MARKETING",
+          "value": "DR4-11000000"
+         },
+         {
+          "n_nik": 730207,
+          "text": "ERNA WIYATI",
+          "desc": "OSM REGIONAL WHOLESALE SERVICE",
+          "value": "DR4-11200000"
+         },
+         {
+          "n_nik": 660434,
+          "text": "ALBERTUS DJOKO SOESENO, IR, MT",
+          "desc": "MGR WHOLESALE &amp; INTERNATIONAL MARKETING",
+          "value": "DR4-112A0000"
+         },
+         {
+          "n_nik": 810085,
+          "text": "YULIA DWI MARTINI",
+          "desc": "MGR WHOLESALE SUPPORT",
+          "value": "DR4-112B0000"
+         },
+         {
+          "n_nik": 720309,
+          "text": "WIJAYANTO, M.T",
+          "desc": "OSM REG ENTERPRISE,GOVERNMENT &amp; BIZ SERV",
+          "value": "DR4-11400000"
+         },
+         {
+          "n_nik": 830044,
+          "text": "VANDY AULIA ABKHARI",
+          "desc": "MGR REGIONAL ENTERPRISE SERVICE",
+          "value": "DR4-114A0000"
+         },
+         {
+          "n_nik": 730288,
+          "text": "HIDAYAT KURNIAWAN, S.T.,M.MT.",
+          "desc": "MGR REGIONAL GOVERNMENT SERVICE",
+          "value": "DR4-114B0000"
+         },
+         {
+          "n_nik": 730549,
+          "text": "JOKO SUSANTOYO, ST",
+          "desc": "MGR REGIONAL BUSINESS SERVICE",
+          "value": "DR4-114C0000"
+         },
+         {
+          "n_nik": 720443,
+          "text": "NOR KRISTANTO ADI",
+          "desc": "MGR PROJECT DELIVERY &amp; QUALITY ASSURANCE",
+          "value": "DR4-114D0000"
+         },
+         {
+          "n_nik": 800024,
+          "text": "RISKA SURYANI, M.T",
+          "desc": "MGR BIDDING MGT &amp; SUPPORT",
+          "value": "DR4-114E0000"
+         },
+         {
+          "n_nik": 730106,
+          "text": "AJI WIDYO UTOMO, ST, MM",
+          "desc": "MGR SOLUTION",
+          "value": "DR4-114F0000"
+         },
+         {
+          "n_nik": 740101,
+          "text": "SULISTYAWAN",
+          "desc": "OSM CUSTOMER CARE",
+          "value": "DR4-11500000"
+         },
+         {
+          "n_nik": 780040,
+          "text": "WIDYA MAHARANI",
+          "desc": "MGR CUSTOMER TOUCH POINT",
+          "value": "DR4-115A0000"
+         },
+         {
+          "n_nik": 730210,
+          "text": "MOHAMAD ARIF SETYABUDI, ST",
+          "desc": "MGR CUSTOMER DATA MANAGEMENT",
+          "value": "DR4-115B0000"
+         },
+         {
+          "n_nik": 860129,
+          "text": "NATASIA BENITA KINARTO",
+          "desc": "MGR CUSTOMER RELATIONSHIP MANAGEMENT",
+          "value": "DR4-115C0000"
+         },
+         {
+          "n_nik": 660276,
+          "text": "RISMAWATI",
+          "desc": "MGR CUSTOMER LEVERAGING",
+          "value": "DR4-115D0000"
+         },
+         {
+          "n_nik": 690016,
+          "text": "ARIF NURJAYANTO,IR, MBA",
+          "desc": "OSM CONSUMER MARKETING",
+          "value": "DR4-11600000"
+         },
+         {
+          "n_nik": 740133,
+          "text": "ABDUL AZIZ MUSLIM",
+          "desc": "MGR CHANNEL ACTIVATION",
+          "value": "DR4-116B0000"
+         },
+         {
+          "n_nik": 710504,
+          "text": "CHRISTIANUS WIDYA UTOMO",
+          "desc": "MGR SALES PROMOTION &amp; PRICING",
+          "value": "DR4-116C0000"
+         },
+         {
+          "n_nik": 700029,
+          "text": "HARIS SUNANDAR, IR",
+          "desc": "MGR DIGITAL SERVICE &amp; WIFI",
+          "value": "DR4-116D0000"
+         },
+         {
+          "n_nik": 810001,
+          "text": "HUSNA MAULIDA , S.KOM",
+          "desc": "MGR APARTMENT &amp; PREMIUM CLUSTER",
+          "value": "DR4-116E0000"
+         },
+         {
+          "n_nik": 730562,
+          "text": "CHOLIS SAFRUDIN",
+          "desc": "DEPUTY EVP INFRASTRUCTURE",
+          "value": "DR4-12000000"
+         },
+         {
+          "n_nik": 730256,
+          "text": "M.ARIF HIDAYAT, ST",
+          "desc": "OSM REGIONAL OPERATION CENTER",
+          "value": "DR4-12100000"
+         },
+         {
+          "n_nik": 670112,
+          "text": "DWI PRAMANA, ST",
+          "desc": "MGR HELPDESK OPERATION",
+          "value": "DR4-121A0000"
+         },
+         {
+          "n_nik": 680353,
+          "text": "ARIF KOERNIAWAN",
+          "desc": "MGR FULFILLMENT",
+          "value": "DR4-121B0000"
+         },
+         {
+          "n_nik": 800002,
+          "text": "DANI ARUMANEGARA , S.KOM",
+          "desc": "MGR ASSURANCE",
+          "value": "DR4-121C0000"
+         },
+         {
+          "n_nik": 800001,
+          "text": "AFIF EKO HARTARTO, S.Kom.",
+          "desc": "MGR TOP PRIORITY SOLUTION",
+          "value": "DR4-121D0000"
+         },
+         {
+          "n_nik": 700335,
+          "text": "SARWIJI",
+          "desc": "MGR PERFORMANCE MGT &amp; SLA MONITORING",
+          "value": "DR4-121E0000"
+         },
+         {
+          "n_nik": 800075,
+          "text": "BUDHI SUPRIYONO",
+          "desc": "MGR SERVICE DELIVERY",
+          "value": "DR4-121F0000"
+         },
+         {
+          "n_nik": 740100,
+          "text": "ARIES YULIANTO, ST",
+          "desc": "OSM MANAGED SERVICE OPERATION",
+          "value": "DR4-12300000"
+         },
+         {
+          "n_nik": 830010,
+          "text": "PRAMUHADIANTO",
+          "desc": "MGR CNOP AREA TELKOM REGIONAL IV",
+          "value": "DR4-123A0000"
+         },
+         {
+          "n_nik": 770043,
+          "text": "DIARTO RAHARDJO",
+          "desc": "MGR OLO FULFILLMENT &amp; ASSURANCE",
+          "value": "DR4-123B0000"
+         },
+         {
+          "n_nik": 670121,
+          "text": "AMRU BADJIDEH",
+          "desc": "MGR INFRA SERVICE DELIVERY &amp; OPERATION S",
+          "value": "DR4-123C0000"
+         },
+         {
+          "n_nik": 730245,
+          "text": "DWI AGUNG SULISTYANTA, ST",
+          "desc": "MGR PERF MGT, SLA MONITORING &amp; KPI REPOR",
+          "value": "DR4-123D0000"
+         },
+         {
+          "n_nik": 780039,
+          "text": "SUSAN PRASETYA",
+          "desc": "OSM REGIONAL NETWORK OPERATION",
+          "value": "DR4-12600000"
+         },
+         {
+          "n_nik": 860112,
+          "text": "FARID BASKORO",
+          "desc": "MGR BACKBONE, DC &amp; DEFA OPERATION",
+          "value": "DR4-126A0000"
+         },
+         {
+          "n_nik": 790025,
+          "text": "ASNA MUNIATI",
+          "desc": "MGR IP &amp; SERVICE NODE OPERATION",
+          "value": "DR4-126B0000"
+         },
+         {
+          "n_nik": 790052,
+          "text": "YANI MARIA CHRISTIE",
+          "desc": "MGR IS OPERATION SUPPORT",
+          "value": "DR4-126C0000"
+         },
+         {
+          "n_nik": 740189,
+          "text": "MUHAMAD JUMHAN",
+          "desc": "MGR INFRA MAINTENANCE",
+          "value": "DR4-126D0000"
+         },
+         {
+          "n_nik": 730465,
+          "text": "USEP MAMAN IDAYAT",
+          "desc": "OSM PLANNING, ENGINEERING &amp; DEPLOYMENT",
+          "value": "DR4-12700000"
+         },
+         {
+          "n_nik": 780002,
+          "text": "BUDI LEKSONO,S.KOM",
+          "desc": "MGR PLANNING, ENGINEERING &amp; CAPEX MGT",
+          "value": "DR4-127A0000"
+         },
+         {
+          "n_nik": 710413,
+          "text": "WAHYU UTOMO",
+          "desc": "MGR NETWORK DEPLOYMENT &amp; PROJECT SUPERVI",
+          "value": "DR4-127B0000"
+         },
+         {
+          "n_nik": 710006,
+          "text": "PURNOMO",
+          "desc": "MGR ACCESS NEW FTTH &amp; MODERNIZATION DEPL",
+          "value": "DR4-127C0000"
+         },
+         {
+          "n_nik": 740113,
+          "text": "YAN ANDI SAIFUDIN, ST",
+          "desc": "MGR ENTERPRISE, OLO &amp; WIFI DEPLOYMENT",
+          "value": "DR4-127D0000"
+         },
+         {
+          "n_nik": 690042,
+          "text": "UTOMO, S.E.",
+          "desc": "MGR HUBUNGAN ANTAR INSTANSI\/PEMDA",
+          "value": "DR4-127E0000"
+         },
+         {
+          "n_nik": 670289,
+          "text": "WIWIT WIDJANARKO, IR",
+          "desc": "OSM ACCESS MANAGEMENT",
+          "value": "DR4-12800000"
+         },
+         {
+          "n_nik": 720600,
+          "text": "EMANUEL FEBRY DJATMIKO ADJI",
+          "desc": "MGR ACCESS CAPEX QE &amp; PERFORMANCE",
+          "value": "DR4-128A0000"
+         },
+         {
+          "n_nik": 670187,
+          "text": "HARTONO, S.T., M.Kom.",
+          "desc": "MGR ACCESS DATA &amp; INVENTORY MGT",
+          "value": "DR4-128B0000"
+         },
+         {
+          "n_nik": 880076,
+          "text": "ARDYANTO KURNIAWAN",
+          "desc": "MGR ACCESS NETWORK ELEMENT OM",
+          "value": "DR4-128C0000"
+         },
+         {
+          "n_nik": 850100,
+          "text": "FITRILIANI HAYU PUSPASARI",
+          "desc": "MGR ACCESS OM &amp; PARTNERSHIP",
+          "value": "DR4-128D0000"
+         },
+         {
+          "n_nik": 790014,
+          "text": "YUDI IRWANTO,S.Kom",
+          "desc": "MGR NTE MANAGEMENT",
+          "value": "DR4-128E0000"
+         },
+         {
+          "n_nik": 680057,
+          "text": "SETYO PURWONO,IR",
+          "desc": "DEPUTY GM WITEL SEMARANG",
+          "value": "R4W-4A100000"
+         },
+         {
+          "n_nik": 730335,
+          "text": "JOKO WIYONO",
+          "desc": "GM WITEL SEMARANG",
+          "value": "R4W-4A100000"
+         },
+         {
+          "n_nik": 790066,
+          "text": "MIRA KOMALA DEWI",
+          "desc": "MGR WAR ROOM &amp; RISK MGT",
+          "value": "R4W-4A1A0000"
+         },
+         {
+          "n_nik": 700024,
+          "text": "AGUNG SUGIHARTO",
+          "desc": "MGR ACCESS &amp; SERVICE OPERATION",
+          "value": "R4W-4A1B0000"
+         },
+         {
+          "n_nik": 940048,
+          "text": "ADITYA KURNIAWAN, S.T, M.M",
+          "desc": "ASMAN CONSUMER ASSURANCE",
+          "value": "R4W-4A1BB000"
+         },
+         {
+          "n_nik": 720367,
+          "text": "JUNI HARIANTO,ST",
+          "desc": "MGR ACCESS OPTIMA &amp; CONSTRUCTION SPV",
+          "value": "R4W-4A1C0000"
+         },
+         {
+          "n_nik": 670332,
+          "text": "RASIKUN",
+          "desc": "ASMAN DEVELOPMENT &amp; SOL PARTNERSHIP SPV",
+          "value": "R4W-4A1CA000"
+         },
+         {
+          "n_nik": 720365,
+          "text": "PARYONO, ST",
+          "desc": "MGR NETWORK AREA &amp; IS OPERATION",
+          "value": "R4W-4A1D0000"
+         },
+         {
+          "n_nik": 730268,
+          "text": "KEMAS CEK AGUS ABDUSSOMAD A.",
+          "desc": "MGR BGES OPERATION",
+          "value": "R4W-4A1E0000"
+         },
+         {
+          "n_nik": 850159,
+          "text": "MYTA IRWANTI",
+          "desc": "MGR WHOLESALE ACCESS NETWORK &amp; WIFI",
+          "value": "R4W-4A1F0000"
+         },
+         {
+          "n_nik": 810016,
+          "text": "ADHI WIDYANTO",
+          "desc": "MGR ACCESS DATA MGT",
+          "value": "R4W-4A1G0000"
+         },
+         {
+          "n_nik": 740234,
+          "text": "TRI ADI SANTOSA, ST",
+          "desc": "MGR ACCESS MAINTENANCE &amp; QE",
+          "value": "R4W-4A1H0000"
+         },
+         {
+          "n_nik": 710067,
+          "text": "SISWANTO",
+          "desc": "ASMAN ACCESS MAINTENANCE, QE PLAN &amp; HAI",
+          "value": "R4W-4A1HA000"
+         },
+         {
+          "n_nik": 910159,
+          "text": "MUHAMMAD RIZKY PRATAMA",
+          "desc": "ASMAN NE FTM ACCES MNTENAN&amp;PRTNRSHP CTRL",
+          "value": "R4W-4A1HB000"
+         },
+         {
+          "n_nik": 740149,
+          "text": "NUNUNG SADTOMO PRAPTO, ST",
+          "desc": "MGR HOME SERVICE",
+          "value": "R4W-4A1I0000"
+         },
+         {
+          "n_nik": 910101,
+          "text": "NAHDATIN HASANAH B. JUMALA",
+          "desc": "ASMAN SALES SUPPORT",
+          "value": "R4W-4A1IB000"
+         },
+         {
+          "n_nik": 680030,
+          "text": "HIRMAG MART DANY",
+          "desc": "MGR DIGITAL SERVICE &amp; WIFI",
+          "value": "R4W-4A1J0000"
+         },
+         {
+          "n_nik": 730387,
+          "text": "AMBAR PRIHADI",
+          "desc": "MGR CUSTOMER CARE",
+          "value": "R4W-4A1K0000"
+         },
+         {
+          "n_nik": 670177,
+          "text": "PUTRO RIYANTO, SE",
+          "desc": "ASMAN SERVICE ASSURANCE",
+          "value": "R4W-4A1KA000"
+         },
+         {
+          "n_nik": 740083,
+          "text": "RONI SETIYAWAN, ST",
+          "desc": "MGR BUSINESS SERVICE",
+          "value": "R4W-4A1L0000"
+         },
+         {
+          "n_nik": 700433,
+          "text": "WIWIK RATNA KUSUMAWATI, SE",
+          "desc": "ASMAN BS OBL",
+          "value": "R4W-4A1LC000"
+         },
+         {
+          "n_nik": 840013,
+          "text": "YOGI ANGGUN SALOKO YUDO",
+          "desc": "MGR ENTERPRISE SERVICE",
+          "value": "R4W-4A1M0000"
+         },
+         {
+          "n_nik": 710223,
+          "text": "CANTI NUGRAHENI",
+          "desc": "ASMAN ES BIDDING MGT &amp; OBL",
+          "value": "R4W-4A1MB000"
+         },
+         {
+          "n_nik": 730486,
+          "text": "IMPERATA JOKO SUBROTO",
+          "desc": "MGR GOVERNMENT SERVICE",
+          "value": "R4W-4A1N0000"
+         },
+         {
+          "n_nik": 920213,
+          "text": "NUR AFIFAH",
+          "desc": "ASMAN GS SALES ENGINEER",
+          "value": "R4W-4A1NA000"
+         },
+         {
+          "n_nik": 710224,
+          "text": "MAHARANI RATIH DWIASIH, S.E.",
+          "desc": "ASMAN GS BIDDING MGT &amp; OBL",
+          "value": "R4W-4A1NB000"
+         },
+         {
+          "n_nik": 720391,
+          "text": "RETNO YULISTYAWATI, ST",
+          "desc": "MGR LOGISTIK &amp; GENERAL SUPPORT",
+          "value": "R4W-4A1O0000"
+         },
+         {
+          "n_nik": 680041,
+          "text": "FATKHIYAH",
+          "desc": "ASMAN LOGISTIK",
+          "value": "R4W-4A1OA000"
+         },
+         {
+          "n_nik": 680040,
+          "text": "SITI RAHAYU, ST",
+          "desc": "ASMAN COMMUNICATION &amp; SECRETARIATE",
+          "value": "R4W-4A1OD000"
+         },
+         {
+          "n_nik": 700430,
+          "text": "ANIEK YULIANI, SE",
+          "desc": "ASMAN HUMAN CAPITAL",
+          "value": "R4W-4A1PA000"
+         },
+         {
+          "n_nik": 700438,
+          "text": "DWI WAHYUNINGSIH",
+          "desc": "ASMAN COMMUNITY DEVELOPMENT CENTER",
+          "value": "R4W-4A1PC000"
+         },
+         {
+          "n_nik": 680121,
+          "text": "ANDREAS SETYO PRAYOGO",
+          "desc": "MGR SAS",
+          "value": "R4W-4A1Q0000"
+         },
+         {
+          "n_nik": 670247,
+          "text": "DEWA GDE ADHI WESESA, IR",
+          "desc": "MGR SHARED SERVICE PAYMENT COLLECTION",
+          "value": "R4W-4A1R0000"
+         },
+         {
+          "n_nik": 700443,
+          "text": "UHDA RUBIANI, S.E.",
+          "desc": "ASMAN DEBT MGT &amp; COLLECTION PARTNERSHIP",
+          "value": "R4W-4A1RB000"
+         },
+         {
+          "n_nik": 720406,
+          "text": "BAMBANG SETIAWAN",
+          "desc": "KAKANDATEL KENDAL",
+          "value": "R4W-4A1S0000"
+         },
+         {
+          "n_nik": 670192,
+          "text": "TJATUR RESMI BUDI UTOMO",
+          "desc": "KAKANDATEL UNGARAN",
+          "value": "R4W-4A1T0000"
+         },
+         {
+          "n_nik": 670506,
+          "text": "RIKY HARGIARTO",
+          "desc": "ASMAN INFRA OPERATION &amp; MAINTENANCE",
+          "value": "R4W-4A1TB000"
+         },
+         {
+          "n_nik": 730587,
+          "text": "AGUS SETIYAWAN AKHMADI",
+          "desc": "KAKANDATEL SALATIGA",
+          "value": "R4W-4A1U0000"
+         },
+         {
+          "n_nik": 670504,
+          "text": "ABDUL HAMID",
+          "desc": "ASMAN SALES &amp; CUSTOMER CARE",
+          "value": "R4W-4A1UA000"
+         },
+         {
+          "n_nik": 690383,
+          "text": "YOHANES DARSONO",
+          "desc": "ASMAN INFRA OPERATION &amp; MAINTENANCE",
+          "value": "R4W-4A1UB000"
+         },
+         {
+          "n_nik": 740160,
+          "text": "NANANG SETIYO UTOMO, ST",
+          "desc": "GM WITEL PURWOKERTO",
+          "value": "R4W-4B100000"
+         },
+         {
+          "n_nik": 830116,
+          "text": "BAMBANG SUPRIYANTO",
+          "desc": "MGR WAR ROOM &amp; RISK MGT",
+          "value": "R4W-4B1A0000"
+         },
+         {
+          "n_nik": 680586,
+          "text": "AGUS BUDI SETYAWAN",
+          "desc": "MGR ACCESS SERVICE OPERATION",
+          "value": "R4W-4B1B0000"
+         },
+         {
+          "n_nik": 720531,
+          "text": "WIDJI KUAT PRABOWO",
+          "desc": "MGR ACCESS OPTIMA, DATA &amp; MAINTENANCE",
+          "value": "R4W-4B1C0000"
+         },
+         {
+          "n_nik": 670179,
+          "text": "SURYO ADI KUSHARTONO, S.E.",
+          "desc": "ASMAN OPTIMA &amp; QE",
+          "value": "R4W-4B1CB000"
+         },
+         {
+          "n_nik": 710510,
+          "text": "SUGIHARTO",
+          "desc": "MGR NETWORK AREA &amp; IS OPERATION",
+          "value": "R4W-4B1D0000"
+         },
+         {
+          "n_nik": 710264,
+          "text": "SISWANTO",
+          "desc": "MGR OPERATION BGES, WAN &amp; WIFI",
+          "value": "R4W-4B1E0000"
+         },
+         {
+          "n_nik": 690517,
+          "text": "MURSITO",
+          "desc": "ASMAN WAN &amp; WIFI FULFILLMENT &amp; ASSURANCE",
+          "value": "R4W-4B1EB000"
+         },
+         {
+          "n_nik": 820016,
+          "text": "NUGROHO ADI PRACOYO",
+          "desc": "MGR CONSUMER SERVICE",
+          "value": "R4W-4B1F0000"
+         },
+         {
+          "n_nik": 900094,
+          "text": "SOFIANA WANTI",
+          "desc": "JM CUSTOMER CARE",
+          "value": "R4W-4B1G0000"
+         },
+         {
+          "n_nik": 730231,
+          "text": "YOGI BAHTIAR, ST",
+          "desc": "MGR BUSINESS, GOVT &amp; ENTERPRISE SERVICE",
+          "value": "R4W-4B1H0000"
+         },
+         {
+          "n_nik": 670288,
+          "text": "KURNIA WARAS TJAHJO",
+          "desc": "MGR LOGISTIK &amp; GENERAL SUPPORT",
+          "value": "R4W-4B1I0000"
+         },
+         {
+          "n_nik": 700441,
+          "text": "DARWIYANTI",
+          "desc": "ASMAN ASSET MGT &amp; FACILITY SUPPORT",
+          "value": "R4W-4B1IB000"
+         },
+         {
+          "n_nik": 700432,
+          "text": "WAHYU LISTYANINGRUM, SE",
+          "desc": "MGR SHARED SERVICE",
+          "value": "R4W-4B1J0000"
+         },
+         {
+          "n_nik": 670508,
+          "text": "BUDI SANTOSA",
+          "desc": "ASMAN SALES &amp; CUSTOMER CARE",
+          "value": "R4W-4B1KA000"
+         },
+         {
+          "n_nik": 740087,
+          "text": "TRI HERU UTOMO, ST",
+          "desc": "KAKANDATEL CILACAP",
+          "value": "R4W-4B1L0000"
+         },
+         {
+          "n_nik": 720575,
+          "text": "MUNGKAS SETYABADI, ST",
+          "desc": "KAKANDATEL PURBALINGGA",
+          "value": "R4W-4B1M0000"
+         },
+         {
+          "n_nik": 740199,
+          "text": "DWI KIANSANTANG",
+          "desc": "GM WITEL PEKALONGAN",
+          "value": "R4W-4C100000"
+         },
+         {
+          "n_nik": 810095,
+          "text": "FERRY HASCARYANTO",
+          "desc": "MGR ACCESS OPERATION",
+          "value": "R4W-4C1B0000"
+         },
+         {
+          "n_nik": 840008,
+          "text": "ARIE SULISTYANINGRUM",
+          "desc": "ASMAN CONSUMER FULFILLMENT",
+          "value": "R4W-4C1BA000"
+         },
+         {
+          "n_nik": 910124,
+          "text": "YUSUF ARIFANDI",
+          "desc": "ASMAN CONSUMER ASSURANCE",
+          "value": "R4W-4C1BB000"
+         },
+         {
+          "n_nik": 720177,
+          "text": "NARDI, ST",
+          "desc": "MGR ACCESS OPTIMA, DATA &amp; MAINTENANCE",
+          "value": "R4W-4C1C0000"
+         },
+         {
+          "n_nik": 720368,
+          "text": "TOTO HARJANTO, ST",
+          "desc": "MGR NETWORK AREA &amp; IS OPERATION",
+          "value": "R4W-4C1D0000"
+         },
+         {
+          "n_nik": 670505,
+          "text": "YUSWANTO BASUKI",
+          "desc": "ASMAN OM TRANSPORT, RADIO &amp; MUX",
+          "value": "R4W-4C1DB000"
+         },
+         {
+          "n_nik": 920067,
+          "text": "MUHAMMAD AZHARI ZAKIRI",
+          "desc": "MGR OPERATION BGES, WAN &amp; WIFI",
+          "value": "R4W-4C1E0000"
+         },
+         {
+          "n_nik": 740292,
+          "text": "SUTEJO, ST",
+          "desc": "MGR CONSUMER SERVICE",
+          "value": "R4W-4C1F0000"
+         },
+         {
+          "n_nik": 950094,
+          "text": "NAYYIROH",
+          "desc": "ASMAN HOME SERVICE",
+          "value": "R4W-4C1FA000"
+         },
+         {
+          "n_nik": 810015,
+          "text": "AHMAD FURQONI AFI",
+          "desc": "JM CUSTOMER CARE",
+          "value": "R4W-4C1G0000"
+         },
+         {
+          "n_nik": 830041,
+          "text": "ANITA",
+          "desc": "MGR BUSINESS, GOVT &amp; ENTERPRISE SERVICE",
+          "value": "R4W-4C1H0000"
+         },
+         {
+          "n_nik": 810014,
+          "text": "DEWI ARIANI, S.KOM.",
+          "desc": "MGR LOGISTIK &amp; GENERAL SUPPORT",
+          "value": "R4W-4C1I0000"
+         },
+         {
+          "n_nik": 750065,
+          "text": "ROSANA INTAN PERMATASARI",
+          "desc": "MGR SHARED SERVICE",
+          "value": "R4W-4C1J0000"
+         },
+         {
+          "n_nik": 890018,
+          "text": "DYAN FEBRINA KUSUMADEWI",
+          "desc": "ASMAN PAYMENT COLLECTION CONSUMER",
+          "value": "R4W-4C1JB000"
+         },
+         {
+          "n_nik": 700026,
+          "text": "CHRISTIANA NILA DEWI",
+          "desc": "KAKANDATEL BATANG",
+          "value": "R4W-4C1K0000"
+         },
+         {
+          "n_nik": 710218,
+          "text": "YAYUK INDRASWATI",
+          "desc": "ASMAN SALES &amp; CUSTOMER CARE",
+          "value": "R4W-4C1KA000"
+         },
+         {
+          "n_nik": 790016,
+          "text": "P. CH. DWI PRASETYO M.S.",
+          "desc": "KAKANDATEL BREBES",
+          "value": "R4W-4C1L0000"
+         },
+         {
+          "n_nik": 660474,
+          "text": "RUDY TRISNA SUSANTO, S.Kom",
+          "desc": "ASMAN INFRA OPERATION &amp; MAINTENANCE",
+          "value": "R4W-4C1LB000"
+         },
+         {
+          "n_nik": 730440,
+          "text": "NOER WIDJAYA",
+          "desc": "KAKANDATEL SLAWI",
+          "value": "R4W-4C1M0000"
+         },
+         {
+          "n_nik": 690401,
+          "text": "TITIN HARDININGSIH, SH",
+          "desc": "ASMAN SALES &amp; CUSTOMER CARE",
+          "value": "R4W-4C1MA000"
+         },
+         {
+          "n_nik": 840035,
+          "text": "HAPSARI INDAH PUJIATI",
+          "desc": "KAKANDATEL PEMALANG",
+          "value": "R4W-4C1N0000"
+         },
+         {
+          "n_nik": 720375,
+          "text": "HARIKA YUNIANTA",
+          "desc": "KAKANDATEL TEGAL",
+          "value": "R4W-4C1O0000"
+         },
+         {
+          "n_nik": 710222,
+          "text": "SRI HERAWATI,S.E.",
+          "desc": "ASMAN SALES &amp; CUSTOMER CARE",
+          "value": "R4W-4C1OA000"
+         },
+         {
+          "n_nik": 690172,
+          "text": "MURACHNO",
+          "desc": "ASMAN INFRA OPERATION &amp; MAINTENANCE",
+          "value": "R4W-4C1OB000"
+         },
+         {
+          "n_nik": 730339,
+          "text": "SULKAN",
+          "desc": "GM WITEL KUDUS",
+          "value": "R4W-4D100000"
+         },
+         {
+          "n_nik": 830019,
+          "text": "NORA ARI RAHMAWATI",
+          "desc": "MGR WAR ROOM &amp; RISK MGT",
+          "value": "R4W-4D1A0000"
+         },
+         {
+          "n_nik": 800028,
+          "text": "AMIN SUYONO, S.Kom.",
+          "desc": "MGR ACCESS OPERATION",
+          "value": "R4W-4D1B0000"
+         },
+         {
+          "n_nik": 920121,
+          "text": "MUHAMMAD AFNAAN SUBHI",
+          "desc": "ASMAN CONSUMER FULFILLMENT",
+          "value": "R4W-4D1BB000"
+         },
+         {
+          "n_nik": 840010,
+          "text": "DONA ARDHY GUSEMA",
+          "desc": "MGR ACCESS OPTIMA, DATA &amp; MAINTENANCE",
+          "value": "R4W-4D1C0000"
+         },
+         {
+          "n_nik": 700339,
+          "text": "SUTARNO",
+          "desc": "ASMAN OPTIMA &amp; QE",
+          "value": "R4W-4D1CA000"
+         },
+         {
+          "n_nik": 670296,
+          "text": "SUNARDI",
+          "desc": "ASMAN MAINTENANCE &amp; DATA MANAGEMENT",
+          "value": "R4W-4D1CB000"
+         },
+         {
+          "n_nik": 860124,
+          "text": "PARWATA",
+          "desc": "MGR NETWORK AREA &amp; IS OPERATION",
+          "value": "R4W-4D1D0000"
+         },
+         {
+          "n_nik": 690288,
+          "text": "JONO",
+          "desc": "MGR OPERATION BGES, WAN &amp; WIFI",
+          "value": "R4W-4D1E0000"
+         },
+         {
+          "n_nik": 740040,
+          "text": "RULLI KURNIA",
+          "desc": "MGR CONSUMER SERVICE",
+          "value": "R4W-4D1F0000"
+         },
+         {
+          "n_nik": 810072,
+          "text": "ADITA KRISMAWATI HADISWARA",
+          "desc": "MGR BUSINESS, GOVT &amp; ENTERPRISE SERVICE",
+          "value": "R4W-4D1H0000"
+         },
+         {
+          "n_nik": 740168,
+          "text": "MU'MIN AMIN",
+          "desc": "MGR LOGISTIK &amp; GENERAL SUPPORT",
+          "value": "R4W-4D1I0000"
+         },
+         {
+          "n_nik": 720580,
+          "text": "MARLINDUNG TURNIP",
+          "desc": "MGR SHARED SERVICE",
+          "value": "R4W-4D1J0000"
+         },
+         {
+          "n_nik": 830017,
+          "text": "TRI ASTUTI RETNO ANGGRAINI",
+          "desc": "KAKANDATEL BLORA",
+          "value": "R4W-4D1K0000"
+         },
+         {
+          "n_nik": 710454,
+          "text": "MOHAMMAD BAKRI, ST",
+          "desc": "KAKANDATEL JEPARA",
+          "value": "R4W-4D1L0000"
+         },
+         {
+          "n_nik": 730203,
+          "text": "ABDUS SYAKUR, ST",
+          "desc": "KAKANDATEL PATI",
+          "value": "R4W-4D1M0000"
+         },
+         {
+          "n_nik": 660447,
+          "text": "KASIBAN, S.E. M.M.",
+          "desc": "ASMAN INFRA OPERATION &amp; MAINTENANCE",
+          "value": "R4W-4D1MB000"
+         },
+         {
+          "n_nik": 790015,
+          "text": "SARJONO",
+          "desc": "KAKANDATEL PURWODADI",
+          "value": "R4W-4D1N0000"
+         },
+         {
+          "n_nik": 720370,
+          "text": "MUSTADI,ST",
+          "desc": "GM WITEL MAGELANG",
+          "value": "R4W-4E100000"
+         },
+         {
+          "n_nik": 850128,
+          "text": "MONICA AFRISIA DINI KRISTIANI",
+          "desc": "MGR WAR ROOM &amp; RISK MGT",
+          "value": "R4W-4E1A0000"
+         },
+         {
+          "n_nik": 840063,
+          "text": "SUMARNO HADI",
+          "desc": "MGR ACCESS OPERATION",
+          "value": "R4W-4E1B0000"
+         },
+         {
+          "n_nik": 740237,
+          "text": "GUNARSO EFENDI, ST",
+          "desc": "MGR ACCESS OPTIMA, DATA &amp; MAINTENANCE",
+          "value": "R4W-4E1C0000"
+         },
+         {
+          "n_nik": 740296,
+          "text": "SUHADI RUSDIANTORO",
+          "desc": "MGR NETWORK AREA &amp; IS OPERATION",
+          "value": "R4W-4E1D0000"
+         },
+         {
+          "n_nik": 790007,
+          "text": "HARTOYO, S.Kom.",
+          "desc": "MGR OPERATION BGES, WAN &amp; WIFI",
+          "value": "R4W-4E1E0000"
+         },
+         {
+          "n_nik": 720522,
+          "text": "HENRIE BRILLIANTORO",
+          "desc": "ASMAN WAN &amp; WIFI FULFILLMENT &amp; ASSURANCE",
+          "value": "R4W-4E1EB000"
+         },
+         {
+          "n_nik": 840156,
+          "text": "JAYANTI SUKMA MAULANI",
+          "desc": "MGR CONSUMER SERVICE",
+          "value": "R4W-4E1F0000"
+         },
+         {
+          "n_nik": 930032,
+          "text": "PUTRI KURNIA SARI",
+          "desc": "JM CUSTOMER CARE",
+          "value": "R4W-4E1G0000"
+         },
+         {
+          "n_nik": 830095,
+          "text": "DIANTY ELISIANA",
+          "desc": "MGR BUSINESS, GOVT &amp; ENTERPRISE SERVICE",
+          "value": "R4W-4E1H0000"
+         },
+         {
+          "n_nik": 720142,
+          "text": "WULANDARI,ST",
+          "desc": "MGR LOGISTIK &amp; GENERAL SUPPORT",
+          "value": "R4W-4E1I0000"
+         },
+         {
+          "n_nik": 690021,
+          "text": "BUDI",
+          "desc": "ASMAN LOGISTIK &amp; LEGAL",
+          "value": "R4W-4E1IA000"
+         },
+         {
+          "n_nik": 840125,
+          "text": "ANGGAR PRASETYONINGRUM",
+          "desc": "MGR SHARED SERVICE",
+          "value": "R4W-4E1J0000"
+         },
+         {
+          "n_nik": 680436,
+          "text": "SITI NURUL HASANAH",
+          "desc": "ASMAN FINANCE",
+          "value": "R4W-4E1JA000"
+         },
+         {
+          "n_nik": 730470,
+          "text": "ACHMAD BUDIANTORO, ST",
+          "desc": "KAKANDATEL KEBUMEN",
+          "value": "R4W-4E1K0000"
+         },
+         {
+          "n_nik": 680327,
+          "text": "RUDY IRAWAN",
+          "desc": "ASMAN INFRA OPERATION &amp; MAINTENANCE",
+          "value": "R4W-4E1KB000"
+         },
+         {
+          "n_nik": 820005,
+          "text": "DIAH ERNAWATI HARIMURNI",
+          "desc": "KAKANDATEL MUNTILAN",
+          "value": "R4W-4E1L0000"
+         },
+         {
+          "n_nik": 790008,
+          "text": "KURNIA TRININGSIH",
+          "desc": "KAKANDATEL PURWOREJO",
+          "value": "R4W-4E1M0000"
+         },
+         {
+          "n_nik": 680505,
+          "text": "PUJIYONO",
+          "desc": "ASMAN SALES &amp; CUSTOMER CARE",
+          "value": "R4W-4E1MA000"
+         },
+         {
+          "n_nik": 800030,
+          "text": "TRIAWAN SETIADI, SE",
+          "desc": "KAKANDATEL WONOSOBO",
+          "value": "R4W-4E1O0000"
+         },
+         {
+          "n_nik": 680451,
+          "text": "DARKO, S.E.",
+          "desc": "ASMAN SUPPORT",
+          "value": "R4W-4E1OC000"
+         },
+         {
+          "n_nik": 710399,
+          "text": "PRIBADI NIRWANA, ST, MT",
+          "desc": "GM WITEL SOLO",
+          "value": "R4W-4G100000"
+         },
+         {
+          "n_nik": 720311,
+          "text": "RULLY SUSILO",
+          "desc": "MGR WAR ROOM &amp; RISK MGT",
+          "value": "R4W-4G1A0000"
+         },
+         {
+          "n_nik": 730410,
+          "text": "ANTOK RAHMAT SUDIBYA",
+          "desc": "MGR ACCESS &amp; SERVICE OPERATION",
+          "value": "R4W-4G1B0000"
+         },
+         {
+          "n_nik": 720058,
+          "text": "WILHELMUS FANDA",
+          "desc": "ASMAN CONSUMER ASSURANCE",
+          "value": "R4W-4G1BB000"
+         },
+         {
+          "n_nik": 920063,
+          "text": "RISKA AMALIA SETYARINI",
+          "desc": "ASMAN WITEL OPERATION CENTER",
+          "value": "R4W-4G1BC000"
+         },
+         {
+          "n_nik": 720359,
+          "text": "NUR AHMAD",
+          "desc": "MGR ACCESS OPTIMA &amp; DATA MANAGEMENT",
+          "value": "R4W-4G1C0000"
+         },
+         {
+          "n_nik": 690388,
+          "text": "NENY DESMIYARSI, S.E",
+          "desc": "ASMAN PLANNING DSGN,DPLOY&amp;SOL PRTNERSHIP",
+          "value": "R4W-4G1CA000"
+         },
+         {
+          "n_nik": 920193,
+          "text": "AYU ADINDA PUTRI",
+          "desc": "ASMAN DAVAL &amp; INVENTORY MGT",
+          "value": "R4W-4G1CC000"
+         },
+         {
+          "n_nik": 720090,
+          "text": "SUTIKNO",
+          "desc": "MGR NETWORK AREA &amp; IS OPERATION",
+          "value": "R4W-4G1D0000"
+         },
+         {
+          "n_nik": 680344,
+          "text": "SAPTO HADI WARSONO",
+          "desc": "ASMAN DATA CENTER &amp; DEFA",
+          "value": "R4W-4G1DC000"
+         },
+         {
+          "n_nik": 740232,
+          "text": "DWI SATRIANANDA, ST, MT.",
+          "desc": "MGR WHOLESALE ACCESS NETWORK &amp; WIFI",
+          "value": "R4W-4G1F0000"
+         },
+         {
+          "n_nik": 720414,
+          "text": "WAHYONO",
+          "desc": "MGR ACCESS MAINTENANCE &amp; QE",
+          "value": "R4W-4G1G0000"
+         },
+         {
+          "n_nik": 670174,
+          "text": "SUMARYONO",
+          "desc": "ASMAN ACCESS MAINTENANCE, QE PLAN &amp; HAI",
+          "value": "R4W-4G1GA000"
+         },
+         {
+          "n_nik": 700349,
+          "text": "BUDIYANTO",
+          "desc": "ASMAN NE FTM ACCES MNTENAN&amp;PRTNRSHP CTRL",
+          "value": "R4W-4G1GB000"
+         },
+         {
+          "n_nik": 740088,
+          "text": "MOHAMMAD AZIZ YUSUF LATIF, ST",
+          "desc": "MGR CONSUMER SERVICE",
+          "value": "R4W-4G1H0000"
+         },
+         {
+          "n_nik": 770033,
+          "text": "YULITA WIJAYANTI, ST.",
+          "desc": "MGR CUSTOMER CARE",
+          "value": "R4W-4G1I0000"
+         },
+         {
+          "n_nik": 720036,
+          "text": "RACHMANI SARWENDYAH, SE",
+          "desc": "ASMAN CUSTOMER TOUCH POINT",
+          "value": "R4W-4G1IB000"
+         },
+         {
+          "n_nik": 920163,
+          "text": "NUR RAHMAWATI",
+          "desc": "ASMAN CRM &amp; LEVERAGING CUSTOMER",
+          "value": "R4W-4G1IC000"
+         },
+         {
+          "n_nik": 720317,
+          "text": "DIDIN WIDIATMOKO, ST",
+          "desc": "MGR BUSINESS SERVICE",
+          "value": "R4W-4G1J0000"
+         },
+         {
+          "n_nik": 730017,
+          "text": "SRI HANDAYANI, S.E.",
+          "desc": "ASMAN BS OBL",
+          "value": "R4W-4G1JB000"
+         },
+         {
+          "n_nik": 810094,
+          "text": "ACHMAD YUSUF",
+          "desc": "MGR GOVERNMENT &amp; ENTERPRISE SERVICE",
+          "value": "R4W-4G1K0000"
+         },
+         {
+          "n_nik": 780049,
+          "text": "FITTY MUSTIKA",
+          "desc": "ASMAN GES SALES ENGINEER",
+          "value": "R4W-4G1KA000"
+         },
+         {
+          "n_nik": 930044,
+          "text": "FAJRIN REZA ANSHARI",
+          "desc": "ASMAN GES BIDDING MGT &amp; OBL",
+          "value": "R4W-4G1KB000"
+         },
+         {
+          "n_nik": 710525,
+          "text": "SURAHMANTO",
+          "desc": "MGR LOGISTIK &amp; GENERAL SUPPORT",
+          "value": "R4W-4G1L0000"
+         },
+         {
+          "n_nik": 700649,
+          "text": "WAHYUDIN SOFYAN",
+          "desc": "ASMAN LOGISTIK &amp; LEGAL",
+          "value": "R4W-4G1LA000"
+         },
+         {
+          "n_nik": 930188,
+          "text": "PRAMESTI FESTA PERDANANTI",
+          "desc": "ASMAN ASSET MGT &amp; FACILITY SUPPORT",
+          "value": "R4W-4G1LB000"
+         },
+         {
+          "n_nik": 720192,
+          "text": "DWI HAPPY AFIANTORO, ST, MT",
+          "desc": "MGR SHARED SERVICE HC &amp; FINANCE",
+          "value": "R4W-4G1M0000"
+         },
+         {
+          "n_nik": 680122,
+          "text": "AGUSTINA BETI SETIANINGSIH",
+          "desc": "ASMAN FINANCE",
+          "value": "R4W-4G1MC000"
+         },
+         {
+          "n_nik": 830078,
+          "text": "RIZKY ARSITA",
+          "desc": "MGR SHARED SERVICE PAYMENT COLLECTION",
+          "value": "R4W-4G1N0000"
+         },
+         {
+          "n_nik": 730208,
+          "text": "ENGGAR CAHYADI, ST,. MM.",
+          "desc": "KAKANDATEL SRAGEN",
+          "value": "R4W-4G1O0000"
+         },
+         {
+          "n_nik": 860073,
+          "text": "INTAN KURNIA IMASTUTI, S.T, M.M",
+          "desc": "KAKANDATEL WONOGIRI",
+          "value": "R4W-4G1P0000"
+         },
+         {
+          "n_nik": 930209,
+          "text": "ADI CIPTA ERLANGGA",
+          "desc": "ASMAN SALES &amp; CUSTOMER CARE",
+          "value": "R4W-4G1PA000"
+         },
+         {
+          "n_nik": 670184,
+          "text": "DARU SETYO RAHARDJO",
+          "desc": "KAKANDATEL KLATEN",
+          "value": "R4W-4G1Q0000"
+         },
+         {
+          "n_nik": 690394,
+          "text": "SARWONO",
+          "desc": "ASMAN SALES &amp; CUSTOMER CARE",
+          "value": "R4W-4G1QA000"
+         },
+         {
+          "n_nik": 660588,
+          "text": "DIDIT NURHARJANTO, SE",
+          "desc": "ASMAN INFRA OPERATION &amp; MAINTENANCE",
+          "value": "R4W-4G1QB000"
+         },
+         {
+          "n_nik": 700030,
+          "text": "DWI HARTONO, IR",
+          "desc": "DEPUTY GM WITEL YOGYAKARTA",
+          "value": "R4W-4H100000"
+         },
+         {
+          "n_nik": 730461,
+          "text": "AGUS FAISAL, ST",
+          "desc": "GM WITEL YOGYAKARTA",
+          "value": "R4W-4H100000"
+         },
+         {
+          "n_nik": 710429,
+          "text": "MUHAMMAD WACHID MUSHLIH",
+          "desc": "MGR WAR ROOM &amp; RISK MGT",
+          "value": "R4W-4H1A0000"
+         },
+         {
+          "n_nik": 840140,
+          "text": "HANDIKA RAHMAWAN AJI",
+          "desc": "MGR ACCESS &amp; SERVICE OPERATION",
+          "value": "R4W-4H1B0000"
+         },
+         {
+          "n_nik": 720242,
+          "text": "AGUSTINUS WAHJUDI HENDRO S.",
+          "desc": "MGR ACCESS OPTIMA &amp; CONSTRUCTION SPV",
+          "value": "R4W-4H1C0000"
+         },
+         {
+          "n_nik": 740297,
+          "text": "MUHAMMAD SIDIK RAHARJA",
+          "desc": "MGR NETWORK AREA &amp; IS OPERATION SUPPORT",
+          "value": "R4W-4H1D0000"
+         },
+         {
+          "n_nik": 740126,
+          "text": "SUKARNO",
+          "desc": "MGR BGES OPERATION",
+          "value": "R4W-4H1E0000"
+         },
+         {
+          "n_nik": 660589,
+          "text": "MARSUDIYONO",
+          "desc": "ASMAN BGES FULFILLMENT",
+          "value": "R4W-4H1EA000"
+         },
+         {
+          "n_nik": 730591,
+          "text": "KRIS WISNU WARDANA, ST",
+          "desc": "MGR WHOLESALE ACCESS NETWORK &amp; WIFI",
+          "value": "R4W-4H1F0000"
+         },
+         {
+          "n_nik": 720485,
+          "text": "HERY NUGROHO, ST",
+          "desc": "MGR ACCESS DATA MGT",
+          "value": "R4W-4H1G0000"
+         },
+         {
+          "n_nik": 940061,
+          "text": "SEKAR RINI ABIDIN",
+          "desc": "ASMAN DAVAL &amp; INVENTORY MGT PLAN&amp;REVIEW",
+          "value": "R4W-4H1GA000"
+         },
+         {
+          "n_nik": 780005,
+          "text": "YULIANTO",
+          "desc": "MGR ACCESS MAINTENANCE &amp; QE",
+          "value": "R4W-4H1H0000"
+         },
+         {
+          "n_nik": 740146,
+          "text": "ARIEF DARYATNO, ST",
+          "desc": "MGR HOME SERVICE",
+          "value": "R4W-4H1I0000"
+         },
+         {
+          "n_nik": 920221,
+          "text": "DYAH NORMA MAHARSI, MBA",
+          "desc": "ASMAN PARTNERSHIP &amp; AGENCY",
+          "value": "R4W-4H1IA000"
+         },
+         {
+          "n_nik": 730535,
+          "text": "ERNI PURWANTI DEWI",
+          "desc": "MGR DIGITAL SERVICE &amp; WIFI",
+          "value": "R4W-4H1J0000"
+         },
+         {
+          "n_nik": 690400,
+          "text": "SULISTYOWATI, S.E.",
+          "desc": "ASMAN DIGITAL &amp; WIFI SUPPORT",
+          "value": "R4W-4H1JC000"
+         },
+         {
+          "n_nik": 730086,
+          "text": "MARTARINI",
+          "desc": "MGR CUSTOMER CARE",
+          "value": "R4W-4H1K0000"
+         },
+         {
+          "n_nik": 670334,
+          "text": "PUJI KASTIYANI",
+          "desc": "ASMAN SERVICE ASSURANCE",
+          "value": "R4W-4H1KB000"
+         },
+         {
+          "n_nik": 720266,
+          "text": "NUNUK ENY KRISTANTI",
+          "desc": "MGR BUSINESS SERVICE",
+          "value": "R4W-4H1L0000"
+         },
+         {
+          "n_nik": 910005,
+          "text": "KAMILATUN NIKMAH",
+          "desc": "ASMAN BS SALES ENGINEER",
+          "value": "R4W-4H1LA000"
+         },
+         {
+          "n_nik": 680495,
+          "text": "SUKANTA",
+          "desc": "ASMAN BS DELIVERY &amp; QUALITY",
+          "value": "R4W-4H1LC000"
+         },
+         {
+          "n_nik": 790120,
+          "text": "DEWI SETIAWATI SUKARNO",
+          "desc": "MGR ENTERPRISE SERVICE",
+          "value": "R4W-4H1M0000"
+         },
+         {
+          "n_nik": 930064,
+          "text": "RATIH TRYAS PRODONINGRUM",
+          "desc": "ASMAN ES BIDDING MGT &amp; OBL",
+          "value": "R4W-4H1MB000"
+         },
+         {
+          "n_nik": 840080,
+          "text": "DWISARI WIGUNA",
+          "desc": "ASMAN ES PROJECT MGT &amp; QUALITY",
+          "value": "R4W-4H1MD000"
+         },
+         {
+          "n_nik": 740141,
+          "text": "TRINIL ANJAR LESTARI, ST",
+          "desc": "MGR GOVERNMENT SERVICE",
+          "value": "R4W-4H1N0000"
+         },
+         {
+          "n_nik": 680044,
+          "text": "MUTOHAR QODRI",
+          "desc": "MGR LOGISTIK &amp; GENERAL SUPPORT",
+          "value": "R4W-4H1O0000"
+         },
+         {
+          "n_nik": 680096,
+          "text": "DAHLIA",
+          "desc": "ASMAN LOGISTIK",
+          "value": "R4W-4H1OA000"
+         },
+         {
+          "n_nik": 700442,
+          "text": "TRI WIDYASTUTI",
+          "desc": "ASMAN ASSET MGT &amp; FACILITY SUPPORT",
+          "value": "R4W-4H1OC000"
+         },
+         {
+          "n_nik": 730092,
+          "text": "YANI QOYIMAH",
+          "desc": "MGR SHARED SERVICE HC &amp; FINANCE",
+          "value": "R4W-4H1P0000"
+         },
+         {
+          "n_nik": 660142,
+          "text": "CIPTADI WIDODO",
+          "desc": "ASMAN HUMAN CAPITAL",
+          "value": "R4W-4H1PA000"
+         },
+         {
+          "n_nik": 880055,
+          "text": "NOVITA WAHYUNINGTYAS",
+          "desc": "ASMAN FINANCE",
+          "value": "R4W-4H1PB000"
+         },
+         {
+          "n_nik": 700440,
+          "text": "SRI WAHYUNI, SE",
+          "desc": "ASMAN COMMUNITY DEVELOPMENT CENTER",
+          "value": "R4W-4H1PC000"
+         },
+         {
+          "n_nik": 810120,
+          "text": "RAMA KUMALA SARI",
+          "desc": "MGR SAS",
+          "value": "R4W-4H1Q0000"
+         },
+         {
+          "n_nik": 710418,
+          "text": "ASTINAH, ST, MM",
+          "desc": "MGR SHARED SERVICE PAYMENT COLLECTION",
+          "value": "R4W-4H1R0000"
+         },
+         {
+          "n_nik": 710134,
+          "text": "TRI MARTININGSIH",
+          "desc": "ASMAN PAYMENT COLLECTION EBIS",
+          "value": "R4W-4H1RB000"
+         },
+         {
+          "n_nik": 670331,
+          "text": "UMI FATIMAH",
+          "desc": "ASMAN DEBT MGT &amp; COLLECTION PARTNERSHIP",
+          "value": "R4W-4H1RC000"
+         },
+         {
+          "n_nik": 720276,
+          "text": "MURTADO",
+          "desc": "KAKANDATEL BANTUL",
+          "value": "R4W-4H1S0000"
+         },
+         {
+          "n_nik": 680092,
+          "text": "SJILFIA FISKA",
+          "desc": "ASMAN SALES &amp; CUSTOMER CARE",
+          "value": "R4W-4H1SA000"
+         },
+         {
+          "n_nik": 680583,
+          "text": "SUPRIYADI",
+          "desc": "KAKANDATEL SLEMAN",
+          "value": "R4W-4H1T0000"
+         },
+         {
+          "n_nik": 900083,
+          "text": "CATHARINA NARISWARI",
+          "desc": "ASMAN SALES &amp; CUSTOMER CARE",
+          "value": "R4W-4H1TA000"
+         }
+        ],
+        "EVP":[
+         {
+          "NIK": 670169,
+          "NAMA KARYAWAN": "RIJANTO UTOMO, RADEN, IR",
+          "JABATAN": "EVP TELKOM REGIONAL IV",
+          "KODE UNIT": "DR4-10000000"
+         },
+         {
+          "NIK": 680079,
+          "NAMA KARYAWAN": "SOERACHMAD ADI WAHJONO, IR.MT.",
+          "JABATAN": "SM GENERAL AFFAIR",
+          "KODE UNIT": "DR4-10400000"
+         },
+         {
+          "NIK": 710220,
+          "NAMA KARYAWAN": "DWI KRISTIANTI, SH",
+          "JABATAN": "MGR LOGISTIC &amp; PROCUREMENT",
+          "KODE UNIT": "DR4-104A0000"
+         },
+         {
+          "NIK": 680016,
+          "NAMA KARYAWAN": "SUNANTO",
+          "JABATAN": "MGR ASSET &amp; FACILITY MANAGEMENT",
+          "KODE UNIT": "DR4-104B0000"
+         },
+         {
+          "NIK": 660263,
+          "NAMA KARYAWAN": "DJAJA WIGUNA",
+          "JABATAN": "MGR LEGAL &amp; REGULATORY AFFAIR",
+          "KODE UNIT": "DR4-104C0000"
+         },
+         {
+          "NIK": 670190,
+          "NAMA KARYAWAN": "SUDARYONO, ST.",
+          "JABATAN": "MGR SECURITY AND SAFETY",
+          "KODE UNIT": "DR4-104D0000"
+         },
+         {
+          "NIK": 740070,
+          "NAMA KARYAWAN": "HENDRO CAHYADIANTO, A.Md, S.KOMP",
+          "JABATAN": "MGR SEKDIV &amp; PUBLIC RELATION",
+          "KODE UNIT": "DR4-104E0000"
+         },
+         {
+          "NIK": 720104,
+          "NAMA KARYAWAN": "MUHAMMAD ASHARI, ST, MM",
+          "JABATAN": "SM BUSINESS PLANNING, PERF &amp; RISK MGT",
+          "KODE UNIT": "DR4-10600000"
+         },
+         {
+          "NIK": 720466,
+          "NAMA KARYAWAN": "ATIK RAHMAWATI TRI ASTUTI, ST",
+          "JABATAN": "MGR PLAN &amp; BUDGET CONTROL",
+          "KODE UNIT": "DR4-106A0000"
+         },
+         {
+          "NIK": 800029,
+          "NAMA KARYAWAN": "EVA MARYAM SANI",
+          "JABATAN": "MGR PERFORMANCE &amp; WAR ROOM",
+          "KODE UNIT": "DR4-106B0000"
+         },
+         {
+          "NIK": 740102,
+          "NAMA KARYAWAN": "YUSTINA ANEKE SARI",
+          "JABATAN": "MGR QUALITY, CHANGE &amp; RISK MANAGEMENT",
+          "KODE UNIT": "DR4-106C0000"
+         },
+         {
+          "NIK": 730575,
+          "NAMA KARYAWAN": "ARIS DONO WARIH UTOMO",
+          "JABATAN": "MGR REVENUE ASSURANCE",
+          "KODE UNIT": "DR4-106D0000"
+         },
+         {
+          "NIK": 740051,
+          "NAMA KARYAWAN": "AMIR SYARIFUDIN, ST",
+          "JABATAN": "SM SHARED SERVICE",
+          "KODE UNIT": "DR4-10700000"
+         },
+         {
+          "NIK": 840122,
+          "NAMA KARYAWAN": "DIANI MARDISAR",
+          "JABATAN": "MGR FINANCIAL SERVICE &amp; TAX",
+          "KODE UNIT": "DR4-107A0000"
+         },
+         {
+          "NIK": 800099,
+          "NAMA KARYAWAN": "MARTA DAMAYANTI",
+          "JABATAN": "MGR BILLING &amp; PAYMENT COLLECTION (CONS)",
+          "KODE UNIT": "DR4-107B0000"
+         },
+         {
+          "NIK": 710384,
+          "NAMA KARYAWAN": "PANTJARINI TRISNANING S,ST",
+          "JABATAN": "MGR BILLING &amp; PAYMENT COLLECTION (EBIS)",
+          "KODE UNIT": "DR4-107C0000"
+         },
+         {
+          "NIK": 740178,
+          "NAMA KARYAWAN": "LULU KURNIJATI, ST",
+          "JABATAN": "MGR HC PLANNING, DEVELOPMENT &amp; SERVICE",
+          "KODE UNIT": "DR4-107D0000"
+         },
+         {
+          "NIK": 670189,
+          "NAMA KARYAWAN": "SIWI WIDIARTO",
+          "JABATAN": "MGR COMMUNITY DEVELOPMENT CENTER",
+          "KODE UNIT": "DR4-107E0000"
+         },
+         null,
+         null,
+         null,
+         {
+          "NAMA KARYAWAN": "LAYER 1"
+         },
+         {
+          "NAMA KARYAWAN": "LAYER 2"
+         },
+         {
+          "NAMA KARYAWAN": "LAYER 3"
+         }
+        ],
+        "DEVP MKT":[
+         {
+          "NIK": 670157,
+          "NAMA KARYAWAN": "FIRMANSYAH, IR",
+          "JABATAN": "DEPUTY EVP MARKETING",
+          "KODE UNIT": "DR4-11000000"
+         },
+         {
+          "NIK": 730207,
+          "NAMA KARYAWAN": "ERNA WIYATI",
+          "JABATAN": "OSM REGIONAL WHOLESALE SERVICE",
+          "KODE UNIT": "DR4-11200000"
+         },
+         {
+          "NIK": 660434,
+          "NAMA KARYAWAN": "ALBERTUS DJOKO SOESENO, IR, MT",
+          "JABATAN": "MGR WHOLESALE &amp; INTERNATIONAL MARKETING",
+          "KODE UNIT": "DR4-112A0000"
+         },
+         {
+          "NIK": 810085,
+          "NAMA KARYAWAN": "YULIA DWI MARTINI",
+          "JABATAN": "MGR WHOLESALE SUPPORT",
+          "KODE UNIT": "DR4-112B0000"
+         },
+         {
+          "NIK": 720309,
+          "NAMA KARYAWAN": "WIJAYANTO, M.T",
+          "JABATAN": "OSM REG ENTERPRISE,GOVERNMENT &amp; BIZ SERV",
+          "KODE UNIT": "DR4-11400000"
+         },
+         {
+          "NIK": 830044,
+          "NAMA KARYAWAN": "VANDY AULIA ABKHARI",
+          "JABATAN": "MGR REGIONAL ENTERPRISE SERVICE",
+          "KODE UNIT": "DR4-114A0000"
+         },
+         {
+          "NIK": 730288,
+          "NAMA KARYAWAN": "HIDAYAT KURNIAWAN, S.T.,M.MT.",
+          "JABATAN": "MGR REGIONAL GOVERNMENT SERVICE",
+          "KODE UNIT": "DR4-114B0000"
+         },
+         {
+          "NIK": 730549,
+          "NAMA KARYAWAN": "JOKO SUSANTOYO, ST",
+          "JABATAN": "MGR REGIONAL BUSINESS SERVICE",
+          "KODE UNIT": "DR4-114C0000"
+         },
+         {
+          "NIK": 720443,
+          "NAMA KARYAWAN": "NOR KRISTANTO ADI",
+          "JABATAN": "MGR PROJECT DELIVERY &amp; QUALITY ASSURANCE",
+          "KODE UNIT": "DR4-114D0000"
+         },
+         {
+          "NIK": 800024,
+          "NAMA KARYAWAN": "RISKA SURYANI, M.T",
+          "JABATAN": "MGR BIDDING MGT &amp; SUPPORT",
+          "KODE UNIT": "DR4-114E0000"
+         },
+         {
+          "NIK": 730106,
+          "NAMA KARYAWAN": "AJI WIDYO UTOMO, ST, MM",
+          "JABATAN": "MGR SOLUTION",
+          "KODE UNIT": "DR4-114F0000"
+         },
+         {
+          "NIK": 740101,
+          "NAMA KARYAWAN": "SULISTYAWAN",
+          "JABATAN": "OSM CUSTOMER CARE",
+          "KODE UNIT": "DR4-11500000"
+         },
+         {
+          "NIK": 780040,
+          "NAMA KARYAWAN": "WIDYA MAHARANI",
+          "JABATAN": "MGR CUSTOMER TOUCH POINT",
+          "KODE UNIT": "DR4-115A0000"
+         },
+         {
+          "NIK": 730210,
+          "NAMA KARYAWAN": "MOHAMAD ARIF SETYABUDI, ST",
+          "JABATAN": "MGR CUSTOMER DATA MANAGEMENT",
+          "KODE UNIT": "DR4-115B0000"
+         },
+         {
+          "NIK": 860129,
+          "NAMA KARYAWAN": "NATASIA BENITA KINARTO",
+          "JABATAN": "MGR CUSTOMER RELATIONSHIP MANAGEMENT",
+          "KODE UNIT": "DR4-115C0000"
+         },
+         {
+          "NIK": 660276,
+          "NAMA KARYAWAN": "RISMAWATI",
+          "JABATAN": "MGR CUSTOMER LEVERAGING",
+          "KODE UNIT": "DR4-115D0000"
+         },
+         {
+          "NIK": 690016,
+          "NAMA KARYAWAN": "ARIF NURJAYANTO,IR, MBA",
+          "JABATAN": "OSM CONSUMER MARKETING",
+          "KODE UNIT": "DR4-11600000"
+         },
+         {
+          "NIK": 740133,
+          "NAMA KARYAWAN": "ABDUL AZIZ MUSLIM",
+          "JABATAN": "MGR CHANNEL ACTIVATION",
+          "KODE UNIT": "DR4-116B0000"
+         },
+         {
+          "NIK": 710504,
+          "NAMA KARYAWAN": "CHRISTIANUS WIDYA UTOMO",
+          "JABATAN": "MGR SALES PROMOTION &amp; PRICING",
+          "KODE UNIT": "DR4-116C0000"
+         },
+         {
+          "NIK": 700029,
+          "NAMA KARYAWAN": "HARIS SUNANDAR, IR",
+          "JABATAN": "MGR DIGITAL SERVICE &amp; WIFI",
+          "KODE UNIT": "DR4-116D0000"
+         },
+         {
+          "NIK": 810001,
+          "NAMA KARYAWAN": "HUSNA MAULIDA , S.KOM",
+          "JABATAN": "MGR APARTMENT &amp; PREMIUM CLUSTER",
+          "KODE UNIT": "DR4-116E0000"
+         },
+         null,
+         null,
+         {
+          "NAMA KARYAWAN": "LAYER 1"
+         },
+         {
+          "NAMA KARYAWAN": "LAYER 2"
+         },
+         {
+          "NAMA KARYAWAN": "LAYER 3"
+         }
+        ],
+        "DEVP INFRASTRUCTURE":[
+         {
+          "NIK": 730562,
+          "NAMA KARYAWAN": "CHOLIS SAFRUDIN",
+          "JABATAN": "DEPUTY EVP INFRASTRUCTURE",
+          "KODE UNIT": "DR4-12000000"
+         },
+         {
+          "NIK": 730256,
+          "NAMA KARYAWAN": "M.ARIF HIDAYAT, ST",
+          "JABATAN": "OSM REGIONAL OPERATION CENTER",
+          "KODE UNIT": "DR4-12100000"
+         },
+         {
+          "NIK": 670112,
+          "NAMA KARYAWAN": "DWI PRAMANA, ST",
+          "JABATAN": "MGR HELPDESK OPERATION",
+          "KODE UNIT": "DR4-121A0000"
+         },
+         {
+          "NIK": 680353,
+          "NAMA KARYAWAN": "ARIF KOERNIAWAN",
+          "JABATAN": "MGR FULFILLMENT",
+          "KODE UNIT": "DR4-121B0000"
+         },
+         {
+          "NIK": 800002,
+          "NAMA KARYAWAN": "DANI ARUMANEGARA , S.KOM",
+          "JABATAN": "MGR ASSURANCE",
+          "KODE UNIT": "DR4-121C0000"
+         },
+         {
+          "NIK": 800001,
+          "NAMA KARYAWAN": "AFIF EKO HARTARTO, S.Kom.",
+          "JABATAN": "MGR TOP PRIORITY SOLUTION",
+          "KODE UNIT": "DR4-121D0000"
+         },
+         {
+          "NIK": 700335,
+          "NAMA KARYAWAN": "SARWIJI",
+          "JABATAN": "MGR PERFORMANCE MGT &amp; SLA MONITORING",
+          "KODE UNIT": "DR4-121E0000"
+         },
+         {
+          "NIK": 800075,
+          "NAMA KARYAWAN": "BUDHI SUPRIYONO",
+          "JABATAN": "MGR SERVICE DELIVERY",
+          "KODE UNIT": "DR4-121F0000"
+         },
+         {
+          "NIK": 740100,
+          "NAMA KARYAWAN": "ARIES YULIANTO, ST",
+          "JABATAN": "OSM MANAGED SERVICE OPERATION",
+          "KODE UNIT": "DR4-12300000"
+         },
+         {
+          "NIK": 830010,
+          "NAMA KARYAWAN": "PRAMUHADIANTO",
+          "JABATAN": "MGR CNOP AREA TELKOM REGIONAL IV",
+          "KODE UNIT": "DR4-123A0000"
+         },
+         {
+          "NIK": 770043,
+          "NAMA KARYAWAN": "DIARTO RAHARDJO",
+          "JABATAN": "MGR OLO FULFILLMENT &amp; ASSURANCE",
+          "KODE UNIT": "DR4-123B0000"
+         },
+         {
+          "NIK": 670121,
+          "NAMA KARYAWAN": "AMRU BADJIDEH",
+          "JABATAN": "MGR INFRA SERVICE DELIVERY &amp; OPERATION S",
+          "KODE UNIT": "DR4-123C0000"
+         },
+         {
+          "NIK": 730245,
+          "NAMA KARYAWAN": "DWI AGUNG SULISTYANTA, ST",
+          "JABATAN": "MGR PERF MGT, SLA MONITORING &amp; KPI REPOR",
+          "KODE UNIT": "DR4-123D0000"
+         },
+         {
+          "NIK": 780039,
+          "NAMA KARYAWAN": "SUSAN PRASETYA",
+          "JABATAN": "OSM REGIONAL NETWORK OPERATION",
+          "KODE UNIT": "DR4-12600000"
+         },
+         {
+          "NIK": 860112,
+          "NAMA KARYAWAN": "FARID BASKORO",
+          "JABATAN": "MGR BACKBONE, DC &amp; DEFA OPERATION",
+          "KODE UNIT": "DR4-126A0000"
+         },
+         {
+          "NIK": 790025,
+          "NAMA KARYAWAN": "ASNA MUNIATI",
+          "JABATAN": "MGR IP &amp; SERVICE NODE OPERATION",
+          "KODE UNIT": "DR4-126B0000"
+         },
+         {
+          "NIK": 790052,
+          "NAMA KARYAWAN": "YANI MARIA CHRISTIE",
+          "JABATAN": "MGR IS OPERATION SUPPORT",
+          "KODE UNIT": "DR4-126C0000"
+         },
+         {
+          "NIK": 740189,
+          "NAMA KARYAWAN": "MUHAMAD JUMHAN",
+          "JABATAN": "MGR INFRA MAINTENANCE",
+          "KODE UNIT": "DR4-126D0000"
+         },
+         {
+          "NIK": 730465,
+          "NAMA KARYAWAN": "USEP MAMAN IDAYAT",
+          "JABATAN": "OSM PLANNING, ENGINEERING &amp; DEPLOYMENT",
+          "KODE UNIT": "DR4-12700000"
+         },
+         {
+          "NIK": 780002,
+          "NAMA KARYAWAN": "BUDI LEKSONO,S.KOM",
+          "JABATAN": "MGR PLANNING, ENGINEERING &amp; CAPEX MGT",
+          "KODE UNIT": "DR4-127A0000"
+         },
+         {
+          "NIK": 710413,
+          "NAMA KARYAWAN": "WAHYU UTOMO",
+          "JABATAN": "MGR NETWORK DEPLOYMENT &amp; PROJECT SUPERVI",
+          "KODE UNIT": "DR4-127B0000"
+         },
+         {
+          "NIK": 710006,
+          "NAMA KARYAWAN": "PURNOMO",
+          "JABATAN": "MGR ACCESS NEW FTTH &amp; MODERNIZATION DEPL",
+          "KODE UNIT": "DR4-127C0000"
+         },
+         {
+          "NIK": 740113,
+          "NAMA KARYAWAN": "YAN ANDI SAIFUDIN, ST",
+          "JABATAN": "MGR ENTERPRISE, OLO &amp; WIFI DEPLOYMENT",
+          "KODE UNIT": "DR4-127D0000"
+         },
+         {
+          "NIK": 690042,
+          "NAMA KARYAWAN": "UTOMO, S.E.",
+          "JABATAN": "MGR HUBUNGAN ANTAR INSTANSI\/PEMDA",
+          "KODE UNIT": "DR4-127E0000"
+         },
+         {
+          "NIK": 670289,
+          "NAMA KARYAWAN": "WIWIT WIDJANARKO, IR",
+          "JABATAN": "OSM ACCESS MANAGEMENT",
+          "KODE UNIT": "DR4-12800000"
+         },
+         {
+          "NIK": 720600,
+          "NAMA KARYAWAN": "EMANUEL FEBRY DJATMIKO ADJI",
+          "JABATAN": "MGR ACCESS CAPEX QE &amp; PERFORMANCE",
+          "KODE UNIT": "DR4-128A0000"
+         },
+         {
+          "NIK": 670187,
+          "NAMA KARYAWAN": "HARTONO, S.T., M.Kom.",
+          "JABATAN": "MGR ACCESS DATA &amp; INVENTORY MGT",
+          "KODE UNIT": "DR4-128B0000"
+         },
+         {
+          "NIK": 880076,
+          "NAMA KARYAWAN": "ARDYANTO KURNIAWAN",
+          "JABATAN": "MGR ACCESS NETWORK ELEMENT OM",
+          "KODE UNIT": "DR4-128C0000"
+         },
+         {
+          "NIK": 850100,
+          "NAMA KARYAWAN": "FITRILIANI HAYU PUSPASARI",
+          "JABATAN": "MGR ACCESS OM &amp; PARTNERSHIP",
+          "KODE UNIT": "DR4-128D0000"
+         },
+         {
+          "NIK": 790014,
+          "NAMA KARYAWAN": "YUDI IRWANTO,S.Kom",
+          "JABATAN": "MGR NTE MANAGEMENT",
+          "KODE UNIT": "DR4-128E0000"
+         },
+         null,
+         null,
+         {
+          "NAMA KARYAWAN": "LAYER 1"
+         },
+         {
+          "NAMA KARYAWAN": "LAYER 2"
+         },
+         {
+          "NAMA KARYAWAN": "LAYER 3"
+         }
+        ],
+        "WITEL SEMARANG":[
+         {
+          "NIK": 680057,
+          "NAMA KARYAWAN": "SETYO PURWONO,IR",
+          "JABATAN": "DEPUTY GM WITEL SEMARANG",
+          "KODE UNIT": "R4W-4A100000"
+         },
+         {
+          "NIK": 730335,
+          "NAMA KARYAWAN": "JOKO WIYONO",
+          "JABATAN": "GM WITEL SEMARANG",
+          "KODE UNIT": "R4W-4A100000"
+         },
+         {
+          "NIK": 790066,
+          "NAMA KARYAWAN": "MIRA KOMALA DEWI",
+          "JABATAN": "MGR WAR ROOM &amp; RISK MGT",
+          "KODE UNIT": "R4W-4A1A0000"
+         },
+         {
+          "NIK": 700024,
+          "NAMA KARYAWAN": "AGUNG SUGIHARTO",
+          "JABATAN": "MGR ACCESS &amp; SERVICE OPERATION",
+          "KODE UNIT": "R4W-4A1B0000"
+         },
+         {
+          "NIK": 940048,
+          "NAMA KARYAWAN": "ADITYA KURNIAWAN, S.T, M.M",
+          "JABATAN": "ASMAN CONSUMER ASSURANCE",
+          "KODE UNIT": "R4W-4A1BB000"
+         },
+         {
+          "NIK": 720367,
+          "NAMA KARYAWAN": "JUNI HARIANTO,ST",
+          "JABATAN": "MGR ACCESS OPTIMA &amp; CONSTRUCTION SPV",
+          "KODE UNIT": "R4W-4A1C0000"
+         },
+         {
+          "NIK": 670332,
+          "NAMA KARYAWAN": "RASIKUN",
+          "JABATAN": "ASMAN DEVELOPMENT &amp; SOL PARTNERSHIP SPV",
+          "KODE UNIT": "R4W-4A1CA000"
+         },
+         {
+          "NIK": 720365,
+          "NAMA KARYAWAN": "PARYONO, ST",
+          "JABATAN": "MGR NETWORK AREA &amp; IS OPERATION",
+          "KODE UNIT": "R4W-4A1D0000"
+         },
+         {
+          "NIK": 730268,
+          "NAMA KARYAWAN": "KEMAS CEK AGUS ABDUSSOMAD A.",
+          "JABATAN": "MGR BGES OPERATION",
+          "KODE UNIT": "R4W-4A1E0000"
+         },
+         {
+          "NIK": 850159,
+          "NAMA KARYAWAN": "MYTA IRWANTI",
+          "JABATAN": "MGR WHOLESALE ACCESS NETWORK &amp; WIFI",
+          "KODE UNIT": "R4W-4A1F0000"
+         },
+         {
+          "NIK": 810016,
+          "NAMA KARYAWAN": "ADHI WIDYANTO",
+          "JABATAN": "MGR ACCESS DATA MGT",
+          "KODE UNIT": "R4W-4A1G0000"
+         },
+         {
+          "NIK": 740234,
+          "NAMA KARYAWAN": "TRI ADI SANTOSA, ST",
+          "JABATAN": "MGR ACCESS MAINTENANCE &amp; QE",
+          "KODE UNIT": "R4W-4A1H0000"
+         },
+         {
+          "NIK": 710067,
+          "NAMA KARYAWAN": "SISWANTO",
+          "JABATAN": "ASMAN ACCESS MAINTENANCE, QE PLAN &amp; HAI",
+          "KODE UNIT": "R4W-4A1HA000"
+         },
+         {
+          "NIK": 910159,
+          "NAMA KARYAWAN": "MUHAMMAD RIZKY PRATAMA",
+          "JABATAN": "ASMAN NE FTM ACCES MNTENAN&amp;PRTNRSHP CTRL",
+          "KODE UNIT": "R4W-4A1HB000"
+         },
+         {
+          "NIK": 740149,
+          "NAMA KARYAWAN": "NUNUNG SADTOMO PRAPTO, ST",
+          "JABATAN": "MGR HOME SERVICE",
+          "KODE UNIT": "R4W-4A1I0000"
+         },
+         {
+          "NIK": 910101,
+          "NAMA KARYAWAN": "NAHDATIN HASANAH B. JUMALA",
+          "JABATAN": "ASMAN SALES SUPPORT",
+          "KODE UNIT": "R4W-4A1IB000"
+         },
+         {
+          "NIK": 680030,
+          "NAMA KARYAWAN": "HIRMAG MART DANY",
+          "JABATAN": "MGR DIGITAL SERVICE &amp; WIFI",
+          "KODE UNIT": "R4W-4A1J0000"
+         },
+         {
+          "NIK": 730387,
+          "NAMA KARYAWAN": "AMBAR PRIHADI",
+          "JABATAN": "MGR CUSTOMER CARE",
+          "KODE UNIT": "R4W-4A1K0000"
+         },
+         {
+          "NIK": 670177,
+          "NAMA KARYAWAN": "PUTRO RIYANTO, SE",
+          "JABATAN": "ASMAN SERVICE ASSURANCE",
+          "KODE UNIT": "R4W-4A1KA000"
+         },
+         {
+          "NIK": 740083,
+          "NAMA KARYAWAN": "RONI SETIYAWAN, ST",
+          "JABATAN": "MGR BUSINESS SERVICE",
+          "KODE UNIT": "R4W-4A1L0000"
+         },
+         {
+          "NIK": 700433,
+          "NAMA KARYAWAN": "WIWIK RATNA KUSUMAWATI, SE",
+          "JABATAN": "ASMAN BS OBL",
+          "KODE UNIT": "R4W-4A1LC000"
+         },
+         {
+          "NIK": 840013,
+          "NAMA KARYAWAN": "YOGI ANGGUN SALOKO YUDO",
+          "JABATAN": "MGR ENTERPRISE SERVICE",
+          "KODE UNIT": "R4W-4A1M0000"
+         },
+         {
+          "NIK": 710223,
+          "NAMA KARYAWAN": "CANTI NUGRAHENI",
+          "JABATAN": "ASMAN ES BIDDING MGT &amp; OBL",
+          "KODE UNIT": "R4W-4A1MB000"
+         },
+         {
+          "NIK": 730486,
+          "NAMA KARYAWAN": "IMPERATA JOKO SUBROTO",
+          "JABATAN": "MGR GOVERNMENT SERVICE",
+          "KODE UNIT": "R4W-4A1N0000"
+         },
+         {
+          "NIK": 920213,
+          "NAMA KARYAWAN": "NUR AFIFAH",
+          "JABATAN": "ASMAN GS SALES ENGINEER",
+          "KODE UNIT": "R4W-4A1NA000"
+         },
+         {
+          "NIK": 710224,
+          "NAMA KARYAWAN": "MAHARANI RATIH DWIASIH, S.E.",
+          "JABATAN": "ASMAN GS BIDDING MGT &amp; OBL",
+          "KODE UNIT": "R4W-4A1NB000"
+         },
+         {
+          "NIK": 720391,
+          "NAMA KARYAWAN": "RETNO YULISTYAWATI, ST",
+          "JABATAN": "MGR LOGISTIK &amp; GENERAL SUPPORT",
+          "KODE UNIT": "R4W-4A1O0000"
+         },
+         {
+          "NIK": 680041,
+          "NAMA KARYAWAN": "FATKHIYAH",
+          "JABATAN": "ASMAN LOGISTIK",
+          "KODE UNIT": "R4W-4A1OA000"
+         },
+         {
+          "NIK": 680040,
+          "NAMA KARYAWAN": "SITI RAHAYU, ST",
+          "JABATAN": "ASMAN COMMUNICATION &amp; SECRETARIATE",
+          "KODE UNIT": "R4W-4A1OD000"
+         },
+         {
+          "NIK": 700430,
+          "NAMA KARYAWAN": "ANIEK YULIANI, SE",
+          "JABATAN": "ASMAN HUMAN CAPITAL",
+          "KODE UNIT": "R4W-4A1PA000"
+         },
+         {
+          "NIK": 700438,
+          "NAMA KARYAWAN": "DWI WAHYUNINGSIH",
+          "JABATAN": "ASMAN COMMUNITY DEVELOPMENT CENTER",
+          "KODE UNIT": "R4W-4A1PC000"
+         },
+         {
+          "NIK": 680121,
+          "NAMA KARYAWAN": "ANDREAS SETYO PRAYOGO",
+          "JABATAN": "MGR SAS",
+          "KODE UNIT": "R4W-4A1Q0000"
+         },
+         {
+          "NIK": 670247,
+          "NAMA KARYAWAN": "DEWA GDE ADHI WESESA, IR",
+          "JABATAN": "MGR SHARED SERVICE PAYMENT COLLECTION",
+          "KODE UNIT": "R4W-4A1R0000"
+         },
+         {
+          "NIK": 700443,
+          "NAMA KARYAWAN": "UHDA RUBIANI, S.E.",
+          "JABATAN": "ASMAN DEBT MGT &amp; COLLECTION PARTNERSHIP",
+          "KODE UNIT": "R4W-4A1RB000"
+         },
+         {
+          "NIK": 720406,
+          "NAMA KARYAWAN": "BAMBANG SETIAWAN",
+          "JABATAN": "KAKANDATEL KENDAL",
+          "KODE UNIT": "R4W-4A1S0000"
+         },
+         {
+          "NIK": 670192,
+          "NAMA KARYAWAN": "TJATUR RESMI BUDI UTOMO",
+          "JABATAN": "KAKANDATEL UNGARAN",
+          "KODE UNIT": "R4W-4A1T0000"
+         },
+         {
+          "NIK": 670506,
+          "NAMA KARYAWAN": "RIKY HARGIARTO",
+          "JABATAN": "ASMAN INFRA OPERATION &amp; MAINTENANCE",
+          "KODE UNIT": "R4W-4A1TB000"
+         },
+         {
+          "NIK": 730587,
+          "NAMA KARYAWAN": "AGUS SETIYAWAN AKHMADI",
+          "JABATAN": "KAKANDATEL SALATIGA",
+          "KODE UNIT": "R4W-4A1U0000"
+         },
+         {
+          "NIK": 670504,
+          "NAMA KARYAWAN": "ABDUL HAMID",
+          "JABATAN": "ASMAN SALES &amp; CUSTOMER CARE",
+          "KODE UNIT": "R4W-4A1UA000"
+         },
+         {
+          "NIK": 690383,
+          "NAMA KARYAWAN": "YOHANES DARSONO",
+          "JABATAN": "ASMAN INFRA OPERATION &amp; MAINTENANCE",
+          "KODE UNIT": "R4W-4A1UB000"
+         },
+         null,
+         null,
+         {
+          "NAMA KARYAWAN": "LAYER 1"
+         },
+         {
+          "NAMA KARYAWAN": "LAYER 2"
+         },
+         {
+          "NAMA KARYAWAN": "LAYER 3"
+         }
+        ],
+        "WITEL PURWOKERTO":[
+         {
+          "NIK": 740160,
+          "NAMA KARYAWAN": "NANANG SETIYO UTOMO, ST",
+          "JABATAN": "GM WITEL PURWOKERTO",
+          "KODE UNIT": "R4W-4B100000"
+         },
+         {
+          "NIK": 830116,
+          "NAMA KARYAWAN": "BAMBANG SUPRIYANTO",
+          "JABATAN": "MGR WAR ROOM &amp; RISK MGT",
+          "KODE UNIT": "R4W-4B1A0000"
+         },
+         {
+          "NIK": 680586,
+          "NAMA KARYAWAN": "AGUS BUDI SETYAWAN",
+          "JABATAN": "MGR ACCESS SERVICE OPERATION",
+          "KODE UNIT": "R4W-4B1B0000"
+         },
+         {
+          "NIK": 720531,
+          "NAMA KARYAWAN": "WIDJI KUAT PRABOWO",
+          "JABATAN": "MGR ACCESS OPTIMA, DATA &amp; MAINTENANCE",
+          "KODE UNIT": "R4W-4B1C0000"
+         },
+         {
+          "NIK": 670179,
+          "NAMA KARYAWAN": "SURYO ADI KUSHARTONO, S.E.",
+          "JABATAN": "ASMAN OPTIMA &amp; QE",
+          "KODE UNIT": "R4W-4B1CB000"
+         },
+         {
+          "NIK": 710510,
+          "NAMA KARYAWAN": "SUGIHARTO",
+          "JABATAN": "MGR NETWORK AREA &amp; IS OPERATION",
+          "KODE UNIT": "R4W-4B1D0000"
+         },
+         {
+          "NIK": 710264,
+          "NAMA KARYAWAN": "SISWANTO",
+          "JABATAN": "MGR OPERATION BGES, WAN &amp; WIFI",
+          "KODE UNIT": "R4W-4B1E0000"
+         },
+         {
+          "NIK": 690517,
+          "NAMA KARYAWAN": "MURSITO",
+          "JABATAN": "ASMAN WAN &amp; WIFI FULFILLMENT &amp; ASSURANCE",
+          "KODE UNIT": "R4W-4B1EB000"
+         },
+         {
+          "NIK": 820016,
+          "NAMA KARYAWAN": "NUGROHO ADI PRACOYO",
+          "JABATAN": "MGR CONSUMER SERVICE",
+          "KODE UNIT": "R4W-4B1F0000"
+         },
+         {
+          "NIK": 900094,
+          "NAMA KARYAWAN": "SOFIANA WANTI",
+          "JABATAN": "JM CUSTOMER CARE",
+          "KODE UNIT": "R4W-4B1G0000"
+         },
+         {
+          "NIK": 730231,
+          "NAMA KARYAWAN": "YOGI BAHTIAR, ST",
+          "JABATAN": "MGR BUSINESS, GOVT &amp; ENTERPRISE SERVICE",
+          "KODE UNIT": "R4W-4B1H0000"
+         },
+         {
+          "NIK": 670288,
+          "NAMA KARYAWAN": "KURNIA WARAS TJAHJO",
+          "JABATAN": "MGR LOGISTIK &amp; GENERAL SUPPORT",
+          "KODE UNIT": "R4W-4B1I0000"
+         },
+         {
+          "NIK": 700441,
+          "NAMA KARYAWAN": "DARWIYANTI",
+          "JABATAN": "ASMAN ASSET MGT &amp; FACILITY SUPPORT",
+          "KODE UNIT": "R4W-4B1IB000"
+         },
+         {
+          "NIK": 700432,
+          "NAMA KARYAWAN": "WAHYU LISTYANINGRUM, SE",
+          "JABATAN": "MGR SHARED SERVICE",
+          "KODE UNIT": "R4W-4B1J0000"
+         },
+         {
+          "NIK": 670508,
+          "NAMA KARYAWAN": "BUDI SANTOSA",
+          "JABATAN": "ASMAN SALES &amp; CUSTOMER CARE",
+          "KODE UNIT": "R4W-4B1KA000"
+         },
+         {
+          "NIK": 740087,
+          "NAMA KARYAWAN": "TRI HERU UTOMO, ST",
+          "JABATAN": "KAKANDATEL CILACAP",
+          "KODE UNIT": "R4W-4B1L0000"
+         },
+         {
+          "NIK": 720575,
+          "NAMA KARYAWAN": "MUNGKAS SETYABADI, ST",
+          "JABATAN": "KAKANDATEL PURBALINGGA",
+          "KODE UNIT": "R4W-4B1M0000"
+         },
+         null,
+         null,
+         {
+          "NAMA KARYAWAN": "LAYER 1"
+         },
+         {
+          "NAMA KARYAWAN": "LAYER 2"
+         },
+         {
+          "NAMA KARYAWAN": "LAYER 3"
+         }
+        ],
+        "WITEL PEKALONGAN":[
+         {
+          "NIK": 740199,
+          "NAMA KARYAWAN": "DWI KIANSANTANG",
+          "JABATAN": "GM WITEL PEKALONGAN",
+          "KODE UNIT": "R4W-4C100000"
+         },
+         {
+          "NIK": 810095,
+          "NAMA KARYAWAN": "FERRY HASCARYANTO",
+          "JABATAN": "MGR ACCESS OPERATION",
+          "KODE UNIT": "R4W-4C1B0000"
+         },
+         {
+          "NIK": 840008,
+          "NAMA KARYAWAN": "ARIE SULISTYANINGRUM",
+          "JABATAN": "ASMAN CONSUMER FULFILLMENT",
+          "KODE UNIT": "R4W-4C1BA000"
+         },
+         {
+          "NIK": 910124,
+          "NAMA KARYAWAN": "YUSUF ARIFANDI",
+          "JABATAN": "ASMAN CONSUMER ASSURANCE",
+          "KODE UNIT": "R4W-4C1BB000"
+         },
+         {
+          "NIK": 720177,
+          "NAMA KARYAWAN": "NARDI, ST",
+          "JABATAN": "MGR ACCESS OPTIMA, DATA &amp; MAINTENANCE",
+          "KODE UNIT": "R4W-4C1C0000"
+         },
+         {
+          "NIK": 720368,
+          "NAMA KARYAWAN": "TOTO HARJANTO, ST",
+          "JABATAN": "MGR NETWORK AREA &amp; IS OPERATION",
+          "KODE UNIT": "R4W-4C1D0000"
+         },
+         {
+          "NIK": 670505,
+          "NAMA KARYAWAN": "YUSWANTO BASUKI",
+          "JABATAN": "ASMAN OM TRANSPORT, RADIO &amp; MUX",
+          "KODE UNIT": "R4W-4C1DB000"
+         },
+         {
+          "NIK": 920067,
+          "NAMA KARYAWAN": "MUHAMMAD AZHARI ZAKIRI",
+          "JABATAN": "MGR OPERATION BGES, WAN &amp; WIFI",
+          "KODE UNIT": "R4W-4C1E0000"
+         },
+         {
+          "NIK": 740292,
+          "NAMA KARYAWAN": "SUTEJO, ST",
+          "JABATAN": "MGR CONSUMER SERVICE",
+          "KODE UNIT": "R4W-4C1F0000"
+         },
+         {
+          "NIK": 950094,
+          "NAMA KARYAWAN": "NAYYIROH",
+          "JABATAN": "ASMAN HOME SERVICE",
+          "KODE UNIT": "R4W-4C1FA000"
+         },
+         {
+          "NIK": 810015,
+          "NAMA KARYAWAN": "AHMAD FURQONI AFI",
+          "JABATAN": "JM CUSTOMER CARE",
+          "KODE UNIT": "R4W-4C1G0000"
+         },
+         {
+          "NIK": 830041,
+          "NAMA KARYAWAN": "ANITA",
+          "JABATAN": "MGR BUSINESS, GOVT &amp; ENTERPRISE SERVICE",
+          "KODE UNIT": "R4W-4C1H0000"
+         },
+         {
+          "NIK": 810014,
+          "NAMA KARYAWAN": "DEWI ARIANI, S.KOM.",
+          "JABATAN": "MGR LOGISTIK &amp; GENERAL SUPPORT",
+          "KODE UNIT": "R4W-4C1I0000"
+         },
+         {
+          "NIK": 750065,
+          "NAMA KARYAWAN": "ROSANA INTAN PERMATASARI",
+          "JABATAN": "MGR SHARED SERVICE",
+          "KODE UNIT": "R4W-4C1J0000"
+         },
+         {
+          "NIK": 890018,
+          "NAMA KARYAWAN": "DYAN FEBRINA KUSUMADEWI",
+          "JABATAN": "ASMAN PAYMENT COLLECTION CONSUMER",
+          "KODE UNIT": "R4W-4C1JB000"
+         },
+         {
+          "NIK": 700026,
+          "NAMA KARYAWAN": "CHRISTIANA NILA DEWI",
+          "JABATAN": "KAKANDATEL BATANG",
+          "KODE UNIT": "R4W-4C1K0000"
+         },
+         {
+          "NIK": 710218,
+          "NAMA KARYAWAN": "YAYUK INDRASWATI",
+          "JABATAN": "ASMAN SALES &amp; CUSTOMER CARE",
+          "KODE UNIT": "R4W-4C1KA000"
+         },
+         {
+          "NIK": 790016,
+          "NAMA KARYAWAN": "P. CH. DWI PRASETYO M.S.",
+          "JABATAN": "KAKANDATEL BREBES",
+          "KODE UNIT": "R4W-4C1L0000"
+         },
+         {
+          "NIK": 660474,
+          "NAMA KARYAWAN": "RUDY TRISNA SUSANTO, S.Kom",
+          "JABATAN": "ASMAN INFRA OPERATION &amp; MAINTENANCE",
+          "KODE UNIT": "R4W-4C1LB000"
+         },
+         {
+          "NIK": 730440,
+          "NAMA KARYAWAN": "NOER WIDJAYA",
+          "JABATAN": "KAKANDATEL SLAWI",
+          "KODE UNIT": "R4W-4C1M0000"
+         },
+         {
+          "NIK": 690401,
+          "NAMA KARYAWAN": "TITIN HARDININGSIH, SH",
+          "JABATAN": "ASMAN SALES &amp; CUSTOMER CARE",
+          "KODE UNIT": "R4W-4C1MA000"
+         },
+         {
+          "NIK": 840035,
+          "NAMA KARYAWAN": "HAPSARI INDAH PUJIATI",
+          "JABATAN": "KAKANDATEL PEMALANG",
+          "KODE UNIT": "R4W-4C1N0000"
+         },
+         {
+          "NIK": 720375,
+          "NAMA KARYAWAN": "HARIKA YUNIANTA",
+          "JABATAN": "KAKANDATEL TEGAL",
+          "KODE UNIT": "R4W-4C1O0000"
+         },
+         {
+          "NIK": 710222,
+          "NAMA KARYAWAN": "SRI HERAWATI,S.E.",
+          "JABATAN": "ASMAN SALES &amp; CUSTOMER CARE",
+          "KODE UNIT": "R4W-4C1OA000"
+         },
+         {
+          "NIK": 690172,
+          "NAMA KARYAWAN": "MURACHNO",
+          "JABATAN": "ASMAN INFRA OPERATION &amp; MAINTENANCE",
+          "KODE UNIT": "R4W-4C1OB000"
+         },
+         null,
+         {
+          "NAMA KARYAWAN": "LAYER 1"
+         },
+         {
+          "NAMA KARYAWAN": "LAYER 2"
+         },
+         {
+          "NAMA KARYAWAN": "LAYER 3"
+         }
+        ],
+        "WITEL KUDUS":[
+         {
+          "NIK": 730339,
+          "NAMA KARYAWAN": "SULKAN",
+          "JABATAN": "GM WITEL KUDUS",
+          "KODE UNIT": "R4W-4D100000"
+         },
+         {
+          "NIK": 830019,
+          "NAMA KARYAWAN": "NORA ARI RAHMAWATI",
+          "JABATAN": "MGR WAR ROOM &amp; RISK MGT",
+          "KODE UNIT": "R4W-4D1A0000"
+         },
+         {
+          "NIK": 800028,
+          "NAMA KARYAWAN": "AMIN SUYONO, S.Kom.",
+          "JABATAN": "MGR ACCESS OPERATION",
+          "KODE UNIT": "R4W-4D1B0000"
+         },
+         {
+          "NIK": 920121,
+          "NAMA KARYAWAN": "MUHAMMAD AFNAAN SUBHI",
+          "JABATAN": "ASMAN CONSUMER FULFILLMENT",
+          "KODE UNIT": "R4W-4D1BB000"
+         },
+         {
+          "NIK": 840010,
+          "NAMA KARYAWAN": "DONA ARDHY GUSEMA",
+          "JABATAN": "MGR ACCESS OPTIMA, DATA &amp; MAINTENANCE",
+          "KODE UNIT": "R4W-4D1C0000"
+         },
+         {
+          "NIK": 700339,
+          "NAMA KARYAWAN": "SUTARNO",
+          "JABATAN": "ASMAN OPTIMA &amp; QE",
+          "KODE UNIT": "R4W-4D1CA000"
+         },
+         {
+          "NIK": 670296,
+          "NAMA KARYAWAN": "SUNARDI",
+          "JABATAN": "ASMAN MAINTENANCE &amp; DATA MANAGEMENT",
+          "KODE UNIT": "R4W-4D1CB000"
+         },
+         {
+          "NIK": 860124,
+          "NAMA KARYAWAN": "PARWATA",
+          "JABATAN": "MGR NETWORK AREA &amp; IS OPERATION",
+          "KODE UNIT": "R4W-4D1D0000"
+         },
+         {
+          "NIK": 690288,
+          "NAMA KARYAWAN": "JONO",
+          "JABATAN": "MGR OPERATION BGES, WAN &amp; WIFI",
+          "KODE UNIT": "R4W-4D1E0000"
+         },
+         {
+          "NIK": 740040,
+          "NAMA KARYAWAN": "RULLI KURNIA",
+          "JABATAN": "MGR CONSUMER SERVICE",
+          "KODE UNIT": "R4W-4D1F0000"
+         },
+         {
+          "NIK": 810072,
+          "NAMA KARYAWAN": "ADITA KRISMAWATI HADISWARA",
+          "JABATAN": "MGR BUSINESS, GOVT &amp; ENTERPRISE SERVICE",
+          "KODE UNIT": "R4W-4D1H0000"
+         },
+         {
+          "NIK": 740168,
+          "NAMA KARYAWAN": "MU'MIN AMIN",
+          "JABATAN": "MGR LOGISTIK &amp; GENERAL SUPPORT",
+          "KODE UNIT": "R4W-4D1I0000"
+         },
+         {
+          "NIK": 720580,
+          "NAMA KARYAWAN": "MARLINDUNG TURNIP",
+          "JABATAN": "MGR SHARED SERVICE",
+          "KODE UNIT": "R4W-4D1J0000"
+         },
+         {
+          "NIK": 830017,
+          "NAMA KARYAWAN": "TRI ASTUTI RETNO ANGGRAINI",
+          "JABATAN": "KAKANDATEL BLORA",
+          "KODE UNIT": "R4W-4D1K0000"
+         },
+         {
+          "NIK": 710454,
+          "NAMA KARYAWAN": "MOHAMMAD BAKRI, ST",
+          "JABATAN": "KAKANDATEL JEPARA",
+          "KODE UNIT": "R4W-4D1L0000"
+         },
+         {
+          "NIK": 730203,
+          "NAMA KARYAWAN": "ABDUS SYAKUR, ST",
+          "JABATAN": "KAKANDATEL PATI",
+          "KODE UNIT": "R4W-4D1M0000"
+         },
+         {
+          "NIK": 660447,
+          "NAMA KARYAWAN": "KASIBAN, S.E. M.M.",
+          "JABATAN": "ASMAN INFRA OPERATION &amp; MAINTENANCE",
+          "KODE UNIT": "R4W-4D1MB000"
+         },
+         {
+          "NIK": 790015,
+          "NAMA KARYAWAN": "SARJONO",
+          "JABATAN": "KAKANDATEL PURWODADI",
+          "KODE UNIT": "R4W-4D1N0000"
+         },
+         null,
+         null,
+         {
+          "NAMA KARYAWAN": "LAYER 1"
+         },
+         {
+          "NAMA KARYAWAN": "LAYER 2"
+         },
+         {
+          "NAMA KARYAWAN": "LAYER 3"
+         }
+        ],
+        "WITEL MAGELANG":[
+         {
+          "NIK": 720370,
+          "NAMA KARYAWAN": "MUSTADI,ST",
+          "JABATAN": "GM WITEL MAGELANG",
+          "KODE UNIT": "R4W-4E100000"
+         },
+         {
+          "NIK": 850128,
+          "NAMA KARYAWAN": "MONICA AFRISIA DINI KRISTIANI",
+          "JABATAN": "MGR WAR ROOM &amp; RISK MGT",
+          "KODE UNIT": "R4W-4E1A0000"
+         },
+         {
+          "NIK": 840063,
+          "NAMA KARYAWAN": "SUMARNO HADI",
+          "JABATAN": "MGR ACCESS OPERATION",
+          "KODE UNIT": "R4W-4E1B0000"
+         },
+         {
+          "NIK": 740237,
+          "NAMA KARYAWAN": "GUNARSO EFENDI, ST",
+          "JABATAN": "MGR ACCESS OPTIMA, DATA &amp; MAINTENANCE",
+          "KODE UNIT": "R4W-4E1C0000"
+         },
+         {
+          "NIK": 740296,
+          "NAMA KARYAWAN": "SUHADI RUSDIANTORO",
+          "JABATAN": "MGR NETWORK AREA &amp; IS OPERATION",
+          "KODE UNIT": "R4W-4E1D0000"
+         },
+         {
+          "NIK": 790007,
+          "NAMA KARYAWAN": "HARTOYO, S.Kom.",
+          "JABATAN": "MGR OPERATION BGES, WAN &amp; WIFI",
+          "KODE UNIT": "R4W-4E1E0000"
+         },
+         {
+          "NIK": 720522,
+          "NAMA KARYAWAN": "HENRIE BRILLIANTORO",
+          "JABATAN": "ASMAN WAN &amp; WIFI FULFILLMENT &amp; ASSURANCE",
+          "KODE UNIT": "R4W-4E1EB000"
+         },
+         {
+          "NIK": 840156,
+          "NAMA KARYAWAN": "JAYANTI SUKMA MAULANI",
+          "JABATAN": "MGR CONSUMER SERVICE",
+          "KODE UNIT": "R4W-4E1F0000"
+         },
+         {
+          "NIK": 930032,
+          "NAMA KARYAWAN": "PUTRI KURNIA SARI",
+          "JABATAN": "JM CUSTOMER CARE",
+          "KODE UNIT": "R4W-4E1G0000"
+         },
+         {
+          "NIK": 830095,
+          "NAMA KARYAWAN": "DIANTY ELISIANA",
+          "JABATAN": "MGR BUSINESS, GOVT &amp; ENTERPRISE SERVICE",
+          "KODE UNIT": "R4W-4E1H0000"
+         },
+         {
+          "NIK": 720142,
+          "NAMA KARYAWAN": "WULANDARI,ST",
+          "JABATAN": "MGR LOGISTIK &amp; GENERAL SUPPORT",
+          "KODE UNIT": "R4W-4E1I0000"
+         },
+         {
+          "NIK": 690021,
+          "NAMA KARYAWAN": "BUDI",
+          "JABATAN": "ASMAN LOGISTIK &amp; LEGAL",
+          "KODE UNIT": "R4W-4E1IA000"
+         },
+         {
+          "NIK": 840125,
+          "NAMA KARYAWAN": "ANGGAR PRASETYONINGRUM",
+          "JABATAN": "MGR SHARED SERVICE",
+          "KODE UNIT": "R4W-4E1J0000"
+         },
+         {
+          "NIK": 680436,
+          "NAMA KARYAWAN": "SITI NURUL HASANAH",
+          "JABATAN": "ASMAN FINANCE",
+          "KODE UNIT": "R4W-4E1JA000"
+         },
+         {
+          "NIK": 730470,
+          "NAMA KARYAWAN": "ACHMAD BUDIANTORO, ST",
+          "JABATAN": "KAKANDATEL KEBUMEN",
+          "KODE UNIT": "R4W-4E1K0000"
+         },
+         {
+          "NIK": 680327,
+          "NAMA KARYAWAN": "RUDY IRAWAN",
+          "JABATAN": "ASMAN INFRA OPERATION &amp; MAINTENANCE",
+          "KODE UNIT": "R4W-4E1KB000"
+         },
+         {
+          "NIK": 820005,
+          "NAMA KARYAWAN": "DIAH ERNAWATI HARIMURNI",
+          "JABATAN": "KAKANDATEL MUNTILAN",
+          "KODE UNIT": "R4W-4E1L0000"
+         },
+         {
+          "NIK": 790008,
+          "NAMA KARYAWAN": "KURNIA TRININGSIH",
+          "JABATAN": "KAKANDATEL PURWOREJO",
+          "KODE UNIT": "R4W-4E1M0000"
+         },
+         {
+          "NIK": 680505,
+          "NAMA KARYAWAN": "PUJIYONO",
+          "JABATAN": "ASMAN SALES &amp; CUSTOMER CARE",
+          "KODE UNIT": "R4W-4E1MA000"
+         },
+         {
+          "NIK": 800030,
+          "NAMA KARYAWAN": "TRIAWAN SETIADI, SE",
+          "JABATAN": "KAKANDATEL WONOSOBO",
+          "KODE UNIT": "R4W-4E1O0000"
+         },
+         {
+          "NIK": 680451,
+          "NAMA KARYAWAN": "DARKO, S.E.",
+          "JABATAN": "ASMAN SUPPORT",
+          "KODE UNIT": "R4W-4E1OC000"
+         },
+         null,
+         null,
+         null,
+         {
+          "NAMA KARYAWAN": "LAYER 1"
+         },
+         {
+          "NAMA KARYAWAN": "LAYER 2"
+         },
+         {
+          "NAMA KARYAWAN": "LAYER 3"
+         }
+        ],
+        "WITEL SOLO":[
+         {
+          "NIK": 710399,
+          "NAMA KARYAWAN": "PRIBADI NIRWANA, ST, MT",
+          "JABATAN": "GM WITEL SOLO",
+          "KODE UNIT": "R4W-4G100000"
+         },
+         {
+          "NIK": 720311,
+          "NAMA KARYAWAN": "RULLY SUSILO",
+          "JABATAN": "MGR WAR ROOM &amp; RISK MGT",
+          "KODE UNIT": "R4W-4G1A0000"
+         },
+         {
+          "NIK": 730410,
+          "NAMA KARYAWAN": "ANTOK RAHMAT SUDIBYA",
+          "JABATAN": "MGR ACCESS &amp; SERVICE OPERATION",
+          "KODE UNIT": "R4W-4G1B0000"
+         },
+         {
+          "NIK": 720058,
+          "NAMA KARYAWAN": "WILHELMUS FANDA",
+          "JABATAN": "ASMAN CONSUMER ASSURANCE",
+          "KODE UNIT": "R4W-4G1BB000"
+         },
+         {
+          "NIK": 920063,
+          "NAMA KARYAWAN": "RISKA AMALIA SETYARINI",
+          "JABATAN": "ASMAN WITEL OPERATION CENTER",
+          "KODE UNIT": "R4W-4G1BC000"
+         },
+         {
+          "NIK": 720359,
+          "NAMA KARYAWAN": "NUR AHMAD",
+          "JABATAN": "MGR ACCESS OPTIMA &amp; DATA MANAGEMENT",
+          "KODE UNIT": "R4W-4G1C0000"
+         },
+         {
+          "NIK": 690388,
+          "NAMA KARYAWAN": "NENY DESMIYARSI, S.E",
+          "JABATAN": "ASMAN PLANNING DSGN,DPLOY&amp;SOL PRTNERSHIP",
+          "KODE UNIT": "R4W-4G1CA000"
+         },
+         {
+          "NIK": 920193,
+          "NAMA KARYAWAN": "AYU ADINDA PUTRI",
+          "JABATAN": "ASMAN DAVAL &amp; INVENTORY MGT",
+          "KODE UNIT": "R4W-4G1CC000"
+         },
+         {
+          "NIK": 720090,
+          "NAMA KARYAWAN": "SUTIKNO",
+          "JABATAN": "MGR NETWORK AREA &amp; IS OPERATION",
+          "KODE UNIT": "R4W-4G1D0000"
+         },
+         {
+          "NIK": 680344,
+          "NAMA KARYAWAN": "SAPTO HADI WARSONO",
+          "JABATAN": "ASMAN DATA CENTER &amp; DEFA",
+          "KODE UNIT": "R4W-4G1DC000"
+         },
+         {
+          "NIK": 740232,
+          "NAMA KARYAWAN": "DWI SATRIANANDA, ST, MT.",
+          "JABATAN": "MGR WHOLESALE ACCESS NETWORK &amp; WIFI",
+          "KODE UNIT": "R4W-4G1F0000"
+         },
+         {
+          "NIK": 720414,
+          "NAMA KARYAWAN": "WAHYONO",
+          "JABATAN": "MGR ACCESS MAINTENANCE &amp; QE",
+          "KODE UNIT": "R4W-4G1G0000"
+         },
+         {
+          "NIK": 670174,
+          "NAMA KARYAWAN": "SUMARYONO",
+          "JABATAN": "ASMAN ACCESS MAINTENANCE, QE PLAN &amp; HAI",
+          "KODE UNIT": "R4W-4G1GA000"
+         },
+         {
+          "NIK": 700349,
+          "NAMA KARYAWAN": "BUDIYANTO",
+          "JABATAN": "ASMAN NE FTM ACCES MNTENAN&amp;PRTNRSHP CTRL",
+          "KODE UNIT": "R4W-4G1GB000"
+         },
+         {
+          "NIK": 740088,
+          "NAMA KARYAWAN": "MOHAMMAD AZIZ YUSUF LATIF, ST",
+          "JABATAN": "MGR CONSUMER SERVICE",
+          "KODE UNIT": "R4W-4G1H0000"
+         },
+         {
+          "NIK": 770033,
+          "NAMA KARYAWAN": "YULITA WIJAYANTI, ST.",
+          "JABATAN": "MGR CUSTOMER CARE",
+          "KODE UNIT": "R4W-4G1I0000"
+         },
+         {
+          "NIK": 720036,
+          "NAMA KARYAWAN": "RACHMANI SARWENDYAH, SE",
+          "JABATAN": "ASMAN CUSTOMER TOUCH POINT",
+          "KODE UNIT": "R4W-4G1IB000"
+         },
+         {
+          "NIK": 920163,
+          "NAMA KARYAWAN": "NUR RAHMAWATI",
+          "JABATAN": "ASMAN CRM &amp; LEVERAGING CUSTOMER",
+          "KODE UNIT": "R4W-4G1IC000"
+         },
+         {
+          "NIK": 720317,
+          "NAMA KARYAWAN": "DIDIN WIDIATMOKO, ST",
+          "JABATAN": "MGR BUSINESS SERVICE",
+          "KODE UNIT": "R4W-4G1J0000"
+         },
+         {
+          "NIK": 730017,
+          "NAMA KARYAWAN": "SRI HANDAYANI, S.E.",
+          "JABATAN": "ASMAN BS OBL",
+          "KODE UNIT": "R4W-4G1JB000"
+         },
+         {
+          "NIK": 810094,
+          "NAMA KARYAWAN": "ACHMAD YUSUF",
+          "JABATAN": "MGR GOVERNMENT &amp; ENTERPRISE SERVICE",
+          "KODE UNIT": "R4W-4G1K0000"
+         },
+         {
+          "NIK": 780049,
+          "NAMA KARYAWAN": "FITTY MUSTIKA",
+          "JABATAN": "ASMAN GES SALES ENGINEER",
+          "KODE UNIT": "R4W-4G1KA000"
+         },
+         {
+          "NIK": 930044,
+          "NAMA KARYAWAN": "FAJRIN REZA ANSHARI",
+          "JABATAN": "ASMAN GES BIDDING MGT &amp; OBL",
+          "KODE UNIT": "R4W-4G1KB000"
+         },
+         {
+          "NIK": 710525,
+          "NAMA KARYAWAN": "SURAHMANTO",
+          "JABATAN": "MGR LOGISTIK &amp; GENERAL SUPPORT",
+          "KODE UNIT": "R4W-4G1L0000"
+         },
+         {
+          "NIK": 700649,
+          "NAMA KARYAWAN": "WAHYUDIN SOFYAN",
+          "JABATAN": "ASMAN LOGISTIK &amp; LEGAL",
+          "KODE UNIT": "R4W-4G1LA000"
+         },
+         {
+          "NIK": 930188,
+          "NAMA KARYAWAN": "PRAMESTI FESTA PERDANANTI",
+          "JABATAN": "ASMAN ASSET MGT &amp; FACILITY SUPPORT",
+          "KODE UNIT": "R4W-4G1LB000"
+         },
+         {
+          "NIK": 720192,
+          "NAMA KARYAWAN": "DWI HAPPY AFIANTORO, ST, MT",
+          "JABATAN": "MGR SHARED SERVICE HC &amp; FINANCE",
+          "KODE UNIT": "R4W-4G1M0000"
+         },
+         {
+          "NIK": 680122,
+          "NAMA KARYAWAN": "AGUSTINA BETI SETIANINGSIH",
+          "JABATAN": "ASMAN FINANCE",
+          "KODE UNIT": "R4W-4G1MC000"
+         },
+         {
+          "NIK": 830078,
+          "NAMA KARYAWAN": "RIZKY ARSITA",
+          "JABATAN": "MGR SHARED SERVICE PAYMENT COLLECTION",
+          "KODE UNIT": "R4W-4G1N0000"
+         },
+         {
+          "NIK": 730208,
+          "NAMA KARYAWAN": "ENGGAR CAHYADI, ST,. MM.",
+          "JABATAN": "KAKANDATEL SRAGEN",
+          "KODE UNIT": "R4W-4G1O0000"
+         },
+         {
+          "NIK": 860073,
+          "NAMA KARYAWAN": "INTAN KURNIA IMASTUTI, S.T, M.M",
+          "JABATAN": "KAKANDATEL WONOGIRI",
+          "KODE UNIT": "R4W-4G1P0000"
+         },
+         {
+          "NIK": 930209,
+          "NAMA KARYAWAN": "ADI CIPTA ERLANGGA",
+          "JABATAN": "ASMAN SALES &amp; CUSTOMER CARE",
+          "KODE UNIT": "R4W-4G1PA000"
+         },
+         {
+          "NIK": 670184,
+          "NAMA KARYAWAN": "DARU SETYO RAHARDJO",
+          "JABATAN": "KAKANDATEL KLATEN",
+          "KODE UNIT": "R4W-4G1Q0000"
+         },
+         {
+          "NIK": 690394,
+          "NAMA KARYAWAN": "SARWONO",
+          "JABATAN": "ASMAN SALES &amp; CUSTOMER CARE",
+          "KODE UNIT": "R4W-4G1QA000"
+         },
+         {
+          "NIK": 660588,
+          "NAMA KARYAWAN": "DIDIT NURHARJANTO, SE",
+          "JABATAN": "ASMAN INFRA OPERATION &amp; MAINTENANCE",
+          "KODE UNIT": "R4W-4G1QB000"
+         },
+         null,
+         null,
+         {
+          "NAMA KARYAWAN": "LAYER 1"
+         },
+         {
+          "NAMA KARYAWAN": "LAYER 2"
+         },
+         {
+          "NAMA KARYAWAN": "LAYER 3"
+         }
+        ],
+        "WITEL YOGYAKARTA":[
+         {
+          "NIK": 700030,
+          "NAMA KARYAWAN": "DWI HARTONO, IR",
+          "JABATAN": "DEPUTY GM WITEL YOGYAKARTA",
+          "KODE UNIT": "R4W-4H100000"
+         },
+         {
+          "NIK": 730461,
+          "NAMA KARYAWAN": "AGUS FAISAL, ST",
+          "JABATAN": "GM WITEL YOGYAKARTA",
+          "KODE UNIT": "R4W-4H100000"
+         },
+         {
+          "NIK": 710429,
+          "NAMA KARYAWAN": "MUHAMMAD WACHID MUSHLIH",
+          "JABATAN": "MGR WAR ROOM &amp; RISK MGT",
+          "KODE UNIT": "R4W-4H1A0000"
+         },
+         {
+          "NIK": 840140,
+          "NAMA KARYAWAN": "HANDIKA RAHMAWAN AJI",
+          "JABATAN": "MGR ACCESS &amp; SERVICE OPERATION",
+          "KODE UNIT": "R4W-4H1B0000"
+         },
+         {
+          "NIK": 720242,
+          "NAMA KARYAWAN": "AGUSTINUS WAHJUDI HENDRO S.",
+          "JABATAN": "MGR ACCESS OPTIMA &amp; CONSTRUCTION SPV",
+          "KODE UNIT": "R4W-4H1C0000"
+         },
+         {
+          "NIK": 740297,
+          "NAMA KARYAWAN": "MUHAMMAD SIDIK RAHARJA",
+          "JABATAN": "MGR NETWORK AREA &amp; IS OPERATION SUPPORT",
+          "KODE UNIT": "R4W-4H1D0000"
+         },
+         {
+          "NIK": 740126,
+          "NAMA KARYAWAN": "SUKARNO",
+          "JABATAN": "MGR BGES OPERATION",
+          "KODE UNIT": "R4W-4H1E0000"
+         },
+         {
+          "NIK": 660589,
+          "NAMA KARYAWAN": "MARSUDIYONO",
+          "JABATAN": "ASMAN BGES FULFILLMENT",
+          "KODE UNIT": "R4W-4H1EA000"
+         },
+         {
+          "NIK": 730591,
+          "NAMA KARYAWAN": "KRIS WISNU WARDANA, ST",
+          "JABATAN": "MGR WHOLESALE ACCESS NETWORK &amp; WIFI",
+          "KODE UNIT": "R4W-4H1F0000"
+         },
+         {
+          "NIK": 720485,
+          "NAMA KARYAWAN": "HERY NUGROHO, ST",
+          "JABATAN": "MGR ACCESS DATA MGT",
+          "KODE UNIT": "R4W-4H1G0000"
+         },
+         {
+          "NIK": 940061,
+          "NAMA KARYAWAN": "SEKAR RINI ABIDIN",
+          "JABATAN": "ASMAN DAVAL &amp; INVENTORY MGT PLAN&amp;REVIEW",
+          "KODE UNIT": "R4W-4H1GA000"
+         },
+         {
+          "NIK": 780005,
+          "NAMA KARYAWAN": "YULIANTO",
+          "JABATAN": "MGR ACCESS MAINTENANCE &amp; QE",
+          "KODE UNIT": "R4W-4H1H0000"
+         },
+         {
+          "NIK": 740146,
+          "NAMA KARYAWAN": "ARIEF DARYATNO, ST",
+          "JABATAN": "MGR HOME SERVICE",
+          "KODE UNIT": "R4W-4H1I0000"
+         },
+         {
+          "NIK": 920221,
+          "NAMA KARYAWAN": "DYAH NORMA MAHARSI, MBA",
+          "JABATAN": "ASMAN PARTNERSHIP &amp; AGENCY",
+          "KODE UNIT": "R4W-4H1IA000"
+         },
+         {
+          "NIK": 730535,
+          "NAMA KARYAWAN": "ERNI PURWANTI DEWI",
+          "JABATAN": "MGR DIGITAL SERVICE &amp; WIFI",
+          "KODE UNIT": "R4W-4H1J0000"
+         },
+         {
+          "NIK": 690400,
+          "NAMA KARYAWAN": "SULISTYOWATI, S.E.",
+          "JABATAN": "ASMAN DIGITAL &amp; WIFI SUPPORT",
+          "KODE UNIT": "R4W-4H1JC000"
+         },
+         {
+          "NIK": 730086,
+          "NAMA KARYAWAN": "MARTARINI",
+          "JABATAN": "MGR CUSTOMER CARE",
+          "KODE UNIT": "R4W-4H1K0000"
+         },
+         {
+          "NIK": 670334,
+          "NAMA KARYAWAN": "PUJI KASTIYANI",
+          "JABATAN": "ASMAN SERVICE ASSURANCE",
+          "KODE UNIT": "R4W-4H1KB000"
+         },
+         {
+          "NIK": 720266,
+          "NAMA KARYAWAN": "NUNUK ENY KRISTANTI",
+          "JABATAN": "MGR BUSINESS SERVICE",
+          "KODE UNIT": "R4W-4H1L0000"
+         },
+         {
+          "NIK": 910005,
+          "NAMA KARYAWAN": "KAMILATUN NIKMAH",
+          "JABATAN": "ASMAN BS SALES ENGINEER",
+          "KODE UNIT": "R4W-4H1LA000"
+         },
+         {
+          "NIK": 680495,
+          "NAMA KARYAWAN": "SUKANTA",
+          "JABATAN": "ASMAN BS DELIVERY &amp; QUALITY",
+          "KODE UNIT": "R4W-4H1LC000"
+         },
+         {
+          "NIK": 790120,
+          "NAMA KARYAWAN": "DEWI SETIAWATI SUKARNO",
+          "JABATAN": "MGR ENTERPRISE SERVICE",
+          "KODE UNIT": "R4W-4H1M0000"
+         },
+         {
+          "NIK": 930064,
+          "NAMA KARYAWAN": "RATIH TRYAS PRODONINGRUM",
+          "JABATAN": "ASMAN ES BIDDING MGT &amp; OBL",
+          "KODE UNIT": "R4W-4H1MB000"
+         },
+         {
+          "NIK": 840080,
+          "NAMA KARYAWAN": "DWISARI WIGUNA",
+          "JABATAN": "ASMAN ES PROJECT MGT &amp; QUALITY",
+          "KODE UNIT": "R4W-4H1MD000"
+         },
+         {
+          "NIK": 740141,
+          "NAMA KARYAWAN": "TRINIL ANJAR LESTARI, ST",
+          "JABATAN": "MGR GOVERNMENT SERVICE",
+          "KODE UNIT": "R4W-4H1N0000"
+         },
+         {
+          "NIK": 680044,
+          "NAMA KARYAWAN": "MUTOHAR QODRI",
+          "JABATAN": "MGR LOGISTIK &amp; GENERAL SUPPORT",
+          "KODE UNIT": "R4W-4H1O0000"
+         },
+         {
+          "NIK": 680096,
+          "NAMA KARYAWAN": "DAHLIA",
+          "JABATAN": "ASMAN LOGISTIK",
+          "KODE UNIT": "R4W-4H1OA000"
+         },
+         {
+          "NIK": 700442,
+          "NAMA KARYAWAN": "TRI WIDYASTUTI",
+          "JABATAN": "ASMAN ASSET MGT &amp; FACILITY SUPPORT",
+          "KODE UNIT": "R4W-4H1OC000"
+         },
+         {
+          "NIK": 730092,
+          "NAMA KARYAWAN": "YANI QOYIMAH",
+          "JABATAN": "MGR SHARED SERVICE HC &amp; FINANCE",
+          "KODE UNIT": "R4W-4H1P0000"
+         },
+         {
+          "NIK": 660142,
+          "NAMA KARYAWAN": "CIPTADI WIDODO",
+          "JABATAN": "ASMAN HUMAN CAPITAL",
+          "KODE UNIT": "R4W-4H1PA000"
+         },
+         {
+          "NIK": 880055,
+          "NAMA KARYAWAN": "NOVITA WAHYUNINGTYAS",
+          "JABATAN": "ASMAN FINANCE",
+          "KODE UNIT": "R4W-4H1PB000"
+         },
+         {
+          "NIK": 700440,
+          "NAMA KARYAWAN": "SRI WAHYUNI, SE",
+          "JABATAN": "ASMAN COMMUNITY DEVELOPMENT CENTER",
+          "KODE UNIT": "R4W-4H1PC000"
+         },
+         {
+          "NIK": 810120,
+          "NAMA KARYAWAN": "RAMA KUMALA SARI",
+          "JABATAN": "MGR SAS",
+          "KODE UNIT": "R4W-4H1Q0000"
+         },
+         {
+          "NIK": 710418,
+          "NAMA KARYAWAN": "ASTINAH, ST, MM",
+          "JABATAN": "MGR SHARED SERVICE PAYMENT COLLECTION",
+          "KODE UNIT": "R4W-4H1R0000"
+         },
+         {
+          "NIK": 710134,
+          "NAMA KARYAWAN": "TRI MARTININGSIH",
+          "JABATAN": "ASMAN PAYMENT COLLECTION EBIS",
+          "KODE UNIT": "R4W-4H1RB000"
+         },
+         {
+          "NIK": 670331,
+          "NAMA KARYAWAN": "UMI FATIMAH",
+          "JABATAN": "ASMAN DEBT MGT &amp; COLLECTION PARTNERSHIP",
+          "KODE UNIT": "R4W-4H1RC000"
+         },
+         {
+          "NIK": 720276,
+          "NAMA KARYAWAN": "MURTADO",
+          "JABATAN": "KAKANDATEL BANTUL",
+          "KODE UNIT": "R4W-4H1S0000"
+         },
+         {
+          "NIK": 680092,
+          "NAMA KARYAWAN": "SJILFIA FISKA",
+          "JABATAN": "ASMAN SALES &amp; CUSTOMER CARE",
+          "KODE UNIT": "R4W-4H1SA000"
+         },
+         {
+          "NIK": 680583,
+          "NAMA KARYAWAN": "SUPRIYADI",
+          "JABATAN": "KAKANDATEL SLEMAN",
+          "KODE UNIT": "R4W-4H1T0000"
+         },
+         {
+          "NIK": 900083,
+          "NAMA KARYAWAN": "CATHARINA NARISWARI",
+          "JABATAN": "ASMAN SALES &amp; CUSTOMER CARE",
+          "KODE UNIT": "R4W-4H1TA000"
+         },
+         null,
+         null,
+         {
+          "NAMA KARYAWAN": "LAYER 1"
+         },
+         {
+          "NAMA KARYAWAN": "LAYER 2"
+         },
+         {
+          "NAMA KARYAWAN": "LAYER 3"
+         }
+        ]
+        }
+]
