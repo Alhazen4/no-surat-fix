@@ -262,7 +262,10 @@
 
                                         <div class="d-flex justify-content-center" style="margin-top: 20px;">
                                             <div class="nav-2">
-                                                <b-button @click="popUp3Active=false" variant="secondary">Kembali</b-button>
+                                                <b-button @click="popUp3Active=false" variant="secondary">
+                                                    <b-icon icon="arrow-left"></b-icon>
+                                                    Kembali
+                                                </b-button>
                                             </div>
                                         </div>
                                     </vs-popup>
@@ -358,16 +361,23 @@
 
                                             <div class="d-flex justify-content-between" style="margin-top: 20px;">
                                                 <div class="nav-2">
-                                                    <b-button @click="popUp2Active=false" variant="secondary">Kembali</b-button>
+                                                    <b-button @click="popUp2Active=false" variant="secondary">
+                                                        <b-icon icon="arrow-left"></b-icon>
+                                                        Kembali
+                                                    </b-button>
                                                 </div>
                                                 <div class="nav-2">
                                                     <label class="btn_input">
                                                         <input @change="selectImage" type="file"/>
+                                                        <b-icon icon="cloud-upload"></b-icon>
                                                         Upload Foto
                                                     </label>
                                                 </div>
                                                 <div class="nav-2" style="padding-right: 0;">
-                                                    <b-button @click="ubahSuratMasuk" variant="success" type="submit">Ubah Surat Masuk</b-button>
+                                                    <b-button @click="ubahSuratMasuk" variant="success" type="submit">
+                                                        <b-icon icon="save"></b-icon>
+                                                        Ubah Surat Masuk
+                                                    </b-button>
                                                 </div>
                                             </div>
                                     </vs-popup>
