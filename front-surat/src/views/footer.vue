@@ -1,6 +1,6 @@
 <template>
     <footer>
-        by pass
+        App V.0.0.1 
     </footer>
 </template>
 

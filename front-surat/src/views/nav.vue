@@ -69,6 +69,7 @@
         top: 0;
         background-color: #202e47;
         color: white;
+        z-index: 97;
     }
 
     .nav p {

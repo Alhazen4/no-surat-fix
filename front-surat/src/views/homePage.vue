@@ -6,6 +6,7 @@
                 <div class="info wrapper">
 
                         <b-carousel
+                        class="carousel"
                         :interval="4000"
                         fade
                         @sliding-start="onSlideStart"
@@ -19,6 +20,11 @@
                         <b-carousel-slide>
                             <template #img>
                                 <img width="1024" height="480" src="../assets/2.jpg" alt="image">
+                            </template>
+                        </b-carousel-slide>
+                        <b-carousel-slide>
+                            <template #img>
+                                <img width="1024" height="480" src="../assets/3.jpg" alt="image">
                             </template>
                         </b-carousel-slide>
                     </b-carousel>
@@ -81,6 +87,11 @@
 
     .body {
         padding: 130px 0;
+    }
+
+    .carousel {
+        position: relative;
+        z-index: 2;
     }
 
     .wrapper {

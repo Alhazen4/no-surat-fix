@@ -831,7 +831,7 @@
                                 } else {
                                     // Change the namber at "today.getDay() === 2"
                                     // If you want to change the day that trigger noSuratLast + 10
-                                    if (today.getDay() === 5 && store.state.saturdayCheck === false) {
+                                    if (today.getDay() === 6 && store.state.saturdayCheck === false) {
                                         // console.log('Today is sunday and false');
                                         
                                         store.dispatch('setSaturdayCheckAction', true)
@@ -840,7 +840,7 @@
                                         store.dispatch('setCadanganUpdatedAction', false)
 
                                     // Don't forget to also change the number here as before
-                                    } else if (today.getDay() === 5 && store.state.saturdayCheck === true) {
+                                    } else if (today.getDay() === 6 && store.state.saturdayCheck === true) {
 
                                         // console.log('Today is sunday and true');
 
@@ -854,7 +854,7 @@
                                             store.dispatch('setCadanganUpdatedAction', false)
                                         }
                                     // Also here
-                                    } else if (today.getDay() !== 5) {
+                                    } else if (today.getDay() !== 6) {
                                         // console.log('Today is not sunday');
 
                                         store.dispatch('setSaturdayCheckAction', false)
@@ -862,7 +862,6 @@
                                         this.isNoSaturdayCheck = false;
 
                                     } else if (store.state.noSuratCadanganPrev.includes(this.noSuratBeforeLast)) {
-                                        console.log("TURU");
                                         this.noSuratLast++
                                         this.isNoSaturdayCheck = false;
                                     }
