@@ -119,12 +119,15 @@
                                     </div>
 
                                     <vs-popup 
-                                    class="holamundo"  
+                                    icon="people-fill"
                                     title="Pejabat yang ber-TTd" 
                                     :active.sync="popUpPejabatTtd"
                                     v-if="popUpPejabatTtd"
                                     style="position: absolute; z-index: 99;"
                                     >
+                                    <span>
+                                        <vs-icon icon="mood"></vs-icon>
+                                    </span>
                                     <b-card style="height: 500px; overflow-y: auto;" v-if="popUpPejabatTtd">
                                             <div style="display: flex; flex-direction: column; gap: 10px;">
                             
@@ -137,7 +140,9 @@
                                                             <template v-for="cabang in pejabat.child">
 
                                                                 <div style="display: flex; flex-direction: row; gap: 10px">
-                                                                    <b-button variant="primary" @click="cabang2Click=true" v-b-toggle="cabang.value" size="sm">V</b-button>
+                                                                    <b-button variant="primary" @click="cabang2Click=true" v-b-toggle="cabang.value" size="sm">
+                                                                        <b-icon icon="chevron-down"></b-icon>
+                                                                    </b-button>
                                                                     <b-button @click="selectPejabatTtd(cabang.value)" size="sm" variant="warning">{{cabang.value}} {{cabang.text}}</b-button>
                                                                 </div>
 
@@ -148,7 +153,9 @@
                                                                         <template v-for="cabang2 in cabang.child2">
                                                                         
                                                                             <div style="display: flex; flex-direction: row; gap: 10px">
-                                                                                <b-button variant="primary"  @click="cabang3Click=true" v-b-toggle="cabang2.value" size="sm">V</b-button>
+                                                                                <b-button variant="primary"  @click="cabang3Click=true" v-b-toggle="cabang2.value" size="sm">
+                                                                                    <b-icon icon="chevron-down"></b-icon>
+                                                                                </b-button>
                                                                                 <b-button variant="success" @click="selectPejabatTtd(cabang2.value)" size="sm">{{cabang2.value}} {{cabang2.text}}</b-button>
                                                                             </div>
                                                                             
@@ -396,7 +403,9 @@
                                                                         <template v-for="cabang in pejabat.child">
 
                                                                             <div style="display: flex; flex-direction: row; gap: 10px">
-                                                                                <b-button variant="primary" @click="cabang2Click=true" v-b-toggle="cabang.value" size="sm">V</b-button>
+                                                                                <b-button variant="primary" @click="cabang2Click=true" v-b-toggle="cabang.value" size="sm">
+                                                                                    <b-icon icon="chevron-down"></b-icon>
+                                                                                </b-button>
                                                                                 <b-button @click="selectPejabatTtd(cabang.value)" size="sm" variant="warning">{{cabang.value}} {{cabang.text}}</b-button>
                                                                             </div>
 
@@ -407,7 +416,9 @@
                                                                                     <template v-for="cabang2 in cabang.child2">
                                                                                     
                                                                                         <div style="display: flex; flex-direction: row; gap: 10px">
-                                                                                            <b-button variant="primary"  @click="cabang3Click=true" v-b-toggle="cabang2.value" size="sm">V</b-button>
+                                                                                            <b-button variant="primary"  @click="cabang3Click=true" v-b-toggle="cabang2.value" size="sm">
+                                                                                                <b-icon icon="chevron-down"></b-icon>
+                                                                                            </b-button>
                                                                                             <b-button variant="success" @click="selectPejabatTtd(cabang2.value)" size="sm">{{cabang2.value}} {{cabang2.text}}</b-button>
                                                                                         </div>
                                                                                         
