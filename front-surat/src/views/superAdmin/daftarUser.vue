@@ -34,6 +34,18 @@
                                         required>
                                     </b-form-input>
                                 </b-form-group>
+                                
+                                <b-form-group
+                                    label="Unit / Witel:"
+                                    label-for="input-unitOrWitel">
+
+                                    <b-form-input
+                                        id="input-unitOrWitel"
+                                        v-model="input_unitOrWitel"
+                                        type="text"
+                                        required>
+                                    </b-form-input>
+                                </b-form-group>
 
                                 <b-form-group
                                     label="Email:"
@@ -43,6 +55,18 @@
                                         id="input-email"
                                         v-model="input_email"
                                         type="text"
+                                        required>
+                                    </b-form-input>
+                                </b-form-group>
+
+                                <b-form-group
+                                    label="Nomor Telepon:"
+                                    label-for="input-email">
+
+                                    <b-form-input
+                                        id="input-noTelp"
+                                        v-model="input_noTelp"
+                                        type="number"
                                         required>
                                     </b-form-input>
                                 </b-form-group>
@@ -149,6 +173,18 @@
                                             </b-form-group>
 
                                             <b-form-group
+                                                label="Unit / Witel:"
+                                                label-for="input-unitOrWitel">
+
+                                                <b-form-input
+                                                    id="input-unitOrWitel"
+                                                    v-model="input_unitOrWitel"
+                                                    type="text"
+                                                    required>
+                                                </b-form-input>
+                                            </b-form-group>
+
+                                            <b-form-group
                                                 label="Email:"
                                                 label-for="input-email">
 
@@ -156,6 +192,18 @@
                                                     id="input-email"
                                                     v-model="input_email"
                                                     type="text"
+                                                    required>
+                                                </b-form-input>
+                                            </b-form-group>
+
+                                            <b-form-group
+                                                label="Nomor Telepon:"
+                                                label-for="input-email">
+
+                                                <b-form-input
+                                                    id="input-noTelp"
+                                                    v-model="input_noTelp"
+                                                    type="number"
                                                     required>
                                                 </b-form-input>
                                             </b-form-group>
@@ -259,8 +307,10 @@
                 currentPage: 1,
 
                 input_nama: '',
-                input_username: '',
+                input_unitOrWitel: '',
                 input_email: '',
+                input_noTelp: null,
+                input_username: '',
                 input_password: '',
 
                 columns: [  
@@ -276,8 +326,19 @@
                     thStyle: { width: "40vh"}
                 },
                 {
+                    key: 'unitOrWitel',
+                    label: 'Unit / Witel',
+                    sortable: true,
+                    thStyle: { width: "40vh"}
+                },
+                {
                     key: 'email',
                     label: 'Email',
+                    thStyle: { width: "30vh"}
+                },
+                {
+                    key: 'noTelp',
+                    label: 'No.Telepon',
                     thStyle: { width: "30vh"}
                 },
                 {
@@ -336,7 +397,9 @@
                             { 
                                 idx: '',
                                 nama: this.input_nama,
+                                unitOrWitel: this.input_unitOrWitel,
                                 email: this.input_email,
+                                noTelp: this.input_noTelp,
                                 role: 'admin',
                                 username: this.input_username,
                                 password: this.input_password
@@ -373,7 +436,9 @@
                     .then(response => {
                         console.log(response);
                         this.input_nama = response.data.nama;
+                        this.input_unitOrWitel = response.data.unitOrWitel;
                         this.input_email = response.data.email;
+                        this.input_noTelp = response.data.noTelp;
                         this.input_username = response.data.username;
                         this.input_password = response.data.password;
                     })
@@ -399,7 +464,9 @@
                             `/user/${this.selectedId}`, 
                             { 
                                 nama: this.input_nama,
+                                unitOrWitel: this.input_unitOrWitel,
                                 email: this.input_email,
+                                noTelp: this.input_noTelp,
                                 role: 'admin',
                                 username: this.input_username,
                                 password: this.input_password

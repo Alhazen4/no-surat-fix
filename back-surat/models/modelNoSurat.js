@@ -45,7 +45,7 @@ export const modelSurat = mongoose.Schema(
         type: String,
         required: true
     },
-    keterangan:{
+    pembuatSurat:{
         type: String,
         required: true
     },

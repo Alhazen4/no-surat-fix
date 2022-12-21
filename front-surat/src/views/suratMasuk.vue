@@ -45,11 +45,11 @@
                                     </b-form-input>
                                 </b-form-group>
                                 <b-form-group
-                                    label="Tujuan Unit:"
-                                    label-for="input-tujuanUnit">
+                                    label="Tujuan Surat:"
+                                    label-for="input-tujuanSurat">
                                     <b-form-input
-                                        id="input-tujuanUnit"
-                                        v-model="input_tujuanUnit"
+                                        id="input-tujuanSurat"
+                                        v-model="input_tujuanSurat"
                                         type="text"
                                         required>
                                     </b-form-input>
@@ -166,6 +166,10 @@
                     :sort-by.sync="sortBy"
                     :sort-desc.sync="sortDesc">
 
+                        <template #cell(fotoSurat)="data">
+                            <img id="input-foto" :src="data.item.image" alt="" style="width: 100px; height: 100px; object-fit: contain;">
+                        </template>
+
                         <template #cell(opsi)="data">
                             <div class="d-flex" style="gap: 10px">
                                     <b-button @click="lihatClick(data.item._id)" variant="primary" size="sm">
@@ -195,11 +199,11 @@
                                                 </b-form-input>
                                             </b-form-group>
                                             <b-form-group
-                                                label="Tujuan Unit:"
-                                                label-for="input-tujuanUnit">
+                                                label="Tujuan Surat:"
+                                                label-for="input-tujuanSurat">
                                                 <b-form-input
-                                                    id="input-tujuanUnit"
-                                                    v-model="input_tujuanUnit"
+                                                    id="input-tujuanSurat"
+                                                    v-model="input_tujuanSurat"
                                                     type="text"
                                                     readonly>
                                                 </b-form-input>
@@ -298,10 +302,10 @@
                                             </b-form-group>
                                             <b-form-group
                                                 label="Tujuan Unit:"
-                                                label-for="input-tujuanUnit">
+                                                label-for="input-tujuanSurat">
                                                 <b-form-input
-                                                    id="input-tujuanUnit"
-                                                    v-model="input_tujuanUnit"
+                                                    id="input-tujuanSurat"
+                                                    v-model="input_tujuanSurat"
                                                     type="text"
                                                     required>
                                                 </b-form-input>
@@ -388,7 +392,6 @@
                             </div>
                         </template>
                     </b-table>
-                    {{ this.suratItems['image'] }}
                 </div>
             </div>
         </div>
@@ -444,7 +447,7 @@
 
                 input_pengirim: '',
                 input_perihal: '',
-                input_tujuanUnit: '',
+                input_tujuanSurat: '',
                 input_namaPenerima: '',
                 input_disposisi: '',
                 curImage: '',
@@ -487,13 +490,18 @@
                         thStyle: { width: "30vh"}
                     },
                     {
-                        key: "tujuanUnit",
-                        label: 'Tujuan Unit',
+                        key: "tujuanSurat",
+                        label: 'Tujuan Surat',
                         thStyle: { width: "30vh"}
                     },
                     {
                         key: "namaPenerima",
                         label: 'Nama Penerima',
+                        thStyle: { width: "30vh"}
+                    },
+                    {
+                        key: "fotoSurat",
+                        label: 'Foto',
                         thStyle: { width: "30vh"}
                     },
                     {
@@ -514,7 +522,6 @@
         computed: {
             // For pagination
             rows() {
-                // return this.userItemsTest.length
                 return this.suratItems.length
             },
         },
@@ -537,7 +544,7 @@
             klikSuratMasuk() {
                 this.input_pengirim = '';
                 this.input_perihal = '';
-                this.input_tujuanUnit = '';
+                this.input_tujuanSurat = '';
                 this.input_namaPenerima = '';
                 this.input_disposisi = '';
                 this.input_tglTerima = '';
@@ -582,7 +589,7 @@
                             tglTerima: this.input_tglTerima,
                             wktTerima: this.input_wktTerima,
                             perihal: this.input_perihal, 
-                            tujuanUnit: this.input_tujuanUnit, 
+                            tujuanSurat: this.input_tujuanSurat, 
                             namaPenerima: this.input_namaPenerima,
                             disposisi: this.input_disposisi,
                             image: `${this.imageURL}`,
@@ -633,7 +640,7 @@
             lihatClick(id) {
                 this.input_pengirim = '';
                 this.input_perihal = '';
-                this.input_tujuanUnit = '';
+                this.input_tujuanSurat = '';
                 this.input_namaPenerima = '';
                 this.input_disposisi = '';
                 this.input_tglTerima = '';
@@ -654,7 +661,7 @@
                         const params = response.data
                         this.input_pengirim = params.pengirim;
                         this.input_perihal = params.perihal;
-                        this.input_tujuanUnit = params.tujuanUnit;
+                        this.input_tujuanSurat = params.tujuanSurat;
                         this.input_namaPenerima = params.namaPenerima;
                         this.input_disposisi = params.disposisi;
 
@@ -684,7 +691,7 @@
                         const params = response.data
                         this.input_pengirim = params.pengirim;
                         this.input_perihal = params.perihal;
-                        this.input_tujuanUnit = params.tujuanUnit;
+                        this.input_tujuanSurat = params.tujuanSurat;
                         this.input_namaPenerima = params.namaPenerima;
                         this.input_disposisi = params.disposisi;
                         
@@ -747,7 +754,7 @@
                             tglTerima: this.input_tglTerima,
                             wktTerima: this.input_wktTerima,
                             perihal: this.input_perihal, 
-                            tujuanUnit: this.input_tujuanUnit, 
+                            tujuanSurat: this.input_tujuanSurat, 
                             namaPenerima: this.input_namaPenerima,
                             disposisi: this.input_disposisi,
                             image: `${this.new_imageURL}`,

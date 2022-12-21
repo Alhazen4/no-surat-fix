@@ -25,16 +25,14 @@ export default new Vuex.Store({
     },
     setCadanganUpdated(state, status) {
       state.cadanganUpdated = status
-      console.log(state.cadanganUpdated);
     },
     setNoSuratCadanganPrev(state, array) {
       state.noSuratCadanganPrev = array
-      console.log(state.noSuratCadanganPrev);
     },
     logout(state) {
       state.id = null
       state.role = null
-      state.saturdayCheck = false
+      // state.saturdayCheck = false
       state.cadanganUpdated = false
       route.push('/')
     }

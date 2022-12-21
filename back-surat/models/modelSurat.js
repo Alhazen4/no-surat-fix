@@ -21,7 +21,7 @@ export const modelSurat = mongoose.Schema(
         type: String,
         required: true
     },
-    tujuanUnit:{
+    tujuanSurat:{
         type: String,
         required: true
     },

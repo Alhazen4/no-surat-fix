@@ -11,8 +11,16 @@ export const userModel = mongoose.Schema(
             type: String,
             required: true
         },
+        unitOrWitel: {
+            type: String,
+            required: true
+        },
         email: {
             type: String,
+            required: true
+        },
+        noTelp: {
+            type: Number,
             required: true
         },
         role: {
