@@ -576,7 +576,7 @@
                 ) {
                     this.errorPopUpActive = true;
                 } else {
-                    const backend_url = process.env.NODE_ENV === 'production' ? '/api/image/' : 'http://localhost:4041/api/image/';
+                    const backend_url = process.env.NODE_ENV === 'production' ? '/api/image/' : 'http://localhost:3030/api/image/';
 
                     const formData = new FormData();
                     formData.append('image', this.curImage)
@@ -751,7 +751,7 @@
 
                     const params = this.selectedSuratId
                     try {
-                        const backend_url = process.env.NODE_ENV === 'production' ? '/api/image/' : 'http://localhost:4041/api/image/';
+                        const backend_url = process.env.NODE_ENV === 'production' ? '/api/image/' : 'http://localhost:3030/api/image/';
                         const formData = new FormData();
                         formData.append('image', this.curImage)
 

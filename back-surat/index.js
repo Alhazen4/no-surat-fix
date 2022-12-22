@@ -87,7 +87,7 @@ app.delete('/api/image', async (req, res) => {
     res.json({ message: 'success' })
 });
 
-const PORT = 4041;
-app.listen(PORT, () => console.log('Run on http://localhost:4041'));
+const PORT = 3030;
+app.listen(PORT, () => console.log('Run on http://localhost:3030'));
 
 export default db 

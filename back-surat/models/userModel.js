@@ -36,7 +36,7 @@ export const userModel = mongoose.Schema(
             required: true
         },
     },
-        { timestamps: true }
+    { timestamps: true }
 );
 
 /* Exporting the model to be used in other files. */
