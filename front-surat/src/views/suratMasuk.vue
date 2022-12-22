@@ -66,12 +66,12 @@
                                 </b-form-group>
                                 <b-form-group
                                     label="Disposisi:"
-                                    label-for="input-disposisi">
+                                    label-for="input-disposisi"
+                                    description="Kosongkan jika tidak di-disposisi">
                                     <b-form-input
                                         id="input-disposisi"
                                         v-model="input_disposisi"
-                                        type="text"
-                                        required>
+                                        type="text">
                                     </b-form-input>
                                 </b-form-group>
 
@@ -107,6 +107,11 @@
                                     <img id="input-foto" :src="preImage" alt="" style="width:320px; height:auto;">
                                 </b-form-group>
                             </b-form>
+
+                            <vs-popup class="holamundo"  title="Error!" :active.sync="errorPopUpActive">
+                                <p>Ada beberapa field yang belum terisi. <br> Harap lengkapi data terlebih dahulu!</p><br>
+                                <b-button @click="errorPopUpActive=false" variant="danger">Mengerti</b-button>
+                            </vs-popup>
 
                                 <div class="d-flex justify-content-between" style="margin-top: 20px;">
                                     <div class="nav-2">
@@ -322,7 +327,8 @@
                                             </b-form-group>
                                             <b-form-group
                                                 label="Disposisi:"
-                                                label-for="input-disposisi">
+                                                label-for="input-disposisi"
+                                                description="Kosongkan jika tidak di-disposisi">
                                                 <b-form-input
                                                     id="input-disposisi"
                                                     v-model="input_disposisi"
@@ -440,6 +446,7 @@
                 popUp2Active: false,
                 popUp3Active: false,
                 selectedSuratId: '',
+                errorPopUpActive: false,
 
                 keyword: '',
                 perPage: 8,
@@ -557,51 +564,64 @@
             },
 
             async tambahSuratMasuk() {
-                const backend_url = process.env.NODE_ENV === 'production' ? '/api/image/' : 'http://localhost:4041/api/image/';
 
-                const formData = new FormData();
-                formData.append('image', this.curImage)
-
-                if (this.curImage === '') {
-                    console.log('Error: no image selected!');
+                if (
+                    this.input_pengirim === ''
+                    || this.input_perihal === ''
+                    || this.input_tujuanSurat === ''
+                    || this.input_namaPenerima === ''
+                    || this.input_tglTerima === ''
+                    || this.input_wktTerima === ''
+                    || this.curImage === ''
+                ) {
+                    this.errorPopUpActive = true;
                 } else {
-                    
-                    // Upload the image to server
+                    const backend_url = process.env.NODE_ENV === 'production' ? '/api/image/' : 'http://localhost:4041/api/image/';
+
+                    const formData = new FormData();
+                    formData.append('image', this.curImage)
+
+                    if (this.curImage === '') {
+                        console.log('Error: no image selected!');
+                    } else {
+                        
+                        // Upload the image to server
+                        try {
+                            await apis.post('/image', formData)
+                            .then(res => {
+                                this.local_imageURL = res.data.file,
+                                this.imageURL = `${backend_url}${this.local_imageURL}`
+                            })
+                        } catch (error) {
+                            console.log(error)
+                        }
+                    }
+
+                    // Save the data to MongoDB 
                     try {
-                        await apis.post('/image', formData)
-                        .then(res => {
-                            this.local_imageURL = res.data.file,
-                            this.imageURL = `${backend_url}${this.local_imageURL}`
-                        })
+                        await apis.post
+                        (
+                            '/surat', 
+                            { 
+                                idx: '',
+                                pengirim: this.input_pengirim, 
+                                tglTerima: this.input_tglTerima,
+                                wktTerima: this.input_wktTerima,
+                                perihal: this.input_perihal, 
+                                tujuanSurat: this.input_tujuanSurat, 
+                                namaPenerima: this.input_namaPenerima,
+                                disposisi: this.input_disposisi,
+                                image: `${this.imageURL}`,
+                                local_image: `${this.local_imageURL}`,
+                            
+                            },
+                            { headers: { 'Content-Type': 'application/json' } }
+                        )
+                        this.popUpActive = false
+                        router.go(0)
                     } catch (error) {
                         console.log(error)
                     }
-                }
-
-                // Save the data to MongoDB 
-                try {
-                    await apis.post
-                    (
-                        '/surat', 
-                        { 
-                            idx: '',
-                            pengirim: this.input_pengirim, 
-                            tglTerima: this.input_tglTerima,
-                            wktTerima: this.input_wktTerima,
-                            perihal: this.input_perihal, 
-                            tujuanSurat: this.input_tujuanSurat, 
-                            namaPenerima: this.input_namaPenerima,
-                            disposisi: this.input_disposisi,
-                            image: `${this.imageURL}`,
-                            local_image: `${this.local_imageURL}`,
-                        
-                        },
-                        { headers: { 'Content-Type': 'application/json' } }
-                    )
-                    this.popUpActive = false
-                    router.go(0)
-                } catch (error) {
-                    console.log(error)
                 }
             },
                 
@@ -680,6 +700,7 @@
             },
 
             ubahClick(id) {
+                
                 this.selectedSuratId = id;
                 // console.log(this.selectedSuratId);
                 try {
@@ -712,60 +733,77 @@
             },
 
             async ubahSuratMasuk() {
-                const params = this.selectedSuratId
-                try {
-                    const backend_url = process.env.NODE_ENV === 'production' ? '/api/image/' : 'http://localhost:4041/api/image/';
-                    const formData = new FormData();
-                    formData.append('image', this.curImage)
 
-                    console.log('pre ', this.preImage);
-                    console.log('cur ', this.current_imageURL);
-
-                    // If the image is not cahnged
-                    if (this.preImage === this.current_imageURL) {
-                        console.log('Image sama')
-                        this.new_imageURL = this.current_imageURL
-                        this.new_local_imageURL = this.current_local_imageURL
-                    } else {
-                        console.log('Image beda')
-                        try {
-                            // Upload the image to the database, set the new image URL and the new image local database URL
-                            await apis.post('/image', formData)
-                            .then(res => {
-                                this.new_imageURL = `${backend_url}${res.data.file}`
-                                this.new_local_imageURL = `${res.data.file}`
-                            })
-                            // Delete the current image with call its API and send the current image local database URL
-                            await apis.delete(`/image`,
-                            {
-                                data: { image: this.current_local_imageURL },
-                            });
-                        } catch (error) {
-                            console.log(error)
-                        }
-                    }
+                if (
+                    this.input_pengirim === ''
+                    || this.input_perihal === ''
+                    || this.input_tujuanSurat === ''
+                    || this.input_namaPenerima === ''
+                    || this.input_tglTerima === ''
+                    || this.input_wktTerima === ''
+                    || this.preImage === ''
+                ) {
+                    this.errorPopUpActive = true;
                     
-                    // // Update the database with new data, such as "selected nama", "selected no_telp", "new imageURL", and "new local image URL"
-                    await apis.patch
-                    (
-                        `/surat/${params}`, 
-                        { 
-                            pengirim: this.input_pengirim, 
-                            tglTerima: this.input_tglTerima,
-                            wktTerima: this.input_wktTerima,
-                            perihal: this.input_perihal, 
-                            tujuanSurat: this.input_tujuanSurat, 
-                            namaPenerima: this.input_namaPenerima,
-                            disposisi: this.input_disposisi,
-                            image: `${this.new_imageURL}`,
-                            local_image: `${this.new_local_imageURL}`,
-                        },
-                        { headers: { 'Content-Type': 'application/json; charset=UTF-8' } }
-                    )
-                    console.log('Success');
-                    router.go(0)
-                } catch (error) {
-                    console.log(error)
+                    // console.log('pre ', this.preImage);
+                    // console.log('cur ', this.current_imageURL);
+                } else {
+
+                    const params = this.selectedSuratId
+                    try {
+                        const backend_url = process.env.NODE_ENV === 'production' ? '/api/image/' : 'http://localhost:4041/api/image/';
+                        const formData = new FormData();
+                        formData.append('image', this.curImage)
+
+                        // console.log('pre ', this.preImage);
+                        // console.log('cur ', this.current_imageURL);
+
+                        // If the image is not cahnged
+                        if (this.preImage === this.current_imageURL) {
+                            // console.log('Image sama')
+                            this.new_imageURL = this.current_imageURL
+                            this.new_local_imageURL = this.current_local_imageURL
+                        } else {
+                            // console.log('Image beda')
+                            try {
+                                // Upload the image to the database, set the new image URL and the new image local database URL
+                                await apis.post('/image', formData)
+                                .then(res => {
+                                    this.new_imageURL = `${backend_url}${res.data.file}`
+                                    this.new_local_imageURL = `${res.data.file}`
+                                })
+                                // Delete the current image with call its API and send the current image local database URL
+                                await apis.delete(`/image`,
+                                {
+                                    data: { image: this.current_local_imageURL },
+                                });
+                            } catch (error) {
+                                console.log(error)
+                            }
+                        }
+                        
+                        // // Update the database with new data, such as "selected nama", "selected no_telp", "new imageURL", and "new local image URL"
+                        await apis.patch
+                        (
+                            `/surat/${params}`, 
+                            { 
+                                pengirim: this.input_pengirim, 
+                                tglTerima: this.input_tglTerima,
+                                wktTerima: this.input_wktTerima,
+                                perihal: this.input_perihal, 
+                                tujuanSurat: this.input_tujuanSurat, 
+                                namaPenerima: this.input_namaPenerima,
+                                disposisi: this.input_disposisi,
+                                image: `${this.new_imageURL}`,
+                                local_image: `${this.new_local_imageURL}`,
+                            },
+                            { headers: { 'Content-Type': 'application/json; charset=UTF-8' } }
+                        )
+                        console.log('Success');
+                        router.go(0)
+                    } catch (error) {
+                        console.log(error)
+                    }
                 }
             },
         }
