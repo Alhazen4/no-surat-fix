@@ -9,7 +9,7 @@ import {
 
 const router = express.Router();
 
-router.get('/api/users', getUser);
+router.post('/api/users', getUser);
 router.get('/api/user/:id', getUserById);
 router.patch('/api/user/:id', updateUser);
 router.delete('/api/user/:id', deleteUser);

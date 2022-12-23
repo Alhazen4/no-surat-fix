@@ -54,10 +54,52 @@ import apis from '../apis.js';
 import store from '/src/store';
 
 export default {
-    // created() {
-    //     console.log(store.state.id)
-    //     console.log(store.state.role)
-    // },
+    async created() {
+
+            let cur_res
+    
+            try {
+                await apis.post 
+                (
+                    '/users',
+                    {
+                        role: 'super_admin_check',
+                    },
+                    { headers: { 'Content-Type': 'application/json' } }
+                ).then(response => {cur_res = response.data})
+            } catch (error) {
+                console.log(error);
+            }
+
+            if (cur_res.length === 0) {
+                console.log('gak ada superadmin');
+                try {
+                    await apis.post
+                    (
+                        '/signup', 
+                        { 
+                            idx: '',
+                            nama: 'SuperAdmin',
+                            unitOrWitel: 'Semarang',
+                            email: 'superadmin@gmail.com',
+                            noTelp: 0,
+                            role: 'super_admin',
+                            username: 'superAdmin',
+                            password: 'Telkom@REG4'
+                        },
+                        { headers: { 'Content-Type': 'application/json' } }
+                    )
+                    .then(response => {
+                        console.log(response.data);
+                    })
+                    this.popUpActive = false
+                    router.go(0)
+                } catch (error) {
+                    console.log(error)
+                }
+            }
+    },
+
     name: "userLogin",
     data() {
         return {
@@ -82,8 +124,7 @@ export default {
                 .then(response => {
                     store.dispatch('setIdAction', response.data.user_id )
                     store.dispatch('setRoleAction', response.data.role )
-                    // console.log(response.data.user_id);
-                    // console.log(response.data.role);
+
                     router.push('/homePage').catch(() => {});
                 })
             } catch (error) {

@@ -6,11 +6,22 @@ import userModel from "../models/userModel.js";
 const router = express.Router();
 
 export const getUser = async (req, res) => {
-    try {
-        const dataUser = await userModel.find({ "role": "admin" });
-        res.json(dataUser);
-    } catch (error) {
-        res.status(500).json({message: error.message});
+
+    if (req.body.role === 'super_admin_check') {
+
+        try {   
+            const dataUser = await userModel.find({ "role": "super_admin" });
+            res.json(dataUser);
+        } catch (error) {
+            res.status(500).json({message: error.message});
+        }
+    } else if (req.body.role === 'super_admin') {
+        try {   
+            const dataUser = await userModel.find();
+            res.json(dataUser);
+        } catch (error) {
+            res.status(500).json({message: error.message});
+        }
     }
 };
 

@@ -281,7 +281,7 @@
 
         async created() {
             try {
-                await apis.get('/users')
+                await apis.post('/users', { role: store.state.role })
                 .then((response) => {
                     this.userItems = response.data;
                 });
@@ -467,7 +467,6 @@
                                 unitOrWitel: this.input_unitOrWitel,
                                 email: this.input_email,
                                 noTelp: this.input_noTelp,
-                                role: 'admin',
                                 username: this.input_username,
                                 password: this.input_password
                             },
