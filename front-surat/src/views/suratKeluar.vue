@@ -206,7 +206,7 @@
                                     <label class="form-label">Tujuan Unit</label>
                                     <b-form-input type="text" v-model="input_tujuanUnit"/>
                                 </div>
-                            
+
                                 <b-form-group>
                                     <div class="d-flex justify-content-between">
                                     <div class="col-tgl">
@@ -568,7 +568,7 @@
     import * as pejabatjson from './dataSelect/dataCabang/pejabatJSON.js';
     
     import { ModelListSelect } from 'vue-search-select';
-
+    
     import Vue from 'vue'
     import { vsPopup } from 'vuesax'
     import 'vuesax/dist/vuesax.css'
@@ -866,7 +866,7 @@
                         }
 
                         if (store.state.role === 'super_admin') {
-                            console.log('superadmin');
+
                         // If user doesn't use the "nomor surat cadangan"
                         if (this.noSuratCadanganField === 'true') {
                                 
@@ -882,7 +882,7 @@
                                     // Change the namber at "today.getDay() === 2"
                                     // Also change at the next if else for "store.state.role === 'admin'"
                                     // If you want to change the day that trigger noSuratLast + 10
-                                    if (today.getDay() === 6 && store.state.saturdayCheck === false) {
+                                    if (today.getDay() === 5 && store.state.saturdayCheck === false) {
                                         // console.log('Today is sunday and false');
                                         
                                         store.dispatch('setSaturdayCheckAction', true)
@@ -891,7 +891,7 @@
                                         store.dispatch('setCadanganUpdatedAction', false)
 
                                     // Don't forget to also change the number here as before
-                                    } else if (today.getDay() === 6 && store.state.saturdayCheck === true) {
+                                    } else if (today.getDay() === 5 && store.state.saturdayCheck === true) {
 
                                         // console.log('Today is sunday and true');
 
@@ -905,7 +905,7 @@
                                             store.dispatch('setCadanganUpdatedAction', false)
                                         }
                                     // Also here
-                                    } else if (today.getDay() !== 6) {
+                                    } else if (today.getDay() !== 5) {
                                         // console.log('Today is not sunday');
 
                                         store.dispatch('setSaturdayCheckAction', false)
@@ -937,7 +937,7 @@
                                 } else {
                                     // Change the namber at "today.getDay() === 2"
                                     // If you want to change the day that trigger noSuratLast + 10
-                                    if (today.getDay() === 2 && store.state.saturdayCheck === false) {
+                                    if (today.getDay() === 5 && store.state.saturdayCheck === false) {
                                         // console.log('Today is sunday and false');
                                         
                                         store.dispatch('setSaturdayCheckAction', true)
@@ -946,7 +946,7 @@
                                         store.dispatch('setCadanganUpdatedAction', false)
 
                                     // Don't forget to also change the number here as before
-                                    } else if (today.getDay() === 2 && store.state.saturdayCheck === true) {
+                                    } else if (today.getDay() === 5 && store.state.saturdayCheck === true) {
 
                                         // console.log('Today is sunday and true');
 
@@ -960,7 +960,7 @@
                                             store.dispatch('setCadanganUpdatedAction', false)
                                         }
                                     // Also here
-                                    } else if (today.getDay() !== 2) {
+                                    } else if (today.getDay() !== 5) {
                                         // console.log('Today is not sunday');
 
                                         store.dispatch('setSaturdayCheckAction', false)
@@ -975,8 +975,8 @@
                                 this.noSuratLastString = this.noSuratLast.toString()
                         }
 
-                        console.log(this.noSuratLastString);
-                        console.log(this.noSuratLast, this.noSuratBeforeLast);
+                        // console.log(this.noSuratLastString);
+                        // console.log(this.noSuratLast, this.noSuratBeforeLast);
 
                         // console.log('len ', this.noSuratLastString.length);
 
