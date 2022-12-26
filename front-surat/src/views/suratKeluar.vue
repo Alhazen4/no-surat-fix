@@ -874,7 +874,7 @@
                                     // Also change at the next if else for "store.state.role === 'admin'"
                                     // If you want to change the day that trigger noSuratLast + 10
                                     if (today.getDay() === 5 && store.state.saturdayCheck === false) {
-                                        // console.log('Today is sunday and false');
+                                        // console.log('Today is friday and false');
                                         
                                         store.dispatch('setSaturdayCheckAction', true)
                                         this.noSuratLast += 10;
@@ -884,7 +884,7 @@
                                     // Don't forget to also change the number here as before
                                     } else if (today.getDay() === 5 && store.state.saturdayCheck === true) {
 
-                                        // console.log('Today is sunday and true');
+                                        // console.log('Today is firday and true');
 
                                         if (this.noSuratLast === this.noSuratBeforeLast + 10 || this.noSuratLast === this.noSuratBeforeLast + 1 || this.noSuratBeforeLast === 0) {
                                             this.noSuratLast++
@@ -897,7 +897,7 @@
                                         }
                                     // Also here
                                     } else if (today.getDay() !== 5) {
-                                        // console.log('Today is not sunday');
+                                        // console.log('Today is not firday');
 
                                         store.dispatch('setSaturdayCheckAction', false)
                                         this.noSuratLast++
