@@ -46,6 +46,18 @@
                                         required>
                                     </b-form-input>
                                 </b-form-group>
+                                
+                                <b-form-group
+                                    label="Role"
+                                    label-for="input-role">
+
+                                    <b-form-select
+                                        class="form-select-custom"
+                                        v-model="input_role" 
+                                        :options="roleOptions" 
+                                        required>
+                                    </b-form-select>
+                                </b-form-group>
 
                                 <b-form-group
                                     label="Email:"
@@ -185,6 +197,18 @@
                                             </b-form-group>
 
                                             <b-form-group
+                                                label="Role"
+                                                label-for="input-role">
+
+                                                <b-form-select
+                                                    class="form-select-custom"
+                                                    v-model="input_role" 
+                                                    :options="roleOptions" 
+                                                    required>
+                                                </b-form-select>
+                                            </b-form-group>
+
+                                            <b-form-group
                                                 label="Email:"
                                                 label-for="input-email">
 
@@ -232,6 +256,14 @@
                                                 </b-form-input>
                                             </b-form-group>
                                         </b-form>
+
+                                        <vs-popup class="holamundo"  title="Error!" :active.sync="errorPopUpActive">
+                                            <p>Ada beberapa field yang belum terisi. <br> Harap lengkapi data terlebih dahulu!</p><br>
+                                            <b-button @click="errorPopUpActive=false" variant="danger">
+                                                <b-icon icon="exclamation-circle"></b-icon>
+                                                Mengerti
+                                            </b-button>
+                                        </vs-popup>
 
                                         <div class="d-flex justify-content-between" style="padding-top: 20px;">
                                             <div class="nav-2">
@@ -305,10 +337,16 @@
 
                 input_nama: '',
                 input_unitOrWitel: '',
+                input_role: '',
                 input_email: '',
                 input_noTelp: null,
                 input_username: '',
                 input_password: '',
+
+                roleOptions: [
+                    { value: 'secret', text: 'secret' },
+                    { value: 'admin', text: 'admin' },
+                ],
 
                 columns: [  
                 {
@@ -372,7 +410,10 @@
 
             klikTambahUser() {
                 this.input_nama = '';
+                this.input_unitOrWitel === ''
+                this.input_role === ''
                 this.input_email = '';
+                this.input_noTelp === null
                 this.input_username = '';
                 this.input_password = '';
                 this.popUpActive=true;
@@ -381,11 +422,14 @@
             async tambahUser() {
                 if (
                     this.input_nama === ''
+                    || this.input_unitOrWitel === ''
+                    || this.input_role === ''
                     || this.input_username === ''
                     || this.input_email === ''
+                    || this.input_noTelp === null
                     || this.input_password === ''
                 ) {
-                    this.errorPopUpActive = true;
+                    this.errorPopUpActive = true
                 } else {
                     try {
                         await apis.post
@@ -397,7 +441,7 @@
                                 unitOrWitel: this.input_unitOrWitel,
                                 email: this.input_email,
                                 noTelp: this.input_noTelp,
-                                role: 'admin',
+                                role: this.input_role,
                                 username: this.input_username,
                                 password: this.input_password
                             },
@@ -425,6 +469,7 @@
 
             ubahClick(id) {
                 this.selectedId = id;
+
                 try {
                     apis.get
                     (
@@ -434,6 +479,7 @@
                         console.log(response);
                         this.input_nama = response.data.nama;
                         this.input_unitOrWitel = response.data.unitOrWitel;
+                        this.input_role = response.data.role;
                         this.input_email = response.data.email;
                         this.input_noTelp = response.data.noTelp;
                         this.input_username = response.data.username;
@@ -449,8 +495,11 @@
 
                 if (
                     this.input_nama === ''
+                    || this.input_unitOrWitel === ''
+                    || this.input_role === ''
                     || this.input_username === ''
                     || this.input_email === ''
+                    || this.input_noTelp === null
                     || this.input_password === ''
                 ) {
                     this.errorPopUpActive = true;
@@ -462,6 +511,7 @@
                             { 
                                 nama: this.input_nama,
                                 unitOrWitel: this.input_unitOrWitel,
+                                role: this.input_role,
                                 email: this.input_email,
                                 noTelp: this.input_noTelp,
                                 username: this.input_username,
@@ -494,5 +544,14 @@
         display: flex; 
         flex-direction: column; 
         gap: 20px;
+    }
+
+    .form-select-custom {
+        height: 40px;
+        width: 100%;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        border: 1px solid lightgray;
+        border-radius: 5px;
     }
 </style>

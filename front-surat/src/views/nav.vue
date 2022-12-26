@@ -1,11 +1,15 @@
 <template>
     <div class="nav justify-content-between">
-        <p><b-icon icon="envelope-open-fill"></b-icon><b> Penomoran Surat App</b></p>
+        <div class="logo">
+            <a href="/homePage">
+                <img src="../assets/logoSerat.png" alt="web logo">
+            </a>
+        </div>
         <ul>
             <li><a href="/homePage">Home</a></li>
             <li><a href="/suratKeluar">Surat Keluar</a></li>
-            <li><a href="/suratMasuk">Surat Masuk</a></li>
-            <li><a href="/daftarUser" :style="{ display }">Daftar User</a></li>
+            <li><a href="/suratMasuk" v-if="showSuratMasuk">Surat Masuk</a></li>
+            <li><a href="/daftarUser" v-if="showDaftarUSer">Daftar User</a></li>
             <li>
                 <div class="dropdown">
                     <a class="dropbtn">Profil</a>
@@ -30,12 +34,16 @@
         async mounted() {
 
             if (store.state.role === 'super_admin') {
-                this.display = 'block'
-                } else {
-                this.display = 'none'
-                }
+                this.showDaftarUser = true
+                this.showSuratMasuk = true
+            } else if (store.state.role === 'secret') {
+                this.showDaftarUser = false
+                this.showSuratMasuk = true
+            } else {
+                this.showDaftarUser = false
+                this.showSuratMasuk = false
+            }
 
-                
             try {
                 await apis.get(`/user/${store.state.id}`)
                 .then((response) => {
@@ -64,19 +72,22 @@
 
 <style>
     .nav {
+        background-color: whitesmoke;
         padding: 0;
         position: sticky;
         top: 0;
-        background-color: #202e47;
-        color: white;
         z-index: 97;
+        border-bottom: 5px solid #374f7a;
     }
 
-    .nav p {
+    .nav .logo {
         margin-left: 230px;
-        padding: 0;
         line-height: 63px;
-        margin-bottom: 0;
+    }
+
+    .nav .logo img {
+        width: 120px; 
+        height: auto;
     }
 
     .nav ul {
@@ -98,6 +109,10 @@
         display: block;
         padding: 20px;
         text-decoration: none;
+        color: #202e47;
+    }
+
+    .nav ul li a:hover {
         color: white;
     }
 
@@ -112,11 +127,16 @@
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #202e47;
+        background-color: #374f7a;
         min-width: 160px;
         z-index: 1;
         right: 1%;
         text-align: right;
+        color: white;
+    }
+
+    .dropdown-content .logout-btn {
+        color: white;
     }
 
     .dropdown-content .logout-btn:hover {

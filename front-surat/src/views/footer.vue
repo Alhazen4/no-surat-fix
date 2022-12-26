@@ -9,8 +9,9 @@
 <style>
 
 footer {
-    background-color: #202e47;
-    color: white;
+    background-color: whitesmoke;
+    border-top: 2px solid #374f7a;
+    color: #374f7a;
     width: 100%;
     height: 20px;
     position: fixed;

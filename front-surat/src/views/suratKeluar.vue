@@ -210,10 +210,24 @@
                                 <b-form-group>
                                     <div class="d-flex justify-content-between">
                                         <b-form-group
-                                            label="Tanggal Keluar">
+                                            label="Tanggal Keluar"
+                                            v-if="dpickerSAdmin">
                                             <el-date-picker
                                                 v-model="input_tglKeluar"
                                                 type="date"
+                                                placeholder="Pilih Tanggal keluar"
+                                                format="dd/MM/yyyy"
+                                                value-format="dd-MM-yyyy">
+                                            </el-date-picker>
+                                        </b-form-group>
+                                        
+                                        <b-form-group
+                                            label="Tanggal Keluar"
+                                            v-if="dpickerAdmin">
+                                            <el-date-picker
+                                                v-model="input_tglKeluar"
+                                                type="date"
+                                                :picker-options="pickerOptions"
                                                 placeholder="Pilih Tanggal keluar"
                                                 format="dd/MM/yyyy"
                                                 value-format="dd-MM-yyyy">
@@ -579,7 +593,7 @@
                     if (role_admin === 'super_admin') {
                         this.dpickerSAdmin = true
                         this.dpickerAdmin = false
-                    } else if (role_admin === 'admin') {
+                    } else if (role_admin === 'admin' || role_admin === 'secret') {
                         this.dpickerSAdmin = false
                         this.dpickerAdmin = true
                     }
@@ -653,25 +667,25 @@
             } else {
                 this.display = 'none'
             }
-
         },
         
         name: 'suratKeluar',
         data() {
 
-            const now = new Date()
-            const today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
-            // 15th two months prior
-            const minDate = new Date(today)
-            minDate.setMonth(minDate.getMonth())
-            minDate.setDate(now.getDate())
-
             return {
+
+                // Disabled all date before today
+                pickerOptions: {
+                    disabledDate (time) {
+                        const previous = new Date();
+                        previous.setDate(previous.getDate() - 1);
+                        return time.getTime() < previous;
+                    },
+                },
 
                 nama_admin: '',
                 dpickerAdmin: false,
                 dpickerSAdmin: false,
-                min: minDate,
 
                 display: false,
                 sortBy: 'idx',

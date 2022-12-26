@@ -48,7 +48,15 @@ const routes: Array<RouteConfig> = [
   {
     path: '/suratMasuk',
     name: 'suratMasuk',
-    component: suratMasuk
+    component: suratMasuk,
+    beforeEnter: (to, from, next) => {
+      if (store.state.role === null || store.state.role !== 'super_admin' && store.state.role !== 'secret') {
+        alert('Contact Super Admin or Secretary to use this feature!')
+        router.push('/homePage')
+      } else {
+        next()
+      }
+    },
   },
   {
     path: '/suratKeluar',
