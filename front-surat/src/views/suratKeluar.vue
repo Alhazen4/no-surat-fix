@@ -209,36 +209,27 @@
 
                                 <b-form-group>
                                     <div class="d-flex justify-content-between">
-                                    <div class="col-tgl">
                                         <b-form-group
-                                            label="Tanggal Keluar:">
-                                            <b-form-datepicker 
-                                                v-if="dpickerSAdmin"
+                                            label="Tanggal Keluar">
+                                            <el-date-picker
                                                 v-model="input_tglKeluar"
-                                                size="sm">
-                                            </b-form-datepicker>
+                                                type="date"
+                                                placeholder="Pilih Tanggal keluar"
+                                                format="dd/MM/yyyy"
+                                                value-format="dd-MM-yyyy">
+                                            </el-date-picker>
+                                        </b-form-group>
 
-                                            <b-form-datepicker 
-                                                v-if="dpickerAdmin"
-                                                v-model="input_tglKeluar" 
-                                                :min="min" 
-                                                :max="max" 
-                                                size="sm">
-                                            </b-form-datepicker>
-                                        </b-form-group>
-                                    </div>
-                                    <div class="col-bln">
                                         <b-form-group
-                                            label="Waktu Keluar:">
-                                            <b-form-timepicker
-                                                :hour12="false"
-                                                v-model="input_wktKeluar" 
-                                                locale="en"
-                                                size="sm">
-                                            </b-form-timepicker>
+                                            label="Waktu Keluar">
+                                            <el-time-picker
+                                                v-model="input_wktKeluar"
+                                                placeholder="Pilih Waktu Keluar"
+                                                format="HH:mm"
+                                                value-format="HH:mm">
+                                            </el-time-picker>
                                         </b-form-group>
                                     </div>
-                                </div>
                                 </b-form-group>
 
                                 <vs-popup class="holamundo"  title="Error!" :active.sync="errorPopUpActive" v-if="errorPopUpActive">
@@ -567,13 +558,13 @@
     import * as masalahjson from './dataSelect/dataCabang/masalahJSON.js';
     import * as pejabatjson from './dataSelect/dataCabang/pejabatJSON.js';
     
-    import { ModelListSelect } from 'vue-search-select';
-    
     import Vue from 'vue'
     import { vsPopup } from 'vuesax'
-    import 'vuesax/dist/vuesax.css'
-
     Vue.use(vsPopup)
+
+    import ElementUI from 'element-ui'
+    import locale from 'element-ui/lib/locale/lang/en'
+    Vue.use(ElementUI, { locale })
 
     export default {
 
@@ -1136,7 +1127,6 @@
         },
 
         components: {
-            ModelListSelect,
             navigation,
             customFooter
         }

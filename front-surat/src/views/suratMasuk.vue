@@ -22,7 +22,7 @@
                             </b-button>
                         </div>
 
-                        <vs-popup class="holamundo"  title="Tambah Surat Masuk" :active.sync="popUpActive">
+                        <vs-popup class="holamundo"  title="Tambah Surat Masuk" :active.sync="popUpActive" style="position: absolute; z-index: 98;">
                             <b-form autoComplete="off" class="b-form-custom">
                                 <b-form-group
                                     label="Pengirim Surat"
@@ -64,6 +64,7 @@
                                         required>
                                     </b-form-input>
                                 </b-form-group>
+                                
                                 <b-form-group
                                     label="Disposisi:"
                                     label-for="input-disposisi"
@@ -75,31 +76,30 @@
                                     </b-form-input>
                                 </b-form-group>
 
-                                <div class="d-flex justify-content-between">
-                                    <div class="col-tgl">
+                                <b-form-group>
+                                    <div class="d-flex justify-content-between">
                                         <b-form-group
-                                            label="Tanggal Terima:"
-                                            label-for="input-tanggalTerima">
-                                            <b-form-datepicker 
-                                                id="input-tanggalTerima" 
+                                            label="Tanggal Masuk">
+                                            <el-date-picker
                                                 v-model="input_tglTerima"
-                                                size="sm">
-                                            </b-form-datepicker>
+                                                type="date"
+                                                placeholder="Pilih Tanggal Masuk"
+                                                format="dd/MM/yyyy"
+                                                value-format="dd-MM-yyyy">
+                                            </el-date-picker>
                                         </b-form-group>
-                                    </div>
-                                    <div class="col-bln ms-auto">
+
                                         <b-form-group
-                                            label="Waktu Terima:"
-                                            label-for="input-tanggalTerima">
-                                            <b-form-timepicker
-                                                :hour12="false"
-                                                v-model="input_wktTerima" 
-                                                locale="en"
-                                                size="sm">
-                                            </b-form-timepicker>
+                                            label="Waktu Masuk">
+                                            <el-time-picker
+                                                v-model="input_wktTerima"
+                                                placeholder="Pilih Waktu Masuk"
+                                                format="HH:mm"
+                                                value-format="HH:mm">
+                                            </el-time-picker>
                                         </b-form-group>
                                     </div>
-                                </div>
+                                </b-form-group>
 
                                 <b-form-group
                                     label="Foto Paket:"
@@ -413,13 +413,9 @@
     import store from '/src/store';
     import apis from './apis.js';
     import router from '@/router';
-
-    import Vue from 'vue'
-    import { vsPopup } from 'vuesax'
-    import 'vuesax/dist/vuesax.css'
-
-    Vue.use(vsPopup)
-
+    
+    // For vsPopup and ElementUI has been called at suratKeluar.vue
+    // and we don't need to call it again here
     export default {
 
         async created() {

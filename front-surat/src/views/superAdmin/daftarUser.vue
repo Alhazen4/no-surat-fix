@@ -271,11 +271,8 @@
     import apis from '../apis.js';
     import router from '@/router';
 
-    import Vue from 'vue'
-    import { vsPopup } from 'vuesax'
-    import 'vuesax/dist/vuesax.css'
-
-    Vue.use(vsPopup)
+    // For vsPopup and ElementUI has been called at suratKeluar.vue
+    // and we don't need to call it again here
 
     export default {
 
@@ -485,10 +482,6 @@
 </script>
 
 <style>
-    .body-padding-top {
-        padding-top: 50px;
-    }
-
     .nav-2 {
         padding: 8px 8px 8px 0;
     }
