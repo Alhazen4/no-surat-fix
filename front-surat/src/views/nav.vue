@@ -9,7 +9,7 @@
             <li><a href="/homePage">Home</a></li>
             <li><a href="/suratKeluar">Surat Keluar</a></li>
             <li><a href="/suratMasuk" v-if="showSuratMasuk">Surat Masuk</a></li>
-            <li><a href="/daftarUser" v-if="showDaftarUSer">Daftar User</a></li>
+            <li><a href="/daftarUser" v-if="showDaftarUser">Daftar User</a></li>
             <li>
                 <div class="dropdown">
                     <a class="dropbtn">Profil</a>
@@ -57,7 +57,6 @@
         data() {
                 return {
                     nama_admin:'',
-                    display: 'none',
                 }
         },
 

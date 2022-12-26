@@ -674,7 +674,6 @@
                         `/surat/${this.selectedSuratId}`,
                     )
                     .then(response => {
-                        // console.log(response);
                         const params = response.data
                         this.input_pengirim = params.pengirim;
                         this.input_perihal = params.perihal;
@@ -720,8 +719,6 @@
                         this.current_local_imageURL = response.data.local_image;
 
                         this.preImage = this.current_imageURL
-                        console.log(this.preImage);
-                        console.log(this.current_imageURL);
                     })
                 } catch (error) {
                     console.log(error)
@@ -806,5 +803,3 @@
         }
     }
 </script>
-
-<style></style>

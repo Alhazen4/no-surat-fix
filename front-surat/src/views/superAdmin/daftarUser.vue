@@ -447,9 +447,6 @@
                             },
                             { headers: { 'Content-Type': 'application/json' } }
                         )
-                        .then(response => {
-                            console.log(response.data);
-                        })
                         this.popUpActive = false
                         router.go(0)
                     } catch (error) {
@@ -476,7 +473,6 @@
                         `/user/${this.selectedId}`,
                     )
                     .then(response => {
-                        console.log(response);
                         this.input_nama = response.data.nama;
                         this.input_unitOrWitel = response.data.unitOrWitel;
                         this.input_role = response.data.role;
@@ -519,7 +515,6 @@
                             },
                             { headers: { 'Content-Type': 'application/json' } }
                         )
-                        .then(response => {console.log('Success Edit!')})
                         this.popUp2Active = false;
                         this.$router.go(0);
                     } catch (error) {

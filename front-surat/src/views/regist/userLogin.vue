@@ -72,7 +72,6 @@ export default {
             }
 
             if (cur_res.length === 0) {
-                console.log('gak ada superadmin');
                 try {
                     await apis.post
                     (
