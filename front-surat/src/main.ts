@@ -13,9 +13,6 @@ import store from './store'
 import 'vuesax/dist/vuesax.css'
 import 'element-ui/lib/theme-chalk/index.css';
 
-import ElementUI from 'element-ui';
-
-Vue.use(ElementUI)
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 

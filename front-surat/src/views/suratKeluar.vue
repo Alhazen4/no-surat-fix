@@ -654,8 +654,6 @@
                 this.display = 'none'
             }
 
-
-
         },
         
         name: 'suratKeluar',
