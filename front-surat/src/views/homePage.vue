@@ -30,18 +30,18 @@
                     </b-carousel>
 
                     <h2>Selamat Datang!</h2>
-                    <p>Ini adalah aplikasi penomoran surat berbasis web.</p>
                     <p>
-                        Di sini Anda bisa melakukan beberapa hal terkait surat-menyurat khususnya pembuatan nomor surat. Selain itu aplikasi ini 
-                        juga bisa digunakan untuk mendata dan mendokumentasikan surat yang datang ke kantor.
-                        Aplikasi ini memiliki 1 “Super Admin” yang bisa membuatkan Anda akun “admin” agar Anda bisa memakai aplikasi ini.
+                        Serat adalah sebuah inovasi yang akan memudahkan kamu dalam melakukan pendataan dan perapihan
+                        adminstrasi perkantoran atas surat yang masuk ataupun surat keluar.
                     </p>
                     <p>
-                        Untuk membuat nomor surat, hubungi “Super Admin” untuk pembuatan akun dan klik tombol dibawah untuk menggunakan 
-                        fitur utama aplikasi ini!
+                        Dengan aplikasi Serat, sebuah unit dalam perusahaan dapat dengan mudah melakukan pendataan 
+                        surat masuk dengan rapih sehingga dapat melakukan <i>record</i> secara digital. 
                     </p>
-                    <h5>Semoga membantu!</h5>
-                    <b-button variant="success" href="/suratKeluar">Start Use <b-icon icon="arrow-right"></b-icon></b-button>
+                    <p>
+                        Selain itu, dengan Serat, juga dapat dengan mudah melakukan <i>generate</i> nomer surat sesuai 
+                        dengan Kebutuhan Surat dan Penandatangan tanpa ada lagi kesalahan takah.
+                    </p>
                 </div>
             </div>
         </div>
