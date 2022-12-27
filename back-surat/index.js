@@ -70,7 +70,11 @@ app.use(multer({storage: fileStorage, fileFilter: fileFilter}).single("image"));
 app.post('/api/image', async (req, res) => {
     // res.json({ file: req.file.path.replace(/\\/g, "/") });
     // console.log(req.file.filename);
-    res.json({ file: req.file.filename });
+    try {
+        res.json({ file: req.file.filename });
+    } catch (error) {
+        res.json({ error: error})     
+    }
     // res.json({ file: req.file });
 });
 

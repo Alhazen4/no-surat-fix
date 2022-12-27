@@ -75,6 +75,17 @@
                                         type="text">
                                     </b-form-input>
                                 </b-form-group>
+                                
+                                <b-form-group
+                                    label="Catatan Tugas Disposisi:"
+                                    label-for="input-catatanDisposisi"
+                                    description="Kosongkan jika tidak di-disposisi">
+                                    <b-form-input
+                                        id="input-catatanDisposisi"
+                                        v-model="input_catatanDisposisi"
+                                        type="text">
+                                    </b-form-input>
+                                </b-form-group>
 
                                 <b-form-group>
                                     <div class="d-flex justify-content-between">
@@ -102,7 +113,7 @@
                                 </b-form-group>
 
                                 <b-form-group
-                                    label="Foto Paket:"
+                                    label="Foto Paket: (Hanya menerima format .PNG / .JPG / .JPEG)"
                                     label-for="input-foto">
                                     <img id="input-foto" :src="preImage" alt="" style="width:320px; height:auto;">
                                 </b-form-group>
@@ -122,7 +133,7 @@
                                     </div>
                                     <div class="nav-2">
                                         <label class="btn_input">
-                                            <input @change="selectImage" type="file"/>
+                                            <input @change="selectImage" type="file" accept="image/png, image/jpg, image/jpeg"/>
                                             <b-icon icon="cloud-upload"></b-icon>
                                             Upload Foto
                                         </label>
@@ -233,6 +244,17 @@
                                                     readonly>
                                                 </b-form-input>
                                             </b-form-group>
+                                            <b-form-group
+                                                label="Catatan Tugas Disposisi:"
+                                                label-for="input-catatanDisposisi"
+                                                description="Kosongkan jika tidak di-disposisi">
+                                                <b-form-input
+                                                    id="input-catatanDisposisi"
+                                                    v-model="input_catatanDisposisi"
+                                                    type="text"
+                                                    readonly>
+                                                </b-form-input>
+                                            </b-form-group>
 
                                             <div class="d-flex justify-content-between">
                                                 <div class="col-tgl">
@@ -335,6 +357,16 @@
                                                     type="text">
                                                 </b-form-input>
                                             </b-form-group>
+                                            <b-form-group
+                                                label="Catatan Tugas Disposisi:"
+                                                label-for="input-catatanDisposisi"
+                                                description="Kosongkan jika tidak di-disposisi">
+                                                <b-form-input
+                                                    id="input-catatanDisposisi"
+                                                    v-model="input_catatanDisposisi"
+                                                    type="text">
+                                                </b-form-input>
+                                            </b-form-group>
 
                                             <div class="d-flex justify-content-between">
                                                 <div class="col-tgl">
@@ -363,7 +395,7 @@
                                             </div>
 
                                         <b-form-group
-                                                label="Foto Paket:"
+                                                label="Foto Paket: (Hanya menerima format .PNG / .JPG / .JPEG)"
                                                 label-for="input-foto">
                                                 <img id="input-foto" :src="preImage" alt="" style="width:320px; height:auto;">
                                             </b-form-group>
@@ -378,7 +410,7 @@
                                                 </div>
                                                 <div class="nav-2">
                                                     <label class="btn_input">
-                                                        <input @change="selectImage" type="file"/>
+                                                        <input @change="selectImage" type="file" accept="image/png, image/jpg, image/jpeg"/>
                                                         <b-icon icon="cloud-upload"></b-icon>
                                                         Upload Foto
                                                     </label>
@@ -392,7 +424,26 @@
                                             </div>
                                     </vs-popup>
 
-                                    <b-button variant="danger" @click="hapusSurat(data.item._id)" size="sm">
+                                    <vs-popup class="holamundo"  title="Konfirmasi Penghapusan Surat Masuk" :active.sync="popUpDelete">
+                                        <p>Yakin ingin <b>menghapus</b> surat masuk ini?</p>
+                                        <div class="d-flex justify-content-between" style="margin-top: 20px;">
+                                            <div class="nav-2">
+                                                <b-button @click="popUpDelete=false" variant="secondary">
+                                                    <b-icon icon="arrow-left"></b-icon>
+                                                    Kembali
+                                                </b-button>
+                                            </div>
+
+                                            <div class="nav-2" style="padding-right: 0;">
+                                                <b-button @click="hapusSurat(data.item._id)" variant="danger" type="submit">
+                                                    <b-icon icon="exclamation-circle"></b-icon>
+                                                    Yakin dan Hapus Surat
+                                                </b-button>
+                                            </div>
+                                        </div>
+                                    </vs-popup>
+
+                                    <b-button variant="danger" @click="popUpDelete=true" size="sm" v-if="deleteBtn">
                                         <b-icon icon="trash"></b-icon>
                                     </b-button>
                             </div>
@@ -432,6 +483,12 @@
             for (let i=1; i <= this.suratItems.length; i++) {
                 this.suratItems[i-1].idx = i;
             }
+
+            if (store.state.role === 'super_admin') {
+                this.deleteBtn = true
+            } else {
+                this.deleteBtn = false
+            }
         },
         
         name: 'suratMasuk',
@@ -444,6 +501,8 @@
                 popUp3Active: false,
                 selectedSuratId: '',
                 errorPopUpActive: false,
+                deleteBtn: false,
+                popUpDelete: false,
 
                 keyword: '',
                 perPage: 8,
@@ -454,6 +513,7 @@
                 input_tujuanSurat: '',
                 input_namaPenerima: '',
                 input_disposisi: '',
+                input_catatanDisposisi: '',
                 curImage: '',
                 preImage: '',
 
@@ -475,6 +535,12 @@
                     {
                         key: 'disposisi',
                         label: 'Disposisi',
+                        sortable: true,
+                        thStyle: { width: "40vh"}
+                    },
+                    {
+                        key: 'catatanDisposisi',
+                        label: 'Catatan Disposisi',
                         sortable: true,
                         thStyle: { width: "40vh"}
                     },
@@ -551,6 +617,7 @@
                 this.input_tujuanSurat = '';
                 this.input_namaPenerima = '';
                 this.input_disposisi = '';
+                this.input_catatanDisposisi = '';
                 this.input_tglTerima = '';
                 this.input_wktTerima = '';
                 this.current_imageURL = '';
@@ -567,6 +634,8 @@
                     || this.input_perihal === ''
                     || this.input_tujuanSurat === ''
                     || this.input_namaPenerima === ''
+                    || this.input_disposisi === ''
+                    || this.input_catatanDisposisi === ''
                     || this.input_tglTerima === ''
                     || this.input_wktTerima === ''
                     || this.curImage === ''
@@ -608,6 +677,7 @@
                                 tujuanSurat: this.input_tujuanSurat, 
                                 namaPenerima: this.input_namaPenerima,
                                 disposisi: this.input_disposisi,
+                                catatanDisposisi: this.input_catatanDisposisi,
                                 image: `${this.imageURL}`,
                                 local_image: `${this.local_imageURL}`,
                             
@@ -660,6 +730,7 @@
                 this.input_tujuanSurat = '';
                 this.input_namaPenerima = '';
                 this.input_disposisi = '';
+                this.input_catatanDisposisi = '';
                 this.input_tglTerima = '';
                 this.input_wktTerima = '';
                 this.current_imageURL = '';
@@ -680,6 +751,7 @@
                         this.input_tujuanSurat = params.tujuanSurat;
                         this.input_namaPenerima = params.namaPenerima;
                         this.input_disposisi = params.disposisi;
+                        this.input_catatanDisposisi = params.catatanDisposisi;
 
                         this.input_tglTerima = params.tglTerima;
                         this.input_wktTerima = params.wktTerima;
@@ -711,6 +783,7 @@
                         this.input_tujuanSurat = params.tujuanSurat;
                         this.input_namaPenerima = params.namaPenerima;
                         this.input_disposisi = params.disposisi;
+                        this.input_catatanDisposisi = params.catatanDisposisi;
                         
                         this.input_tglTerima = params.tglTerima;
                         this.input_wktTerima = params.wktTerima;
@@ -733,6 +806,8 @@
                     || this.input_perihal === ''
                     || this.input_tujuanSurat === ''
                     || this.input_namaPenerima === ''
+                    || this.input_disposisi === ''
+                    || this.input_catatanDisposisi === ''
                     || this.input_tglTerima === ''
                     || this.input_wktTerima === ''
                     || this.preImage === ''
@@ -788,6 +863,7 @@
                                 tujuanSurat: this.input_tujuanSurat, 
                                 namaPenerima: this.input_namaPenerima,
                                 disposisi: this.input_disposisi,
+                                catatanDisposisi: this.input_catatanDisposisi,
                                 image: `${this.new_imageURL}`,
                                 local_image: `${this.new_local_imageURL}`,
                             },

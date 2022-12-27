@@ -32,6 +32,9 @@ export const modelSurat = mongoose.Schema(
         disposisi:{
             type: String
         },
+        catatanDisposisi:{
+            type: String
+        },
         image: {
             type: String,
             required: true

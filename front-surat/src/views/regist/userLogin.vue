@@ -69,6 +69,9 @@ export default {
                 ).then(response => {cur_res = response.data})
             } catch (error) {
                 console.log(error);
+                if (error.code === 'ERR_NETWORK') {
+                    this.error_login_text = 'Error Connecting to server!'
+                }
             }
 
             if (cur_res.length === 0) {
