@@ -1,6 +1,5 @@
 <template>
     <div class="main_wrap">
-
             <div class="wrapper wrapper-login">
                 <div class="form">
                     <div class="title">
@@ -42,12 +41,19 @@
                     <div>
                         <b-button class="custom-btn-login"   @click="login" variant="primary" type="submit">Login</b-button>
                     </div>
+
+                    <!-- <div class="">
+                        <p>app v.0.0.4</p>
+                    </div> -->
+                    <customFooter class="footer-login"></customFooter>
                 </div>
             </div>
     </div>
 </template>
 
 <script>
+
+import customFooter from '../footer';
 
 import router from '@/router';
 import apis from '../apis.js';
@@ -136,6 +142,10 @@ export default {
             }
         },
     },
+
+    components: {
+        customFooter
+    },
 }
 </script>
 
@@ -179,6 +189,12 @@ export default {
 .custom-btn-login {
     margin-top: 20px;
     width: 210px; 
+}
+
+.footer-login {
+    color: white;
+    border: 0;
+    background-color: #202e47;
 }
 
 </style>
