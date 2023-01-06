@@ -9,6 +9,7 @@ export default new Vuex.Store({
   state: {
     id: null,
     role: null,
+    witel: null,
     saturdayCheck: false,
     cadanganUpdated: false,
     noSuratCadanganPrev: [],
@@ -19,6 +20,9 @@ export default new Vuex.Store({
     },
     setRole(state, role) {
       state.role = role
+    },
+    setWitel(state, witel) {
+      state.witel = witel
     },
     setSaturdayCheck(state, status) {
       state.saturdayCheck = status
@@ -32,6 +36,7 @@ export default new Vuex.Store({
     logout(state) {
       state.id = null
       state.role = null
+      state.witel = null
       // state.saturdayCheck = false
       state.cadanganUpdated = false
       route.push('/')
@@ -43,6 +48,9 @@ export default new Vuex.Store({
     },
     setRoleAction({ commit }, payload) {
       commit('setRole', payload)
+    },
+    setWitelAction({ commit }, payload) {
+      commit('setWitel', payload)
     },
     setSaturdayCheckAction({ commit }, payload) {
       commit('setSaturdayCheck', payload)

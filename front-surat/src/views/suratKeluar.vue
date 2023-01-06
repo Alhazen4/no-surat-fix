@@ -290,6 +290,8 @@
                         </div>
                     </div>
 
+                    
+
                     <b-table 
                     id="suratTable"
                     hover
@@ -556,7 +558,26 @@
                                         </b-form>
                                     </vs-popup>
 
-                                    <b-button variant="danger" @click="hapusSuratKeluar(data.item._id)" size="sm">
+                                    <vs-popup class="holamundo"  title="Konfirmasi Penghapusan Surat Keluar" :active.sync="popUpDelete" v-if="popUpDelete">
+                                        <p>Yakin ingin <b>menghapus</b> surat keluar ini?</p>
+                                        <div class="d-flex justify-content-between" style="margin-top: 20px;">
+                                            <div class="nav-2">
+                                                <b-button @click="popUpDelete=false" variant="secondary">
+                                                    <b-icon icon="arrow-left"></b-icon>
+                                                    Kembali
+                                                </b-button>
+                                            </div>
+
+                                            <div class="nav-2" style="padding-right: 0;">
+                                                <b-button @click="hapusSuratKeluar(data.item._id)" variant="danger" type="submit">
+                                                    <b-icon icon="exclamation-circle"></b-icon>
+                                                    Yakin dan Hapus Surat
+                                                </b-button>
+                                            </div>
+                                        </div>
+                                    </vs-popup>
+
+                                    <b-button variant="danger" @click="popUpDelete=true" size="sm">
                                         <b-icon icon="trash"></b-icon>
                                     </b-button>
                             </div>
@@ -704,6 +725,7 @@
                 popUp2Active: false,
                 popUp3Active: false,
                 errorPopUpActive: false,
+                popUpDelete: false,
                 btn_display: true,
                 cabangClick: false,
                 cabang2Click: false,
@@ -894,12 +916,12 @@
                                 } else {
                                     // Change the namber at "today.getDay() === 2"
                                     // Also change at the next if else for "store.state.role === 'admin'"
-                                    // If you want to change the day that trigger noSuratLast + 10
+                                    // If you want to change the day that trigger noSuratLast + 20
                                     if (today.getDay() === 5 && store.state.saturdayCheck === false) {
                                         // console.log('Today is friday and false');
                                         
                                         store.dispatch('setSaturdayCheckAction', true)
-                                        this.noSuratLast += 10;
+                                        this.noSuratLast += 20;
                                         this.isNoSaturdayCheck = true;
                                         store.dispatch('setCadanganUpdatedAction', false)
 
@@ -908,12 +930,12 @@
 
                                         // console.log('Today is firday and true');
 
-                                        if (this.noSuratLast === this.noSuratBeforeLast + 10 || this.noSuratLast === this.noSuratBeforeLast + 1 || this.noSuratBeforeLast === 0) {
+                                        if (this.noSuratLast === this.noSuratBeforeLast + 20 || this.noSuratLast === this.noSuratBeforeLast + 1 || this.noSuratBeforeLast === 0) {
                                             this.noSuratLast++
                                         } else if (this.noSuratLast === this.lastMaxNoSurat){
                                             this.noSuratLast++;
                                         } else {
-                                            this.noSuratLast += 10;
+                                            this.noSuratLast += 20;
                                             this.isNoSaturdayCheck = true;
                                             store.dispatch('setCadanganUpdatedAction', false)
                                         }
@@ -938,7 +960,7 @@
 
                         this.noSuratLastString = this.noSuratLast.toString()
 
-                        } else if ( store.state.role === 'admin') {
+                        } else if ( store.state.role === 'admin' || store.state.role === 'secret') {
 
                            // Condition to continue increasing noSurat number
                                 if (this.noSuratLast !== this.lastMaxNoSurat) {
@@ -954,7 +976,7 @@
                                         // console.log('Today is firday and false');
                                         
                                         store.dispatch('setSaturdayCheckAction', true)
-                                        this.noSuratLast += 10;
+                                        this.noSuratLast += 20;
                                         this.isNoSaturdayCheck = true;
                                         store.dispatch('setCadanganUpdatedAction', false)
 
@@ -963,12 +985,12 @@
 
                                         // console.log('Today is fiday and true');
 
-                                        if (this.noSuratLast === this.noSuratBeforeLast + 10 || this.noSuratLast === this.noSuratBeforeLast + 1 || this.noSuratBeforeLast === 0) {
+                                        if (this.noSuratLast === this.noSuratBeforeLast + 20 || this.noSuratLast === this.noSuratBeforeLast + 1 || this.noSuratBeforeLast === 0) {
                                             this.noSuratLast++
                                         } else if (this.noSuratLast === this.lastMaxNoSurat){
                                             this.noSuratLast++;
                                         } else {
-                                            this.noSuratLast += 10;
+                                            this.noSuratLast += 20;
                                             this.isNoSaturdayCheck = true;
                                             store.dispatch('setCadanganUpdatedAction', false)
                                         }

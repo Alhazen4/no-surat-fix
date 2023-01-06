@@ -88,7 +88,7 @@ export default {
                         { 
                             idx: '',
                             nama: 'SuperAdmin',
-                            unitOrWitel: 'Semarang',
+                            unitOrWitel: 'REG4',
                             email: 'superadmin@gmail.com',
                             noTelp: 0,
                             role: 'super_admin',
@@ -132,6 +132,7 @@ export default {
                 .then(response => {
                     store.dispatch('setIdAction', response.data.user_id )
                     store.dispatch('setRoleAction', response.data.role )
+                    store.dispatch('setWitelAction', response.data.unitOrWitel )
 
                     router.push('/homePage').catch(() => {});
                 })

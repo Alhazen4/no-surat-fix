@@ -22,7 +22,7 @@
                             </b-button>
                         </div>
 
-                        <vs-popup class="holamundo"  title="Tambah Surat Masuk" :active.sync="popUpActive" style="position: absolute; z-index: 98;">
+                        <vs-popup class="holamundo"  title="Tambah Surat Masuk" :active.sync="popUpActive" style="position: absolute; z-index: 98;" v-if="popUpActive">
                             <b-form autoComplete="off" class="b-form-custom">
                                 <b-form-group
                                     label="Pengirim Surat"
@@ -167,6 +167,232 @@
                         </div>
                     </div>
 
+                    <vs-popup class="holamundo"  title="Lihat Surat Masuk" :active.sync="popUp3Active" v-if="popUp3Active">
+                        <b-form autoComplete="off" class="b-form-custom">
+                            <b-form-group
+                                label="Pengirim Surat"
+                                label-for="input-pengirim">
+                                <b-form-input
+                                    id="input-pengirim"
+                                    v-model="input_pengirim"
+                                    type="text"
+                                    readonly>
+                                </b-form-input>
+                            </b-form-group>
+                            <b-form-group
+                                label="Perihal:"
+                                label-for="input-perihal">
+                                <b-form-input
+                                    id="input-perihal"
+                                    v-model="input_perihal"
+                                    type="text"
+                                    readonly>
+                                </b-form-input>
+                            </b-form-group>
+                            <b-form-group
+                                label="Tujuan Surat:"
+                                label-for="input-tujuanSurat">
+                                <b-form-input
+                                    id="input-tujuanSurat"
+                                    v-model="input_tujuanSurat"
+                                    type="text"
+                                    readonly>
+                                </b-form-input>
+                            </b-form-group>
+                            <b-form-group
+                                label="Nama Penerima:"
+                                label-for="input-namaPenerima">
+                                <b-form-input
+                                    id="input-namaPenerima"
+                                    v-model="input_namaPenerima"
+                                    type="text"
+                                    readonly>
+                                </b-form-input>
+                            </b-form-group>
+                            <b-form-group
+                                label="Disposisi:"
+                                label-for="input-disposisi">
+                                <b-form-input
+                                    id="input-disposisi"
+                                    v-model="input_disposisi"
+                                    type="text"
+                                    readonly>
+                                </b-form-input>
+                            </b-form-group>
+                            <b-form-group
+                                label="Catatan Tugas Disposisi:"
+                                label-for="input-catatanDisposisi"
+                                description="Kosongkan jika tidak di-disposisi">
+                                <b-form-input
+                                    id="input-catatanDisposisi"
+                                    v-model="input_catatanDisposisi"
+                                    type="text"
+                                    readonly>
+                                </b-form-input>
+                            </b-form-group>
+
+                            <b-form-group>
+                                <div class="d-flex justify-content-between">
+                                    <b-form-group
+                                        label="Tanggal Masuk">
+                                        <el-date-picker
+                                            v-model="input_tglTerima"
+                                            type="date"
+                                            placeholder="Pilih Tanggal Masuk"
+                                            format="dd/MM/yyyy"
+                                            value-format="dd-MM-yyyy"
+                                            readonly>
+                                        </el-date-picker>
+                                    </b-form-group>
+
+                                    <b-form-group
+                                        label="Waktu Masuk">
+                                        <el-time-picker
+                                            v-model="input_wktTerima"
+                                            placeholder="Pilih Waktu Masuk"
+                                            format="HH:mm"
+                                            value-format="HH:mm"
+                                            readonly>
+                                        </el-time-picker>
+                                    </b-form-group>
+                                </div>
+                            </b-form-group>
+
+                            <b-form-group
+                                label="Foto Paket:"
+                                label-for="input-foto">
+                                <img id="input-foto" :src="preImage" alt="" style="width:320px; height:auto;">
+                            </b-form-group>
+                        </b-form>
+
+                        <div class="d-flex justify-content-center" style="margin-top: 20px;">
+                            <div class="nav-2">
+                                <b-button @click="popUp3Active=false" variant="secondary">
+                                    <b-icon icon="arrow-left"></b-icon>
+                                    Kembali
+                                </b-button>
+                            </div>
+                        </div>
+                    </vs-popup>
+
+                    <vs-popup class="holamundo"  title="Edit Surat Masuk" :active.sync="popUp2Active" style="position: absolute; z-index: 98;" v-if="popUp2Active">
+                        <b-form autoComplete="off" class="b-form-custom">
+                            <b-form-group
+                                label="Pengirim Surat"
+                                label-for="input-pengirim">
+                                <b-form-input
+                                    id="input-pengirim"
+                                    v-model="input_pengirim"
+                                    type="text"
+                                    required>
+                                </b-form-input>
+                            </b-form-group>
+                            <b-form-group
+                                label="Perihal:"
+                                label-for="input-perihal">
+                                <b-form-input
+                                    id="input-perihal"
+                                    v-model="input_perihal"
+                                    type="text"
+                                    required>
+                                </b-form-input>
+                            </b-form-group>
+                            <b-form-group
+                                label="Tujuan Unit:"
+                                label-for="input-tujuanSurat">
+                                <b-form-input
+                                    id="input-tujuanSurat"
+                                    v-model="input_tujuanSurat"
+                                    type="text"
+                                    required>
+                                </b-form-input>
+                            </b-form-group>
+                            <b-form-group
+                                label="Nama Penerima:"
+                                label-for="input-namaPenerima">
+                                <b-form-input
+                                    id="input-namaPenerima"
+                                    v-model="input_namaPenerima"
+                                    type="text"
+                                    required>
+                                </b-form-input>
+                            </b-form-group>
+                            <b-form-group
+                                label="Disposisi:"
+                                label-for="input-disposisi"
+                                description="Kosongkan jika tidak di-disposisi">
+                                <b-form-input
+                                    id="input-disposisi"
+                                    v-model="input_disposisi"
+                                    type="text">
+                                </b-form-input>
+                            </b-form-group>
+                            <b-form-group
+                                label="Catatan Tugas Disposisi:"
+                                label-for="input-catatanDisposisi"
+                                description="Kosongkan jika tidak di-disposisi">
+                                <b-form-input
+                                    id="input-catatanDisposisi"
+                                    v-model="input_catatanDisposisi"
+                                    type="text">
+                                </b-form-input>
+                            </b-form-group>
+
+                            <b-form-group>
+                                <div class="d-flex justify-content-between">
+                                    <b-form-group
+                                        label="Tanggal Masuk">
+                                        <el-date-picker
+                                            v-model="input_tglTerima"
+                                            type="date"
+                                            placeholder="Pilih Tanggal Masuk"
+                                            format="dd/MM/yyyy"
+                                            value-format="dd-MM-yyyy">
+                                        </el-date-picker>
+                                    </b-form-group>
+
+                                    <b-form-group
+                                        label="Waktu Masuk">
+                                        <el-time-picker
+                                            v-model="input_wktTerima"
+                                            placeholder="Pilih Waktu Masuk"
+                                            format="HH:mm"
+                                            value-format="HH:mm">
+                                        </el-time-picker>
+                                    </b-form-group>
+                                </div>
+                            </b-form-group>
+
+                            <b-form-group
+                                label="Foto Paket: (Hanya menerima format .PNG / .JPG / .JPEG)"
+                                label-for="input-foto">
+                                <img id="input-foto" :src="preImage" alt="" style="width:320px; height:auto;">
+                            </b-form-group>
+                        </b-form>
+
+                            <div class="d-flex justify-content-between" style="margin-top: 20px;">
+                                <div class="nav-2">
+                                    <b-button @click="popUp2Active=false" variant="secondary">
+                                        <b-icon icon="arrow-left"></b-icon>
+                                        Kembali
+                                    </b-button>
+                                </div>
+                                <div class="nav-2">
+                                    <label class="btn_input">
+                                        <input @change="selectImage" type="file" accept="image/png, image/jpg, image/jpeg"/>
+                                        <b-icon icon="cloud-upload"></b-icon>
+                                        Upload Foto
+                                    </label>
+                                </div>
+                                <div class="nav-2" style="padding-right: 0;">
+                                    <b-button @click="ubahSuratMasuk" variant="success" type="submit">
+                                        <b-icon icon="save"></b-icon>
+                                        Ubah Surat Masuk
+                                    </b-button>
+                                </div>
+                            </div>
+                    </vs-popup>
+
                     <b-table 
                     id="suratTable"
                     hover
@@ -192,239 +418,11 @@
                                         <b-icon icon="eye"></b-icon>
                                     </b-button>
 
-                                    <vs-popup class="holamundo"  title="Lihat Surat Masuk" :active.sync="popUp3Active">
-                                        <b-form autoComplete="off" class="b-form-custom">
-                                            <b-form-group
-                                                label="Pengirim Surat"
-                                                label-for="input-pengirim">
-                                                <b-form-input
-                                                    id="input-pengirim"
-                                                    v-model="input_pengirim"
-                                                    type="text"
-                                                    readonly>
-                                                </b-form-input>
-                                            </b-form-group>
-                                            <b-form-group
-                                                label="Perihal:"
-                                                label-for="input-perihal">
-                                                <b-form-input
-                                                    id="input-perihal"
-                                                    v-model="input_perihal"
-                                                    type="text"
-                                                    readonly>
-                                                </b-form-input>
-                                            </b-form-group>
-                                            <b-form-group
-                                                label="Tujuan Surat:"
-                                                label-for="input-tujuanSurat">
-                                                <b-form-input
-                                                    id="input-tujuanSurat"
-                                                    v-model="input_tujuanSurat"
-                                                    type="text"
-                                                    readonly>
-                                                </b-form-input>
-                                            </b-form-group>
-                                            <b-form-group
-                                                label="Nama Penerima:"
-                                                label-for="input-namaPenerima">
-                                                <b-form-input
-                                                    id="input-namaPenerima"
-                                                    v-model="input_namaPenerima"
-                                                    type="text"
-                                                    readonly>
-                                                </b-form-input>
-                                            </b-form-group>
-                                            <b-form-group
-                                                label="Disposisi:"
-                                                label-for="input-disposisi">
-                                                <b-form-input
-                                                    id="input-disposisi"
-                                                    v-model="input_disposisi"
-                                                    type="text"
-                                                    readonly>
-                                                </b-form-input>
-                                            </b-form-group>
-                                            <b-form-group
-                                                label="Catatan Tugas Disposisi:"
-                                                label-for="input-catatanDisposisi"
-                                                description="Kosongkan jika tidak di-disposisi">
-                                                <b-form-input
-                                                    id="input-catatanDisposisi"
-                                                    v-model="input_catatanDisposisi"
-                                                    type="text"
-                                                    readonly>
-                                                </b-form-input>
-                                            </b-form-group>
-
-                                            <div class="d-flex justify-content-between">
-                                                <div class="col-tgl">
-                                                    <b-form-group
-                                                        label="Tanggal Terima:"
-                                                        label-for="input-tanggalTerima">
-                                                        <b-form-datepicker 
-                                                            disabled
-                                                            id="input-tanggalTerima" 
-                                                            v-model="input_tglTerima"
-                                                            size="sm" 
-                                                        ></b-form-datepicker>
-                                                    </b-form-group>
-                                                </div>
-                                                <div class="col-bln ms-auto">
-                                                    <b-form-group
-                                                        label="Waktu Terima:"
-                                                        label-for="input-tanggalTerima">
-                                                        <b-form-timepicker
-                                                            disabled
-                                                            :hour12="false"
-                                                            v-model="input_wktTerima" 
-                                                            size="sm" 
-                                                            locale="en">
-                                                        </b-form-timepicker>
-                                                    </b-form-group>
-                                                </div>
-                                            </div>
-
-                                            <b-form-group
-                                                label="Foto Paket:"
-                                                label-for="input-foto">
-                                                <img id="input-foto" :src="preImage" alt="" style="width:320px; height:auto;">
-                                            </b-form-group>
-                                        </b-form>
-
-                                        <div class="d-flex justify-content-center" style="margin-top: 20px;">
-                                            <div class="nav-2">
-                                                <b-button @click="popUp3Active=false" variant="secondary">
-                                                    <b-icon icon="arrow-left"></b-icon>
-                                                    Kembali
-                                                </b-button>
-                                            </div>
-                                        </div>
-                                    </vs-popup>
-
                                     <b-button @click="ubahClick(data.item._id)" variant="warning" size="sm">
                                         <b-icon icon="pencil-square"></b-icon>
                                     </b-button>
 
-                                    <vs-popup class="holamundo"  title="Edit Surat Masuk" :active.sync="popUp2Active">
-                                        <b-form autoComplete="off" class="b-form-custom">
-                                            <b-form-group
-                                                label="Pengirim Surat"
-                                                label-for="input-pengirim">
-                                                <b-form-input
-                                                    id="input-pengirim"
-                                                    v-model="input_pengirim"
-                                                    type="text"
-                                                    required>
-                                                </b-form-input>
-                                            </b-form-group>
-                                            <b-form-group
-                                                label="Perihal:"
-                                                label-for="input-perihal">
-                                                <b-form-input
-                                                    id="input-perihal"
-                                                    v-model="input_perihal"
-                                                    type="text"
-                                                    required>
-                                                </b-form-input>
-                                            </b-form-group>
-                                            <b-form-group
-                                                label="Tujuan Unit:"
-                                                label-for="input-tujuanSurat">
-                                                <b-form-input
-                                                    id="input-tujuanSurat"
-                                                    v-model="input_tujuanSurat"
-                                                    type="text"
-                                                    required>
-                                                </b-form-input>
-                                            </b-form-group>
-                                            <b-form-group
-                                                label="Nama Penerima:"
-                                                label-for="input-namaPenerima">
-                                                <b-form-input
-                                                    id="input-namaPenerima"
-                                                    v-model="input_namaPenerima"
-                                                    type="text"
-                                                    required>
-                                                </b-form-input>
-                                            </b-form-group>
-                                            <b-form-group
-                                                label="Disposisi:"
-                                                label-for="input-disposisi"
-                                                description="Kosongkan jika tidak di-disposisi">
-                                                <b-form-input
-                                                    id="input-disposisi"
-                                                    v-model="input_disposisi"
-                                                    type="text">
-                                                </b-form-input>
-                                            </b-form-group>
-                                            <b-form-group
-                                                label="Catatan Tugas Disposisi:"
-                                                label-for="input-catatanDisposisi"
-                                                description="Kosongkan jika tidak di-disposisi">
-                                                <b-form-input
-                                                    id="input-catatanDisposisi"
-                                                    v-model="input_catatanDisposisi"
-                                                    type="text">
-                                                </b-form-input>
-                                            </b-form-group>
-
-                                            <div class="d-flex justify-content-between">
-                                                <div class="col-tgl">
-                                                    <b-form-group
-                                                        label="Tanggal Terima:"
-                                                        label-for="input-tanggalTerima">
-                                                        <b-form-datepicker 
-                                                            id="input-tanggalTerima" 
-                                                            v-model="input_tglTerima" 
-                                                            size="sm" 
-                                                            ></b-form-datepicker>
-                                                    </b-form-group>
-                                                </div>
-                                                <div class="col-bln ms-auto">
-                                                    <b-form-group
-                                                        label="Waktu Terima:"
-                                                        label-for="input-tanggalTerima">
-                                                        <b-form-timepicker
-                                                            :hour12="false"
-                                                            v-model="input_wktTerima"
-                                                            size="sm" 
-                                                            locale="en">
-                                                        </b-form-timepicker>
-                                                    </b-form-group>
-                                                </div>
-                                            </div>
-
-                                        <b-form-group
-                                                label="Foto Paket: (Hanya menerima format .PNG / .JPG / .JPEG)"
-                                                label-for="input-foto">
-                                                <img id="input-foto" :src="preImage" alt="" style="width:320px; height:auto;">
-                                            </b-form-group>
-                                        </b-form>
-
-                                            <div class="d-flex justify-content-between" style="margin-top: 20px;">
-                                                <div class="nav-2">
-                                                    <b-button @click="popUp2Active=false" variant="secondary">
-                                                        <b-icon icon="arrow-left"></b-icon>
-                                                        Kembali
-                                                    </b-button>
-                                                </div>
-                                                <div class="nav-2">
-                                                    <label class="btn_input">
-                                                        <input @change="selectImage" type="file" accept="image/png, image/jpg, image/jpeg"/>
-                                                        <b-icon icon="cloud-upload"></b-icon>
-                                                        Upload Foto
-                                                    </label>
-                                                </div>
-                                                <div class="nav-2" style="padding-right: 0;">
-                                                    <b-button @click="ubahSuratMasuk" variant="success" type="submit">
-                                                        <b-icon icon="save"></b-icon>
-                                                        Ubah Surat Masuk
-                                                    </b-button>
-                                                </div>
-                                            </div>
-                                    </vs-popup>
-
-                                    <vs-popup class="holamundo"  title="Konfirmasi Penghapusan Surat Masuk" :active.sync="popUpDelete">
+                                    <vs-popup class="holamundo"  title="Konfirmasi Penghapusan Surat Masuk" :active.sync="popUpDelete" v-if="popUpDelete">
                                         <p>Yakin ingin <b>menghapus</b> surat masuk ini?</p>
                                         <div class="d-flex justify-content-between" style="margin-top: 20px;">
                                             <div class="nav-2">
@@ -443,7 +441,7 @@
                                         </div>
                                     </vs-popup>
 
-                                    <b-button variant="danger" @click="popUpDelete=true" size="sm" v-if="deleteBtn">
+                                    <b-button variant="danger" @click="popUpDelete=true" size="sm">
                                         <b-icon icon="trash"></b-icon>
                                     </b-button>
                             </div>
@@ -472,7 +470,13 @@
 
         async created() {
             try {
-                await apis.get('/surat')
+                await apis.post
+                (
+                    '/surat/witel', 
+                    {
+                        witel: store.state.witel,
+                    },
+                )
                 .then((response) => {
                     this.suratItems = response.data;
                 });
@@ -570,6 +574,11 @@
                         thStyle: { width: "30vh"}
                     },
                     {
+                        key: "witelPenerima",
+                        label: 'Witel Penerima',
+                        thStyle: { width: "30vh"}
+                    },
+                    {
                         key: "fotoSurat",
                         label: 'Foto',
                         thStyle: { width: "30vh"}
@@ -634,8 +643,6 @@
                     || this.input_perihal === ''
                     || this.input_tujuanSurat === ''
                     || this.input_namaPenerima === ''
-                    || this.input_disposisi === ''
-                    || this.input_catatanDisposisi === ''
                     || this.input_tglTerima === ''
                     || this.input_wktTerima === ''
                     || this.curImage === ''
@@ -676,6 +683,7 @@
                                 perihal: this.input_perihal, 
                                 tujuanSurat: this.input_tujuanSurat, 
                                 namaPenerima: this.input_namaPenerima,
+                                witelPenerima: store.state.witel,
                                 disposisi: this.input_disposisi,
                                 catatanDisposisi: this.input_catatanDisposisi,
                                 image: `${this.imageURL}`,
@@ -806,8 +814,6 @@
                     || this.input_perihal === ''
                     || this.input_tujuanSurat === ''
                     || this.input_namaPenerima === ''
-                    || this.input_disposisi === ''
-                    || this.input_catatanDisposisi === ''
                     || this.input_tglTerima === ''
                     || this.input_wktTerima === ''
                     || this.preImage === ''
@@ -862,6 +868,7 @@
                                 perihal: this.input_perihal, 
                                 tujuanSurat: this.input_tujuanSurat, 
                                 namaPenerima: this.input_namaPenerima,
+                                witelPenerima: store.state.witel,
                                 disposisi: this.input_disposisi,
                                 catatanDisposisi: this.input_catatanDisposisi,
                                 image: `${this.new_imageURL}`,

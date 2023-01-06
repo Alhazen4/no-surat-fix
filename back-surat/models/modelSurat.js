@@ -9,6 +9,12 @@ export const modelSurat = mongoose.Schema(
             type: String,
             required: true
         },
+        disposisi:{
+            type: String
+        },
+        catatanDisposisi:{
+            type: String
+        },
         tglTerima:{
             type: String,
             required: true
@@ -29,11 +35,9 @@ export const modelSurat = mongoose.Schema(
             type: String,
             required: true
         },
-        disposisi:{
-            type: String
-        },
-        catatanDisposisi:{
-            type: String
+        witelPenerima:{
+            type: String,
+            required: true
         },
         image: {
             type: String,

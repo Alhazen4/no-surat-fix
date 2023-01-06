@@ -63,6 +63,7 @@ export const signinUser = async (req, res) => {
             user_id: checkUsername._id,
             username: checkUsername.username,
             role: checkUsername.role,
+            unitOrWitel: checkUsername.unitOrWitel,
             email: checkUsername.email,
         }
 

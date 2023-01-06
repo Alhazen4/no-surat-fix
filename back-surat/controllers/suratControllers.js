@@ -5,8 +5,14 @@ const router = express.Router();
 
 export const getKoleksiSurat = async (req, res) => {
     try {
-        const surat = await modelSurat.find();
-        res.json(surat);
+        if (req.body.witel === 'REG4') {
+            const surat = await modelSurat.find();
+            res.json(surat);
+        } else {
+            const surat = await modelSurat.find({ "witelPenerima": req.body.witel });
+            res.json(surat);
+        }
+
     } catch (error) {
         res.status(500).json({message: error.message});
     }

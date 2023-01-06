@@ -36,20 +36,18 @@
                                 </b-form-group>
                                 
                                 <b-form-group
-                                    label="Unit / Witel:"
-                                    label-for="input-unitOrWitel">
+                                    label="Unit / Witel:">
 
-                                    <b-form-input
-                                        id="input-unitOrWitel"
+                                    <b-form-select
+                                        class="form-select-custom"
                                         v-model="input_unitOrWitel"
-                                        type="text"
+                                        :options="witelOptions" 
                                         required>
-                                    </b-form-input>
+                                    </b-form-select>
                                 </b-form-group>
-                                
+
                                 <b-form-group
-                                    label="Role"
-                                    label-for="input-role">
+                                    label="Role">
 
                                     <b-form-select
                                         class="form-select-custom"
@@ -185,20 +183,18 @@
                                             </b-form-group>
 
                                             <b-form-group
-                                                label="Unit / Witel:"
-                                                label-for="input-unitOrWitel">
+                                                label="Unit / Witel:">
 
-                                                <b-form-input
-                                                    id="input-unitOrWitel"
+                                                <b-form-select
+                                                    class="form-select-custom"
                                                     v-model="input_unitOrWitel"
-                                                    type="text"
+                                                    :options="witelOptions" 
                                                     required>
-                                                </b-form-input>
+                                                </b-form-select>
                                             </b-form-group>
 
                                             <b-form-group
-                                                label="Role"
-                                                label-for="input-role">
+                                                label="Role">
 
                                                 <b-form-select
                                                     class="form-select-custom"
@@ -257,7 +253,7 @@
                                             </b-form-group>
                                         </b-form>
 
-                                        <vs-popup class="holamundo"  title="Error!" :active.sync="errorPopUpActive">
+                                        <vs-popup class="holamundo"  title="Error!" :active.sync="errorPopUpActive" v-if="errorPopUpActive">
                                             <p>Ada beberapa field yang belum terisi. <br> Harap lengkapi data terlebih dahulu!</p><br>
                                             <b-button @click="errorPopUpActive=false" variant="danger">
                                                 <b-icon icon="exclamation-circle"></b-icon>
@@ -342,6 +338,17 @@
                 input_noTelp: null,
                 input_username: '',
                 input_password: '',
+
+                witelOptions: [
+                    { value: 'REG4', text: 'REG4'},
+                    { value: 'SMG', text: 'Semarang'},
+                    { value: 'YGY', text: 'Yogyakarta'},
+                    { value: 'SLO', text: 'Solo'},
+                    { value: 'MGL', text: 'Magelang'},
+                    { value: 'PWK', text: 'Purwokerto'},
+                    { value: 'PKL', text: 'Pekalongan'},
+                    { value: 'KDS', text: 'Kudus'},
+                ],
 
                 roleOptions: [
                     { value: 'secret', text: 'secret' },

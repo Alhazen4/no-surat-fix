@@ -12,7 +12,7 @@ import {
 
 const router = express.Router();
 
-router.get('/api/surat', getKoleksiSurat);
+router.post('/api/surat/witel', getKoleksiSurat);
 router.get('/api/surat/:id', getSuratById);
 router.post('/api/surat', simpanSurat);
 router.patch('/api/surat/:id', updateSurat);
