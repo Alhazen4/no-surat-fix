@@ -133,7 +133,7 @@
                                     </div>
                                     <div class="nav-2">
                                         <label class="btn_input">
-                                            <input @change="selectImage" type="file" accept="image/png, image/jpg, image/jpeg"/>
+                                            <input @change="selectImage" type="file"/>
                                             <b-icon icon="cloud-upload"></b-icon>
                                             Upload Foto
                                         </label>
@@ -379,7 +379,7 @@
                                 </div>
                                 <div class="nav-2">
                                     <label class="btn_input">
-                                        <input @change="selectImage" type="file" accept="image/png, image/jpg, image/jpeg"/>
+                                        <input @change="selectImage" type="file"/>
                                         <b-icon icon="cloud-upload"></b-icon>
                                         Upload Foto
                                     </label>
