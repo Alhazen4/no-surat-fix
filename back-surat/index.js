@@ -17,7 +17,7 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const uri = 'mongodb://localhost:27017/no-surat';
+const uri = 'mongodb://127.0.0.1:27017/no-surat';
 const app = express();
 
 mongoose.connect(uri, {

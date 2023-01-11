@@ -45,6 +45,10 @@ export const modelSurat = mongoose.Schema(
             type: String,
             required: true
         },
+        pejabatDesc:{
+            type: String,
+            required: true
+        },
         pembuatSurat:{
             type: String,
             required: true

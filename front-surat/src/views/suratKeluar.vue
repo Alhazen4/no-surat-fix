@@ -150,7 +150,7 @@
                                                                     <b-button variant="primary" @click="cabang2Click=true" v-b-toggle="cabang.value" size="sm">
                                                                         <b-icon icon="chevron-down"></b-icon>
                                                                     </b-button>
-                                                                    <b-button @click="selectPejabatTtd(cabang.value)" size="sm" variant="warning">{{cabang.value}}</b-button>
+                                                                    <b-button @click="selectPejabatTtd(cabang.value, cabang.desc)" size="sm" variant="warning">{{cabang.value}}</b-button>
                                                                 </div>
 
                                                                 <b-card style="margin-left: 45px;" size="sm">{{cabang.desc}}</b-card>
@@ -163,7 +163,7 @@
                                                                                 <b-button variant="primary"  @click="cabang3Click=true" v-b-toggle="cabang2.value" size="sm">
                                                                                     <b-icon icon="chevron-down"></b-icon>
                                                                                 </b-button>
-                                                                                <b-button variant="success" @click="selectPejabatTtd(cabang2.value)" size="sm">{{cabang2.value}}</b-button>
+                                                                                <b-button variant="success" @click="selectPejabatTtd(cabang2.value, cabang2.desc)" size="sm">{{cabang2.value}}</b-button>
                                                                             </div>
                                                                             
                                                                                 <b-card style="margin-left: 46px;" size="sm">{{cabang2.desc}}</b-card>
@@ -172,7 +172,7 @@
                                                                                 <div style="margin-left: 55px; display: flex; flex-direction: column; gap: 10px" v-if="cabang3Click">
                                                                                     <template v-for="cabang3 in cabang2.child3">
                                                                                         <div style="display: flex; flex-direction: row; gap: 10px">
-                                                                                            <b-button variant="success" @click="selectPejabatTtd(cabang3.value)" size="sm">{{cabang3.value}}</b-button>
+                                                                                            <b-button variant="success" @click="selectPejabatTtd(cabang3.value, cabang3.desc)" size="sm">{{cabang3.value}}</b-button>
                                                                                         </div>
                                                                                         
                                                                                         <b-card size="sm">{{cabang3.desc}}</b-card>
@@ -434,7 +434,7 @@
                                                                                     <b-button variant="primary" @click="cabang2Click=true" v-b-toggle="cabang.value" size="sm">
                                                                                         <b-icon icon="chevron-down"></b-icon>
                                                                                     </b-button>
-                                                                                    <b-button @click="selectPejabatTtd(cabang.value)" size="sm" variant="warning">{{cabang.value}}</b-button>
+                                                                                    <b-button @click="selectPejabatTtd(cabang.value, cabang.desc)" size="sm" variant="warning">{{cabang.value}}</b-button>
                                                                                 </div>
 
                                                                                 <b-card style="margin-left: 45px;" size="sm">{{cabang.desc}}</b-card>
@@ -447,7 +447,7 @@
                                                                                                 <b-button variant="primary"  @click="cabang3Click=true" v-b-toggle="cabang2.value" size="sm">
                                                                                                     <b-icon icon="chevron-down"></b-icon>
                                                                                                 </b-button>
-                                                                                                <b-button variant="success" @click="selectPejabatTtd(cabang2.value)" size="sm">{{cabang2.value}}</b-button>
+                                                                                                <b-button variant="success" @click="selectPejabatTtd(cabang2.value, cabang.desc)" size="sm">{{cabang2.value}}</b-button>
                                                                                             </div>
                                                                                             
                                                                                                 <b-card style="margin-left: 46px;" size="sm">{{cabang2.desc}}</b-card>
@@ -456,7 +456,7 @@
                                                                                                 <div style="margin-left: 55px; display: flex; flex-direction: column; gap: 10px" v-if="cabang3Click">
                                                                                                     <template v-for="cabang3 in cabang2.child3">
                                                                                                         <div style="display: flex; flex-direction: row; gap: 10px">
-                                                                                                            <b-button variant="success" @click="selectPejabatTtd(cabang3.value)" size="sm">{{cabang3.value}}</b-button>
+                                                                                                            <b-button variant="success" @click="selectPejabatTtd(cabang3.value, cabang3.desc)" size="sm">{{cabang3.value}}</b-button>
                                                                                                         </div>
                                                                                                         
                                                                                                         <b-card size="sm">{{cabang3.desc}}</b-card>
@@ -756,6 +756,7 @@
                 
                 dataPejabatJSON: {},
                 pejabatTtdSelected: '',
+                pejabatDescSelected: '',
 
                 dataKodeSurat: [],
                 kodeSuratSelected: '',
@@ -809,6 +810,11 @@
                         thStyle: { width: "20vh"}
                     },
                     {
+                        key: "pejabatDesc",
+                        label: 'Pejabat Ttd',
+                        thStyle: { width: "20vh"}
+                    },
+                    {
                         key: "pembuatSurat",
                         label: 'Pembuat Surat',
                         thStyle: { width: "30vh"}
@@ -836,8 +842,9 @@
                 this.popUpMasalah = false
             },
             
-            selectPejabatTtd(value) {
+            selectPejabatTtd(value, text) {
                 this.pejabatTtdSelected = value;
+                this.pejabatDescSelected = text;
                 this.popUpPejabatTtd = false
             },
 
@@ -1039,6 +1046,7 @@
                                     kodeSurat: this.kodeSuratSelected,
                                     masalahUtama: this.masalahUtamaSelected,
                                     pejabatTtd: this.pejabatTtdSelected,
+                                    pejabatDesc: this.pejabatDescSelected,
                                     tglKeluar: this.input_tglKeluar,
                                     wktKeluar: this.input_wktKeluar,
                                     perihal: this.input_perihal,
@@ -1153,6 +1161,7 @@
                                 kodeSurat: this.kodeSuratSelected,
                                 masalahUtama: this.masalahUtamaSelected,
                                 pejabatTtd: this.pejabatTtdSelected,
+                                pejabatDesc: this.pejabatDescSelected,
                                 tglKeluar: this.input_tglKeluar,
                                 wktKeluar: this.input_wktKeluar,
                                 perihal: this.input_perihal,
