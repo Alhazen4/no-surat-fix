@@ -433,7 +433,7 @@
                                             </div>
 
                                             <div class="nav-2" style="padding-right: 0;">
-                                                <b-button @click="hapusSurat(data.item._id)" variant="danger" type="submit">
+                                                <b-button @click="hapusSurat(deleteItemId)" variant="danger" type="submit">
                                                     <b-icon icon="exclamation-circle"></b-icon>
                                                     Yakin dan Hapus Surat
                                                 </b-button>
@@ -441,7 +441,7 @@
                                         </div>
                                     </vs-popup>
 
-                                    <b-button variant="danger" @click="popUpDelete=true" size="sm">
+                                    <b-button variant="danger" @click="popUpDeleteClick(data.item._id)" size="sm">
                                         <b-icon icon="trash"></b-icon>
                                     </b-button>
                             </div>
@@ -508,6 +508,7 @@
                 deleteBtn: false,
                 popUpDelete: false,
 
+                deleteItemId: null,
                 keyword: '',
                 perPage: 8,
                 currentPage: 1,
@@ -698,6 +699,11 @@
                         console.log(error)
                     }
                 }
+            },
+
+            popUpDeleteClick(id) {
+                this.popUpDelete = true
+                this.deleteItemId = id
             },
                 
             async hapusSurat(id) {
