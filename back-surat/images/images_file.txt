@@ -1,0 +1,4 @@
+Ignore this file, but...
+DO NOT DELETE this file or the empty images folder will be deleted from the repository automatically!
+
+This file is only to allow github make an empty folder for the uploaded images to the server!
