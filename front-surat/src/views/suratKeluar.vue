@@ -663,7 +663,7 @@
                 .then((response) => {
                     this.saturdayCheck = response.data.saturdayCheck;
                     this.cadanganUpdated = response.data.cadanganUpdated;
-                    console.log(this.saturdayCheck, this.cadanganUpdated);
+                    // console.log(this.saturdayCheck, this.cadanganUpdated);
                 });
             } catch (error) {
                 console.log(error);
@@ -888,7 +888,7 @@
                 this.popUpActive=true
             },
 
-            async generateNoSurat() {
+            generateNoSurat() {
                 const today = new Date();
                 this.noSuratCadanganSelected = null
                 // Condition to continue increasing noSurat number
@@ -908,8 +908,7 @@
                         this.noSuratLast += 20;
                         this.isNoSaturdayCheck = true;
                         
-                        try {
-                            await apis.patch
+                            apis.patch
                             (
                                 `/state`, 
                                 { 
@@ -918,9 +917,6 @@
                                 },
                                 { headers: { 'Content-Type': 'application/json' } }
                             )
-                        } catch (error) {
-                            console.log(error)
-                        }
 
                         // store.dispatch('setSaturdayCheckAction', true)
                         // store.dispatch('setCadanganUpdatedAction', false)
@@ -938,8 +934,7 @@
                             this.noSuratLast += 20;
                             this.isNoSaturdayCheck = true;
 
-                            try {
-                                await apis.patch
+                                apis.patch
                                 (
                                     `/state`, 
                                     { 
@@ -947,17 +942,13 @@
                                     },
                                     { headers: { 'Content-Type': 'application/json' } }
                                 )
-                            } catch (error) {
-                                console.log(error)
-                            }
                                 // store.dispatch('setCadanganUpdatedAction', false)
                             }
                     // Also here
                     } else if (today.getDay() !== 5) {
                         // console.log('Today is not firday');
                         
-                        try {
-                            await apis.patch
+                            apis.patch
                             (
                                 `/state`, 
                                 { 
@@ -965,13 +956,10 @@
                                 },
                                 { headers: { 'Content-Type': 'application/json' } }
                             )
-                        } catch (error) {
-                            console.log(error)
-                        }
-
-                        // store.dispatch('setSaturdayCheckAction', false)
+                            
                         this.noSuratLast++
                         this.isNoSaturdayCheck = false;
+                        // store.dispatch('setSaturdayCheckAction', false)
 
                     } else if (store.state.noSuratCadanganPrev.includes(this.noSuratBeforeLast)) {
                         this.noSuratLast++

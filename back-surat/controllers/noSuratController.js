@@ -77,7 +77,7 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-export const getState = async (req, res) => {
+export const getState = (req, res) => {
     fs.readFile(__dirname + "/state.json", "utf8", (err, jsonString) => {
     if (err) {
         res.status(504)
@@ -87,7 +87,7 @@ export const getState = async (req, res) => {
     });
 }
 
-export const setState = async (req, res) => {
+export const setState = (req, res) => {
     const stateData = fs.readFileSync(__dirname + "/state.json", "utf8")
     const convJson = JSON.parse(stateData)
     
@@ -97,7 +97,7 @@ export const setState = async (req, res) => {
 
     convJson["cadanganUpdate"] = req.body.cadanganUpdate;
     fs.writeFileSync(__dirname + "/state.json", JSON.stringify(convJson));
-    res.json({message: "OK"})
+    res.status(200).json({message: "OK"})
 }
 
 export default router;
