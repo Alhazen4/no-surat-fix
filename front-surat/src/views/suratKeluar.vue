@@ -661,7 +661,7 @@
                         // of getting all noSurat start from 23-01-2024
 
                         // startDate is 'MM-DD-YYYY'
-                        const startDate = '01-22-2023';
+                        const startDate = '01-23-2023';
 
                         const currentDate = new Date();
                         const day = currentDate.getDate().toString().padStart(2, '0');
