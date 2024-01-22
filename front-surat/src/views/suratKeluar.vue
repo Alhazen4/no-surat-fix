@@ -661,9 +661,13 @@
                             this.lastMaxNoSurat = 0;
                             // console.log(this.lastMaxNoSurat);
                         } else {
-                            let maxCurYearNoSurat = curYearNoSurat.reduce((max, obj) => Math.max(max, obj.noSurat), -Infinity);
+                            if (curYearNoSurat.some(obj => obj.noSurat === 1)) {
+                                let maxCurYearNoSurat = curYearNoSurat.reduce((max, obj) => Math.max(max, obj.noSurat), -Infinity);
+                                this.lastMaxNoSurat = maxCurYearNoSurat;
+                            } else {
+                                this.lastMaxNoSurat = 0;
+                            }
                             // console.log(maxCurYearNoSurat);
-                            this.lastMaxNoSurat = maxCurYearNoSurat;
                         }
                     }
                 });
