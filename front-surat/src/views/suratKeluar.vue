@@ -654,17 +654,55 @@
 
                         let allNoSurat = response.data.map((o) => { return {noSurat: o.noSurat, tglKeluar: o.tglKeluar}});
                         // console.log(allNoSurat);
-                        
                         const curYear = new Date().getFullYear();
                         let curYearNoSurat = allNoSurat.filter(o =>  o.tglKeluar.includes(curYear.toString()));
+                        
+                        // START BLOCK CODE
+                        // of getting all noSurat start from 23-01-2024
+
+                        // startDate is 'MM-DD-YYYY'
+                        const startDate = '01-22-2023';
+
+                        const currentDate = new Date();
+                        const day = currentDate.getDate().toString().padStart(2, '0');
+                        const month = (currentDate.getMonth() + 1).toString().padStart(2, '0'); // Note: Months are 0-based
+                        const year = currentDate.getFullYear();
+                        const endDate = `${day}-${month}-${year}`;
+
+                        const allReset2024 = allNoSurat.filter(obj => {
+                            const parts = obj.tglKeluar.split('-');
+                            const objDate = new Date(`${parts[1]}-${parts[0]}-${parts[2]}`);
+                            // console.log(objDate);
+                            // console.log(new Date(startDate));
+                            return objDate >= new Date(startDate) && objDate <= currentDate;
+                        });
+
+                        // console.log(allReset2024);
+                        // END BLOCK CODE
+                        
+                        // If database of suratKeluar empty, start the noSurat from 1
                         if (curYearNoSurat.length === 0) {
                             this.lastMaxNoSurat = 0;
-                            // console.log(this.lastMaxNoSurat);
                         } else {
+                            // If current noSurat of this year has noSurat === 1
                             if (curYearNoSurat.some(obj => obj.noSurat === 1)) {
-                                let maxCurYearNoSurat = curYearNoSurat.reduce((max, obj) => Math.max(max, obj.noSurat), -Infinity);
-                                this.lastMaxNoSurat = maxCurYearNoSurat;
+
+                                // Continue start from the biggest noSurat number between 23-01-2024 until today
+                                let maxCurYearNoSurat = allReset2024.reduce((max, obj) => Math.max(max, obj.noSurat), -Infinity);
+                                
+                                // If there is some noSurat between 23-01-2024 until today
+                                // -Infinity is returned result of reduce() function above is the array is empty
+                                console.log(maxCurYearNoSurat === -Infinity);
+                                if (maxCurYearNoSurat.length !== -Infinity) {
+                                    // Continue the noSurat from the biggest number
+                                    this.lastMaxNoSurat = maxCurYearNoSurat;
+                                } else {
+                                    // Else if there is no noSurat between 23-01-2024 until today
+                                    // Start the noSurat from 1
+                                    this.lastMaxNoSurat = 0;
+                                }
                             } else {
+                                // Start the noSurat 1 again
                                 this.lastMaxNoSurat = 0;
                             }
                             // console.log(maxCurYearNoSurat);
