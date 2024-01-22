@@ -393,7 +393,8 @@
                             </div>
                     </vs-popup>
 
-                    <b-table 
+                    <b-table
+                    responsive
                     id="suratTable"
                     hover
                     stacked="md"
