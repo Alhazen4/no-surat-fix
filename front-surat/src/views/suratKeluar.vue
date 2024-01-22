@@ -553,6 +553,7 @@
 
                     <b-table 
                     id="suratTable"
+                    responsive
                     hover
                     striped
                     stacked="md"
@@ -638,6 +639,8 @@
                 console.log(error);
             }
 
+            // Defining the lastMaxNoSurat to continue or reset the noSurat
+            // Resetteing noSurat will be occur every first surat in a new year
             try {
                 await apis.get('/noSurat')
                 .then((response) => {
@@ -646,8 +649,22 @@
                     if (this.suratItems.length === 0) {
                         this.lastMaxNoSurat = 0;
                     } else {
-                        let maxNoSurat= response.data.map(object => object.noSurat);
-                        this.lastMaxNoSurat = Math.max(...maxNoSurat);
+                        // let maxNoSurat= response.data.map(object => object.noSurat);
+                        // this.lastMaxNoSurat = Math.max(...maxNoSurat);
+
+                        let allNoSurat = response.data.map((o) => { return {noSurat: o.noSurat, tglKeluar: o.tglKeluar}});
+                        // console.log(allNoSurat);
+                        
+                        const curYear = new Date().getFullYear();
+                        let curYearNoSurat = allNoSurat.filter(o =>  o.tglKeluar.includes(curYear.toString()));
+                        if (curYearNoSurat.length === 0) {
+                            this.lastMaxNoSurat = 0;
+                            // console.log(this.lastMaxNoSurat);
+                        } else {
+                            let maxCurYearNoSurat = curYearNoSurat.reduce((max, obj) => Math.max(max, obj.noSurat), -Infinity);
+                            // console.log(maxCurYearNoSurat);
+                            this.lastMaxNoSurat = maxCurYearNoSurat;
+                        }
                     }
                 });
             } catch (error) {
@@ -669,16 +686,29 @@
                 console.log(error);
             }
 
+            // Fill noSuratCadangan
             try {
-                await apis.get('/getAllNoSurat')
+                // await apis.get('/getAllNoSurat')
+                await apis.get('/noSurat')
                 .then((response) => {
 
-                    this.allNoSuratItems = response.data.map(object => object.noSurat);
-                    let maxNoSurat = Math.max(...this.allNoSuratItems);
                     
+                    // The noSuratCadangan will bi filled by the number that
+                    // Not used yet in this year
+                    let allNoSurat = response.data.map((o) => { return {noSurat: o.noSurat, tglKeluar: o.tglKeluar}});
+                    const curYear = new Date().getFullYear();
+                    let curYearNoSurat = allNoSurat.filter(o =>  o.tglKeluar.includes(curYear.toString()));
+                    const noSuratArray = curYearNoSurat.map(obj => obj.noSurat);
+                    
+                    // Get the max number of noSurat from curYearNoSurat array
+                    let maxCurYearNoSurat = curYearNoSurat.reduce((max, obj) => Math.max(max, obj.noSurat), -Infinity);
+                    
+                    // Push blank to array noSuratCadangan
+                    // To make user can choose blank input
                     this.noSuratCadangan.push('');
-                    for (let i=1; i <= maxNoSurat; i++) {
-                        if (!this.allNoSuratItems.includes(i)) {
+                    
+                    for (let i=1; i < maxCurYearNoSurat; i++) {
+                        if (!noSuratArray.includes(i)) {
                             this.noSuratCadangan.push(i)
                         }
                     }
@@ -697,7 +727,7 @@
                         // store.dispatch('setCadanganUpdatedAction', true)
                     }
 
-                    // console.logx(this.noSuratCadangan);
+                    // console.log(this.noSuratCadangan);
                 });
             } catch (error) {
                 console.log(error);
@@ -718,7 +748,6 @@
         
         name: 'suratKeluar',
         data() {
-
             return {
 
                 // Disabled all date before today
@@ -891,18 +920,22 @@
             generateNoSurat() {
                 const today = new Date();
                 this.noSuratCadanganSelected = null
+
                 // Condition to continue increasing noSurat number
                 if (this.noSuratLast !== this.lastMaxNoSurat) {
                     this.noSuratLast = this.lastMaxNoSurat;
                 }
-                
-                if (this.noSuratLast === null || this.noSuratLast === 0) {
+
+                if ( this.noSuratLast === null || this.noSuratLast === 0) 
+                {   
                     this.noSuratLast = 1
                 } else {
-                    // Change the namber at "today.getDay() === 2"
+                    let setDay = 5;
+                    // 5 is Friday. 0 is Sunday
+                    // Change the number at "setDay" to test
                     // Also change at the next if else for "store.state.role === 'admin'"
-                    // If you want to change the day that trigger noSuratLast + 20
-                    if (today.getDay() === 5 && this.saturdayCheck === false) {
+                    // If you want to change the day that trigger noSuratLast + 20 (test case)
+                    if (today.getDay() === setDay && this.saturdayCheck === false) {
                         // console.log('Today is friday and false');
                         
                         this.noSuratLast += 20;
@@ -922,7 +955,7 @@
                         // store.dispatch('setCadanganUpdatedAction', false)
 
                     // Don't forget to also change the number here as before
-                    } else if (today.getDay() === 5 && this.saturdayCheck === true) {
+                    } else if (today.getDay() === setDay && this.saturdayCheck === true) {
 
                         // console.log('Today is firday and true');
 
@@ -943,9 +976,9 @@
                                     { headers: { 'Content-Type': 'application/json' } }
                                 )
                                 // store.dispatch('setCadanganUpdatedAction', false)
-                            }
+                        }
                     // Also here
-                    } else if (today.getDay() !== 5) {
+                    } else if (today.getDay() !== setDay) {
                         // console.log('Today is not firday');
                         
                             apis.patch
@@ -1036,7 +1069,6 @@
                         }
 
                         this.generatedKode = `${this.kodeSuratSelected} ${this.noSuratLastString}/${this.masalahUtamaSelected}/${this.pejabatTtdSelected}/REG4/${today.getFullYear()}`
-
                         // Save the data to MongoDB 
                         try {
                             await apis.post
