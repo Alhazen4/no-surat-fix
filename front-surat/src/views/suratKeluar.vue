@@ -639,6 +639,10 @@
                 console.log(error);
             }
 
+            // globalAllReset2024 will be global variable used in resetting noSurat
+            // and filling the noSuratCadangan
+            let globalAllReset2024;
+
             // Defining the lastMaxNoSurat to continue or reset the noSurat
             // Resetteing noSurat will be occur every first surat in a new year
             try {
@@ -661,7 +665,7 @@
                         // of getting all noSurat start from 23-01-2024
 
                         // startDate is 'MM-DD-YYYY'
-                        const startDate = '01-23-2023';
+                        const startDate = '01-23-2024';
 
                         const currentDate = new Date();
                         const day = currentDate.getDate().toString().padStart(2, '0');
@@ -676,6 +680,8 @@
                             // console.log(new Date(startDate));
                             return objDate >= new Date(startDate) && objDate <= currentDate;
                         });
+
+                        this.globalAllReset2024 = allReset2024;
 
                         // console.log(allReset2024);
                         // END BLOCK CODE
@@ -692,7 +698,6 @@
                                 
                                 // If there is some noSurat between 23-01-2024 until today
                                 // -Infinity is returned result of reduce() function above is the array is empty
-                                console.log(maxCurYearNoSurat === -Infinity);
                                 if (maxCurYearNoSurat.length !== -Infinity) {
                                     // Continue the noSurat from the biggest number
                                     this.lastMaxNoSurat = maxCurYearNoSurat;
@@ -734,16 +739,15 @@
                 await apis.get('/noSurat')
                 .then((response) => {
 
-                    
-                    // The noSuratCadangan will bi filled by the number that
-                    // Not used yet in this year
+                    // // The noSuratCadangan will bi filled by the number that
+                    // // Not used yet in this year
                     let allNoSurat = response.data.map((o) => { return {noSurat: o.noSurat, tglKeluar: o.tglKeluar}});
                     const curYear = new Date().getFullYear();
                     let curYearNoSurat = allNoSurat.filter(o =>  o.tglKeluar.includes(curYear.toString()));
                     const noSuratArray = curYearNoSurat.map(obj => obj.noSurat);
                     
-                    // Get the max number of noSurat from curYearNoSurat array
-                    let maxCurYearNoSurat = curYearNoSurat.reduce((max, obj) => Math.max(max, obj.noSurat), -Infinity);
+                    // Get the max number of noSurat from globalAllReset2024 array
+                    let maxCurYearNoSurat = this.globalAllReset2024.reduce((max, obj) => Math.max(max, obj.noSurat), -Infinity);
                     
                     // Push blank to array noSuratCadangan
                     // To make user can choose blank input
