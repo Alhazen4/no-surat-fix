@@ -700,8 +700,26 @@
 
                             // Especially for 2024
                             if (year === 2024) {
-                                // Continue noSurat from the biggest number from 23-01-2024
-                                this.lastMaxNoSurat = maxCurYearNoSurat2024;
+                                // Check if the noSurat since 23-01-2024 has number 1
+                                if (allReset2024.length !== 0) {
+
+                                    // Continue noSurat from the biggest number from 23-01-2024
+                                    this.lastMaxNoSurat = maxCurYearNoSurat2024;
+
+                                } else {
+
+                                    // Only for 2024 the noSurat start from 100 since 23-01-2024
+                                    if (maxCurYearNoSurat2024 !== -Infinity) {
+                                            // Continue the noSurat from the biggest number
+                                            this.lastMaxNoSurat = maxCurYearNoSurat2024;
+                                            console.log(this.lastMaxNoSurat);
+                                        } else {
+                                            // Else if there is no noSurat between 23-01-2024 until today
+                                            // Start the noSurat from 100
+                                            this.lastMaxNoSurat = 99;
+                                            console.log(this.lastMaxNoSurat);
+                                        }
+                                }
                             } else {
                                 // Else for another next year after 2024
 
@@ -712,30 +730,13 @@
                                     if (curYearNoSurat !== -Infinity) {
                                         // Continue the noSurat from the biggest number
                                         this.lastMaxNoSurat = maxCurYearNoSurat;
-                                        console.log(this.lastMaxNoSurat);
                                     } else {
                                         // Start the noSurat from 1
                                         this.lastMaxNoSurat = 0;
-                                        console.log(this.lastMaxNoSurat);
                                     }
                                 } else {
-                                    // Only for 2024 the noSurat start from 100 since 23-01-2024
-                                    if (year === 2024) {
-                                        if (maxCurYearNoSurat2024 !== -Infinity) {
-                                            // Continue the noSurat from the biggest number
-                                            this.lastMaxNoSurat = maxCurYearNoSurat2024;
-                                            console.log(this.lastMaxNoSurat);
-                                        } else {
-                                            // Else if there is no noSurat between 23-01-2024 until today
-                                            // Start the noSurat from 100
-                                            this.lastMaxNoSurat = 99;
-                                            console.log(this.lastMaxNoSurat);
-                                        }
-                                    } else {
-                                        // Start the noSurat 1 again
-                                        this.lastMaxNoSurat = 0;
-                                        console.log(this.lastMaxNoSurat);
-                                    }
+                                    // Start the noSurat 1 again
+                                    this.lastMaxNoSurat = 0;
                                 }
                             }
                             // console.log(maxCurYearNoSurat);
