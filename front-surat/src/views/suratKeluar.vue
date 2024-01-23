@@ -683,7 +683,7 @@
 
                         this.globalAllReset2024 = allReset2024;
 
-                        // console.log(allReset2024);
+                        console.log(allReset2024);
                         // END BLOCK CODE
                         
                         // If database of suratKeluar empty, start the noSurat from 1
@@ -703,12 +703,18 @@
                                     this.lastMaxNoSurat = maxCurYearNoSurat;
                                 } else {
                                     // Else if there is no noSurat between 23-01-2024 until today
-                                    // Start the noSurat from 1
-                                    this.lastMaxNoSurat = 0;
+                                    // Start the noSurat from 100
+                                    this.lastMaxNoSurat = 99;
                                 }
                             } else {
-                                // Start the noSurat 1 again
-                                this.lastMaxNoSurat = 0;
+                                if (year === 2024) {
+                                    // Only for 2024 the noSurat start from 100 since 23-01-2024
+                                    this.lastMaxNoSurat = 99;
+                                    console.log(this.lastMaxNoSurat);
+                                } else {
+                                    // Start the noSurat 1 again
+                                    this.lastMaxNoSurat = 0;
+                                }
                             }
                             // console.log(maxCurYearNoSurat);
                         }
