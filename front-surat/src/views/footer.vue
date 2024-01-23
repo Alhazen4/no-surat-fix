@@ -1,6 +1,6 @@
 <template>
     <footer>
-        App V.0.0.5f
+        App Version 1.0.0
     </footer>
 </template>
 
