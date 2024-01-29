@@ -681,6 +681,7 @@
                             // console.log(new Date(startDate));
                             return objDate >= new Date(startDate) && objDate <= currentDate;
                         });
+                        console.log(allReset2024);
 
                         this.globalAllReset2024 = allReset2024;
 
@@ -701,12 +702,18 @@
                             // Especially for 2024
                             if (year === 2024) {
                                 console.log('Now is 2024')
-                                // Check if the noSurat since 23-01-2024 has number 1
+                                // Check if the noSurat since 23-01-2024 not null
                                 if (allReset2024.length !== 0) {
                                     console.log(allReset2024.length)
                                     // Continue noSurat from the biggest number from 23-01-2024
                                     console.log(maxCurYearNoSurat2024)
-                                    this.lastMaxNoSurat = maxCurYearNoSurat2024;
+
+                                    let bug104 = allReset2024.filter(obj => obj.noSurat === 104);
+                                    if (bug104.length !== 0) {
+                                        this.lastMaxNoSurat = 105;
+                                    } else {
+                                        this.lastMaxNoSurat = maxCurYearNoSurat2024;
+                                    }
 
                                 } else {
 
@@ -742,9 +749,9 @@
                                     this.lastMaxNoSurat = 0;
                                 }
                             }
-                            console.log(this.lastMaxNoSurat);
                         }
                     }
+                    console.log(this.lastMaxNoSurat);
                 });
             } catch (error) {
                 console.log(error);
