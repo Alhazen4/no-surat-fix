@@ -666,12 +666,12 @@
 
                         // startDate is 'MM-DD-YYYY'
                         const startDate = '01-29-2024';
+                        // Since 29-01-2024 there is a bug where the noSurat turn to 2863 in 24-01-2024
+                        // So the startDate also changed to fix the bug
 
                         const currentDate = new Date();
-                        const day = currentDate.getDate().toString().padStart(2, '0');
-                        const month = (currentDate.getMonth() + 1).toString().padStart(2, '0'); // Note: Months are 0-based
                         const year = currentDate.getFullYear();
-                        const endDate = `${day}-${month}-${year}`;
+                        const lastYear = new Date(new Date().getFullYear(), 11, 31)
                         
                         // allReset2024 is function to filter all of noSurat between 23-01-2024 until today
                         const allReset2024 = allNoSurat.filter(obj => {
@@ -679,9 +679,9 @@
                             const objDate = new Date(`${parts[1]}-${parts[0]}-${parts[2]}`);
                             // console.log(objDate);
                             // console.log(new Date(startDate));
-                            return objDate >= new Date(startDate) && objDate <= currentDate;
+                            return objDate >= new Date(startDate) && objDate <= lastYear;
                         });
-                        console.log(allReset2024);
+                        // console.log(allReset2024);
 
                         this.globalAllReset2024 = allReset2024;
 
@@ -701,12 +701,13 @@
 
                             // Especially for 2024
                             if (year === 2024) {
+                                // Bug fixing in 29-01-2024
                                 let checkOne =  allReset2024.filter(obj => obj.noSurat === 105);
                                 
                                 // Check if the noSurat since 23-01-2024 not null
                                 if (allReset2024.length !== 0) {
                                     // Continue noSurat from the biggest number from 23-01-2024
-                                    console.log(maxCurYearNoSurat2024)
+                                    // console.log(maxCurYearNoSurat2024)
 
                                     if (checkOne.length === 0) {
                                         this.lastMaxNoSurat = 104;
