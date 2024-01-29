@@ -665,7 +665,7 @@
                         // START BLOCK CODE of getting all noSurat start from 23-01-2024
 
                         // startDate is 'MM-DD-YYYY'
-                        const startDate = '01-23-2024';
+                        const startDate = '01-29-2024';
 
                         const currentDate = new Date();
                         const day = currentDate.getDate().toString().padStart(2, '0');
@@ -707,14 +707,8 @@
                                     console.log(allReset2024.length)
                                     // Continue noSurat from the biggest number from 23-01-2024
                                     console.log(maxCurYearNoSurat2024)
-
-                                    let bug104 = allReset2024.filter(obj => obj.noSurat === 104);
-                                    if (bug104.length !== 0) {
-                                        this.lastMaxNoSurat = 105;
-                                    } else {
-                                        this.lastMaxNoSurat = maxCurYearNoSurat2024;
-                                    }
-
+                                    this.lastMaxNoSurat = maxCurYearNoSurat2024;
+                                    
                                 } else {
 
                                     // Only for 2024 the noSurat start from 100 since 23-01-2024
@@ -726,7 +720,7 @@
                                         } else {
                                             // Else if there is no noSurat between 23-01-2024 until today
                                             // Start the noSurat from 100
-                                            this.lastMaxNoSurat = 99;
+                                            this.lastMaxNoSurat = 104;
                                             console.log(this.lastMaxNoSurat);
                                         }
                                 }
