@@ -701,13 +701,18 @@
 
                             // Especially for 2024
                             if (year === 2024) {
-                                console.log('Now is 2024')
+                                let checkOne =  allReset2024.filter(obj => obj.noSurat === 105);
+                                
                                 // Check if the noSurat since 23-01-2024 not null
                                 if (allReset2024.length !== 0) {
-                                    console.log(allReset2024.length)
                                     // Continue noSurat from the biggest number from 23-01-2024
                                     console.log(maxCurYearNoSurat2024)
-                                    this.lastMaxNoSurat = maxCurYearNoSurat2024;
+
+                                    if (checkOne.length === 0) {
+                                        this.lastMaxNoSurat = 104;
+                                    } else {
+                                        this.lastMaxNoSurat = maxCurYearNoSurat2024;
+                                    }
                                     
                                 } else {
 
